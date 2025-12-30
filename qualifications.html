@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link html code to css -->
+    <script>
+        // get saved theme before the page renders
+        (function() {
+        let savedTheme = localStorage.getItem('theme') || 'css/styles1.css';
+        document.write('<link id="theme" rel="stylesheet" href="' + savedTheme + '">');
+        })();
+    </script>
+
+    <!-- heading/body font embed code (style1) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- heading/body font embed code (style2) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <title>Claire Wu</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="top">
+      <ul class="nav-bar">
+        <li><a class="nav-bar-text" href="index.html">Claire</a></li>
+        <li><a class="nav-bar-text" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-bar-text" href="qualifications.html">Qualifications</a></li>
+        <li><a class="nav-bar-text" href="service.html">Service</a></li>
+        <li><a class="nav-bar-text" href="genai.html">AI</a></li>
+      </ul>
+
+      <!-- change theme button -->
+      <div class="change-theme"> 
+        <input type="checkbox" id="toggle" class="checkbox" onclick="changeTheme()"/>
+        <label for="toggle" class="switch"></label>
+        <script src="js/switch.js"></script>
+      </div>
+    </div>
+    
+
+    <h1 class="qualifications-text heading-text">Qualifications</h1>
+
+    <h3 class="qualifications-subheadings subheadings">Condensed Technical Skills</h3>
+
+    <div class="technical-skills-container">
+        <div class="technical-skills-text-container">
+            <ul>
+                <li class="body-text">Coded the Signify Hex backend in Go using a PostgreSQL database, created a heatmap with Mapbox, and containerized the program using Docker. Kubernetes, Redis, and Kafka were used to handle and process data.</li>
+                <li class="body-text">Experimented with Dart and Flutter in Xcode while developing my mental health app with my co-founder.</li>
+                <li class="body-text">Used R for various statistics classes, including STAT 211, 212, and 404.</li>
+            </ul>
+        </div>
+
+
+        <div class="technical-skills-img-container">
+            <img class="technical-skills-img" src="assets/technical-skills.jpg" alt="Image showing Flutter, Dart, and other app development icons">
+        </div>
+    </div> 
+
+    <h3 class="reveal-box areas-subheading subheadings">Fields That Inspire Me</h3>
+    <div class="areas-text-container areas-text">
+      <p class="reveal-box topic-sentence body-text">
+        Besides my technical skills, I am interested in many technical areas 
+        within Computer Science. 
+        <br>
+        <br>
+        
+        <div class="first-interest body-text">
+          First, I am interested in data science 
+          because data is everywhere. For example, I am grateful to 
+          work with Signify Health to use mock personal 
+          data to create a system that has practically and tangibly affected 
+          people’s lives. We live in a diverse world, and it is important 
+          to create software that is accessible to everyone. These patients 
+          could be unable to leave 
+          their home for traditional healthcare for a variety of reasons. 
+          Regardless, combining two powerful fields (computer science and 
+          statistics) had a direct, positive impact on those patients. 
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="second-interest body-text">
+          Second, 
+          Artificial intelligence (AI) is a technological breakthrough that 
+          will drastically affect the software industry with the rise of 
+          generative AI coding tools. The combination of the popularity of 
+          AI and the fact that I am interested in the linear algebra aspect 
+          of machine learning make AI an intriguing field for me. To pursue 
+          this interest, I am co-founding a mental health app with major 
+          AI features. 
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="third-interest body-text">
+          Finally, I am fascinated with software 
+          engineering because I love programming. My dad was a software 
+          engineer when I was younger, and learning about his experiences 
+          inspired me to pursue this field. In addition, in elementary school, 
+          I loved exploring Scratch, a block-based programming language; I 
+          continued to explore this interest by learning HTML and CSS in 
+          middle school, Python and Java in high school, and many more 
+          programming languages in college.
+        </div>
+      </p>
+    </div>
+
+    <p class="reveal-box body-text">Below is my resume for reference.</p>
+    <iframe class="reveal-box" src="assets/Claire Wu Resume.pdf" width="640" height="480" allow="autoplay"></iframe>
+
+    <script src="js/scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link html code to css -->
+    <script>
+        // get saved theme before the page renders
+        (function() {
+        let savedTheme = localStorage.getItem('theme') || 'css/styles1.css';
+        document.write('<link id="theme" rel="stylesheet" href="' + savedTheme + '">');
+        })();
+    </script>
+    
+    <!-- heading/body font embed code (style1) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- heading/body font embed code (style2) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- js code for slideshow -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            if (x.length === 0) return; // nothing to show -> exit
+
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <title>Claire Wu</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="top">
+      <ul class="nav-bar">
+        <li><a class="nav-bar-text" href="index.html">Claire</a></li>
+        <li><a class="nav-bar-text" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-bar-text" href="qualifications.html">Qualifications</a></li>
+        <li><a class="nav-bar-text" href="service.html">Service</a></li>
+        <li><a class="nav-bar-text" href="genai.html">AI</a></li>
+      </ul>
+
+      <!-- change theme button -->
+      <div class="change-theme"> 
+        <input type="checkbox" id="toggle" class="checkbox" onclick="changeTheme()"/>
+        <label for="toggle" class="switch"></label>
+        <script src="js/switch.js"></script>
+      </div>
+    </div>
+    
+
+    <h1 class="heading-text" id="service-heading">Service</h1>
+
+    <div class="service-container">
+        <!-- img carousel -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img class="slide-img" src="assets/park-cleanup.jpg">
+                <div class="photo-captions">Austin Park Cleanup</div>
+                
+                <!-- next and previous buttons -->
+                <div class="arrows">
+                    <a onclick="plusSlides(-1)">&#10229;</a>
+                    <div class="numbertext">1 / 4</div>
+                    <a onclick="plusSlides(1)">&#10230;</a>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <img class="slide-img" src="assets/flo-bowl.jpg">
+                <div class="photo-captions">FLO Bowl Volunteering</div>
+                
+                <!-- next and previous buttons -->
+                <div class="arrows">
+                    <a onclick="plusSlides(-1)">&#10229;</a>
+                    <div class="numbertext">2 / 4</div>
+                    <a onclick="plusSlides(1)">&#10230;</a>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <img class="slide-img" src="assets/freshman-big-event.jpg">
+                <div class="photo-captions">Freshman Year at Big Event with MSC FISH</div>
+                
+                <!-- next and previous buttons -->
+                <div class="arrows">
+                    <a onclick="plusSlides(-1)">&#10229;</a>
+                    <div class="numbertext">3 / 4</div>
+                    <a onclick="plusSlides(1)">&#10230;</a>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <img class="slide-img" src="assets/sophomore-big-event.png">
+                <div class="photo-captions">Sophomore Year at Big Event with Aggies Create</div>
+                
+                <!-- next and previous buttons -->
+                <div class="arrows" id="arrows">
+                    <a onclick="plusSlides(-1)">&#10229;</a>
+                    <p class="numbertext">4 / 4</p>
+                    <a onclick="plusSlides(1)">&#10230;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal-box service-text-container">
+            <p class="service-text body-text">
+                I have always been passionate about serving the community. In middle school and high school, I would volunteer 
+                at the thrift store and help make sandwiches for the homeless. This love for service extended into college, and I joined a 
+                Freshman Leadership Organization (FLO) called 
+                <a href="https://fish.tamu.edu/">MSC FISH</a>, 
+                Memorial Student Center Freshmen in Service and Hosting. Through MSC FISH, I participated in various service opportunities, 
+                such as picking up trash at a park and volunteering at the food bank. 
+            </p>
+        </div>
+    </div>
+
+    <div class="reveal-box extra-service-text-container">
+        <p class="body-text">
+            Since freshman year, I 
+            have continued to participate in community service, including Texas A&M's annual service event called 
+            <a href="https://bigevent.tamu.edu/">Big Event</a>, which gives students a 
+            chance to serve residents of the Bryan-College Station area. 
+            
+            <br> <br>
+            
+            Giving back to the community is very 
+            important to me, and I would love to be part of a corporate culture that is committed to that cause.
+        </p>
+    </div>
+
+    <script src="js/scroll.js"></script>
+</body>
+</html>

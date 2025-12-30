@@ -1,0 +1,431 @@
+:root {
+  --links: #25476E;
+  --hover: #6D90C2;
+  --subheadings: #2c2c2c;
+  --accents: #E8AABF;
+  --light-accent: #e9d1d9;
+}
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex; /* keep nav bar horizontal */
+  gap: 5%; /* space between nav bar links */
+
+  padding: 1% 1.5%;
+}
+
+.nav-bar-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: clamp(1.8rem, 2vw, 6rem); /* linearly scale css font size using clamp() */
+  text-align: center;
+
+  float: left;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* change styles */
+.change-theme {
+  text-align: right; /* put in top right corner */
+  padding: 1% 1.5%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: clamp(3rem, 3.4vw, 11.4rem);
+  height: clamp(1.5rem, 1.7vw, 5.7rem);
+  background-color: var(--light-accent);
+  border-radius: clamp(1.5rem, 1.7vw, 5.7rem);
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  width: clamp(0.9720rem, 1.53vw, 5.13rem); /* circle width */
+  height: clamp(0.9720rem, 1.53vw, 5.13rem);
+  border-radius: 50%;
+  background-color: white;
+  top: clamp(0.075rem, 0.085vw, 0.285rem); /* circle effect */
+  left: clamp(0.075rem, 0.085vw, 0.285rem);
+  transition: all 0.3s;
+}
+
+.checkbox:checked + .switch::after { /* on right */
+  /* make switch even */
+  left: calc(100% - clamp(0.9720rem, 1.53vw, 5.13rem) - clamp(0.075rem, 0.085vw, 0.285rem));
+  /* full width of switch - circle width - the right padding i want */
+}
+
+.checkbox:checked + .switch { /* on left */
+  background-color: var(--accents);
+}
+
+.checkbox {
+  display: none; /* hide checkbox */
+}
+
+
+
+a:hover, a:link, a:visited, a:active {
+  text-decoration: none; /* remove underline on links everywhere for every status/state */
+  /* color: black; */
+  color: var(--links);
+}
+
+a:hover {
+  /* color: #b68dc4; */
+  color: var(--hover);
+}
+
+
+
+.heading-text {
+  text-align: center;
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  text-decoration: underline;
+  text-decoration-thickness: 1.5%;
+  text-decoration-color: var(--accents);
+
+  font-size: clamp(14rem, 13vw, 33rem);
+  clear: right; 
+
+  margin: 5% auto;
+  padding-top: 2%;
+}
+
+.body-text {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: clamp(1.2rem, 1.9vw, 4.6rem);
+}
+
+.subheadings {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: clamp(3.5rem, 3.5vw, 14rem);
+
+  color: var(--subheadings); /* uses previously stated colors */
+
+  padding-left: 3%;
+  margin-bottom: 1%;
+}
+
+
+
+/* homepage */
+.intro-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding-bottom: 5%;
+}
+
+.headshot {
+  clip-path: circle();
+
+  width: clamp(31rem, 34vw, 90rem);
+}
+
+.headshot-container {
+  display: flex;
+  justify-content: center; /* center the image horizontally */
+  align-items: center; /* center image vertically */
+}
+
+.intro-text-container {
+  display: flex;
+  justify-content: center; /* center the text */
+}
+
+.intro-text-container p {
+  text-align: left;
+  max-width: clamp(34rem, 39.9vw, 90rem);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-text-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  
+  margin: 0 auto;
+  width: clamp(40rem, 40vw, 100rem);
+  padding-left: 8%;
+}
+
+.contact-text {
+  margin-top: 0;
+}
+
+.contact-img-container {
+  display: flex;
+  align-items: center; /* center vertically */
+  justify-content: center; /* center horizontally */
+}
+
+.contact-img-container img{
+  width: clamp(25rem, 20vw, 55rem);
+  height: auto;
+  padding-bottom: 5%;
+}
+
+
+
+/* portfolio.html*/
+.signify-name-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  max-width: 40%;
+
+  align-items: center; /* horizontal alignment */
+  justify-items: start; /* vertical alignment w/in columns */
+  padding-left: 1.5%;
+}
+
+.signify-img {
+  height: clamp(3.5rem, 3.5vw, 14rem);
+  width: auto;
+}
+
+.signify-name {
+  margin-top: 0;
+  padding-left: 1%;
+}
+
+.signify-body-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  padding-left: 2%;
+  padding-bottom: 5%;
+
+  place-items: center;
+}
+
+.signify-text-container {
+  padding-right: 5%;
+}
+
+.signify-video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 85rem; /* cap the largest size */
+  width: min(95%, 85rem); /* use 75% of page width, capped */
+  margin: 0 auto; /* center the container */
+}
+
+.signify-video {
+  width: 100%;
+  height: auto;
+  padding-right: 2%;
+  max-width: 100%; /* prevents overflow */
+}
+
+.tao-name-container {
+  display: grid;
+  grid-template-columns: 0.1fr auto;
+  width: 60%;
+
+  align-items: center; /* horizontal alignment */
+  justify-items: start; /* vertical alignment w/in columns */
+  padding-left: 1.5%;
+}
+
+.tao-name {
+  margin: 0;
+  white-space: nowrap; /* prevent text wrapping */
+}
+
+.tao-name-hover {
+  display: none;
+}
+
+.tao-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-height: 10rem;
+  height: min(40%, 10rem);
+  min-height: 2rem;
+  margin: 0 auto; /* center the container */
+}
+
+.tao-logo {
+  height: 100%;
+  width: auto;
+}
+
+.tao-body-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  padding-left: 2%;
+}
+
+.tao-text-container {
+  padding-right: 5%;
+}
+
+.tao-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 150rem;
+  width: min(90%, 150rem);
+  margin: 0 auto; /* center the container */
+}
+
+.tao-img {
+  width: 100%;
+  height: auto;
+  padding-right: 2%;
+}
+
+.smart-name {
+  padding-left: 1.5%;
+}
+
+.smart-body-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  padding-left: 2%;
+}
+
+.smart-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 150rem;
+  width: min(90%, 150rem);
+  margin: 0 auto; /* center the container */
+}
+
+.smart-img {
+  width: 100%;
+  height: auto;
+  padding-right: 2%;
+}
+
+
+
+/* qualifications.html */
+.technical-skills-container {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+
+  padding-left: 3.5%;
+
+  display: flex;
+  align-items: center; /* center vertically */
+}
+
+.technical-skills-text-container {
+  padding-right: 2.5%;
+}
+
+.technical-skills-img {
+  width: 83%;
+  height: auto;
+}
+
+.areas-text {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+}
+
+
+
+/* service.html */
+.mySlides {
+  display: none; /* hide all slides at first */
+  text-align: center;
+}
+
+.mySlides:first-child {
+  display: block; /* shows 1st slide before js kicks in */
+}
+
+.slide-img {
+  width: 83%;
+  height: auto;
+}
+
+.photo-captions {
+  font-family: 'Lora',serif; 
+  font-weight: 400; 
+  font-size: clamp(1.1rem,1.8vw,4.5rem);
+  color: var(--accents);
+  text-align: center;
+}
+
+.numbertext {
+  text-align: center;
+  
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: clamp(1rem, 1.3vw, 3.5rem);
+
+  margin: auto;
+  padding-top: 4%;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between; /* push left, center, right */
+  width: clamp(6rem, 10vw, 22rem);
+  font-size: clamp(2.5rem, 2vw, 4rem);
+  align-items: center;
+  margin: auto;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service-text{
+  margin-top: 0;
+  padding-right: 6%;
+}
+
+.extra-service-text-container {
+  padding: 1% 4%;
+}

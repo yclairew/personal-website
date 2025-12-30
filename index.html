@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link html code to css -->
+    <script>
+        // get saved theme before the page renders
+        (function() {
+        let savedTheme = localStorage.getItem('theme') || 'css/styles1.css';
+        document.write('<link id="theme" rel="stylesheet" href="' + savedTheme + '">');
+        })();
+    </script>
+
+    <!-- heading/body font embed code (style1) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- heading/body font embed code (style2) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <title>Claire Wu</title>
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <div class="top">
+      <ul class="nav-bar">
+        <li><a class="nav-bar-text" href="index.html">Claire</a></li>
+        <li><a class="nav-bar-text" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-bar-text" href="qualifications.html">Qualifications</a></li>
+        <li><a class="nav-bar-text" href="service.html">Service</a></li>
+        <li><a class="nav-bar-text" href="genai.html">AI</a></li>
+      </ul>
+
+      <!-- change theme button -->
+      <div class="change-theme"> 
+        <input type="checkbox" id="toggle" class="checkbox" onclick="changeTheme()"/>
+        <label for="toggle" class="switch"></label>
+        <script src="js/switch.js"></script>
+      </div>
+    </div>
+
+
+    <div class="howdy-container">
+      <h1 class="typing-effect heading-text" id="howdy-text">Howdy!</h1>
+    </div>
+    
+    <div class="intro-container">
+      <div class="headshot-container">
+        <img class="headshot" src="assets/my-headshot.jpg" alt="Claire Wu headshot">
+      </div>
+
+      <div class="intro-text-container">
+        <p class="body-text">
+          I'm Claire Wu, a junior 
+          <a class="body-text" href="https://engineering.tamu.edu/cse/index.html">Computer Science</a> 
+          student double-minoring in
+          <a class="body-text" href="https://artsci.tamu.edu/statistics/academics/undergraduate/minor.html">Statistics</a> 
+          and <a class="body-text" href="https://mays.tamu.edu/ai/ai-minor/">AI in business</a> 
+          at Texas A&M University.
+
+          <!-- line breaks -->
+          <br>
+          <br>
+          
+          I am passionate about software engineering, data science, 
+          AI/ML, and UX design. Recently, I collaborated on
+          <i>Signify Hex</i>, a data visualization tool 
+          created for
+          <a href="https://www.signifyhealth.com/">Signify Health</a>
+          that placed 1st in consultancy at the 
+          <a href="https://www.aggiescreate.com/">Aggies Create</a> 
+          Innovation Expo. 
+          
+          <!-- line breaks -->
+          <br>
+          <br>
+
+          When I'm not coding, 
+          you can usually find me at the gym, 
+          crocheting or doing other crafts, or exploring new 
+          coffee shops!          
+        </p>
+
+      </div>
+    </div>
+
+    
+    <h1 class="reveal-box heading-text" id="contact-text">Contact Me</h1>
+    
+    <div class="reveal-box contact-container">
+      <div class="contact-text-container">
+        <p class="contact-text body-text">
+          If you have a question or comment, please feel free to contact me!
+          <br>
+          <br>
+
+          Email: 
+          <a class="body-text" href="mailto:y.clairewu@tamu.edu">y.clairewu@tamu.edu</a>
+          <br>
+
+          Phone number:
+          (469) 230-1605
+          <br>
+
+          <a class="body-text" href="https://www.linkedin.com/in/y-clairewu/">My LinkedIn</a>
+        </p>
+      </div>
+
+      <div class="contact-img-container">
+        <img src="assets/email-icon.png" alt="mail icon">
+      </div>
+    </div>
+
+    <script src="js/scroll.js"></script>
+
+  </body>
+</html>

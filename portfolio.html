@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link html code to css -->
+    <script>
+        // get saved theme before the page renders
+        (function() {
+        let savedTheme = localStorage.getItem('theme') || 'css/styles1.css';
+        document.write('<link id="theme" rel="stylesheet" href="' + savedTheme + '">');
+        })();
+    </script>
+        
+    <!-- heading/body font embed code (style1) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- heading/body font embed code (style2) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <title>Claire Wu</title>
+
+    
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="top">
+      <ul class="nav-bar">
+        <li><a class="nav-bar-text" href="index.html">Claire</a></li>
+        <li><a class="nav-bar-text" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-bar-text" href="qualifications.html">Qualifications</a></li>
+        <li><a class="nav-bar-text" href="service.html">Service</a></li>
+        <li><a class="nav-bar-text" href="genai.html">AI</a></li>
+      </ul>
+
+      <!-- change theme button -->
+      <div class="change-theme"> 
+        <input type="checkbox" id="toggle" class="checkbox" onclick="changeTheme()"/>
+        <label for="toggle" class="switch"></label>
+        <script src="js/switch.js"></script>
+      </div>
+    </div>
+
+
+    <h1 class="portfolio-heading heading-text">Portfolio</h1>
+    
+    <div class="center">
+        <div class="slider">
+            <script>
+                const slider = document.querySelector('.slider');
+
+                slider.addEventListener('scroll', () => {
+                const gradient = window.getComputedStyle(slider, '::after');
+                // if user scrolled more than 5px, hide the gradient
+                if (slider.scrollLeft > 5) {
+                    slider.style.setProperty('--after-opacity', '0');
+                } else {
+                    slider.style.setProperty('--after-opacity', '1');
+                }
+                });
+            </script>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="signify-name-container">
+                        <img class="signify-img" src="assets/signify-health-logo.png" alt="Signify Health logo">
+                        <h3 class="signify-name subheadings">Signify Health</h3>
+                    </div>
+                        
+                    <div class="signify-body-container">
+                        <div class="signify-text-container">
+                            <p class="body-text">
+                                Through an entrepreneurial and consulting organization called Aggies Create, 
+                                I had to opportunity to be a software engineering consultant for 
+                                <a class="subheading-link" href="https://www.signifyhealth.com/">Signify Health</a>, 
+                                a company focused on connecting a network of medical providers with patients for 
+                                at home service, along with a talented team. We were tasked to create an internal 
+                                data visualization software tool that addressed the issues of visual clutter and 
+                                a lack of data depth in their current system. Together, we developed Signify Hex, 
+                                a tool that leverages React/TypeScript, UberH3, Go, PostgreSQL, and other technologies. 
+                                We used the unique hexagonal shape from UberH3 to solve those problems and show metrics 
+                                like supply deserts. Here is a short demo.
+                            </p>
+                        </div>
+
+                        <div class="signify-video-container">
+                            <video controls class="signify-video">
+                                <source src="assets/signify-hex-demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card" id="tao-card">
+                    <div class="tao-name-container">
+                        <div class="tao-logo-container">
+                            <img class="tao-logo" src="assets/tao-logo.png" alt="Engineering TA Organization logo">
+                        </div>
+                        <h3 class="tao-name subheadings">Engineering TA Organization</h3>
+                        <h3 class="tao-name-hover subheadings">Engineering TA Organization</h3>
+                    </div>
+
+                    <div class="tao-body-container">
+                        <div class="tao-text-container">
+                            <p class="body-text">
+                                As a Web Officer and Software Engineering (SWE) Intern for
+                                <a href="https://engrtao.tech/">Engineering TAO</a>, 
+                                I built the TAO website with fellow SWE interns, applying 
+                                React, Tailwind CSS, and other technologies. Additionally, I 
+                                helped manage a Discord community of over 5,000 engineering 
+                                students and supported first-year students by 
+                                brainstorming ideas for events, such as review sessions. For 
+                                more information on the club website, please see the 
+                                <a href="https://github.com/TAO-ENGR/club-website">Github</a>.
+                            </p>
+                        </div>
+                        <div class="tao-img-container">
+                            <img class="tao-img" src="assets/tao-img.png" alt="Instagram screenshot of my TAO officer introduction">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h3 class="smart-name subheadings">Project SMART</h3>
+                    
+                    <div class="smart-body-container">
+                        <div class="smart-body-text">
+                            <p class="body-text">
+                                Since the Spring 2025 semester, I have been an undergraduate research 
+                                assistant for the 
+                                <a id="smart-link" href="https://reporter.nih.gov/search/rDSof44kikaDWHwODD4i1A/project-details/10936382">project Social Media And Resilient Teens (SMART) lab</a>. 
+                                This lab aims to investigate the relationship between social media 
+                                and mental health in adolescents from different ethnic 
+                                backgrounds in a unique way: by capturing screenshots from 
+                                teen participants' phones to monitor the content they see 
+                                on social media. To perform ethical research and protect the 
+                                participants, I completed a variety of trainings, such as the 
+                                TrainTraq Child Protection Training. We also 
+                                went to ILTexas to teach middle school students about internet
+                                safety, as shown here. Currently, I am collecting 
+                                high-quality data by creating surveys in REDCap and conducting 
+                                participant interviews for the parents and teens in the study.
+                            </p>
+                        </div>
+
+                        <div class="smart-img-container">
+                            <img class="smart-img" src="assets/smart-project.jpg" alt="Texas school auditorium with chairs" width=300 height=243>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
