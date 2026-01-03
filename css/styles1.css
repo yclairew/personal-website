@@ -6,13 +6,14 @@
   --light-accent: #e9d1d9;
 }
 
-.nav-bar {
+.nav-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 
   display: flex; /* keep nav bar horizontal */
-  gap: 5%; /* space between nav bar links */
+  /* flex-wrap: wrap; */
+  gap: 45px; /* space between nav bar links */
 
   padding: 1% 1.5%;
 }
@@ -33,6 +34,72 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* larger screen side --> hide hamburger menu buttons */
+#open-sidebar-button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+#close-sidebar-button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+#overlay { /* to implement close hamburger menu on exit */
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: none;
+}
+
+
+/* hamburger menu */
+@media screen and (max-width: 800px) {
+  #open-sidebar-button {
+    display: inline-block;
+  }
+  #close-sidebar-button {
+    display: inline-block;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: -100%; /* hides nav bar */
+    height: 100vh;
+    width: min(20em, 100%);
+    z-index: 10;
+    background-color: white;
+    transition: left 300ms ease-out;
+  }
+  nav.show{
+    left: 0;
+  }
+  nav.show ~ #overlay {
+    display: block;
+  }
+  .nav-ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  nav a {
+    text-align: left;
+    padding-left: 0.9em;
+  }
+  .top {
+    position: relative;
+    float: right;
+    top: 12px;
+    right: 12px;
+  }
 }
 
 
@@ -147,7 +214,7 @@ a:hover {
 .headshot {
   clip-path: circle();
 
-  width: clamp(31rem, 34vw, 90rem);
+  width: clamp(25rem, 34vw, 90rem);
 }
 
 .headshot-container {
@@ -177,8 +244,10 @@ a:hover {
   align-items: center; /* center vertically */
   
   margin: 0 auto;
-  width: clamp(40rem, 40vw, 100rem);
-  padding-left: 8%;
+  /* width: clamp(40rem, 40vw, 100rem); */
+  width: clamp(30rem, 40vw, 100rem);
+  padding-left: 10px;
+  /* padding-left: 8%; */
 }
 
 .contact-text {

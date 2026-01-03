@@ -32,14 +32,23 @@
     <title>Claire Wu</title>
 </head>
 <body>
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+      <img src="assets/hamburger-menu-icon.svg">
+    </button>
+
     <!-- nav bar -->
     <div class="top">
-      <ul class="nav-bar">
-        <li><a class="nav-bar-text" href="index.html">Claire</a></li>
-        <li><a class="nav-bar-text" href="portfolio.html">Portfolio</a></li>
-        <li><a class="nav-bar-text" href="qualifications.html">Qualifications</a></li>
-        <li><a class="nav-bar-text" href="service.html">Service</a></li>
-      </ul>
+      <nav id="nav-bar">
+        <ul class="nav-ul">
+          <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><img src="assets/close-icon.svg"></button></li>
+          <li><a class="nav-bar-text" aria-current="page" href="index.html">Claire</a></li>
+          <li><a class="nav-bar-text" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-bar-text" href="qualifications.html">Qualifications</a></li>
+          <li><a class="nav-bar-text" href="service.html">Service</a></li>
+        </ul>
+      </nav>
+
+      <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
       <!-- change theme button -->
       <div class="change-theme"> 
@@ -124,5 +133,6 @@
     <iframe class="reveal-box" src="assets/Claire Wu Resume.pdf" width="640" height="480" allow="autoplay"></iframe>
 
     <script src="js/scroll.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 </html>
