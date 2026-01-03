@@ -50,6 +50,7 @@
   border: none;
   padding: 1em;
   cursor: pointer;
+  margin-top: 4.5px;
 }
 
 #overlay { /* to implement close hamburger menu on exit */
