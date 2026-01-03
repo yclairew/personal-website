@@ -472,6 +472,7 @@ a:hover {
   font-style: normal;
 
   font-size: clamp(1rem, 1.3vw, 3.5rem);
+  white-space: nowrap;
 
   margin: auto;
   padding-top: 4%;
@@ -479,7 +480,8 @@ a:hover {
 
 .arrows {
   display: flex;
-  justify-content: space-between; /* push left, center, right */
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 3rem);
   width: clamp(6rem, 10vw, 22rem);
   font-size: clamp(2.5rem, 2vw, 4rem);
   align-items: center;
