@@ -114,6 +114,7 @@
 .switch {
   position: relative;
   display: inline-block;
+  /* use a single scale factor for all dimensions */
   width: clamp(3rem, 3.4vw, 11.4rem);
   height: clamp(1.5rem, 1.7vw, 5.7rem);
   background-color: var(--light-accent);
@@ -123,22 +124,23 @@
 .switch::after {
   content: '';
   position: absolute;
-  width: clamp(0.9720rem, 1.53vw, 5.13rem); /* circle width */
-  height: clamp(0.9720rem, 1.53vw, 5.13rem);
+  /* scale circle proportionally with the switch height */
+  width: clamp(1.35rem, 1.53vw, 5.13rem);
+  height: clamp(1.35rem, 1.53vw, 5.13rem);
   border-radius: 50%;
   background-color: white;
-  top: clamp(0.075rem, 0.085vw, 0.285rem); /* circle effect */
+  top: 50%; /* moves circle down so top edge is at halfway point of switch */
   left: clamp(0.075rem, 0.085vw, 0.285rem);
+  transform: translateY(-50%); /* moves circle up half its own height */
   transition: all 0.3s;
 }
 
-.checkbox:checked + .switch::after { /* on right */
-  /* make switch even */
-  left: calc(100% - clamp(0.9720rem, 1.53vw, 5.13rem) - clamp(0.075rem, 0.085vw, 0.285rem));
-  /* full width of switch - circle width - the right padding i want */
+.checkbox:checked + .switch::after {
+  /* move circle to the right with consistent padding */
+  left: calc(100% - clamp(1.35rem, 1.53vw, 5.13rem) - clamp(0.075rem, 0.085vw, 0.285rem));
 }
 
-.checkbox:checked + .switch { /* on left */
+.checkbox:checked + .switch {
   background-color: var(--accents);
 }
 
