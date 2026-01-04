@@ -12,11 +12,10 @@
   padding: 0;
 
   display: flex; /* keep nav bar horizontal */
-
-  padding: 1% 3%;
+  padding: 0.625rem 1.875rem;
 }
 .nav-ul > *:not(:first-child) {
-  margin-right: 45px;
+  margin-right: 2.8rem;
 }
 
 
@@ -26,7 +25,7 @@
   font-weight: 500;
   font-style: normal;
 
-  font-size: clamp(1.8rem, 2vw, 6rem); /* linearly scale css font size using clamp() */
+  font-size: clamp(1.5rem, 2vw, 5rem); /* linearly scale css font size using clamp() */
   text-align: center;
 
   float: left;
@@ -36,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1%;
+  margin-top: 0.625rem;
 }
 
 /* larger screen side --> hide hamburger menu buttons */
@@ -53,7 +52,7 @@
   border: none;
   padding: 1em;
   cursor: pointer;
-  margin-top: 4.5px;
+  margin-top: 0.28rem;
 }
 
 #overlay { /* to implement close hamburger menu on exit */
@@ -66,7 +65,7 @@
 
 
 /* hamburger menu */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50em) {
   #open-sidebar-button {
     display: inline-block;
   }
@@ -93,6 +92,7 @@
   .nav-ul {
     width: 100%;
     flex-direction: column;
+    gap: 2rem;
   }
   nav a {
     text-align: left;
@@ -101,8 +101,8 @@
   .top {
     position: relative;
     float: right;
-    top: 12px;
-    right: 12px;
+    top: 0.75rem;
+    right: 0.75rem;
   }
 }
 
@@ -111,7 +111,7 @@
 /* change styles */
 .change-theme {
   text-align: right; /* put in top right corner */
-  padding: 1% 1.5%;
+  padding: 0.625rem 1.875rem;
 }
 
 .switch {
@@ -155,12 +155,10 @@
 
 a:hover, a:link, a:visited, a:active {
   text-decoration: none; /* remove underline on links everywhere for every status/state */
-  /* color: black; */
   color: var(--links);
 }
 
 a:hover {
-  /* color: #b68dc4; */
   color: var(--hover);
 }
 
@@ -174,10 +172,10 @@ a:hover {
   font-style: normal;
 
   text-decoration: underline;
-  text-decoration-thickness: 1.5%;
+  text-decoration-thickness: 0.15rem;
   text-decoration-color: var(--accents);
 
-  font-size: clamp(14rem, 13vw, 33rem);
+  font-size: clamp(4.5rem, 16vw, 37rem);
   clear: right; 
 
   margin: 5% auto;
@@ -252,8 +250,7 @@ a:hover {
   margin: 0 auto;
   /* width: clamp(40rem, 40vw, 100rem); */
   width: clamp(30rem, 40vw, 100rem);
-  padding-left: 10px;
-  /* padding-left: 8%; */
+  padding-left: 0.625rem;
 }
 
 .contact-text {
@@ -279,6 +276,7 @@ a:hover {
   display: grid;
   grid-template-columns: 0.1fr 1fr;
   max-width: 40%;
+  min-width: 40rem;
 
   align-items: center; /* horizontal alignment */
   justify-items: start; /* vertical alignment w/in columns */
@@ -419,7 +417,6 @@ a:hover {
 
 /* qualifications.html */
 .technical-skills-container {
-  display: grid;
   grid-template-columns: 2.5fr 1fr;
 
   padding-left: 3.5%;
