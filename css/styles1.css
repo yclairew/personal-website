@@ -12,11 +12,13 @@
   padding: 0;
 
   display: flex; /* keep nav bar horizontal */
-  /* flex-wrap: wrap; */
-  gap: 45px; /* space between nav bar links */
 
-  padding: 1% 1.5%;
+  padding: 1% 3%;
 }
+.nav-ul > *:not(:first-child) {
+  margin-right: 45px;
+}
+
 
 .nav-bar-text {
   font-family: "Montserrat", sans-serif;
@@ -34,6 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1%;
 }
 
 /* larger screen side --> hide hamburger menu buttons */
