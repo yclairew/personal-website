@@ -175,7 +175,7 @@ a:hover {
   text-decoration-thickness: 0.15rem;
   text-decoration-color: var(--accents);
 
-  font-size: clamp(4.5rem, 16vw, 37rem);
+  font-size: clamp(8rem, 16vw, 37rem);
   clear: right; 
 
   margin: 5% auto;
@@ -218,7 +218,7 @@ a:hover {
 .headshot {
   clip-path: circle();
 
-  width: clamp(25rem, 34vw, 90rem);
+  width: clamp(20rem, 34vw, 90rem);
 }
 
 .headshot-container {
@@ -234,7 +234,7 @@ a:hover {
 
 .intro-text-container p {
   text-align: left;
-  max-width: clamp(34rem, 39.9vw, 90rem);
+  max-width: clamp(36rem, 39.9vw, 90rem);
 }
 
 .contact-container {
@@ -248,7 +248,6 @@ a:hover {
   align-items: center; /* center vertically */
   
   margin: 0 auto;
-  /* width: clamp(40rem, 40vw, 100rem); */
   width: clamp(30rem, 40vw, 100rem);
   padding-left: 0.625rem;
 }
@@ -264,11 +263,44 @@ a:hover {
 }
 
 .contact-img-container img{
-  width: clamp(25rem, 20vw, 55rem);
+  width: clamp(20rem, 20vw, 55rem);
   height: auto;
   padding-bottom: 5%;
 }
 
+/* homepage mobile look */
+@media screen and (max-width: 50em) {
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    padding-bottom: 5%;
+  }
+  .headshot-container {
+    grid-row: 1;
+  }
+  .intro-text-container {
+    grid-row: 2;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .contact-text-container {
+    grid-row: 1;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-img-container {
+    grid-row: 2;
+    margin: 0 auto;
+  }
+}
 
 
 /* portfolio.html*/
