@@ -492,7 +492,7 @@ a:hover {
 .photo-captions {
   font-family: 'Lora',serif; 
   font-weight: 400; 
-  font-size: clamp(1.1rem,1.8vw,4.5rem);
+  font-size: clamp(1rem,1.8vw,4.5rem);
   color: var(--accents);
   text-align: center;
 }
@@ -534,4 +534,29 @@ a:hover {
 
 .extra-service-text-container {
   padding: 1% 4%;
+}
+
+/* service mobile look */
+@media screen and (max-width: 50em) {
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  .service-text-container {
+    grid-row: 1;
+    margin: 0 auto;
+  }
+  .service-text {
+    padding-right: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slideshow-container {
+    grid-row: 2;
+    margin: 0 auto;
+    width: fit-content;
+  }
 }
