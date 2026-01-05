@@ -175,7 +175,7 @@ a:hover {
   text-decoration-thickness: 0.15rem;
   text-decoration-color: var(--accents);
 
-  font-size: clamp(8rem, 16vw, 37rem);
+  font-size: clamp(5rem, 16vw, 37rem);
   clear: right; 
 
   margin: 5% auto;
@@ -263,9 +263,9 @@ a:hover {
 }
 
 .contact-img-container img{
-  width: clamp(20rem, 20vw, 55rem);
+  width: clamp(15rem, 20vw, 55rem);
   height: auto;
-  padding-bottom: 5%;
+  padding-bottom: 2rem;
 }
 
 /* homepage mobile look */
@@ -273,9 +273,10 @@ a:hover {
   .intro-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
 
-    padding-bottom: 5%;
+    padding-bottom: 2rem;
   }
   .headshot-container {
     grid-row: 1;
