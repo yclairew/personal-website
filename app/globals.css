@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+
+:root {
+  --links: #1D4363;
+  --hover: #6D90C2;
+  --headings: black;
+  --subheadings: #2c2c2c;
+  --accents: #E8AABF;
+  --light-accent: #e9d1d9;
+}
+/* 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+/* text */
+.heading-text {
+  font-family: var(--font-heading);
+  font-size: clamp(5rem, 16vw, 37rem);
+  text-align: center;
+
+  text-decoration: underline;
+  text-decoration-thickness: 0.19rem;
+  text-decoration-color: var(--accents);
+}
+
+.body-text {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.9vw, 4.6rem);
+}
+
+.subheadings {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 3.5vw, 14rem);
+}
+
+
+/* links */
+a:link, a:visited {
+  color: var(--links);
+}
+a:hover, a:active {
+  text-decoration-color: var(--hover);
+}
+a {
+  text-decoration: underline;
+  text-decoration-thickness: 1;
+  text-underline-offset: 4px; /* to match underline with animation */
+  text-decoration-color: var(--links);
+
+  background-image: linear-gradient(var(--hover), var(--hover));
+  background-position: 0% 100%; /* 100% to be at bottom of line (y) */
+  background-repeat: no-repeat;
+  background-size: 0% 8%; /* 0% to hide */
+  transition: background-size .3s;
+}
+a:hover, a:focus {
+  background-size: 100% 8%; 
+  color: var(--hover);
+}
+
+
+/* nav bar */
+.nav-bar-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: clamp(1.5rem, 2vw, 5rem); /* linearly scale css font size using clamp() */
+  text-align: center;
+
+  float: left;
+
+  text-decoration: none;
+}
+
+
+
+/* homepage */
+.headshot {
+  clip-path: circle();
+
+  width: clamp(18rem, 34vw, 90rem);
+  aspect-ratio: 1; /* force circle */
+}
+
+.typing-animation {
+  display: inline-block; /* keep blinking cursor to the edge of text */
+  white-space: nowrap;
+  overflow: hidden; /* hide text until typed */
+  border-right: 0.12em solid var(--headings); /* blinking cursor */
+  width: 0; /* start with nothing visible */
+  
+  animation: 
+    typing 3.5s steps(65, end) forwards, /* typing effect */
+    blink-caret 0.75s step-end infinite; /* cursor blink */
+}
+/* typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 48.5ch } /* reveals full text */
+}
+/* blinking cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--headings) }
+}
