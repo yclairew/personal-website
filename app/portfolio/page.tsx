@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ".././globals.css"
 import Nav from "../../components/nav";
+import Footer from "../../components/footer"
 import Cards from '@/components/Cards'
 
 export default function Portfolio() {
@@ -13,6 +14,8 @@ export default function Portfolio() {
       <div className="center">
         <Cards/>
       </div>
+
+      <Footer/>
     </div>
   );
 }

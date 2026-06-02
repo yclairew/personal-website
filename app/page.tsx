@@ -42,7 +42,7 @@ export default function Home() {
             <br/>
             <br/>
 
-            Check out my <a href="portfolio">projects</a> or feel free to <a href="#footer">contact me!</a>
+            Check out my <a href="portfolio">portfolio</a> or feel free to <a href="#footer">contact me!</a>
           </p>
         </div>
       </div>

@@ -117,36 +117,69 @@ export default function Cards() {
   return (
     <div className="cards">
       {cards.map(card => (
-        <div key={card.title} className="card">
-          <div className="card-header">
-            {card.logo && <img className="card-logo" src={card.logo} alt={`${card.title} logo`} />}
-            <h3 className="card-title text-4xl [font-family:var(--font-body)]">{card.title}</h3>
-          </div>
+        // <div key={card.title} className="card pb-10 pl-10 pr-10">
+        //   <div className="card-header pb-5">
+        //     {card.logo && <img className="card-logo" src={card.logo} alt={`${card.title} logo`} />}
+        //     <h3 className="card-title text-4xl [font-family:var(--font-body)]">{card.title}</h3>
+        //   </div>
 
-          <div className="card-body">
-            <div className="card-text [font-family:var(--font-body)]">
-              <p className="card-description" dangerouslySetInnerHTML={{ __html: card.description }}/>
+        //   <div className="card-body flex">
+        //     <div className="card-text [font-family:var(--font-body)] flex-1 text-lg">
+        //       <p className="card-description" dangerouslySetInnerHTML={{ __html: card.description }}/>
               
-              {card.links.length > 0 && (
-                <div className="card-links">
-                  {card.links.map(link => (
-                    <a
-                      key={link.label}
-                      className="card__link"
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
+        //       {card.links.length > 0 && (
+        //         <div className="card-links">
+        //           {card.links.map(link => (
+        //             <a
+        //               key={link.label}
+        //               className="card__link"
+        //               href={link.url}
+        //               target="_blank"
+        //               rel="noopener noreferrer"
+        //             >
+        //               {link.label}
+        //             </a>
+        //           ))}
+        //         </div>
+        //       )}
+        //     </div>
 
-          <div className="card-media">
-            {card.type === "video" ? <video controls className="card-video"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image" src={card.media} alt={`${card.title} image`}/>}
+        //     <div className="card-media flex-1/16">
+        //       {card.type === "video" ? <video controls className="card-video"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image" src={card.media} alt={`${card.title} image`}/>}
+        //     </div>
+        //   </div>
+        // </div>
+
+        <div key={card.title} className="card pb-10 pl-10 pr-10">
+          <div className="card-header pb-5 flex">
+            <div className="flex-1">
+              {card.logo && <img className="card-logo" src={card.logo} alt={`${card.title} logo`} />}
+              <h3 className="card-title text-4xl [font-family:var(--font-body)]">{card.title}</h3>
+
+              <div className="card-text [font-family:var(--font-body)] text-lg pt-5">
+                <p className="card-description" dangerouslySetInnerHTML={{ __html: card.description }}/>
+                
+                {card.links.length > 0 && (
+                  <div className="card-links">
+                    {card.links.map(link => (
+                      <a
+                        key={link.label}
+                        className="card__link"
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="card-media flex-1">
+              {card.type === "video" ? <video controls className="card-video"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image" src={card.media} alt={`${card.title} image`}/>}
+            </div>
           </div>
         </div>
       ))}
