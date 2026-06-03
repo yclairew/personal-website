@@ -1,24 +1,28 @@
+"use client";
+import React, { useState } from 'react';
 
-const cards = [
+const cards: Card[] = [
   {
     title: "AnnoMath",
-    description: `In Dr. Xia's Dream Lab and under Kiyrah Mowry, a PhD researcher, I collaborated with fellow undergraduate 
-      researchers to develop an AI-powered, multimodial college math tutorial system that displays 
-      annotations to teach students. Kiryah and I analyzed 30 Khan Academy videos and performed annotation coding 
-      to derive the mathematical annotations. Additionally, I used tldraw and React to render relevant annotations onto LaTeX and 
-      handwritten student work.`, // TODO: write something about the paper 
+    role: "Undergraduate Researcher",
+    description: `Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math 
+    tutoring system applying pedagogically grounded annotation types to handwritten student 
+    work. Co-coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation 
+    framework. Implemented annotation rendering, covering 22% of all annotations 
+    identified from frequency analysis of 30 instructional videos. Built frontend logic to render 
+    AI generated outputs from the OpenAI API.
+    `, // TODO: write something about the paper 
     type: "video",
     media: "annomath-paper-video.mp4",
-    links: []
+    links: [],
+    skills: ["TypeScript", "React", "tldraw", "Prompt Engineering", "Research Skills", "Teamwork", "Annotation Coding"]
   },
   {
     title: "Boba POS System",
-    description: `As a <strong>full-stack developer</strong> on a collaborative Agile Scrum team, 
-      I helped build a multi-interface boba shop POS platform. I led deployment and authentication 
-      security implementation, integrated a text-to-speech API and a weather-based kiosk drink 
-      recommendation system. I also contributed to dynamic database-driven menu rendering, the drink 
-      customization popup, and checkout and tipping functionality to create an accessible and streamlined 
-      customer kiosk experience.`,
+    role: "Full-Stack Developer",
+    description: `Built a multi-interface boba shop POS platform on an Agile Scrum team. Led deployment 
+      and authentification security, integrated a TTS API and weather based drink recommendations, 
+      and contributed to dynamic database driven menu rendering, drink customization, and checkout flows.`,
     type: "image",
     media: "boba-pos-img.png",
     links: [
@@ -30,59 +34,61 @@ const cards = [
         label: "GitHub",
         url: "https://github.com/yclairew/project3-gang71"
       }
-    ]
+    ],
+    skills: ["Javascript", "PostgreSQL", "AWS", "Java", "Rest APIs", "Jira", "Render", "HTML/CSS", "Agile", "Teamwork", "Debugging"]
   },
   {
-    logo: "aggies-create-logo.jpg",
+    logo: "aggies-create-logo.png",
     title: "Aggies Create",
-    description: `Serving as a <strong>team lead</strong> for Aggies Create and a <strong>consultant</strong> 
-      for a small skincare company, I created a personalized product recommendation quiz for their website and a Random Forest 
-      model that generates email recommendations using mock sales data, achieving 98% prediction accuracy. Additionally, 
-      I led the team in the design and rebranding process, coordinating workflows to boost sales for the client.`,
+    role: "Team Lead and Consultant",
+    description: `Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, 
+      designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating 
+      email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a 
+      full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.`,
     type: "video",
     media: "aggies-create-quiz-demo.mov",
-    links: [] // TODO: add https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils?? 
+    links: [
+      {
+        label: "Aggies Create",
+        url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils"
+      }
+    ],
+    skills: ["Javascript", "HTML/CSS", "scikit-learn", "ML Model Training", "Leadership", "Public Speaking"]
   },
   {
     logo: "signify-health-logo.png",
     title: "Signify Health",
-    // description: `Through Aggies Create, I worked as a <strong>software engineering consultant</strong>
-    //   for Signify Health, building an internal data visualization tool connecting patients to healthcare 
-    //   providers for at home care.`, // TODO: add technologies? or just more
-    description: `Through Aggies Create, I worked as a <strong>software engineering consultant</strong> for Signify 
-      Health and developed Signify Hex, an internal data visualization tool to connect patients with a network of medical 
-      providers for at-home care. Specifically, I optimized performance using Redis-based change tracking to reduce 
-      unnecessary front-end refreshes, improved user experience with hover-based interactions and UI enhancements, 
-      and implemented real-time data fetching via gRPC contracts. I also built a geospatial hex overlay to 
-      show provider reachability based on location and travel radius. The project was presented to Signify Health 
-      leadership, including the VP of Software Engineering, and received 1st place in consultancy at the Aggies Create Innovation Expo.`,
+    role: "Software Engineering Consultant",
+    description: `Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients 
+      with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented 
+      real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. 
+      Regularly met with Signify Health leadership. Awarded 1st place at the Aggies Create Innovation Expo.
+      `,
     type: "video",
     media: "signify-hex-demo.mp4",
-    links: []
-  },
-  {
-    title: "Weak Supervision for Clinical Note Classification",
-    description: `In collaboration with a partner, I developed a machine learning system classifying clinical notes as ICD-codeable or not using 
-      the MIMIC-III dataset. Led the weak supervision and evaluation pipeline, 
-      including developing and iterating on a weak labeling strategy, validating labels against 
-      a gold-standard dataset, and implementing class balancing and dataset splits. Supported debugging of 
-      the prediction pipeline to ensure reliable inference during evaluation and performed error analysis to 
-      evaluate the system.`,
-    type: "image",
-    media: "clinical-notes-technical-pipeline.png",
     links: [
       {
-        label: "GitHub",
-        url: "https://github.com/yclairew/CSCE421-Final-Project"
+        label: "About Signify Health",
+        url: "https://www.signifyhealth.com/"
       }
-    ]
+    ],
+    skills: ["React", "TypeScript", "Go", "UberH3", "PostgreSQL", "Docker", "Redis", "Mapbox", "Public Speaking", "Teamwork"]
   },
+  // {
+  //   title: "Machine Learning Pipeline",
+  //   description: `Built a machine learning pipeline to classify clinical notes as ICD-codeable using the MIMIC-III dataset with a partner. 
+  //     Led the weak supervision strategy, label validation against a gold standard dataset, class balancing, and error analysis.`,
+  //   type: "image",
+  //   media: "clinical-notes-technical-pipeline.png",
+  //   links: [], 
+  //   skills: ["Weak Labeling", "Paper Writing", "Debugging", "Presentation Skills", "Teamwork"]
+  // },
   {
     logo: "tao-logo.png",
     title: "Engineering TA Organization",
-    description: `Working as a <strong>Web Officer</strong> and <strong>Software Engineering (SWE) Intern</strong> for TAO, 
-      I developed the TAO website with fellow SWE interns, applying React, Next.js, Node.js, Tailwind CSS, etc. Additionally, 
-      I helped manage a Discord community of over 5,000 engineering students and supported first-year students by 
+    role: "Web Officer & Software Engineering Intern",
+    description: `Developed the TAO website with fellow SWE interns. Practiced Git workflows including pull requests 
+      and code reviews. Helped manage a Discord community of 5,000+ engineering students and supported freshmen by 
       brainstorming ideas for events, such as review sessions.`,
     type: "image",
     media: "tao-img.png",
@@ -95,94 +101,114 @@ const cards = [
         label: "GitHub",
         url: "https://github.com/TAO-ENGR/club-website"
       }
-    ]
+    ],
+    skills: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Responsive Design", "Teamwork"]
   },
   {
     title: "Bingo Board Generator",
-    description: `As a personal project, I built an automated bingo board generator using Python and Selenium that created shift-based, customized bingo 
-      boards for ice cream store employees based on time-of-day logic. The system 
-      dynamically parses shift-specific text datasets, automates browser interactions with an online bingo board generator, 
-      and creates randomized shareable game links for use during shifts to maintain employee engagement during low-traffic 
-      periods.`,    
+    description: `Built an automated bingo board generator that creates randomized 
+      bingo boards for ice cream store employees based 
+      on time-of-day logic and shift type to keep engagement up during slow periods.
+      `,    
     type: "image",
     media: "bingo-board-img.png",
-    links: []
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/yclairew/automated-bingo-generator"
+      }
+    ], 
+    skills: ["Python", "Selenium", "Automation"]
   },
 ];
 
+interface Card {
+  title: string;
+  role?: string;
+  logo?: string;
+  description: string;
+  type: "image" | "video";
+  media: string;
+  links: { label: string; url: string }[];
+  skills: string[];
+}
 
+
+function ProjectCard({ card }: { card: Card}) {
+  const [showAll, setShowAll] = useState(false);
+
+  return (
+    <div key={card.title} className="card mb-15 ml-15 mr-15 bg-red-50 p-5 rounded-lg">
+      <div className="card-header grid grid-cols-2"> 
+        <div className="card-title-div flex col-1">
+          {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
+
+          <div>
+            <h3 className="card-title text-4xl [font-family:var(--font-body)] pb-1.5">{card.title}</h3>
+            {card.role && <p className="text-md [font-family:var(--font-body)] text-[#2c2c2c]">{card.role}</p>}
+          </div>
+        </div>
+
+        <div className="links-div text-right col-2">
+          {card.links.length > 0 && (
+            <div className="card-links flex gap-5 justify-end">
+              {card.links.map((link: { label: string; url: string }) => (
+                <a
+                  key={link.label}
+                  className="card__link"
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.label} ↗
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="card-body flex gap-8 pt-3">
+        <div className="card-text [font-family:var(--font-body)] text-xl flex-1">
+          <p className="card-description w-xl" dangerouslySetInnerHTML={{ __html: card.description }}/>
+        </div>
+
+        <div className="card-media flex flex-1 justify-end">
+          {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>}
+        </div>
+      </div>
+
+      <div className="card-skills">
+        {card.skills && (
+          <div className="flex flex-wrap gap-2"
+            onMouseEnter={() => setShowAll(true)}
+            onMouseLeave={() => setShowAll(false)}
+          >
+            {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
+              <span key={skill} className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-lg bg-[#e9d1d9] text-[#2c2c2c]">
+                {skill}
+              </span>
+            ))}
+            {!showAll && card.skills.length > 3 && (
+              <span className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-lg bg-[#e9d1d9] text-[#2c2c2c]">
+                +{card.skills.length - 3}
+              </span>
+            )}
+          </div>
+        )}
+      </div>
+      
+    </div>
+  );
+}
 
 
 export default function Cards() {
   return (
-    <div className="cards">
+    <div className="card">
       {cards.map(card => (
-        // <div key={card.title} className="card pb-10 pl-10 pr-10">
-        //   <div className="card-header pb-5">
-        //     {card.logo && <img className="card-logo" src={card.logo} alt={`${card.title} logo`} />}
-        //     <h3 className="card-title text-4xl [font-family:var(--font-body)]">{card.title}</h3>
-        //   </div>
-
-        //   <div className="card-body flex">
-        //     <div className="card-text [font-family:var(--font-body)] flex-1 text-lg">
-        //       <p className="card-description" dangerouslySetInnerHTML={{ __html: card.description }}/>
-              
-        //       {card.links.length > 0 && (
-        //         <div className="card-links">
-        //           {card.links.map(link => (
-        //             <a
-        //               key={link.label}
-        //               className="card__link"
-        //               href={link.url}
-        //               target="_blank"
-        //               rel="noopener noreferrer"
-        //             >
-        //               {link.label}
-        //             </a>
-        //           ))}
-        //         </div>
-        //       )}
-        //     </div>
-
-        //     <div className="card-media flex-1/16">
-        //       {card.type === "video" ? <video controls className="card-video"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image" src={card.media} alt={`${card.title} image`}/>}
-        //     </div>
-        //   </div>
-        // </div>
-
-        <div key={card.title} className="card pb-10 pl-10 pr-10">
-          <div className="card-header pb-5 flex">
-            <div className="flex-1">
-              {card.logo && <img className="card-logo" src={card.logo} alt={`${card.title} logo`} />}
-              <h3 className="card-title text-4xl [font-family:var(--font-body)]">{card.title}</h3>
-
-              <div className="card-text [font-family:var(--font-body)] text-lg pt-5">
-                <p className="card-description" dangerouslySetInnerHTML={{ __html: card.description }}/>
-                
-                {card.links.length > 0 && (
-                  <div className="card-links">
-                    {card.links.map(link => (
-                      <a
-                        key={link.label}
-                        className="card__link"
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {link.label}
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
-
-            <div className="card-media flex-1">
-              {card.type === "video" ? <video controls className="card-video"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image" src={card.media} alt={`${card.title} image`}/>}
-            </div>
-          </div>
-        </div>
+        <ProjectCard key={card.title} card={card} />
       ))}
     </div>
-  )
+  );
 }
