@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+
 
 const cards: Card[] = [
   {
@@ -134,70 +135,88 @@ interface Card {
 }
 
 
-function ProjectCard({ card }: { card: Card}) {
+function ProjectCard({ card }: { card: Card }) {
   const [showAll, setShowAll] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-up");
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div key={card.title} className="card mb-15 ml-15 mr-15 bg-red-50 p-5 rounded-lg">
-      <div className="card-header grid grid-cols-2"> 
-        <div className="card-title-div flex col-1">
-          {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
+    <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-red-50 p-5 rounded-lg">
+      <div key={card.title} className="card mb-15 ml-15 mr-15 bg-red-50 p-5 rounded-lg animate-fade-up">
+        <div className="card-header grid grid-cols-2"> 
+          <div className="card-title-div flex col-1">
+            {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
 
-          <div>
-            <h3 className="card-title text-4xl [font-family:var(--font-body)] pb-1.5">{card.title}</h3>
-            {card.role && <p className="text-md [font-family:var(--font-body)] text-[#2c2c2c]">{card.role}</p>}
+            <div>
+              <h3 className="card-title text-4xl [font-family:var(--font-body)] pb-1.5">{card.title}</h3>
+              {card.role && <p className="text-md [font-family:var(--font-body)] text-[#2c2c2c]">{card.role}</p>}
+            </div>
+          </div>
+
+          <div className="links-div text-right col-2">
+            {card.links.length > 0 && (
+              <div className="card-links flex gap-5 justify-end">
+                {card.links.map((link: { label: string; url: string }) => (
+                  <a
+                    key={link.label}
+                    className="card__link"
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label} ↗
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
-        <div className="links-div text-right col-2">
-          {card.links.length > 0 && (
-            <div className="card-links flex gap-5 justify-end">
-              {card.links.map((link: { label: string; url: string }) => (
-                <a
-                  key={link.label}
-                  className="card__link"
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.label} ↗
-                </a>
+        <div className="card-body flex gap-8 pt-3">
+          <div className="card-text [font-family:var(--font-body)] text-xl flex-1">
+            <p className="card-description w-xl" dangerouslySetInnerHTML={{ __html: card.description }}/>
+          </div>
+
+          <div className="card-media flex flex-1 justify-end">
+            {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>}
+          </div>
+        </div>
+
+        <div className="card-skills">
+          {card.skills && (
+            <div className="flex flex-wrap gap-2"
+              onMouseEnter={() => setShowAll(true)}
+              onMouseLeave={() => setShowAll(false)}
+            >
+              {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
+                <span key={skill} className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-lg bg-[#e9d1d9] text-[#2c2c2c]">
+                  {skill}
+                </span>
               ))}
+              {!showAll && card.skills.length > 3 && (
+                <span className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-lg bg-[#e9d1d9] text-[#2c2c2c]">
+                  +{card.skills.length - 3}
+                </span>
+              )}
             </div>
           )}
         </div>
+        
       </div>
-
-      <div className="card-body flex gap-8 pt-3">
-        <div className="card-text [font-family:var(--font-body)] text-xl flex-1">
-          <p className="card-description w-xl" dangerouslySetInnerHTML={{ __html: card.description }}/>
-        </div>
-
-        <div className="card-media flex flex-1 justify-end">
-          {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>}
-        </div>
-      </div>
-
-      <div className="card-skills">
-        {card.skills && (
-          <div className="flex flex-wrap gap-2"
-            onMouseEnter={() => setShowAll(true)}
-            onMouseLeave={() => setShowAll(false)}
-          >
-            {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
-              <span key={skill} className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-lg bg-[#e9d1d9] text-[#2c2c2c]">
-                {skill}
-              </span>
-            ))}
-            {!showAll && card.skills.length > 3 && (
-              <span className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-lg bg-[#e9d1d9] text-[#2c2c2c]">
-                +{card.skills.length - 3}
-              </span>
-            )}
-          </div>
-        )}
-      </div>
-      
     </div>
   );
 }
