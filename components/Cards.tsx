@@ -156,7 +156,7 @@ function ProjectCard({ card }: { card: Card }) {
 
   return (
     <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-red-50 p-5 rounded-lg">
-      <div key={card.title} className="card mb-15 ml-15 mr-15 bg-red-50 p-5 rounded-lg animate-fade-up">
+      <div key={card.title} className="card p-6 animate-fade-up">
         <div className="card-header grid grid-cols-2"> 
           <div className="card-title-div flex col-1">
             {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
