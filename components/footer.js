@@ -10,10 +10,9 @@ const Footer = () => {
             </div>
 
             <div className="space-y-2">
-                <a className="block text-sm text-link" href="http://www.linkedin.com/in/y-clairewu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a className="block text-sm text-link" href="https://github.com/yclairew" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a className="block text-sm text-link" href="mailto:y.clairewu@gmail.com">Email</a>
-                {/* TODO: fix animation underline length */}
+                <a className="table text-sm text-link" href="http://www.linkedin.com/in/y-clairewu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a className="table text-sm text-link" href="https://github.com/yclairew" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a className="table text-sm text-link" href="mailto:y.clairewu@gmail.com">Email</a>
             </div>
         </footer>
     );
