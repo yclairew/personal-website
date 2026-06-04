@@ -5,15 +5,15 @@ import Footer from "../components/footer"
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-background">
       <title>Claire Wu</title>
       <Nav/>
       <div>
-        <h1 className="heading-text leading-none pb-0 mb-0 mt-20" id="name-text">Claire Wu</h1>
+        <h1 className="heading-text leading-none pb-0 mb-0 mt-20 text-text" id="name-text">Claire Wu</h1>
       </div>
 
       <div className="flex justify-center"> {/* keeps text centered during typing animation */}
-        <p className="body-text typing-animation mb-21">
+        <p className="body-text typing-animation mb-21 text-text">
           CS senior at Texas A&M, minoring in Statistics and{" "}
           <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">AI in business</a>
         </p>
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center text-text">
           <p className="body-text max-w-[clamp(36rem,39.9vw,90rem)] text-left">
             I am passionate about software engineering, data science, 
             AI/ML, and UX design. Currently, I am researching in Dr. Xia's{" "}

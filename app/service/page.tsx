@@ -6,10 +6,10 @@ import Footer from "../../components/footer"
 
 export default function Service() {
   return (
-    <div>
+    <div className="bg-background">
       <title>Claire Wu</title>
       <Nav/>
-      <h1 className="heading-text" id="service-heading">Service</h1>
+      <h1 className="heading-text text-text" id="service-heading">Service</h1>
 
       <div className="service-container">
           {/* <div className="slideshow-container">

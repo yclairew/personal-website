@@ -6,7 +6,7 @@ import Footer from "../../components/footer"
 
 export default function Qualifications() {
   return (
-    <div>
+    <div className="bg-background">
       <title>Claire Wu</title>
       <Nav/>
 
@@ -85,8 +85,17 @@ export default function Qualifications() {
       </div>
 
 
-      <p className="reveal-box body-text">Below is my resume for reference.</p>
-      <iframe className="reveal-box resume" src="assets/Claire Wu Resume.pdf#view=FitH" allow="autoplay"></iframe>
+      <div className="flex bg-accent-light ml-10 mr-10 p-5">
+        <div className="flex-1">
+          <p className="reveal-box body-text text-text">Check out my resume!</p>
+          <button className="bg-background p-3 rounded-xl">
+            <a href="Claire Wu Resume.pdf#view=Fit" target="_blank" rel="noopener noreferrer">Open ↗</a>
+          </button>
+        </div>
+        <div className="flex flex-1 justify-end">
+          <iframe className="reveal-box resume h-100 w-auto" src="Claire Wu Resume.pdf#view=Fit" allow="autoplay"></iframe>
+        </div>
+      </div>
       
       <Footer/>
     </div>

@@ -88,7 +88,8 @@ const cards: Card[] = [
     logo: "tao-logo.png",
     title: "Engineering TA Organization",
     role: "Web Officer & Software Engineering Intern",
-    description: `Developed the TAO website with fellow SWE interns. Practiced Git workflows including pull requests 
+    description: `Developed the TAO website with fellow SWE interns for 10,000+ viewers. Practiced Git workflows 
+      including pull requests 
       and code reviews. Helped manage a Discord community of 5,000+ engineering students and supported freshmen by 
       brainstorming ideas for events, such as review sessions.`,
     type: "image",
@@ -103,7 +104,7 @@ const cards: Card[] = [
         url: "https://github.com/TAO-ENGR/club-website"
       }
     ],
-    skills: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Responsive Design", "Teamwork"]
+    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Responsive Design", "Teamwork"]
   },
   {
     title: "Bingo Board Generator",
@@ -155,15 +156,16 @@ function ProjectCard({ card }: { card: Card }) {
   }, []);
 
   return (
-    <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-red-50 p-5 rounded-lg">
+    <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-accent-light p-5 rounded-xl">
+    {/* // <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-gray-50 p-5 rounded-lg"> */}
       <div key={card.title} className="card p-6 animate-fade-up">
         <div className="card-header grid grid-cols-2"> 
           <div className="card-title-div flex col-1">
             {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
 
             <div>
-              <h3 className="card-title text-4xl [font-family:var(--font-body)] pb-1.5">{card.title}</h3>
-              {card.role && <p className="text-md [font-family:var(--font-body)] text-[#2c2c2c]">{card.role}</p>}
+              <h3 className="card-title text-4xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
+              {card.role && <p className="text-md [font-family:var(--font-body)] text-subheading">{card.role}</p>}
             </div>
           </div>
 
@@ -188,7 +190,7 @@ function ProjectCard({ card }: { card: Card }) {
 
         <div className="card-body flex gap-8 pt-3">
           <div className="card-text [font-family:var(--font-body)] text-xl flex-1">
-            <p className="card-description w-xl" dangerouslySetInnerHTML={{ __html: card.description }}/>
+            <p className="card-description w-xl text-text" dangerouslySetInnerHTML={{ __html: card.description }}/>
           </div>
 
           <div className="card-media flex flex-1 justify-end">
@@ -203,12 +205,12 @@ function ProjectCard({ card }: { card: Card }) {
               onMouseLeave={() => setShowAll(false)}
             >
               {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
-                <span key={skill} className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-lg bg-[#e9d1d9] text-[#2c2c2c]">
+                <span key={skill} className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading">
                   {skill}
                 </span>
               ))}
               {!showAll && card.skills.length > 3 && (
-                <span className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-lg bg-[#e9d1d9] text-[#2c2c2c]">
+                <span className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading">
                   +{card.skills.length - 3}
                 </span>
               )}

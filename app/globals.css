@@ -1,16 +1,46 @@
 @import "tailwindcss";
 
 
-:root {
+/* :root {
   --links: #1D4363;
   --hover: #6D90C2;
   --headings: black;
   --subheadings: #2c2c2c;
   --accents: #E8AABF;
   --light-accent: #e9d1d9;
+} */
+
+:root {
+  /* base */
+  --color-background: #fcfcfc;
+  --color-text: #111111;
+  --color-subheading: #2c2c2c;
+
+  /* links */
+  --color-link: #1b3a6b;
+  --color-link-hover: #2E5AA8;
+
+  /* accent */
+  --color-accent: #DE7D97;
+  --color-accent-light: #FBEFF2;
+  --color-accent-tag: #F0C4CF;
 }
 
 @theme {
+  /* colors */
+  --color-background: var(--color-background);
+  --color-text: var(--color-text);
+  --color-subheading: var(--color-subheading);
+
+  --color-link: var(--color-link);
+  --color-link-hover: var(--color-link-hover);
+
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-accent-tag: var(--color-accent-tag);
+
+
+  /* animations */
   --animate-fade-up: fadeUp 0.8s ease-out forwards;
 
   @keyframes fadeUp {
@@ -40,13 +70,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-@layer components {
-  .third-level-headings {
-    font-family: var(--font-body);
-    font-weight: 600;
-  }
-}
-
 
 /* text */
 .heading-text {
@@ -54,37 +77,51 @@ body {
   font-size: clamp(5rem, 16vw, 37rem);
   text-align: center;
 
+  color: var(--color-text);
+
   text-decoration: underline;
   text-decoration-thickness: 0.19rem;
-  text-decoration-color: var(--accents);
+  text-underline-offset: 0.3rem;
+  text-decoration-color: var(--color-accent);
 }
 
 .body-text {
   font-family: var(--font-body);
   font-size: clamp(1rem, 1.9vw, 4.6rem);
+
+  color: var(--color-text);
 }
 
 .subheadings {
   font-family: var(--font-body);
   font-weight: 500;
   font-size: clamp(1.8rem, 3.5vw, 14rem);
+
+  color: var(--color-subheading);
+}
+
+.third-level-headings {
+  font-family: var(--font-body);
+  font-weight: 600;
+
+  color: var(--color-accent);
 }
 
 
 /* links */
 a:link, a:visited {
-  color: var(--links);
+  color: var(--color-link);
 }
 a:hover, a:active {
-  text-decoration-color: var(--hover);
+  text-decoration-color: var(--color-link-hover);
 }
 a {
   text-decoration: underline;
   text-decoration-thickness: 1;
   text-underline-offset: 4px; /* to match underline with animation */
-  text-decoration-color: var(--links);
+  text-decoration-color: var(--color-link);
 
-  background-image: linear-gradient(var(--hover), var(--hover));
+  background-image: linear-gradient(var(--color-link-hover), var(--color-link-hover));
   background-position: 0% 100%; /* 100% to be at bottom of line (y) */
   background-repeat: no-repeat;
   background-size: 0% 8%; /* 0% to hide */
@@ -92,7 +129,7 @@ a {
 }
 a:hover, a:focus {
   background-size: 100% 8%; 
-  color: var(--hover);
+  color: var(--color-link-hover);
 }
 
 
@@ -125,7 +162,7 @@ a:hover, a:focus {
   display: inline-block; /* keep blinking cursor to the edge of text */
   white-space: nowrap;
   overflow: hidden; /* hide text until typed */
-  border-right: 0.12em solid var(--headings); /* blinking cursor */
+  border-right: 0.12em solid var(--color-text); /* blinking cursor */
   width: 0; /* start with nothing visible */
   
   animation: 
@@ -140,5 +177,5 @@ a:hover, a:focus {
 /* blinking cursor */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: var(--headings) }
+  50% { border-color: var(--color-text) }
 }

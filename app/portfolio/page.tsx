@@ -6,10 +6,10 @@ import Cards from '@/components/Cards'
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="bg-background">
       <title>Claire Wu</title>
       <Nav/>
-      <h1 className="portfolio-heading heading-text">Portfolio</h1>
+      <h1 className="portfolio-heading heading-text text-text">Portfolio</h1>
       
       <div className="center">
         <Cards/>
