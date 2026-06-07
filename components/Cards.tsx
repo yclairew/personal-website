@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
+import { useAnimateOnScroll } from '@/hooks/useAnimateOnScroll';
 
 
 const cards: Card[] = [
@@ -138,26 +139,10 @@ interface Card {
 
 function ProjectCard({ card }: { card: Card }) {
   const [showAll, setShowAll] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-fade-up");
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
+  const ref = useAnimateOnScroll();  
 
   return (
     <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-accent-light p-5 rounded-xl">
-    {/* // <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-gray-50 p-5 rounded-lg"> */}
       <div key={card.title} className="card p-6 animate-fade-up">
         <div className="card-header grid grid-cols-2"> 
           <div className="card-title-div flex col-1">

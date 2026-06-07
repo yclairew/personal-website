@@ -1,7 +1,7 @@
 import Image from "next/image";
-import "./globals.css"
-import Nav from "../components/nav"
-import Footer from "../components/footer"
+import "./globals.css";
+import Nav from "@/components/nav";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
