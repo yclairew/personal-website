@@ -251,7 +251,7 @@ export default function Cards() {
         <span className="text-sm [font-family:var(--font-body)] text-subheading">Type: </span>
         {types.map(t => (
           <button key={t} onClick={() => setTypeFilter(t)}
-            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent 
+            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent cursor-pointer 
               ${typeFilter === t ? "bg-accent text-background" : "bg-background text-subheading"}`}>
             {t}
           </button>
@@ -260,7 +260,7 @@ export default function Cards() {
         <span className="text-sm [font-family:var(--font-body)] text-subheading">Context: </span>
         {contexts.map(c => (
           <button key={c} onClick={() => setContextFilter(c)}
-            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent 
+            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent cursor-pointer
               ${contextFilter === c ? "bg-accent text-background" : "bg-background text-subheading"}`}>
             {c}
           </button>

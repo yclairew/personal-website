@@ -21,7 +21,7 @@ export default function Slideshow() {
     <div className="slideshow-container flex flex-col align-center w-full">
       <img className="slide-img mx-auto block" src={slides[currentSlide].src} />
       <div className="photo-captions">{slides[currentSlide].caption}</div>
-      <div className="arrows">
+      <div className="arrows cursor-pointer">
         <a onClick={() => plusSlides(-1)}>&#10229;</a>
         <div className="numbertext">{currentSlide + 1} / {slides.length}</div>
         <a onClick={() => plusSlides(1)}>&#10230;</a>
