@@ -53,6 +53,23 @@
   opacity: 0;
 }
 
+.animated-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--color-link);
+  background-image: linear-gradient(var(--color-link-hover), var(--color-link-hover));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 8%;
+  transition: background-size .3s;
+}
+
+.animated-link:hover, .animated-link:focus {
+  background-size: 100% 8%;
+  color: var(--color-link-hover);
+}
+
 /* 
 @theme inline {
   --color-background: var(--background);
@@ -135,7 +152,6 @@ a:hover, a:focus {
   background-size: 100% 8%; 
   color: var(--color-link-hover);
 }
-
 
 /* nav bar */
 .nav-bar-text {

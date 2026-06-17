@@ -14,10 +14,12 @@ const cards: Card[] = [
     identified from frequency analysis of 30 instructional videos. Built frontend logic to render 
     AI generated outputs from the OpenAI API.
     `, // TODO: write something about the paper 
+    stackType: ["Frontend", "AI/ML"],
+    context: "Research",
     type: "video",
     media: "annomath-paper-video.mp4",
     links: [],
-    skills: ["TypeScript", "React", "tldraw", "Prompt Engineering", "Research Skills", "Teamwork", "Annotation Coding"]
+    skills: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
   },
   {
     title: "Boba POS System",
@@ -25,6 +27,8 @@ const cards: Card[] = [
     description: `Built a multi-interface boba shop POS platform on an Agile Scrum team. Led deployment 
       and authentification security, integrated a TTS API and weather based drink recommendations, 
       and contributed to dynamic database driven menu rendering, drink customization, and checkout flows.`,
+    stackType: ["Full-Stack"],
+    context: "Coursework",
     type: "image",
     media: "boba-pos-img.png",
     links: [
@@ -37,7 +41,7 @@ const cards: Card[] = [
         url: "https://github.com/yclairew/project3-gang71"
       }
     ],
-    skills: ["Javascript", "PostgreSQL", "AWS", "Java", "Rest APIs", "Jira", "Render", "HTML/CSS", "Agile", "Teamwork", "Debugging"]
+    skills: ["PostgreSQL", "Java", "Rest APIs", "AWS", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging"]
   },
   {
     logo: "aggies-create-logo.png",
@@ -47,6 +51,8 @@ const cards: Card[] = [
       designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating 
       email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a 
       full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.`,
+    stackType: ["Frontend", "AI/ML"],
+    context: "Consulting",
     type: "video",
     media: "aggies-create-quiz-demo.mov",
     links: [
@@ -55,7 +61,7 @@ const cards: Card[] = [
         url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils"
       }
     ],
-    skills: ["Javascript", "HTML/CSS", "scikit-learn", "ML Model Training", "Leadership", "Public Speaking"]
+    skills: ["scikit-learn", "Machine Learning (Model Training)", "JavaScript", "HTML/CSS", "Leadership", "Public Speaking"]
   },
   {
     logo: "signify-health-logo.png",
@@ -66,6 +72,8 @@ const cards: Card[] = [
       real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. 
       Regularly met with Signify Health leadership. Awarded 1st place at the Aggies Create Innovation Expo.
       `,
+    stackType: ["Full-Stack", "Data Visualization"],
+    context: "Consulting",
     type: "video",
     media: "signify-hex-demo.mp4",
     links: [
@@ -74,7 +82,7 @@ const cards: Card[] = [
         url: "https://www.signifyhealth.com/"
       }
     ],
-    skills: ["React", "TypeScript", "Go", "UberH3", "PostgreSQL", "Docker", "Redis", "Mapbox", "Public Speaking", "Teamwork"]
+    skills: ["Go", "UberH3", "Redis", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
   },
   // {
   //   title: "Machine Learning Pipeline",
@@ -93,6 +101,8 @@ const cards: Card[] = [
       including pull requests 
       and code reviews. Helped manage a Discord community of 5,000+ engineering students and supported freshmen by 
       brainstorming ideas for events, such as review sessions.`,
+    stackType: ["Frontend"],
+    context: "Organization",
     type: "image",
     media: "tao-img.png",
     links: [
@@ -105,7 +115,7 @@ const cards: Card[] = [
         url: "https://github.com/TAO-ENGR/club-website"
       }
     ],
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Responsive Design", "Teamwork"]
+    skills: ["Next.js", "Tailwind CSS", "TypeScript", "React", "Responsive Design", "Teamwork"]
   },
   {
     title: "Bingo Board Generator",
@@ -113,6 +123,8 @@ const cards: Card[] = [
       bingo boards for ice cream store employees based 
       on time-of-day logic and shift type to keep engagement up during slow periods.
       `,    
+    stackType: ["Automation"],
+    context: "Personal",
     type: "image",
     media: "bingo-board-img.png",
     links: [
@@ -130,6 +142,8 @@ interface Card {
   role?: string;
   logo?: string;
   description: string;
+  stackType: string[];
+  context: string;
   type: "image" | "video";
   media: string;
   links: { label: string; url: string }[];
@@ -137,9 +151,13 @@ interface Card {
 }
 
 
-function ProjectCard({ card }: { card: Card }) {
+function ProjectCard({ card, setSkillFilter, skillFilter }: { 
+  card: Card, 
+  setSkillFilter: (skill: string) => void,
+  skillFilter: string 
+}) {
   const [showAll, setShowAll] = useState(false);
-  const ref = useAnimateOnScroll();  
+  const ref = useAnimateOnScroll();
 
   return (
     <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-accent-light p-5 rounded-xl">
@@ -190,7 +208,10 @@ function ProjectCard({ card }: { card: Card }) {
               onMouseLeave={() => setShowAll(false)}
             >
               {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
-                <span key={skill} className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading">
+                <span key={skill} className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading 
+                cursor-pointer hover:bg-accent hover:text-background transition-colors"
+                  onClick={() => setSkillFilter(skillFilter === skill ? "All" : skill)}
+                >
                   {skill}
                 </span>
               ))}
@@ -210,11 +231,66 @@ function ProjectCard({ card }: { card: Card }) {
 
 
 export default function Cards() {
+  const [typeFilter, setTypeFilter] = useState("All");
+  const [contextFilter, setContextFilter] = useState("All");
+  const [skillFilter, setSkillFilter] = useState("All");
+
+  const types = ["All", ...Array.from(new Set(cards.flatMap(card => card.stackType)))];
+  const contexts = ["All", ...Array.from(new Set(cards.map(card => card.context)))];
+
+  const filteredCards = cards.filter(card =>
+    (typeFilter === "All" || card.stackType.includes(typeFilter)) &&
+    (contextFilter === "All" || card.context === contextFilter) &&
+    (skillFilter === "All" || card.skills.includes(skillFilter))
+  );
+
+
   return (
-    <div className="card">
-      {cards.map(card => (
-        <ProjectCard key={card.title} card={card} />
-      ))}
+    <div className="flex flex-col gap-3 mb-6">
+      <div className="flex items-center gap-3 mb-2 justify-center flex-wrap">
+        <span className="text-sm [font-family:var(--font-body)] text-subheading">Type: </span>
+        {types.map(t => (
+          <button key={t} onClick={() => setTypeFilter(t)}
+            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent 
+              ${typeFilter === t ? "bg-accent text-background" : "bg-background text-subheading"}`}>
+            {t}
+          </button>
+        ))}
+        <span className="text-sm [font-family:var(--font-body)] text-subheading">|</span>
+        <span className="text-sm [font-family:var(--font-body)] text-subheading">Context: </span>
+        {contexts.map(c => (
+          <button key={c} onClick={() => setContextFilter(c)}
+            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent 
+              ${contextFilter === c ? "bg-accent text-background" : "bg-background text-subheading"}`}>
+            {c}
+          </button>
+        ))}
+      </div>
+
+      
+      <div className="flex flex-row gap-3 items-center justify-center mb-4">
+        <p className="text-sm [font-family:var(--font-body)] text-subheading text-center">
+          {filteredCards.length} {filteredCards.length === 1 ? "project" : "projects"} found
+        </p>
+
+        {(typeFilter !== "All" || contextFilter !== "All" || skillFilter !== "All") &&  
+          (
+          <>
+            <span className="text-sm [font-family:var(--font-body)] text-subheading">|</span>
+
+            <button onClick={() => { setTypeFilter("All"); setContextFilter("All"); setSkillFilter("All"); }}
+              className="text-sm [font-family:var(--font-body)] text-subheading animated-link">
+              Reset
+            </button>
+          </>
+        )}
+      </div>
+
+      <div className="card">
+        {filteredCards.map(card => (
+          <ProjectCard key={card.title} card={card} setSkillFilter={setSkillFilter} skillFilter={skillFilter} />
+        ))}
+      </div>
     </div>
   );
 }
