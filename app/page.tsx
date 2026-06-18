@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+import Skills_scene from "@/components/Skills_scene";
 
 export default function Home() {
   return (
@@ -47,6 +48,11 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="pt-35 pb-40">
+        <h2 className="subheadings mb-10 text-center">My Skills</h2>
+        <Skills_scene/>
+      </div>
+      
       <Footer/>
     </div>
   );
