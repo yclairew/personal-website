@@ -1,16 +1,18 @@
 "use client";
-import { useState } from 'react';
+import { useState } from "react";
 
 
-const slides = [
-  { src: "park-cleanup.jpg", caption: "Austin Park Cleanup" },
-  { src: "flo-bowl.jpg", caption: "FLO Bowl Volunteering" },
-  { src: "freshman-big-event.jpg", caption: "Freshman Year at Big Event with MSC FISH" },
-  { src: "sophomore-big-event.png", caption: "Sophomore Year at Big Event with Aggies Create" }
-];
+type Slide = {
+  src: string;
+  caption: string;
+};
 
+type Props = {
+  slides: Slide[];
+};
 
-export default function Slideshow() {
+export default function Slideshow({ slides }: Props) {
+  
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const plusSlides = (n: number) => {

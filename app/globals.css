@@ -240,3 +240,15 @@ a:hover, a:focus {
   align-items: center;
   margin: auto;
 }
+
+/* qualifications page */
+.category-item {
+  display: block; /* makes it behave like a div */
+  cursor: pointer;
+}
+
+.category-item:focus,
+.category-item:focus-visible {
+  outline: none;
+  box-shadow: none;
+}

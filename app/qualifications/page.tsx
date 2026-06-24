@@ -2,6 +2,7 @@ import Image from "next/image";
 import ".././globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+import Coursework from "@/components/Coursework";
 
 
 export default function Qualifications() {
@@ -48,45 +49,7 @@ export default function Qualifications() {
       </div>
 
       <h2 className="qualifications-subheadings subheadings">Coursework</h2>
-
-      <div>
-        <ul>
-          <li className="body-text">Machine Learning</li>
-          {/* <!-- assets/421-3d-svm-scatterplot-with-margin.png -->
-          <!-- assets/421-xgboost-roc-curve.png -->
-          <!-- assets/421-eda-correlation-heatmap.png --> */}
-
-          <li className="body-text">Computer Graphics</li>
-          {/* <!-- assets/441-a3-shader.png -->
-          <!-- assets/441-a4-topdown.png -->
-          <!-- assets/441-a5-deferredrendering.png -->
-          <!-- assets/441-a6-raytracing.png --> */}
-
-          <li className="body-text">Computer Science Research</li>
-          <li className="body-text">Software Engineering</li>
-          {/* <!-- assets/331-proj2-order.png -->
-          <!-- assets/331-proj2-add-item.png -->
-          <!-- assets/331-proj2-add-associated-ingredients.png --> */}
-
-          <li className="body-text">Data Structures & Algorithms</li>
-          <li className="body-text">Statistical Computing</li>
-          {/* <!-- assets/stat404-poly-plot.png -->
-          <!-- assets/stat404-residuals-vs-fitted.png -->
-          <!-- assets/stat404-theta1-hist.png --> */}
-          
-          <li className="body-text">Algorithm Design</li>
-          <li className="body-text">Statistics I & II</li>
-          <li className="body-text">Machine Learning for Business</li>
-          <li className="body-text">Linear Algebra</li>
-          <li className="body-text">Business with Generative AI</li>
-          <li className="body-text">Business Storytelling using AI</li>
-          <li className="body-text">Computer Systems</li>
-          <li className="body-text">Computer Organization</li>
-          <li className="body-text">Discrete Structures</li>
-          <li className="body-text">Program Design</li>
-        </ul>
-      </div>
-
+      <Coursework/>
 
       <div className="flex bg-accent-light ml-10 mr-10 p-5 rounded-xl border-2 border-accent">
         <div className="flex-1">

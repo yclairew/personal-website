@@ -8,6 +8,14 @@ import Slideshow from "@/components/Slideshow";
 import { useAnimateOnScroll } from '@/hooks/useAnimateOnScroll';
 
 
+const serviceSlides = [
+  { src: "park-cleanup.jpg", caption: "Austin Park Cleanup" },
+  { src: "flo-bowl.jpg", caption: "FLO Bowl Volunteering" },
+  { src: "freshman-big-event.jpg", caption: "Freshman Year at Big Event with MSC FISH" },
+  { src: "sophomore-big-event.png", caption: "Sophomore Year at Big Event with Aggies Create" }
+];
+
+
 export default function Service() {
     const ref1 = useAnimateOnScroll();  
     const ref2 = useAnimateOnScroll();  
@@ -18,7 +26,7 @@ export default function Service() {
       <h1 className="heading-text text-text" id="service-heading">Service</h1>
 
       <div className="service-container">
-          <Slideshow/>
+          <Slideshow slides={serviceSlides}/>
 
           <div ref={ref1} className="animate-target service-text-container pt-10 pb-8 ml-12 mr-12">
               <p className="service-text body-text">
