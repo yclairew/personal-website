@@ -1,10 +1,10 @@
 "use client";
-// import { useEffect, useState } from "react";
 import { forwardRef, useRef, useState, useEffect, useMemo } from "react";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Html } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
+import { useSpring, animated } from "react-spring"
 
 
 const customIcons: Record<string, string> = {
@@ -17,6 +17,20 @@ const customIcons: Record<string, string> = {
 const spacing = 2
 const cols = 8
 const rows = 4
+
+const displayNames: Record<string, string> = {
+  "react": "React", "typescript": "TypeScript", "python": "Python", "go": "Go",
+  "postgresql": "PostgreSQL", "docker": "Docker", "redis": "Redis", "anaconda": "Anaconda", 
+  "cplusplus": "C++", "cmake": "CMake", "css": "CSS", "html5": "HTML", "dart": "Dart",
+  "flutter": "Flutter", "kubernetes": "Kubernetes", "deepgram": "Deepgram", 
+  "javascript": "JavaScript", "figma": "Figma", "git": "Git", "github": "GitHub", 
+  "rstudioide": "R Studio", "jira": "Jira", "latex": "LaTeX", "pycharm": "PyCharm", 
+  "intellijidea": "IntelliJ IDEA", "mapbox": "Mapbox", "pytorch": "PyTorch",
+  "bootstrap": "Bootstrap", "numpy": "NumPy", "pandas": "Pandas", "tailwindcss": "Tailwind CSS", 
+  "scikitlearn": "scikit-learn", "opengl": "OpenGL", "tldraw": "tldraw", "render": "Render",
+  "nextdotjs": "Next.js", "selenium": "Selenium", "jupyter": "Jupyter", "r": "R", "java": "Java", 
+  "amazonwebservices": "AWS", "matplotlib": "Matplotlib", "vscode": "VS Code",
+}
 
 const icons = [
   "react", "typescript", "python", "go", "postgresql", "docker", 
@@ -75,18 +89,53 @@ function seededShuffle(arr: string[], seed: number) {
 }
 
 
-const Icon = forwardRef<THREE.Mesh, { position: [number, number, number], name: string }>(
-  ({ position, name }, ref) => {
+const AnimatedMesh = animated('mesh')
+
+const Icon = forwardRef<THREE.Mesh, { 
+  position: [number, number, number], 
+  name: string,
+  onHover: (isHovered: boolean) => void
+}>(
+  ({ position, name, onHover }, ref) => {
     const texture = useSvgTexture(name)
+    const [hovered, setHovered] = useState(false)
+
+    const { scale } = useSpring({
+      scale: hovered ? 1.4 : 1,
+      config: { mass: 1, tension: 300, friction: 10 }
+    })
+
     return (
-      <mesh ref={ref} position={position}>
+      <animated.mesh
+        ref={ref}
+        position={position}
+        scale={scale}
+        onPointerOver={() => { setHovered(true); onHover(true) }}
+        onPointerOut={() => { setHovered(false); onHover(false) }}
+      >
         <planeGeometry args={[1.5, 1.5]} />
         <meshBasicMaterial map={texture ?? undefined} transparent visible={!!texture} />
-      </mesh>
+        {hovered && (
+          <Html center position={[0, -1, 0]}>
+            <div style={{
+              color: "white",
+              fontSize: "12px",
+              fontFamily: "var(--font-body)",
+              whiteSpace: "nowrap",
+              background: "color-mix(in srgb, var(--color-accent) 80%, transparent)",
+
+              padding: "4px 8px",
+              borderRadius: "8px",
+              letterSpacing: "0.05em",
+            }}>
+              {displayNames[name] ?? name}
+            </div>
+          </Html>
+        )}
+      </animated.mesh>
     )
   }
 )
-
 
 function IconGrid() {
   console.log("IconGrid rendering");
@@ -100,19 +149,29 @@ function IconGrid() {
 
     meshRefs.current.forEach((mesh, i) => {
       if (!mesh) return
-      
+
       const originalX = positions[i][0]
       const originalY = positions[i][1]
-      
-      // wrap relative to camera
+
       let x = originalX - camera.position.x
       x = ((x + gw / 2) % gw + gw) % gw - gw / 2
-      
-      let y = originalY - camera.position.y  
+      let y = originalY - camera.position.y
       y = ((y + gh / 2) % gh + gh) % gh - gh / 2
 
-      mesh.position.x = x + camera.position.x
-      mesh.position.y = y + camera.position.y
+      const wrappedX = x + camera.position.x
+      const wrappedY = y + camera.position.y
+
+      // fisheye based on screen position only
+      const dist = Math.sqrt(x * x + y * y)
+      const fisheyeRadius = 6
+      const force = Math.max(0, (1 - dist / fisheyeRadius) * 0.5)
+
+      const targetX = wrappedX + x * force
+      const targetY = wrappedY + y * force
+
+      const threshold = spacing * 2
+      mesh.position.x = Math.abs(targetX - mesh.position.x) > threshold ? targetX : THREE.MathUtils.lerp(mesh.position.x, targetX, 0.08)
+      mesh.position.y = Math.abs(targetY - mesh.position.y) > threshold ? targetY : THREE.MathUtils.lerp(mesh.position.y, targetY, 0.08)
     })
   })
 
@@ -124,16 +183,16 @@ function IconGrid() {
           ref={(el) => { if (el) meshRefs.current[i] = el }}
           position={pos}
           name={shuffledIcons[i % shuffledIcons.length]}
+          onHover={() => {}}
         />
       ))}
     </>
   )
 }
 
-
 export default function Skills_scene() {
   return (
-    <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100vw", height: "110vh" }}>
+    <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100vw", height: "100vh" }}>
       <IconGrid/>
       <OrbitControls 
         enableRotate={false} 
@@ -143,3 +202,4 @@ export default function Skills_scene() {
     </Canvas>
   )
 }
+
