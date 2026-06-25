@@ -23,7 +23,7 @@ export default function Slideshow({ slides, onSlideChange }: Props) {
 
   return (
     <div className="slideshow-container flex flex-col align-center w-full">
-      <img className="slide-img mx-auto block" src={slides[currentSlide].src} />
+      <img className="slide-img mx-auto block max-w-full h-auto" src={slides[currentSlide].src} />
       <div className="photo-captions">{slides[currentSlide].caption}</div>
       <div className="arrows cursor-pointer">
         <a onClick={() => plusSlides(-1)}>&#10229;</a>

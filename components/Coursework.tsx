@@ -36,15 +36,15 @@ const coursework: Coursework = {
       slides: [
         {
           src: "/331-proj2-order.png",
-          caption: "Order System UI",
+          caption: "Boba POS Order System UI",
         },
         {
           src: "/331-proj2-add-item.png",
-          caption: "Add Item Flow",
+          caption: "Add Item Popup",
         },
         {
           src: "/331-proj2-add-associated-ingredients.png",
-          caption: "Ingredient Linking",
+          caption: "Ingredient Linking to Seasonal Drinks",
         },
       ]
     },
@@ -60,7 +60,7 @@ const coursework: Coursework = {
       slides: [
         {
           src: "/421-3d-svm-scatterplot-with-margin.png",
-          caption: "SVM Margin Visualization",
+          caption: "SVM Hyperplane and Margin Visualization",
         },
         {
           src: "/421-xgboost-roc-curve.png",
@@ -68,7 +68,7 @@ const coursework: Coursework = {
         },
         {
           src: "/421-eda-correlation-heatmap.png",
-          caption: "EDA Correlation Heatmap",
+          caption: "EDA Pearson's Correlation Heatmap",
         },
       ]
     },
@@ -77,19 +77,19 @@ const coursework: Coursework = {
       slides: [
         {
           src: "/441-a3-shader.png",
-          caption: "Shader Pipeline",
+          caption: "Cell Shader with Stanford Bunny and Utah Teapot",
         },
         {
           src: "/441-a4-topdown.png",
-          caption: "Top-down Scene View",
+          caption: "Top-down and Freelook Camera Scene",
         },
         {
           src: "/441-a5-deferredrendering.png",
-          caption: "Deferred Rendering",
+          caption: "Scene with Deferred Rendering and Light Attenuation",
         },
         {
           src: "/441-a6-raytracing.png",
-          caption: "Ray Tracing",
+          caption: "Ray Tracing Scene",
         },
       ]
     },
@@ -109,15 +109,15 @@ const coursework: Coursework = {
       slides: [
         {
           src: "/stat404-poly-plot.png",
-          caption: "Polynomial Fit Plot",
+          caption: "Polynomial Fit Plot using Boston Housing Dataset",
         },
         {
           src: "/stat404-residuals-vs-fitted.png",
-          caption: "Residuals vs Fitted",
+          caption: "Residuals vs Fitted Graph with Boston Housing Dataset",
         },
         {
           src: "/stat404-theta1-hist.png",
-          caption: "Parameter Distribution",
+          caption: "Parameter Distribution Graph",
         },
       ]
     },
@@ -182,7 +182,12 @@ export default function Coursework() {
             .join(" ")
           }>
 
-          <FolderIcon size={30}/>
+          <FolderIcon size={30} className="cursor-pointer" 
+            onClick={() => {
+            setSelectedCategory(category);
+            setSelectedCourse(null);
+          }}
+          />
 
           <button
           className={[
@@ -210,17 +215,20 @@ export default function Coursework() {
       <div>
         {courses.map((course) => (
           <div key={course.name} className={[
-            "flex items-center gap-2 course-item whitespace-nowrap", 
+            "flex items-center gap-2 whitespace-nowrap", 
             selectedCourse === course && "active",
             ]
               .filter(Boolean)
               .join(" ")
             }>
-            <FolderIcon size={30} weight={course.slides.length > 0 ? "fill" : "regular"} />
+            <FolderIcon size={30} weight={course.slides.length > 0 ? "fill" : "regular"} 
+              className="cursor-pointer"
+              onClick={() => setSelectedCourse(course)} 
+            />
 
             <button
               key={`${selectedCategory}-${course.name}`}
-              className="text-lg! body-text overflow-hidden text-ellipsis whitespace-nowrap max-w-[190px] 
+              className="text-lg! course-item body-text overflow-hidden text-ellipsis whitespace-nowrap max-w-[190px] 
                 hover:max-w-xs"
               onClick={() => setSelectedCourse(course)}
             >
@@ -237,7 +245,7 @@ export default function Coursework() {
               {currentSrc?.replace("/", "")}
             </h3>
             {slides.length > 0 ? (
-              <Slideshow slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+              <Slideshow key={selectedCourse.name} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
             ) : (
               <p className="text-lg! body-text">(Empty.)</p>
             )}
