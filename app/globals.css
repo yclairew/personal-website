@@ -243,12 +243,22 @@ a:hover, a:focus {
 
 /* qualifications page */
 .category-item {
-  display: block; /* makes it behave like a div */
   cursor: pointer;
+  padding: 5px;
 }
 
 .category-item:focus,
 .category-item:focus-visible {
   outline: none;
   box-shadow: none;
+}
+
+.active {
+  background: var(--color-accent-tag);
+  border-radius: var(--radius-md); /* 0.5rem (8px) */
+}
+
+.course-item {
+  cursor: pointer;
+  padding: 5px 2px;
 }

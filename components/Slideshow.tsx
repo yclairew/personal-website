@@ -9,14 +9,16 @@ type Slide = {
 
 type Props = {
   slides: Slide[];
+  onSlideChange?: (slide: Slide) => void;
 };
 
-export default function Slideshow({ slides }: Props) {
-  
+export default function Slideshow({ slides, onSlideChange }: Props) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const plusSlides = (n: number) => {
-    setCurrentSlide(prev => (prev + n + slides.length) % slides.length);
+    const next = (currentSlide + n + slides.length) % slides.length;
+    setCurrentSlide(next);
+    onSlideChange?.(slides[next]);
   };
 
   return (

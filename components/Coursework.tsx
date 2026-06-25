@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../app/globals.css";
 import Slideshow from "@/components/Slideshow";
+import { FolderIcon } from "@phosphor-icons/react";
 
 
 const coursework: Coursework = {
@@ -162,60 +163,96 @@ export default function Coursework() {
   const courses = coursework[selectedCategory];
   const slides = selectedCourse?.slides || [];
 
+  const [currentSrc, setCurrentSrc] = useState(selectedCourse?.slides[0]?.src);
+
+  // reset when course changes
+  useEffect(() => {
+    setCurrentSrc(selectedCourse?.slides[0]?.src);
+  }, [selectedCourse]);
+
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-8 ml-8 mb-15">
       <div>
         {Object.keys(coursework).map((category) => (
-        <button
-        className={[
-          "category-item",
-          "body-text",
+        <div key={`${category} div`} className={[
+          "flex items-center gap-2",
           selectedCategory === category && "active",
           ]
-          .filter(Boolean)
-          .join(" ")
-        }
-        onClick={() => {
-          setSelectedCategory(category);
-          setSelectedCourse(null);
-        }}
-        key={category}
-        >
-          {category}
-        </button>
+            .filter(Boolean)
+            .join(" ")
+          }>
+
+          <FolderIcon size={30}/>
+
+          <button
+          className={[
+            "category-item",
+            "text-lg!",
+            "body-text",
+            "text-left",
+            "text-nowrap",
+            // selectedCategory === category && "active",
+            ]
+            .filter(Boolean)
+            .join(" ")
+          }
+          onClick={() => {
+            setSelectedCategory(category);
+            setSelectedCourse(null);
+          }}
+          key={category}
+          >
+            {category}
+          </button>
+        </div>
         ))}
       </div>
 
       <div>
-        <ul>
         {courses.map((course) => (
-          <li
-              key={`${selectedCategory}-${course.name}`}
-              className="body-text"
-              onClick={() => {
-                setSelectedCourse(course);
-              }}
-          >
-              {course.name}
-          </li>
+          <div key={course.name} className={[
+            "flex items-center gap-2 course-item whitespace-nowrap", 
+            selectedCourse === course && "active",
+            ]
+              .filter(Boolean)
+              .join(" ")
+            }>
+            <FolderIcon size={30}/>
+
+            <button
+                key={`${selectedCategory}-${course.name}`}
+                className={[
+                  "text-lg!",
+                  "body-text",
+                  "text-nowrap",
+                  ]
+                  .join(" ")
+                }
+
+                onClick={() => {
+                  setSelectedCourse(course);
+                }}
+            >
+                {course.name}
+            </button>
+          </div>
         ))}
-        </ul>
       </div>
             
       <div>
         {selectedCourse ? (
           <>
-            <h3 className="third-level-headings text-3xl">
-              {selectedCourse.name}
+            <h3 className="third-level-headings text-3xl! text-center">
+              {currentSrc?.replace("/", "")}
             </h3>
             {slides.length > 0 ? (
-              <Slideshow slides={slides} />
+              <Slideshow slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
             ) : (
-              <p className="body-text">(Empty.)</p>
+              <p className="text-lg! body-text">(Empty.)</p>
             )}
           </>
         ) : (
-          <p className="body-text">Please select a course to see details.</p>
+          <p className="text-lg! body-text">Please select a course to see details.</p>
         )}
       </div>
     </div>

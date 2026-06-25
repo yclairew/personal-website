@@ -48,7 +48,7 @@ export default function Qualifications() {
         </div>
       </div>
 
-      <h2 className="qualifications-subheadings subheadings">Coursework</h2>
+      <h2 className="qualifications-subheadings subheadings ml-8">Coursework</h2>
       <Coursework/>
 
       <div className="flex bg-accent-light ml-10 mr-10 p-5 rounded-xl border-2 border-accent">
