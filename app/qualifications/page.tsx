@@ -13,43 +13,52 @@ export default function Qualifications() {
 
       <h1 className="qualifications-text heading-text">Qualifications</h1>
 
-      <div className="inspire-div ml-20 mr-20 pb-15">
-        <h2 className="reveal-box areas-subheading subheadings mb-5">Fields That Inspire Me</h2>
+      <div className="inspire-div ml-12 mr-20 pb-25">
+        <h2 className="reveal-box areas-subheading subheadings mb-5 text-5xl!">Fields That Inspire Me</h2>
         <div className="areas-text-container areas-text">
           <div className="first-interest body-text mb-8">
             <h3 className="text-4xl third-level-headings mb-1">Data Science</h3>
-            Data is everywhere, and analyses of it can reveal insights. To explore 
-            the field, I collaborated to work with{" "}
-            <a href="https://www.signifyhealth.com/" target="_blank" rel="noopener noreferrer">Signify Health</a>{" "}
-            to create a system 
-            that brings healthcare services to patients' doorsteps. I am grateful to 
-            have worked on a project combining two powerful fields (computer science and 
-            statistics) to have a direct, positive impact on patients.  
+            <p className="text-2xl">
+              Data is everywhere, and analyses of it can reveal insights. To explore 
+              the field, I collaborated to work with{" "}
+              <a href="https://www.signifyhealth.com/" target="_blank" rel="noopener noreferrer">Signify Health</a>{" "}
+              to create a system 
+              that brings healthcare services to patients' doorsteps. I am grateful to 
+              have worked on a project combining two powerful fields (computer science and 
+              statistics) to have a direct, positive impact on patients.  
+            </p>
           </div>
 
           <div className="second-interest body-text mb-8">
             <h3 className="text-4xl third-level-headings mb-1">Artificial intelligence (AI)</h3>
-            I like exploring AI, the theory behind machine learning, and the 
-            impact AI tools can have on the software industry. To pursue this 
-            interest, I am working on an AI-powered multimodial college math 
-            tutoring system as part of my research under {" "}
-            <a href="https://www.xiameng.org/">Dr. Xia</a> in the 
-            Department of Computer Science & Engineering. Also, I recently took 
-            CSCE 421 (Machine Learning). 
+            <p className="text-2xl">
+              I like exploring AI, the theory behind machine learning, and the 
+              impact AI tools can have on the software industry. To pursue this 
+              interest, I am working on an AI-powered multimodial college math 
+              tutoring system as part of my research under {" "}
+              <a href="https://www.xiameng.org/" target="_blank" rel="noopener noreferrer">Dr. Xia</a> in the 
+              Department of Computer Science & Engineering. Also, I recently took 
+              CSCE 421 (Machine Learning). 
+            </p>
           </div>
 
           <div className="third-interest body-text">
             <h3 className="text-4xl third-level-headings mb-1">Business</h3>
-            Inspired my dad, I developed an interest in business early on. 
-            In high school, I pursued and graduated with an Associate degree 
-            in Business through dual credit. Currently, I am earning a minor 
-            under Mays Business School in <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">AI in business</a>.
+            <p className="text-2xl">
+              Inspired my dad, I developed an interest in business early on. 
+              In high school, I pursued and graduated with an Associate degree 
+              in Business through dual credit. Currently, I am earning a minor 
+              under Mays Business School in  {" "}
+              <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">AI in business</a>.
+            </p>
           </div>
         </div>
       </div>
 
-      <h2 className="qualifications-subheadings subheadings ml-8">Coursework</h2>
-      <Coursework/>
+      <div className="bg-accent-light pt-4 pb-4 mb-10">
+        <h2 className="qualifications-subheadings subheadings ml-12 mb-6 text-5xl!">Coursework</h2>
+        <Coursework/>
+      </div>
 
       <div className="flex bg-accent-light ml-10 mr-10 p-5 rounded-xl border-2 border-accent">
         <div className="flex-1">

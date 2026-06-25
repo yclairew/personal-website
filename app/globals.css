@@ -241,6 +241,10 @@ a:hover, a:focus {
   margin: auto;
 }
 
+.arrows a {
+  text-underline-offset: 11px;
+}
+
 /* qualifications page */
 .category-item {
   cursor: pointer;
