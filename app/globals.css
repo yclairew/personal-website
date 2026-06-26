@@ -204,16 +204,17 @@ a:hover, a:focus {
 /* service.html */
 .slide-img {
   width: 50rem;
-  height: 28rem;
+  height: 27rem;
   object-fit: contain; /* dont crop */
 }
 
 .photo-captions {
   font-family: 'Lora',serif; 
   font-weight: 400; 
-  font-size: clamp(1rem,1.8vw,4.5rem);
+  font-size: clamp(1rem,1.4vw,4.5rem);
   color: var(--accents);
   text-align: center;
+  margin: 3px 0px 0px 0px;
 }
 
 .numbertext {

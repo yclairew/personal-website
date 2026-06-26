@@ -108,6 +108,10 @@ const coursework: Coursework = {
       name: "Statistical Computing",
       slides: [
         {
+          src: "/stat404-nyc-airbnb-neighborhood-vs-price.png",
+          caption: "Boxplots Comparing NYC Neighborhoods and Prices using Airbnb Listing Data",
+        },
+        {
           src: "/stat404-poly-plot.png",
           caption: "Polynomial Fit Plot using Boston Housing Dataset",
         },
@@ -125,17 +129,61 @@ const coursework: Coursework = {
 
   "AI in Business": [
     {
-      name: "Machine Learning for Business",
-      slides: []
+      name: "Machine Learning & Predictive Modeling for Business",
+      slides: [
+        {
+          src: "460-machine-learning-mock-flow.png",
+          caption: "ML System Designed for a Local Business for Semester-long Mock Project",
+        },
+      ]
     },
     {
       name: "Business with Generative AI",
-      slides: []
+      slides: [
+        {
+          src: "450-arts-participation-by-age-group.png",
+          caption: "Market Analysis: Arts Participation by Age Group to Identify Target Demographics",
+        },
+        {
+          src: "450-arts-participation-heatmap-by-region.png",
+          caption: "Market Analysis: Arts Participation by Region to Assess Geographic Demand",
+        },
+        {
+          src: "450-michaels-profit-margins-over-time.png",
+          caption: "Competitor Analysis: Michaels Profit Margins Over Time",
+        },
+        {
+          src: "450-retail-sales-over-time.png",
+          caption: "Partnership Viability: Retail Sales Trends",
+        },
+      ]
     },
     {
       name: "Business Storytelling using AI",
-      slides: []
+      slides: [
+        {
+          src: "455-gnn-movie-recommendation-calibration-plot.png", 
+          caption: "Calibration Plot for a GNN-Based Movie Recommendation Model",
+        },
+        {
+          src: "455-who-regions.png",
+          caption: "WHO Regions for Geospatial Analysis of Global COVID-19 Data",
+        },
+        {
+          src: "455-covid-new-deaths.png",
+          caption: "COVID-19 New Deaths Over Time from WHO Geospatial Data",
+        },
+        
+        {
+          src: "455-ga4-gertificate.png",
+          caption: "Google Analytics 4 Certification: Manage GA4 Data and Learn to Read Reports",
+        },
+      ]
     },
+
+    // certifications
+    // movie one
+    // geospatial
   ],
 };
 
@@ -229,7 +277,7 @@ export default function Coursework() {
             <button
               key={`${selectedCategory}-${course.name}`}
               className="text-lg! course-item body-text overflow-hidden text-ellipsis whitespace-nowrap max-w-[190px] 
-                hover:max-w-xs"
+                hover:max-w-full"
               onClick={() => setSelectedCourse(course)}
             >
               {course.name}
@@ -241,7 +289,7 @@ export default function Coursework() {
       <div>
         {selectedCourse ? (
           <>
-            <h3 className="third-level-headings text-3xl! text-center">
+            <h3 className="third-level-headings text-3xl! text-center pb-2">
               {currentSrc?.replace("/", "")}
             </h3>
             {slides.length > 0 ? (
