@@ -259,7 +259,7 @@ export default function Coursework() {
   }, [selectedCourse]);
 
   return (
-    <div className={`flex flex-row gap-12 mb-15 ${selectedCourse && slides.length > 0 ? "justify-center" : "ml-18"}`}>
+    <div className={`flex flex-row gap-12 mb-8 ${selectedCourse && slides.length > 0 ? "justify-center" : "ml-18"}`}>
       <div>
         {Object.keys(coursework).map((category) => (
         <div key={`${category} div`} className={[
@@ -316,7 +316,7 @@ export default function Coursework() {
 
             <button
               key={`${selectedCategory}-${course.name}`}
-              className="text-lg! course-item body-text overflow-hidden text-ellipsis whitespace-nowrap max-w-[190px] 
+              className="text-lg! course-item body-text overflow-hidden text-ellipsis whitespace-nowrap max-w-47.5 
                 hover:max-w-full"
               onClick={() => setSelectedCourse(course)}
             >

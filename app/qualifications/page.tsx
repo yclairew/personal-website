@@ -13,11 +13,11 @@ export default function Qualifications() {
 
       <h1 className="qualifications-text heading-text">Qualifications</h1>
 
-      <div className="inspire-div ml-12 mr-20 pb-25">
-        <h2 className="reveal-box areas-subheading subheadings mb-5 text-5xl!">Fields That Inspire Me</h2>
-        <div className="areas-text-container areas-text">
-          <div className="first-interest body-text mb-8">
-            <h3 className="text-4xl third-level-headings mb-1">Data Science</h3>
+      <div className="inspire-div ml-12 mr-20 mb-30">
+        <h2 className="reveal-box areas-subheading subheadings mb-7 text-5xl!">Fields That Inspire Me</h2>
+        <div className="grid grid-cols-3 gap-8">
+          <div className="body-text border-l-3 border-accent pl-4">
+            <h3 className="text-4xl third-level-headings mb-2">Data Science</h3>
             <p className="text-2xl">
               Data is everywhere, and analyses of it can reveal insights. To explore 
               the field, I collaborated to work with{" "}
@@ -29,8 +29,8 @@ export default function Qualifications() {
             </p>
           </div>
 
-          <div className="second-interest body-text mb-8">
-            <h3 className="text-4xl third-level-headings mb-1">Artificial intelligence (AI)</h3>
+          <div className="body-text border-l-3 border-accent pl-4">
+            <h3 className="text-4xl third-level-headings mb-2">Artificial intelligence (AI)</h3>
             <p className="text-2xl">
               I like exploring AI, the theory behind machine learning, and the 
               impact AI tools can have on the software industry. To pursue this 
@@ -42,8 +42,8 @@ export default function Qualifications() {
             </p>
           </div>
 
-          <div className="third-interest body-text">
-            <h3 className="text-4xl third-level-headings mb-1">Business</h3>
+          <div className="body-text border-l-4 border-accent pl-4">
+            <h3 className="text-4xl third-level-headings mb-2">Business</h3>
             <p className="text-2xl">
               Inspired my dad, I developed an interest in business early on. 
               In high school, I pursued and graduated with an Associate degree 
@@ -60,15 +60,22 @@ export default function Qualifications() {
         <Coursework/>
       </div>
 
-      <div className="flex bg-accent-light ml-10 mr-10 p-5 rounded-xl border-2 border-accent">
-        <div className="flex-1">
-          <p className="reveal-box body-text text-text">Check out my resume!</p>
-          <button className="bg-background p-3 rounded-xl">
-            <a href="Claire Wu Resume.pdf#view=Fit" target="_blank" rel="noopener noreferrer">Open ↗</a>
-          </button>
+      <div className="flex ml-10 mr-10 pl-5 pr-5 pt-10 pb-10 mt-30 mb-35">
+        <div className="flex-1 flex-col flex gap-10 justify-center items-center">
+          <p className="reveal-box body-text text-text text-center w-lg">Please check out and download my resume here!</p>
+          <div className="flex flex-row gap-8">
+            <button className="bg-accent p-3 rounded-xl w-fit">
+              <a href="Claire Wu Resume.pdf#view=Fit" target="_blank" rel="noopener noreferrer" className="text-white! decoration-white! no-underline!">Open ↗</a>
+            </button>
+            <button className="border-2 border-accent p-3 rounded-xl w-fit">
+              <a href="Claire Wu Resume.pdf" download className="text-accent! no-underline!">
+                Download ↓
+              </a>
+            </button>
+          </div>
         </div>
-        <div className="flex flex-1 justify-end">
-          <iframe className="reveal-box resume h-100 w-auto" src="Claire Wu Resume.pdf#view=Fit" allow="autoplay"></iframe>
+        <div className="flex flex-1 justify-center">
+          <iframe className="rounded-xl border border-gray-200 shadow-sm reveal-box resume h-[440px] w-auto" src="Claire Wu Resume.pdf#view=Fit" allow="autoplay"></iframe>
         </div>
       </div>
       
