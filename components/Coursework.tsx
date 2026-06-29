@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "../app/globals.css";
 import Slideshow from "@/components/Slideshow";
-import { FolderIcon, ArrowSquareOutIcon } from "@phosphor-icons/react";
+import { FolderIcon } from "@phosphor-icons/react";
 
 
 const coursework: Coursework = {
@@ -325,7 +325,7 @@ export default function Coursework() {
 
             {course.portfolioLink && (
               <a href={course.portfolioLink.href} title={course.portfolioLink.label}>
-                <ArrowSquareOutIcon size={18} className="text-subheading hover:text-accent" />
+                <p className="text-subheading hover:text-accent">↗</p>
               </a>
             )}
           </div>
