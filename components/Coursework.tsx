@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "../app/globals.css";
 import Slideshow from "@/components/Slideshow";
-import { FolderIcon } from "@phosphor-icons/react";
+import { FolderIcon, ArrowSquareOutIcon } from "@phosphor-icons/react";
 
 
 const coursework: Coursework = {
@@ -49,8 +49,8 @@ const coursework: Coursework = {
 
 
         {
-          src: "/331-proj3-customer-kiosk.png (Project 3)",
-          caption: "Dynamic Website Based Boba POS Customer Kiosk",
+          src: "/331-proj3-customer-kiosk.png",
+          caption: "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
         },
         {
           src: "/331-proj3-customer-customizations-popup.png",
@@ -68,7 +68,11 @@ const coursework: Coursework = {
           src: "/331-proj3-manager-reports.webp",
           caption: "Daily Sales Report for Manager, One of Many Available Reports",
         },
-      ]
+      ],
+      portfolioLink: {
+        label: "See Pearl Tea POS →",
+        href: "/portfolio#boba-pos-system",
+      },
     },
     {
       name: "Algorithm Design",
@@ -121,7 +125,6 @@ const coursework: Coursework = {
         {
           src: "/491-annomath-interface.png",
           caption: "Interactive Interface Graphic for AnnoMath",
-          // TODO: link to annomath in portfolio here?
         },
         {
           src: "/491-annomath-technical-pipeline.png",
@@ -131,7 +134,11 @@ const coursework: Coursework = {
           src: "491-annotation-coding-example.png",
           caption: "Annotations and Color Changes from Open Coding of Khan Academy Math Videos",
         },
-      ]
+      ],
+      portfolioLink: {
+        label: "See AnnoMath →",
+        href: "/portfolio#annomath",
+      },
     },
   ],
 
@@ -228,6 +235,7 @@ type Slide = {
 type Course = {
   name: string;
   slides: Slide[];
+  portfolioLink?: { label: string; href: string };
 };
 
 type Coursework = Record<string, Course[]>;
@@ -314,6 +322,12 @@ export default function Coursework() {
             >
               {course.name}
             </button>
+
+            {course.portfolioLink && (
+              <a href={course.portfolioLink.href} title={course.portfolioLink.label}>
+                <ArrowSquareOutIcon size={18} className="text-subheading hover:text-accent" />
+              </a>
+            )}
           </div>
         ))}
       </div>

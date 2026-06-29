@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useAnimateOnScroll } from '@/hooks/useAnimateOnScroll';
 
 
@@ -22,7 +22,7 @@ const cards: Card[] = [
     skills: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
   },
   {
-    title: "Boba POS System",
+    title: "Pearl Tea POS System",
     role: "Full-Stack Developer",
     description: `Built a multi-interface boba shop POS platform on an Agile Scrum team. Led deployment 
       and authentification security, integrated a TTS API and weather based drink recommendations, 
@@ -160,7 +160,9 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
   const ref = useAnimateOnScroll();
 
   return (
-    <div ref={ref} className="opacity-0 mb-15 ml-15 mr-15 bg-accent-light p-5 rounded-xl">
+    <div ref={ref} id={card.title.toLowerCase().replace(/\s+/g, '-')}
+      className="opacity-0 mb-15 ml-15 mr-15 bg-accent-light p-5 rounded-xl"
+    >
       <div key={card.title} className="card p-6 animate-fade-up">
         <div className="card-header grid grid-cols-2"> 
           <div className="card-title-div flex col-1">
@@ -243,6 +245,20 @@ export default function Cards() {
     (contextFilter === "All" || card.context === contextFilter) &&
     (skillFilter === "All" || card.skills.includes(skillFilter))
   );
+
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const el = document.getElementById(hash);
+      if (el) {
+        el.classList.remove('opacity-0');
+        el.classList.add('animate-fade-up');
+        el.style.animation = 'none';
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      }
+    }
+  }, []);
 
 
   return (
