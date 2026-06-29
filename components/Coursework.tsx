@@ -36,7 +36,7 @@ const coursework: Coursework = {
       slides: [
         {
           src: "/331-proj2-order.png",
-          caption: "Boba POS Order System UI",
+          caption: "JavaFX-Based Boba POS GUI (Project 2)",
         },
         {
           src: "/331-proj2-add-item.png",
@@ -45,6 +45,28 @@ const coursework: Coursework = {
         {
           src: "/331-proj2-add-associated-ingredients.png",
           caption: "Ingredient Linking to Seasonal Drinks",
+        },
+
+
+        {
+          src: "/331-proj3-customer-kiosk.png (Project 3)",
+          caption: "Dynamic Website Based Boba POS Customer Kiosk",
+        },
+        {
+          src: "/331-proj3-customer-customizations-popup.png",
+          caption: "Accessible Customer Customizations Popup",
+        },
+        {
+          src: "/331-proj3-customer-cart.png",
+          caption: "Customer Cart with Loyalty Point System",
+        },
+        {
+          src: "/331-proj3-employee-kiosk.png",
+          caption: "Simplified Employee View Kiosk",
+        },
+        {
+          src: "/331-proj3-manager-reports.webp",
+          caption: "Daily Sales Report for Manager, One of Many Available Reports",
         },
       ]
     },
@@ -95,7 +117,21 @@ const coursework: Coursework = {
     },
     {
       name: "Computer Science Research",
-      slides: []
+      slides: [
+        {
+          src: "/491-annomath-interface.png",
+          caption: "Interactive Interface Graphic for AnnoMath",
+          // TODO: link to annomath in portfolio here?
+        },
+        {
+          src: "/491-annomath-technical-pipeline.png",
+          caption: "Full Technical Pipeline Graphics for AnnoMath",
+        },
+        {
+          src: "491-annotation-coding-example.png",
+          caption: "Annotations and Color Changes from Open Coding of Khan Academy Math Videos",
+        },
+      ]
     },
   ],
 
@@ -180,10 +216,6 @@ const coursework: Coursework = {
         },
       ]
     },
-
-    // certifications
-    // movie one
-    // geospatial
   ],
 };
 
