@@ -1,0 +1,21 @@
+{
+  "name": "Claire Wu",
+  "short_name": "Claire Wu",
+  "description": "Portfolio of Claire Wu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon-for-public/web-app-manifest-192x192",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon-for-public/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/x-icon"
+    }
+  ]
+}

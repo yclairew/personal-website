@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import ".././globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Coursework from "@/components/Coursework";
+import Bottom_overscroll_color from "@/components/Bottom_overscroll_color";
 
 
 export default function Qualifications() {
+  Bottom_overscroll_color(); 
+
   return (
     <div className="bg-background">
       <title>Claire Wu</title>
@@ -75,7 +80,7 @@ export default function Qualifications() {
           </div>
         </div>
         <div className="flex flex-1 justify-center">
-          <iframe className="rounded-xl border border-gray-200 shadow-sm reveal-box resume h-[440px] w-auto" src="Claire Wu Resume.pdf#view=Fit" allow="autoplay"></iframe>
+          <iframe className="rounded-xl border border-gray-200 shadow-sm reveal-box resume h-110 w-auto" src="Claire Wu Resume.pdf#view=Fit" allow="autoplay"></iframe>
         </div>
       </div>
       

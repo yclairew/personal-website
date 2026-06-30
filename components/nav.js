@@ -7,7 +7,6 @@ const Nav = () => {
             <Link className="nav-bar-text text-center text-link" href="/portfolio">Portfolio</Link>
             <Link className="nav-bar-text text-center text-link" href="/qualifications">Qualifications</Link>
             <Link className="nav-bar-text text-center text-link" href="/service">Service</Link>
-            {/* TODO: maybe even contact to link to footer */}
         </nav>
     );
 };

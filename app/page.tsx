@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Skills_scene from "@/components/Skills_scene";
+import Bottom_overscroll_color from "@/components/Bottom_overscroll_color";
 
 export default function Home() {
+  Bottom_overscroll_color(); 
+
   return (
     <div className="bg-background">
       <title>Claire Wu</title>

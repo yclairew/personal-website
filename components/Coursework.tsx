@@ -21,7 +21,8 @@ const coursework: Coursework = {
     },
     {
       name: "Computer Organization",
-      slides: []
+      slides: [],
+      // readme: "# Computer Organization*\nNand2Tetris — Built a Computer from First Principles*\n\n## Overview\nA semester-long build of a full computer system from the ground up, starting at a single NAND gate and ending with a working CPU running custom assembly programs — based on the Nand2Tetris curriculum.\n\n## What I Did\nStarting from nothing but a NAND gate, I built up the entire hardware stack in HDL: logic gates, an ALU, registers, RAM, and eventually a full CPU. From there I built the assembler that translates assembly instructions into the machine code the CPU actually runs. Every layer had to work before the next one could be built on top of it, so debugging meant tracing problems all the way down to the gate level when something didn't add up.\n\n## Tech / Skills\n`HDL` `Boolean Logic` `Computer Architecture` `Assembly` `CPU Design` `Nand2Tetris Hardware Simulator` `CPU Emulator`\n\n## Outcome\nWorking CPU and assembler capable of running custom assembly programs — built entirely from a single logic gate up."
     },
     {
       name: "Data Structures & Algorithms",
@@ -235,11 +236,46 @@ type Slide = {
 type Course = {
   name: string;
   slides: Slide[];
+  // readme?: string;
   portfolioLink?: { label: string; href: string };
 };
 
 type Coursework = Record<string, Course[]>;
 
+
+
+
+// TODO: edit styling
+// import ReactMarkdown from 'react-markdown';
+// import remarkGfm from 'remark-gfm';
+
+// function CourseReadme({ content }: { content: string }) {
+//   return (
+//     <div className="rounded-lg border border-gray-700 bg-gray-900 overflow-hidden">
+//       {/* fake file header bar */}
+//       <div className="flex items-center gap-2 px-4 py-2 bg-gray-800 border-b border-gray-700 text-sm text-gray-400">
+//         <span>📄</span>
+//         <span className="font-mono">README.md</span>
+//       </div>
+
+//       <div className="prose prose-invert prose-sm sm:prose-base max-w-none p-6">
+//         <ReactMarkdown
+//           remarkPlugins={[remarkGfm]}
+//           components={{
+//             // style inline code as pill-style skill tags
+//             code: ({ children }) => (
+//               <span className="inline-block bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded-full text-xs font-mono mr-1 mb-1">
+//                 {children}
+//               </span>
+//             ),
+//           }}
+//         >
+//           {content}
+//         </ReactMarkdown>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 export default function Coursework() {
@@ -347,6 +383,9 @@ export default function Coursework() {
         ) : (
           <p className="text-lg! body-text">Please select a course to see details.</p>
         )}
+
+        {/* TODO: add "readme files" */}
+        {/* {selectedCourse?.readme && CourseReadme({ content: selectedCourse.readme })} */}
       </div>
     </div>
   )

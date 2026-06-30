@@ -5,6 +5,7 @@ import ".././globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Slideshow from "@/components/Slideshow";
+import Bottom_overscroll_color from "@/components/Bottom_overscroll_color";
 import { useAnimateOnScroll } from '@/hooks/useAnimateOnScroll';
 
 
@@ -18,7 +19,8 @@ const serviceSlides = [
 
 export default function Service() {
     const ref1 = useAnimateOnScroll();  
-    const ref2 = useAnimateOnScroll();  
+    const ref2 = useAnimateOnScroll(); 
+    Bottom_overscroll_color(); 
   return (
     <div className="bg-background">
       <title>Claire Wu</title>
