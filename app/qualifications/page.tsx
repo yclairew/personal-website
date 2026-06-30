@@ -11,7 +11,7 @@ export default function Qualifications() {
       <title>Claire Wu</title>
       <Nav/>
 
-      <h1 className="qualifications-text heading-text">Qualifications</h1>
+      <h1 className="qualifications-text heading-text mt-5">Qualifications</h1>
 
       <div className="inspire-div ml-12 mr-20 mb-30">
         <h2 className="reveal-box areas-subheading subheadings mb-7 text-5xl!">Fields That Inspire Me</h2>

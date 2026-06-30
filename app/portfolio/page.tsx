@@ -9,7 +9,7 @@ export default function Portfolio() {
     <div className="bg-background">
       <title>Claire Wu</title>
       <Nav/>
-      <h1 className="portfolio-heading heading-text text-text">Portfolio</h1>
+      <h1 className="heading-text text-text mt-5">Portfolio</h1>
       
       <div className="center">
         <Cards/>

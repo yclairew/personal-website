@@ -23,7 +23,7 @@ export default function Service() {
     <div className="bg-background">
       <title>Claire Wu</title>
       <Nav/>
-      <h1 className="heading-text text-text" id="service-heading">Service</h1>
+      <h1 className="heading-text text-text mt-5">Service</h1>
 
       <div className="service-container">
           <Slideshow slides={serviceSlides}/>

@@ -55,13 +55,38 @@
 //   )
 // }
 
+"use client";
 import { Lora, Montserrat } from "next/font/google"
+import { useEffect } from "react";
 
 
 const lora = Lora({ subsets: ["latin"] })
 const montserrat = Montserrat({ subsets: ["latin"] })
 
-export default function RootLayout({ children }) {
+function useBottomOverscrollColor() {
+  useEffect(() => {
+    const updateOverscrollColor = () => {
+      const scrollBottom = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+      const nearBottom = pageHeight - scrollBottom < 50;
+      document.body.style.backgroundColor = nearBottom ? "var(--color-accent-tag)" : "var(--color-background)";
+    };
+
+    window.addEventListener("scroll", updateOverscrollColor);
+    window.addEventListener("resize", updateOverscrollColor);
+    updateOverscrollColor();
+
+    return () => {
+      window.removeEventListener("scroll", updateOverscrollColor);
+      window.removeEventListener("resize", updateOverscrollColor);
+    };
+  }, []);
+}
+
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  useBottomOverscrollColor();
+
   return (
     <html lang="en">
       <head>

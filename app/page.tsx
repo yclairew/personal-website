@@ -10,11 +10,11 @@ export default function Home() {
       <title>Claire Wu</title>
       <Nav/>
       <div>
-        <h1 className="heading-text leading-none pb-0 mb-0 mt-20 text-text" id="name-text">Claire Wu</h1>
+        <h1 className="heading-text text-text [text-box-trim:trim-end] mt-5 -mb-4">Claire Wu</h1>
       </div>
 
       <div className="flex justify-center"> {/* keeps text centered during typing animation */}
-        <p className="body-text typing-animation mb-21 text-text">
+        <p className="body-text typing-animation mb-14 text-text">
           CS senior at Texas A&M, minoring in Statistics and{" "}
           <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">AI in business</a>
         </p>
