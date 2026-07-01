@@ -42,7 +42,7 @@ export default function Service() {
           </div>
       </div>
 
-      <div ref={ref2} className="animate-target extra-service-text-container ml-12 mr-12">
+      <div ref={ref2} className="animate-target extra-service-text-container ml-12 mr-12 mb-35">
           <p className="body-text">
               Since freshman year, I 
               have continued to participate in community service, including Texas A&M's annual service event called {" "}

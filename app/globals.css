@@ -131,13 +131,37 @@ a:hover, a:focus {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-
-  font-size: clamp(1.5rem, 2vw, 5rem); /* linearly scale css font size using clamp() */
   text-align: center;
 
   float: left;
+}
 
-  text-decoration: none;
+.nav-underline {
+  position: relative;
+  color: var(--color-link);
+}
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: var(--color-link-hover);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-underline:hover::after,
+.nav-underline:focus::after {
+  transform: scaleX(1);
+}
+
+.no-anim-link {
+  background-image: none !important;
+  background-size: 0 !important;
+  color: inherit;
 }
 
 
