@@ -5,7 +5,7 @@ import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Skills_scene from "@/components/Skills_scene";
-import Bottom_overscroll_color from "@/components/Bottom_overscroll_color";
+import Bottom_overscroll_color from "@/components/Overscroll_color";
 
 export default function Home() {
   Bottom_overscroll_color(); 

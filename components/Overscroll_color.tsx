@@ -2,13 +2,21 @@
 
 import { useEffect } from "react";
 
-export default function Bottom_overscroll_color() {
+export default function Overscroll_color() {
   useEffect(() => {
     const updateOverscrollColor = () => {
-      const scrollBottom = window.scrollY + window.innerHeight;
+      const scrollY = window.scrollY;
+      const scrollBottom = scrollY + window.innerHeight;
       const pageHeight = document.documentElement.scrollHeight;
+
       const nearBottom = pageHeight - scrollBottom < 50;
-      document.body.style.backgroundColor = nearBottom ? "var(--color-accent-tag)" : "var(--color-background)";
+      const nearTop = scrollY < 50;
+
+      document.body.style.backgroundColor = nearBottom
+        ? "var(--color-accent-light)"
+        : nearTop
+        ? "var(--color-accent-light)"
+        : "var(--color-background)";
     };
 
     window.addEventListener("scroll", updateOverscrollColor);

@@ -5,11 +5,11 @@ import ".././globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Coursework from "@/components/Coursework";
-import Bottom_overscroll_color from "@/components/Bottom_overscroll_color";
+import Overscroll_color from "@/components/Overscroll_color";
 
 
 export default function Qualifications() {
-  Bottom_overscroll_color(); 
+  Overscroll_color(); 
 
   return (
     <div className="bg-background">

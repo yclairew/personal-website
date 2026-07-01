@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="bg-accent-light border-t-2 border-accent-light shadow-lg font-[Montserrat]">
+        <footer className="bg-accent-light border-t-2 border-accent-light shadow-sm font-[Montserrat]">
             <div className="mx-auto flex max-w-240 justify-between items-center px-14 py-14">
                 <div className="space-y-2">
                     <h3 className="text-lg font-semibold text-text">Claire Wu</h3>
