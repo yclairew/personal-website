@@ -2050,5 +2050,701 @@
     "targetLang": "zh-Hant",
     "translated": "個人生活",
     "cachedAt": "2026-07-02T02:48:50.206Z"
+  },
+  "c84f575addeac87fa4aec3258dbe9268d74fd72088581c62f948a3368645ee15": {
+    "source": "Required CS",
+    "targetLang": "zh-Hans",
+    "translated": "必修计算机科学",
+    "cachedAt": "2026-07-02T03:09:35.733Z"
+  },
+  "cb91d0ee7189118c58c22bf6ffec57d8d0086e4e11a1024fb3de19850a070d54": {
+    "source": "CS Electives",
+    "targetLang": "zh-Hans",
+    "translated": "计算机科学选修课",
+    "cachedAt": "2026-07-02T03:09:36.005Z"
+  },
+  "d5d0248db9ee3ec2a60893b35c1be62be72490db1fffe95edd5208083fee6de0": {
+    "source": "Statistics",
+    "targetLang": "zh-Hans",
+    "translated": "统计数据",
+    "cachedAt": "2026-07-02T03:09:36.126Z"
+  },
+  "a04465e0215c3637be229ad20bc9d57ee80fb3c38b80ba0103b2028f84e6351f": {
+    "source": "AI in Business",
+    "targetLang": "zh-Hans",
+    "translated": "商业中的人工智能",
+    "cachedAt": "2026-07-02T03:09:36.284Z"
+  },
+  "b76ffeb07ee9113dc1c1d58e73a7d208fbd07b5996f8ff3efdb227ad7ba8d79a": {
+    "source": "Program Design",
+    "targetLang": "zh-Hans",
+    "translated": "程序设计",
+    "cachedAt": "2026-07-02T03:09:36.434Z"
+  },
+  "9d81a9eadbf0bb941a57b751ccea9f9dc9cccee4805ae34dad70a332c61ab511": {
+    "source": "Discrete Structures",
+    "targetLang": "zh-Hans",
+    "translated": "离散结构",
+    "cachedAt": "2026-07-02T03:09:36.582Z"
+  },
+  "56b997528d8b1a2ea91522eb0ff0ef2b6ff1d077866d8165cf43af21c5b9c76c": {
+    "source": "Linear Algebra",
+    "targetLang": "zh-Hans",
+    "translated": "线性代数",
+    "cachedAt": "2026-07-02T03:09:36.649Z"
+  },
+  "0f515d23490c0d83548c7dd066ac492a45d1ec450b6d07793aef91fe1e27b398": {
+    "source": "Computer Organization",
+    "targetLang": "zh-Hans",
+    "translated": "计算机组织",
+    "cachedAt": "2026-07-02T03:09:36.798Z"
+  },
+  "7fe2aaed9e31147309972236310a948b371b920381d3e329a51c174f15015ba1": {
+    "source": "Data Structures & Algorithms",
+    "targetLang": "zh-Hans",
+    "translated": "数据结构与算法",
+    "cachedAt": "2026-07-02T03:09:36.946Z"
+  },
+  "85f2ea7bb2e8c3590a0fb06842a01c76356946da4047eba2c5cc23f4a82d027c": {
+    "source": "Computer Systems",
+    "targetLang": "zh-Hans",
+    "translated": "计算机系统",
+    "cachedAt": "2026-07-02T03:09:37.056Z"
+  },
+  "624eeef0416b9f19b552d0a82b307f5f7a9ceabb4f0a15efa3b8723551af99e3": {
+    "source": "Software Engineering",
+    "targetLang": "zh-Hans",
+    "translated": "软件工程",
+    "cachedAt": "2026-07-02T03:09:37.123Z"
+  },
+  "3d0fe7ad55d44841397fe4d8a9e3e5e046eb41e96d5799750adeaad880952c36": {
+    "source": "Algorithm Design",
+    "targetLang": "zh-Hans",
+    "translated": "算法设计",
+    "cachedAt": "2026-07-02T03:09:37.269Z"
+  },
+  "36d21ac6c74687d71c3d6ff3138d5bbba2c33ef0d8f6fe49d35ac677706ad374": {
+    "source": "Machine Learning",
+    "targetLang": "zh-Hans",
+    "translated": "机器学习",
+    "cachedAt": "2026-07-02T03:09:37.338Z"
+  },
+  "8d8ab41192d46619cb57adfc6c38d1fb9c97d61a48036782255d4abc9c31bf1f": {
+    "source": "Computer Graphics",
+    "targetLang": "zh-Hans",
+    "translated": "计算机图形学",
+    "cachedAt": "2026-07-02T03:09:37.473Z"
+  },
+  "21b1977f70e4a97b29ac41ca3acef5b144cbf5fd58c269dd51504d8d2fe5a5c7": {
+    "source": "Computer Science Research",
+    "targetLang": "zh-Hans",
+    "translated": "计算机科学研究",
+    "cachedAt": "2026-07-02T03:09:37.617Z"
+  },
+  "517512f3df37eb9ffee0c7da675949ff4ed307f2acad3d4963a9aba0d0ec16ff": {
+    "source": "Statistics I & II",
+    "targetLang": "zh-Hans",
+    "translated": "统计学 I 和 II",
+    "cachedAt": "2026-07-02T03:09:37.715Z"
+  },
+  "b79d859933b95f19a3d9ce729458c96081f59d0b085a0beb0442e83b7d12da5b": {
+    "source": "Statistical Computing",
+    "targetLang": "zh-Hans",
+    "translated": "统计计算",
+    "cachedAt": "2026-07-02T03:09:37.834Z"
+  },
+  "2ef2d93780bd3b7e619fce76051d5b8b04a80f2bd104924db347eed615a08bbf": {
+    "source": "Machine Learning & Predictive Modeling for Business",
+    "targetLang": "zh-Hans",
+    "translated": "机器学习与商业预测建模",
+    "cachedAt": "2026-07-02T03:09:37.997Z"
+  },
+  "e59e89acb179ad4d3d4c9cfb81a40348deeff1f0128a7de159a55de28a2221c5": {
+    "source": "Business with Generative AI",
+    "targetLang": "zh-Hans",
+    "translated": "与生成式人工智能的商业",
+    "cachedAt": "2026-07-02T03:09:38.097Z"
+  },
+  "1204c626e1c6f88a5e99f340a7d57437d4ec853b95366c981d71a62baf321d59": {
+    "source": "Business Storytelling using AI",
+    "targetLang": "zh-Hans",
+    "translated": "利用人工智能进行商业叙事",
+    "cachedAt": "2026-07-02T03:09:38.202Z"
+  },
+  "37950a9f81a7509c602d1c74e494701ec781e8aa13a62c17d3ebc2e02c90d788": {
+    "source": "See",
+    "targetLang": "zh-Hans",
+    "translated": "参见",
+    "cachedAt": "2026-07-02T03:09:38.269Z"
+  },
+  "8bc5928abdd9ea47aedd4d0af05c54f16cb33db91ff5207587a657c9b8fe40f5": {
+    "source": "JavaFX-Based Boba POS GUI (Project 2)",
+    "targetLang": "zh-Hans",
+    "translated": "基于 JavaFX 的 Boba POS 图形界面（项目 2）",
+    "cachedAt": "2026-07-02T03:09:38.464Z"
+  },
+  "cfc587125f14ae42d83fe1c107c8322bf73f487a14b0845abaf7f2e900bee29a": {
+    "source": "Add Item Popup",
+    "targetLang": "zh-Hans",
+    "translated": "添加物品弹窗",
+    "cachedAt": "2026-07-02T03:09:38.575Z"
+  },
+  "78262fcba89d7cbc6acc91e9b0b714f657f432fe52905808e11779a6924cd543": {
+    "source": "Ingredient Linking to Seasonal Drinks",
+    "targetLang": "zh-Hans",
+    "translated": "与季节性饮品相关的成分",
+    "cachedAt": "2026-07-02T03:09:38.681Z"
+  },
+  "27cbd47fb32d789c9ec5cad242fa15c388a4477e7bc5e64627025c0628031018": {
+    "source": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
+    "targetLang": "zh-Hans",
+    "translated": "基于网站的动态Boba POS客户自助终端（專案 3）",
+    "cachedAt": "2026-07-02T03:09:38.818Z"
+  },
+  "46b7b08a4fc32d0dc53b87b71f710f587afba2fa3b32ab71e3f0b166c708ad6b": {
+    "source": "Accessible Customer Customizations Popup",
+    "targetLang": "zh-Hans",
+    "translated": "可访问客户定制弹窗",
+    "cachedAt": "2026-07-02T03:09:38.926Z"
+  },
+  "58623668cb41d80dedeaa656d4f9ed3a608e28299a5dd75e142ee7bb6a33ba0f": {
+    "source": "Customer Cart with Loyalty Point System",
+    "targetLang": "zh-Hans",
+    "translated": "带忠诚点系统的客户推车",
+    "cachedAt": "2026-07-02T03:09:39.033Z"
+  },
+  "0402c395ff00363e05baefa3eaf79fab57e42b9bb466aa99e50af15efa6b6889": {
+    "source": "Simplified Employee View Kiosk",
+    "targetLang": "zh-Hans",
+    "translated": "简化员工视图自助终端",
+    "cachedAt": "2026-07-02T03:09:39.128Z"
+  },
+  "e6f6eedcdd3c566463beab54b8233625c96d575c9f761ab72bc375ab284102a2": {
+    "source": "Daily Sales Report for Manager, One of Many Available Reports",
+    "targetLang": "zh-Hans",
+    "translated": "经理每日销售报告，众多可用报告之一",
+    "cachedAt": "2026-07-02T03:09:39.231Z"
+  },
+  "37ef161a76a2cf8ff91746c921172eeda943a3eb12819e52084355184ef313e5": {
+    "source": "SVM Hyperplane and Margin Visualization",
+    "targetLang": "zh-Hans",
+    "translated": "SVM超平面与边缘可视化",
+    "cachedAt": "2026-07-02T03:09:39.351Z"
+  },
+  "0414550bdc05f5f96c4dd1fbc2567dee5edc9302fa38c3095de194173c5786bb": {
+    "source": "XGBoost ROC Curve",
+    "targetLang": "zh-Hans",
+    "translated": "XGBoost ROC弯道",
+    "cachedAt": "2026-07-02T03:09:39.461Z"
+  },
+  "aa14be460a67c6dcc770823f87f35424f7c00542001ca617ec64eb59356ce412": {
+    "source": "EDA Pearson's Correlation Heatmap",
+    "targetLang": "zh-Hans",
+    "translated": "EDA 皮尔逊相关热量图",
+    "cachedAt": "2026-07-02T03:09:39.571Z"
+  },
+  "c2c3a5a5290c483633b863c7f00ee72e8f2d6b4bd44e88abbc3ca23fff661bc9": {
+    "source": "Cell Shader with Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hans",
+    "translated": "斯坦福兔子和犹他茶壶的细胞变色器",
+    "cachedAt": "2026-07-02T03:09:39.688Z"
+  },
+  "50c33216504c1b8d2d2891b68eb53fd7e2641f2e35cf39c898b6235cbee17244": {
+    "source": "Top-down and Freelook Camera Scene",
+    "targetLang": "zh-Hans",
+    "translated": "俯视与自由视角摄像场景",
+    "cachedAt": "2026-07-02T03:09:39.796Z"
+  },
+  "8ed1a82a481d0b76ae3a09c1091a86278192c7e62adccf367b733e5408af43ff": {
+    "source": "Scene with Deferred Rendering and Light Attenuation",
+    "targetLang": "zh-Hans",
+    "translated": "延迟渲染和光衰减场景",
+    "cachedAt": "2026-07-02T03:09:39.920Z"
+  },
+  "2aef6b86044fe9904942da3f1518a192f6535a7195d0e8dbc5b4374b6bb5a064": {
+    "source": "Ray Tracing Scene",
+    "targetLang": "zh-Hans",
+    "translated": "光线追踪场景",
+    "cachedAt": "2026-07-02T03:09:40.023Z"
+  },
+  "8bb6f14f6cffe23189d651efa211794d2321383bc76304463529505ebf077664": {
+    "source": "Interactive Interface Graphic for AnnoMath",
+    "targetLang": "zh-Hans",
+    "translated": "AnnoMath 的交互界面图形",
+    "cachedAt": "2026-07-02T03:09:40.132Z"
+  },
+  "7c7a4e53a92758868f871cd455a00f1ad04a25e193f3f368227ae3f2087568cc": {
+    "source": "Full Technical Pipeline Graphics for AnnoMath",
+    "targetLang": "zh-Hans",
+    "translated": "AnnoMath的完整技术流程图形",
+    "cachedAt": "2026-07-02T03:09:40.244Z"
+  },
+  "2fcfd4cdb60efd5fdae715427f82f9340cc550a8f03eb8944451bf598b78303d": {
+    "source": "Annotations and Color Changes from Open Coding of Khan Academy Math Videos",
+    "targetLang": "zh-Hans",
+    "translated": "可汗学院数学视频开放编码中的注释和颜色变化",
+    "cachedAt": "2026-07-02T03:09:40.369Z"
+  },
+  "eb9e1a44bf3469ae08b2d62067a8cbdf9b9172eab7135d8e12deaac008319e7f": {
+    "source": "Boxplots Comparing NYC Neighborhoods and Prices using Airbnb Listing Data",
+    "targetLang": "zh-Hans",
+    "translated": "利用Airbnb房源数据比较纽约市社区和价格的箱型图",
+    "cachedAt": "2026-07-02T03:09:40.513Z"
+  },
+  "73eaee71da3c5db8f63d7a4fb4e12044a09abd20d1c0f7521d96d4dd8985f9c8": {
+    "source": "Polynomial Fit Plot using Boston Housing Dataset",
+    "targetLang": "zh-Hans",
+    "translated": "使用波士顿住房数据集的多项式拟合图",
+    "cachedAt": "2026-07-02T03:09:40.638Z"
+  },
+  "f4fd2ddfdc4e1a495d65e48c2c62bb48f5dfb95333c6b46ebbe01506f33be1cd": {
+    "source": "Residuals vs Fitted Graph with Boston Housing Dataset",
+    "targetLang": "zh-Hans",
+    "translated": "剩余与拟合图与波士顿住房数据集",
+    "cachedAt": "2026-07-02T03:09:40.761Z"
+  },
+  "42380696b10a3de665bf73c4368363129b99f04120a7633c11988d182010a960": {
+    "source": "Parameter Distribution Graph",
+    "targetLang": "zh-Hans",
+    "translated": "参数分布图",
+    "cachedAt": "2026-07-02T03:09:40.858Z"
+  },
+  "de72e62a7ad98244416cc3816d66d9e654bb3f3f8863a69ca3f52c6c36b4a479": {
+    "source": "ML System Designed for a Local Business for Semester-long Mock Project",
+    "targetLang": "zh-Hans",
+    "translated": "为本地企业设计的机器学习系统，用于为期一学期的模拟项目",
+    "cachedAt": "2026-07-02T03:09:40.999Z"
+  },
+  "efca435e890e364f81a4df4fe1ffff81831907d7bf5f02b2692c3d84d7a61012": {
+    "source": "Market Analysis: Arts Participation by Age Group to Identify Target Demographics",
+    "targetLang": "zh-Hans",
+    "translated": "市场分析：按年龄组划分的艺术参与度以识别目标人群",
+    "cachedAt": "2026-07-02T03:09:41.128Z"
+  },
+  "676bc9a9ab1be544d2dcb4768cc224048eab8068f3eb0ddec9ae2d72ae20495d": {
+    "source": "Market Analysis: Arts Participation by Region to Assess Geographic Demand",
+    "targetLang": "zh-Hans",
+    "translated": "市场分析：按地区划分的艺术参与度以评估地理需求",
+    "cachedAt": "2026-07-02T03:09:41.250Z"
+  },
+  "3193667b9b585169fe7e1491a4b9594555bbdf301fb2376fbc52931fa69ce7fb": {
+    "source": "Competitor Analysis: Michaels Profit Margins Over Time",
+    "targetLang": "zh-Hans",
+    "translated": "竞争对手分析：迈克尔斯的利润率随时间变化",
+    "cachedAt": "2026-07-02T03:09:41.378Z"
+  },
+  "2d62c27321717811dec5d5732c91d8e145b51102cb7973cdeb9cb88c372a8255": {
+    "source": "Partnership Viability: Retail Sales Trends",
+    "targetLang": "zh-Hans",
+    "translated": "合作可行性：零售销售趋势",
+    "cachedAt": "2026-07-02T03:09:41.493Z"
+  },
+  "df15234055303410cc7aa59244ce2fdf0a2c02933cdeb2cb75708afa9c3ca1f6": {
+    "source": "Calibration Plot for a GNN-Based Movie Recommendation Model",
+    "targetLang": "zh-Hans",
+    "translated": "基于GNN的电影推荐模型校准图",
+    "cachedAt": "2026-07-02T03:09:41.603Z"
+  },
+  "4b6778e5266c2a41aeb3b82de72491f1e42cb60875181e67dda814cda42d31eb": {
+    "source": "WHO Regions for Geospatial Analysis of Global COVID-19 Data",
+    "targetLang": "zh-Hans",
+    "translated": "世卫组织全球COVID-19数据地理空间分析区域",
+    "cachedAt": "2026-07-02T03:09:41.724Z"
+  },
+  "61b8c49ae334dbca0e7ef0e7064cb73c99755f21ff0d40bbed9788cad0086ee8": {
+    "source": "COVID-19 New Deaths Over Time from WHO Geospatial Data",
+    "targetLang": "zh-Hans",
+    "translated": "来自世卫组织地理空间数据的新冠肺炎新死亡人数",
+    "cachedAt": "2026-07-02T03:09:41.863Z"
+  },
+  "d16d7b3c263eb32407933f0ebf45f9b3576c214b85dbc0d7f11b5d664564f818": {
+    "source": "Google Analytics 4 Certification: Manage GA4 Data and Learn to Read Reports",
+    "targetLang": "zh-Hans",
+    "translated": "Google Analytics 4 认证：管理 GA4 数据并学习阅读报告",
+    "cachedAt": "2026-07-02T03:09:42.004Z"
+  },
+  "41a31433ce3b7dd582c33fe83655c56793c81376af5f8bf4141727cd486e39e6": {
+    "source": "Please select a course to see details.",
+    "targetLang": "zh-Hans",
+    "translated": "请选择课程以查看详情。",
+    "cachedAt": "2026-07-02T03:09:42.103Z"
+  },
+  "4a9ed7c07e5831bfcf46e74df67bb6755cf21b104868cf89d0b07dc0fa2bb49b": {
+    "source": "(Empty.)",
+    "targetLang": "zh-Hans",
+    "translated": "（空的。）",
+    "cachedAt": "2026-07-02T03:09:42.255Z"
+  },
+  "7b6ac3c391a538a39917d050af049c16d79f51f029c6b26581ed50ea442c5844": {
+    "source": "Required CS",
+    "targetLang": "zh-Hant",
+    "translated": "必修的公務員",
+    "cachedAt": "2026-07-02T03:09:42.425Z"
+  },
+  "369f5b54d86685656f1d51b46f3f0cbcc323c743d9e2132a479d796841b1d444": {
+    "source": "CS Electives",
+    "targetLang": "zh-Hant",
+    "translated": "電腦科學選修課",
+    "cachedAt": "2026-07-02T03:09:42.518Z"
+  },
+  "76318d034e67aadb2d956c63b1e143e17f35601cf68305f92453e03d005834cf": {
+    "source": "Statistics",
+    "targetLang": "zh-Hant",
+    "translated": "統計數據",
+    "cachedAt": "2026-07-02T03:09:42.612Z"
+  },
+  "4f2d0b2b67cad09528aa371a961f1f3925ab8bff7c0800ba22ea19b3b97a25e3": {
+    "source": "AI in Business",
+    "targetLang": "zh-Hant",
+    "translated": "商業中的人工智慧",
+    "cachedAt": "2026-07-02T03:09:42.712Z"
+  },
+  "6cbe50957d1ba678a80c3d271a60effb902b5f13eabe8645ed2ae0ab0f0c0eb6": {
+    "source": "Program Design",
+    "targetLang": "zh-Hant",
+    "translated": "程式設計",
+    "cachedAt": "2026-07-02T03:09:42.803Z"
+  },
+  "c1edc553bd60a7c391d313f8e9dbb1dd046db8cfb29be9b480cc83018942b333": {
+    "source": "Discrete Structures",
+    "targetLang": "zh-Hant",
+    "translated": "離散結構",
+    "cachedAt": "2026-07-02T03:09:42.898Z"
+  },
+  "846c7dcbe771b938c4c04b2658843f72c55a9f809a0ac5f9d8f25c8ca95fac27": {
+    "source": "Linear Algebra",
+    "targetLang": "zh-Hant",
+    "translated": "線性代數",
+    "cachedAt": "2026-07-02T03:09:42.991Z"
+  },
+  "512f2aa1ac2b3e1c8a3357a2590fd2ea6e68b07a93e9137a52da73c3506f5825": {
+    "source": "Computer Organization",
+    "targetLang": "zh-Hant",
+    "translated": "電腦組織",
+    "cachedAt": "2026-07-02T03:09:43.079Z"
+  },
+  "893a7ce138cfa604687e6a9c4e5abb291b72ab691960a84717b8a84f83259d6c": {
+    "source": "Data Structures & Algorithms",
+    "targetLang": "zh-Hant",
+    "translated": "資料結構與演算法",
+    "cachedAt": "2026-07-02T03:09:43.171Z"
+  },
+  "b2e2604e0e6d153e2cb4028019ab400d0396a8ed31d174f6e7e7034b612a1213": {
+    "source": "Computer Systems",
+    "targetLang": "zh-Hant",
+    "translated": "電腦系統",
+    "cachedAt": "2026-07-02T03:09:43.265Z"
+  },
+  "6af3fee9bf78d3bdd3daec126b6f48b4ddadfd2eea372bb4e6b7740eac7b9db1": {
+    "source": "Software Engineering",
+    "targetLang": "zh-Hant",
+    "translated": "軟體工程",
+    "cachedAt": "2026-07-02T03:09:43.353Z"
+  },
+  "9b8f97eb23169a33c019d6f4f3cc7c67776aa9ccf17af470e0172caed657fd31": {
+    "source": "Algorithm Design",
+    "targetLang": "zh-Hant",
+    "translated": "演算法設計",
+    "cachedAt": "2026-07-02T03:09:43.444Z"
+  },
+  "27f797a23128f1fb77ec0c1962f66053063b1826efa585ac23d7751e7abc5a57": {
+    "source": "Machine Learning",
+    "targetLang": "zh-Hant",
+    "translated": "機器學習",
+    "cachedAt": "2026-07-02T03:09:43.533Z"
+  },
+  "5fcd7ada1b78df4e07f6eac4adc22403d4cbc9d94d4fc7a55130bbd552ba1d64": {
+    "source": "Computer Graphics",
+    "targetLang": "zh-Hant",
+    "translated": "電腦圖像",
+    "cachedAt": "2026-07-02T03:09:43.626Z"
+  },
+  "91e492829c72e004dbbf3813696de1dd8ce73cddbc5727d04025e104cc6a02e3": {
+    "source": "Computer Science Research",
+    "targetLang": "zh-Hant",
+    "translated": "電腦科學研究",
+    "cachedAt": "2026-07-02T03:09:43.724Z"
+  },
+  "657e1016fc3186d9289d228da1b36d9282b79e056a76f9ea74e155f790637808": {
+    "source": "Statistics I & II",
+    "targetLang": "zh-Hant",
+    "translated": "統計一與二",
+    "cachedAt": "2026-07-02T03:09:43.830Z"
+  },
+  "36b5105a36513d15473cb80b049bee197cabe50fbb327d69249bca4cefb4f427": {
+    "source": "Statistical Computing",
+    "targetLang": "zh-Hant",
+    "translated": "統計計算",
+    "cachedAt": "2026-07-02T03:09:43.926Z"
+  },
+  "3c8b55a8ab21c52b0ad63294da2850b6dece75fd1076f62e254177ffb9ed5239": {
+    "source": "Machine Learning & Predictive Modeling for Business",
+    "targetLang": "zh-Hant",
+    "translated": "機器學習與商業預測建模",
+    "cachedAt": "2026-07-02T03:09:44.029Z"
+  },
+  "60f93c6265cff4eaa7a361888c2785d37142432a6ffaeda138441d72e6ae377e": {
+    "source": "Business with Generative AI",
+    "targetLang": "zh-Hant",
+    "translated": "與生成式人工智慧的商業",
+    "cachedAt": "2026-07-02T03:09:44.146Z"
+  },
+  "85bbe7ce3b38f6f994681a8f89acf42ec7eb02fd00e789c4e83a3f60bae1d8a0": {
+    "source": "Business Storytelling using AI",
+    "targetLang": "zh-Hant",
+    "translated": "利用 AI 進行商業敘事",
+    "cachedAt": "2026-07-02T03:09:44.245Z"
+  },
+  "14cc7dea0fb2a092dae6c3b5bb15abaa0a900e06fcd4a99181b2c6953588a97f": {
+    "source": "See",
+    "targetLang": "zh-Hant",
+    "translated": "參見",
+    "cachedAt": "2026-07-02T03:09:44.342Z"
+  },
+  "35a9c6dd1c9a4f904f272a979c80bcd0ba8f21189b42e121eda81d48811428cc": {
+    "source": "JavaFX-Based Boba POS GUI (Project 2)",
+    "targetLang": "zh-Hant",
+    "translated": "基於 JavaFX 的 Boba POS 圖形介面（專案 2）",
+    "cachedAt": "2026-07-02T03:09:44.468Z"
+  },
+  "bace6b7f4b5e574459ce2e4ace2453e675a64801385699aed1a1ef034522bb66": {
+    "source": "Add Item Popup",
+    "targetLang": "zh-Hant",
+    "translated": "新增項目彈窗",
+    "cachedAt": "2026-07-02T03:09:44.564Z"
+  },
+  "0cc787368a988d75377a2618f04e44d1eb7fb1b210034cc42b59cc2ffefefbb7": {
+    "source": "Ingredient Linking to Seasonal Drinks",
+    "targetLang": "zh-Hant",
+    "translated": "與季節性飲品相關的成分",
+    "cachedAt": "2026-07-02T03:09:44.732Z"
+  },
+  "c51fddca864d1d36d36483f9ff6693b20757508fe15e1fef18c93d7bf3f3c077": {
+    "source": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
+    "targetLang": "zh-Hant",
+    "translated": "動態網站式 Boba POS 客戶自助服務機（專案 3）",
+    "cachedAt": "2026-07-02T03:09:44.856Z"
+  },
+  "9a359e0909623748ca6ca85484ed97279b4e99bad42de1942887bb934064b5db": {
+    "source": "Accessible Customer Customizations Popup",
+    "targetLang": "zh-Hant",
+    "translated": "無障礙客戶客製化彈窗",
+    "cachedAt": "2026-07-02T03:09:44.979Z"
+  },
+  "d3de550f81c80f30fe044a7273c4c92c203b9332c662791b1fece5f688a222f8": {
+    "source": "Customer Cart with Loyalty Point System",
+    "targetLang": "zh-Hant",
+    "translated": "顧客購物車搭配忠誠點數系統",
+    "cachedAt": "2026-07-02T03:09:45.080Z"
+  },
+  "a75a045a662789b06503483c12980bd980193fd628897b5288d21c9a52c74061": {
+    "source": "Simplified Employee View Kiosk",
+    "targetLang": "zh-Hant",
+    "translated": "簡化員工檢視服務亭",
+    "cachedAt": "2026-07-02T03:09:45.177Z"
+  },
+  "bb080b54cf4689968fc024ce63c7d65ad3e0a359df0fce329a48064707a909d2": {
+    "source": "Daily Sales Report for Manager, One of Many Available Reports",
+    "targetLang": "zh-Hant",
+    "translated": "經理每日銷售報告，眾多可用報告之一",
+    "cachedAt": "2026-07-02T03:09:45.283Z"
+  },
+  "af4e0d0e806bbd1608dfd56e0ed949287b13da67d6df83c0cad808cd1dec3cc7": {
+    "source": "SVM Hyperplane and Margin Visualization",
+    "targetLang": "zh-Hant",
+    "translated": "SVM 超平面與邊界可視化",
+    "cachedAt": "2026-07-02T03:09:45.404Z"
+  },
+  "8dbb1a03081cf733329fbcc940f32853c3083b131fd5c0e8140c88f452dd628a": {
+    "source": "XGBoost ROC Curve",
+    "targetLang": "zh-Hant",
+    "translated": "XGBoost ROC 彎道",
+    "cachedAt": "2026-07-02T03:09:45.503Z"
+  },
+  "4ff60b3148fb6b2a7a0ebd962ef4f8bd2e818e71fcbe44868883f5ceb8b2c95f": {
+    "source": "EDA Pearson's Correlation Heatmap",
+    "targetLang": "zh-Hant",
+    "translated": "EDA 皮爾森的相關熱力圖",
+    "cachedAt": "2026-07-02T03:09:45.616Z"
+  },
+  "745925fbf35abbea06f827ae42b4f95ca703000ae4cf1e3a2f6c9e5715e096c1": {
+    "source": "Cell Shader with Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hant",
+    "translated": "與史丹佛兔子及猶他茶壺的細胞陰影器",
+    "cachedAt": "2026-07-02T03:09:45.780Z"
+  },
+  "a7281f595d2a775f043a3469ecff8c6318be97e0a960e8645904d980710ca8ce": {
+    "source": "Top-down and Freelook Camera Scene",
+    "targetLang": "zh-Hant",
+    "translated": "俯視與自由視角攝影場景",
+    "cachedAt": "2026-07-02T03:09:45.881Z"
+  },
+  "028efd21e5fdbef669e9552de04ae49051c89b9fdafbe6936b3bbeb98bfce7be": {
+    "source": "Scene with Deferred Rendering and Light Attenuation",
+    "targetLang": "zh-Hant",
+    "translated": "延遲渲染與光衰減場景",
+    "cachedAt": "2026-07-02T03:09:45.985Z"
+  },
+  "6c96603f3a6c21441b8fc04c289fc4e95134bc80cb12ae386348b681420c21da": {
+    "source": "Ray Tracing Scene",
+    "targetLang": "zh-Hant",
+    "translated": "光線追蹤場景",
+    "cachedAt": "2026-07-02T03:09:46.080Z"
+  },
+  "171e71a798c6c006dbf87979f37293af59707657bb8c7433b01e83b04021edd1": {
+    "source": "Interactive Interface Graphic for AnnoMath",
+    "targetLang": "zh-Hant",
+    "translated": "AnnoMath 的互動介面圖形",
+    "cachedAt": "2026-07-02T03:09:46.204Z"
+  },
+  "c29b33ad5dd0cc104b678d07f36baae68e06a9695a344c2ff504871a978d9d2d": {
+    "source": "Full Technical Pipeline Graphics for AnnoMath",
+    "targetLang": "zh-Hant",
+    "translated": "AnnoMath 的完整技術流程圖形",
+    "cachedAt": "2026-07-02T03:09:46.318Z"
+  },
+  "c4315d52c760860e527168eb4f6784bc6789ed5d028c4e6797984e9e4c7a07c9": {
+    "source": "Annotations and Color Changes from Open Coding of Khan Academy Math Videos",
+    "targetLang": "zh-Hant",
+    "translated": "Khan Academy 數學影片開放編碼的註解與顏色變更",
+    "cachedAt": "2026-07-02T03:09:46.474Z"
+  },
+  "15c2e55dbe338b657296e9854d59e46f15cccaf3cc7fb782673b28653c641fc5": {
+    "source": "Boxplots Comparing NYC Neighborhoods and Prices using Airbnb Listing Data",
+    "targetLang": "zh-Hant",
+    "translated": "利用Airbnb房源資料比較紐約市社區與價格的箱型圖",
+    "cachedAt": "2026-07-02T03:09:46.612Z"
+  },
+  "1d9fc419183608ac893e48648d2922927f9853ba765b95fb43c0bddf7e2da687": {
+    "source": "Polynomial Fit Plot using Boston Housing Dataset",
+    "targetLang": "zh-Hant",
+    "translated": "使用波士頓住宅資料集的多項式擬合圖",
+    "cachedAt": "2026-07-02T03:09:46.741Z"
+  },
+  "8708ea218d87f130966c7e7557c41fa2ec6723a9ebb6ca0c3f565a092b4f89af": {
+    "source": "Residuals vs Fitted Graph with Boston Housing Dataset",
+    "targetLang": "zh-Hant",
+    "translated": "殘差與波士頓住房資料集擬合圖",
+    "cachedAt": "2026-07-02T03:09:46.861Z"
+  },
+  "5cdc8a064002f54f52ace38338fdca6b43e13d5d7d9ad010d9e7fa35325558eb": {
+    "source": "Parameter Distribution Graph",
+    "targetLang": "zh-Hant",
+    "translated": "參數分布圖",
+    "cachedAt": "2026-07-02T03:09:46.959Z"
+  },
+  "e14b1025d8711dfa1b484f21120f70c3d263fc72216db188db8c4f4d5d120533": {
+    "source": "ML System Designed for a Local Business for Semester-long Mock Project",
+    "targetLang": "zh-Hant",
+    "translated": "為地方企業設計的機器學習系統，用於為期一學期的模擬專案",
+    "cachedAt": "2026-07-02T03:09:47.086Z"
+  },
+  "446205446f8828b0ca8aaef3142c93fd1e99653edcdb75de8a34745c3611304c": {
+    "source": "Market Analysis: Arts Participation by Age Group to Identify Target Demographics",
+    "targetLang": "zh-Hant",
+    "translated": "市場分析：按年齡層劃分的藝術參與度以識別目標族群",
+    "cachedAt": "2026-07-02T03:09:47.213Z"
+  },
+  "24e06079d5dd640ae7b8e67ad8ed80c927dab220e0b5d3ade1b0ba81747d4b99": {
+    "source": "Market Analysis: Arts Participation by Region to Assess Geographic Demand",
+    "targetLang": "zh-Hant",
+    "translated": "市場分析：按區域劃分的藝術參與度以評估地理需求",
+    "cachedAt": "2026-07-02T03:09:47.355Z"
+  },
+  "73362aeea9c37226b664f8e43c20af89b54612fb9a7a6e0e16720c1f185e2cb4": {
+    "source": "Competitor Analysis: Michaels Profit Margins Over Time",
+    "targetLang": "zh-Hant",
+    "translated": "競爭對手分析：Michaels 長期利潤率",
+    "cachedAt": "2026-07-02T03:09:47.477Z"
+  },
+  "bb46f41185a99204d4b8b25fc3c1c04fcfd0b36b5cc98172357571f5782bf1f8": {
+    "source": "Partnership Viability: Retail Sales Trends",
+    "targetLang": "zh-Hant",
+    "translated": "合作可行性：零售銷售趨勢",
+    "cachedAt": "2026-07-02T03:09:47.580Z"
+  },
+  "57dbc9c0908583d046c8911d602a81aef24690c5559fd6572b84882ec7c7f14c": {
+    "source": "Calibration Plot for a GNN-Based Movie Recommendation Model",
+    "targetLang": "zh-Hant",
+    "translated": "基於GNN的電影推薦模型校正圖",
+    "cachedAt": "2026-07-02T03:09:47.699Z"
+  },
+  "4903e4ce0ce8e5a811b98b0408acf0f418f3cf2329a4d30189cab11f4fad498e": {
+    "source": "WHO Regions for Geospatial Analysis of Global COVID-19 Data",
+    "targetLang": "zh-Hant",
+    "translated": "世界衛生組織全球 COVID-19 資料地理空間分析區域",
+    "cachedAt": "2026-07-02T03:09:47.824Z"
+  },
+  "bfdf81a5d749efeff7975fbaaeb7983e2783d74fa3bd0f571c0aff25f439261e": {
+    "source": "COVID-19 New Deaths Over Time from WHO Geospatial Data",
+    "targetLang": "zh-Hant",
+    "translated": "根據世界衛生組織地理空間資料，COVID-19 新死亡隨時間推移",
+    "cachedAt": "2026-07-02T03:09:47.960Z"
+  },
+  "4f63879ae40c8324c1a41a5f2951aa9fb537700ae54901d55c7b15ed83211b0c": {
+    "source": "Google Analytics 4 Certification: Manage GA4 Data and Learn to Read Reports",
+    "targetLang": "zh-Hant",
+    "translated": "Google Analytics 4 認證：管理 GA4 資料並學習閱讀報告",
+    "cachedAt": "2026-07-02T03:09:48.107Z"
+  },
+  "d38f634f72453bcc175604f8e580fcd9bc21ffddcbe5e4e2bc8e6acfc0615973": {
+    "source": "Please select a course to see details.",
+    "targetLang": "zh-Hant",
+    "translated": "請選擇課程以查看詳情。",
+    "cachedAt": "2026-07-02T03:09:48.225Z"
+  },
+  "7f0533cbf93fcf80ca01bceee7e8cb983dd0199c3e72fbd694896055755d1504": {
+    "source": "(Empty.)",
+    "targetLang": "zh-Hant",
+    "translated": "（空無一物。）",
+    "cachedAt": "2026-07-02T03:09:48.328Z"
+  },
+  "5fd5d311431f333d8f4d07f6d08c752337a19094209bba7207a2ac16648696ef": {
+    "source": "Austin Park Cleanup",
+    "targetLang": "zh-Hans",
+    "translated": "奥斯汀公园清理",
+    "cachedAt": "2026-07-02T03:19:36.780Z"
+  },
+  "bb7238f667cf8a2fdaf8242542e8339c7b351671574c8365130484a915b79e16": {
+    "source": "FLO Bowl Volunteering",
+    "targetLang": "zh-Hans",
+    "translated": "FLO碗志愿服务",
+    "cachedAt": "2026-07-02T03:19:37.071Z"
+  },
+  "2bfdb3195d71572ad53748fe91b8b011c31e6ea2f196f9b226c3e31fd0be325c": {
+    "source": "Freshman Year at Big Event with MSC FISH",
+    "targetLang": "zh-Hans",
+    "translated": "大一新生年参加MSC FISH的Big Event活动",
+    "cachedAt": "2026-07-02T03:19:37.244Z"
+  },
+  "2aaa012a38960ea2173cdb91ba11ce0c79cbcf3c54f11f228263aa2777959f68": {
+    "source": "Sophomore Year at Big Event with Aggies Create",
+    "targetLang": "zh-Hans",
+    "translated": "大二学生参加Aggies Create的Big Event",
+    "cachedAt": "2026-07-02T03:19:37.408Z"
+  },
+  "f1e22c558537830992861e1ed513bac4e541f623cebe9464070d59c20002cc6e": {
+    "source": "Austin Park Cleanup",
+    "targetLang": "zh-Hant",
+    "translated": "奧斯汀公園清潔",
+    "cachedAt": "2026-07-02T03:19:37.621Z"
+  },
+  "e431606108fcf4c523869755e656b683aac44651a283c56d7809cf17bfe54c94": {
+    "source": "FLO Bowl Volunteering",
+    "targetLang": "zh-Hant",
+    "translated": "FLO 碗志工服務",
+    "cachedAt": "2026-07-02T03:19:37.772Z"
+  },
+  "fae848b426093b12acef1444e87f945ff20e9e35b0e341b4d88456b3cb91eea8": {
+    "source": "Freshman Year at Big Event with MSC FISH",
+    "targetLang": "zh-Hant",
+    "translated": "大一大一與MSC FISH的Big Event活動",
+    "cachedAt": "2026-07-02T03:19:37.893Z"
+  },
+  "d7a1290f7df73abcf6d74c100c8fd945fc6170c678d78dd2138f07e6ca22d185": {
+    "source": "Sophomore Year at Big Event with Aggies Create",
+    "targetLang": "zh-Hant",
+    "translated": "大二參加 Aggies Create 的大活動",
+    "cachedAt": "2026-07-02T03:19:38.053Z"
   }
 }

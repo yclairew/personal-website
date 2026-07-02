@@ -7,14 +7,29 @@ import Footer from "@/components/footer";
 import Slideshow from "@/components/Slideshow";
 import Overscroll_color from "@/components/Overscroll_color";
 import { useAnimateOnScroll } from "@/hooks/useAnimateOnScroll";
+import { useLocale } from "@/lib/i18n/Locale_context";
 
 
-const serviceSlides = [
-  { src: "park-cleanup.jpg", caption: "Austin Park Cleanup" },
-  { src: "flo-bowl.jpg", caption: "FLO Bowl Volunteering" },
-  { src: "freshman-big-event.jpg", caption: "Freshman Year at Big Event with MSC FISH" },
-  { src: "sophomore-big-event.png", caption: "Sophomore Year at Big Event with Aggies Create" }
+// const serviceSlides = [
+//   { src: "park-cleanup.jpg", caption: "Austin Park Cleanup" },
+//   { src: "flo-bowl.jpg", caption: "FLO Bowl Volunteering" },
+//   { src: "freshman-big-event.jpg", caption: "Freshman Year at Big Event with MSC FISH" },
+//   { src: "sophomore-big-event.png", caption: "Sophomore Year at Big Event with Aggies Create" }
+// ];
+
+const serviceSlidesData = [
+  { id: "park-cleanup", src: "park-cleanup.jpg" },
+  { id: "flo-bowl", src: "flo-bowl.jpg" },
+  { id: "freshman-big-event", src: "freshman-big-event.jpg" },
+  { id: "sophomore-big-event", src: "sophomore-big-event.png" },
 ];
+
+function getServiceSlides(t: Record<string, string>) {
+  return serviceSlidesData.map((slide) => ({
+    ...slide,
+    caption: t[`service_slide_${slide.id}_caption`],
+  }));
+}
 
 
 // export default function Service() {
@@ -61,15 +76,12 @@ const serviceSlides = [
 // }
 
 
-
-import { useLocale } from "@/lib/i18n/Locale_context";
-
-
 export default function Service() {
   const ref1 = useAnimateOnScroll();  
   const ref2 = useAnimateOnScroll(); 
   Overscroll_color(); 
   const { t } = useLocale();
+  const serviceSlides = getServiceSlides(t);
 
   return (
     <div className="bg-background">
@@ -83,7 +95,7 @@ export default function Service() {
           <div ref={ref1} className="animate-target service-text-container pt-10 pb-8 ml-12 mr-12">
               <p className="service-text body-text">
                   {t.service_text_prefix}{" "}
-                  <a href="https://fish.tamu.edu/">{t.service_text_link}</a>,{" "}
+                  <a href="https://fish.tamu.edu/">MSC FISH</a>,{" "}
                   {t.service_text_suffix}
               </p>
           </div>
@@ -92,7 +104,7 @@ export default function Service() {
       <div ref={ref2} className="animate-target extra-service-text-container ml-12 mr-12 mb-35">
           <p className="body-text">
               {t.service_extra_text_prefix}{" "}
-              <a href="https://bigevent.tamu.edu/">{t.service_extra_text_link}</a>,{" "}
+              <a href="https://bigevent.tamu.edu/">Big Event</a>,{" "}
               {t.service_extra_text_suffix}
           </p>
       </div>
