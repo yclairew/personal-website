@@ -4,7 +4,7 @@ import { createContext, useContext, useState, ReactNode } from "react";
 import en from "@/locales/en.json";
 import zhHans from "@/locales/zh-Hans.json";
 import zhHant from "@/locales/zh-Hant.json";
-import { locales, defaultLocale, type Locale } from "@/lib/i18n/config";
+import { defaultLocale, type Locale } from "@/lib/i18n/config";
 
 const translations: Record<Locale, Record<string, string>> = {
   en,

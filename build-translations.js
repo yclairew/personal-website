@@ -1,7 +1,6 @@
 require("dotenv").config();
 
 const { locales } = require("./lib/i18n/config.ts");
-
 const { translateCached } = require("./translate");
 const fs = require("fs");
 const path = require("path");

@@ -8,19 +8,15 @@ export default function LanguageSwitcher() {
 
   return (
     <>
-      {/* {locales.map((l) => (
-        <button key={l} onClick={() => setLocale(l)}>
+      {locales.map((l) => (
+        <button key={l} onClick={() => {
+          console.log("clicked", l);
+          setLocale(l);
+          }}
+        >
           {localeLabels[l]}
         </button>
-      ))} */}
-        {locales.map((l) => (
-            <button key={l} onClick={() => {
-                console.log("clicked", l);
-                setLocale(l);
-                }}>
-                {localeLabels[l]}
-            </button>
-        ))}
+      ))}
     </>
   );
 }

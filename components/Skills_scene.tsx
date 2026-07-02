@@ -1,5 +1,5 @@
 "use client";
-import { forwardRef, useRef, useState, useEffect, useMemo } from "react";
+import { forwardRef, useRef, useState, useEffect } from "react";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Html } from "@react-three/drei";

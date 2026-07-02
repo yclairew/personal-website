@@ -1,16 +1,9 @@
+import { Lora, Montserrat } from "next/font/google";
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import { LocaleProvider } from "@/lib/i18n/Locale_context";
+import LanguageSwitcher from "@/components/Language_switcher";
+import Nav from "@/components/nav";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,55 +11,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 };
 
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html
-//       lang="en"
-//       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-//     >
-//       <body className="min-h-full flex flex-col">{children}</body>
-//     </html>
-//   );
-// }
-
-// import { Lora, Montserrat, Kapakana } from "next/font/google"
-
-// const lora = Lora({ subsets: ["latin"] })
-// const montserrat = Montserrat({ subsets: ["latin"] })
-// const kapakana = Kapakana({ subsets: ["latin"] })
-
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body
-//         style={{
-//           "--font-body": lora.style.fontFamily,
-//           "--font-nav": montserrat.style.fontFamily,
-//           "--font-heading": kapakana.style.fontFamily,
-//         } as React.CSSProperties}
-//       >
-//         {children}
-//       </body>
-//     </html>
-//   )
-// }
-
-
-import { Lora, Montserrat } from "next/font/google";
-import { LocaleProvider } from "@/lib/i18n/Locale_context";
-import LanguageSwitcher from "@/components/Language_switcher";
-import Nav from "@/components/nav";
-import Footer from "@/components/footer";
-
 
 const lora = Lora({ subsets: ["latin"] })
 const montserrat = Montserrat({ subsets: ["latin"] })
-
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
