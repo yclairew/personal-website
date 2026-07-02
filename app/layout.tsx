@@ -60,6 +60,8 @@ export const metadata: Metadata = {
 import { Lora, Montserrat } from "next/font/google";
 import { LocaleProvider } from "@/lib/i18n/Locale_context";
 import LanguageSwitcher from "@/components/Language_switcher";
+import Nav from "@/components/nav";
+import Footer from "@/components/footer";
 
 
 const lora = Lora({ subsets: ["latin"] })
@@ -85,11 +87,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         } as React.CSSProperties}
       >
         <LocaleProvider>
-          <header>
-            <LanguageSwitcher />
-          </header>
-          {children}
-          
+          <div className="bg-background">
+            <header className="bg-accent-light">
+              <LanguageSwitcher />
+            </header>
+            <Nav/>
+            {children}
+            
+            <Footer/>
+          </div>
         </LocaleProvider>
       </body>
     </html>

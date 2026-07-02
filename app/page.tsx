@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import "./globals.css";
-import Nav from "@/components/nav";
-import Footer from "@/components/footer";
 import Skills_scene from "@/components/Skills_scene";
 import Bottom_overscroll_color from "@/components/Overscroll_color";
 
@@ -75,7 +73,6 @@ export default function Home() {
   return (
     <div className="bg-background">
       <title>{t.site_title}</title>
-      <Nav/>
       <div>
         <h1 className="heading-text text-text [text-box-trim:trim-end] mt-5 -mb-4">{t.home_heading}</h1>
       </div>
@@ -114,8 +111,7 @@ export default function Home() {
         <h2 className="subheadings mb-10 text-center">{t.home_skills_heading}</h2>
         <Skills_scene/>
       </div>
-
-      <Footer/>
+      
     </div>
   );
 }

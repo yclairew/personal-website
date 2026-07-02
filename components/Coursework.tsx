@@ -364,7 +364,7 @@ const courseworkData: CategoryData[] = [
 type Coursework = Record<string, Course[]>;
 
 type TranslatedSlide = Slide & { caption: string };
-type TranslatedCourse = Omit<Course, "slides"> & {
+type TranslatedCourse = Omit<Course, "slides" | "portfolioLink"> & {
   name: string;
   slides: TranslatedSlide[];
   portfolioLink?: { label: string; href: string };

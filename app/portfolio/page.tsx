@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import ".././globals.css";
-import Nav from "@/components/nav";
-import Footer from "@/components/footer";
 import Cards from "@/components/Cards";
 import Overscroll_color from "@/components/Overscroll_color";
 
@@ -34,14 +32,13 @@ export default function Portfolio() {
   return (
     <div className="bg-background">
       <title>{t.site_title}</title>
-      <Nav/>
+
       <h1 className="heading-text text-text mt-5">{t.portfolio_heading}</h1>
 
-      <div className="center">
+      <div className="center mb-25">
         <Cards/>
       </div>
 
-      <Footer/>
     </div>
   );
 }

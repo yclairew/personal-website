@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import ".././globals.css";
-import Nav from "@/components/nav";
-import Footer from "@/components/footer";
 import Slideshow from "@/components/Slideshow";
 import Overscroll_color from "@/components/Overscroll_color";
 import { useAnimateOnScroll } from "@/hooks/useAnimateOnScroll";
@@ -86,7 +84,7 @@ export default function Service() {
   return (
     <div className="bg-background">
       <title>{t.site_title}</title>
-      <Nav/>
+
       <h1 className="heading-text text-text mt-5">{t.service_heading}</h1>
 
       <div className="service-container">
@@ -109,7 +107,6 @@ export default function Service() {
           </p>
       </div>
 
-      <Footer/>
     </div>
   );
 }

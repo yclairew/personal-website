@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import ".././globals.css";
-import Nav from "@/components/nav";
-import Footer from "@/components/footer";
 import Coursework from "@/components/Coursework";
 import Overscroll_color from "@/components/Overscroll_color";
 
@@ -100,7 +98,6 @@ export default function Qualifications() {
   return (
     <div className="bg-background">
       <title>{t.site_title}</title>
-      <Nav/>
 
       <h1 className="qualifications-text heading-text mt-5">{t.qualifications_heading}</h1>
 
@@ -158,8 +155,7 @@ export default function Qualifications() {
           <iframe className="rounded-xl border border-gray-200 shadow-sm reveal-box resume h-110 w-auto" src="Claire Wu Resume.pdf#view=Fit" allow="autoplay"></iframe>
         </div>
       </div>
-
-      <Footer/>
+      
     </div>
   );
 }
