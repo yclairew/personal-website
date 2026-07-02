@@ -17,8 +17,9 @@ const Nav = () => {
                 <div className="flex gap-10 ml-auto justify-end mr-15 items-center">
                     <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/">{t.nav_about}</Link>
                     <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/portfolio">{t.nav_portfolio}</Link>
-                    <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/qualifications">{t.nav_qualifications}</Link>
+                    <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/coursework">{t.nav_coursework}</Link>
                     <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/service">{t.nav_service}</Link>
+                    <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/Claire Wu Resume.pdf#view=Fit" target="_blank" rel="noopener noreferrer">{t.nav_resume}</Link>
                 </div>
             </div>
         </nav>

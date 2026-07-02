@@ -545,7 +545,7 @@ function getCoursework(t: Record<string, string>): TranslatedCategory[] {
 // }
 
 
-export default function Coursework() {
+export default function CourseworkSection() {
   const { t } = useLocale();
   const coursework = getCoursework(t);
 

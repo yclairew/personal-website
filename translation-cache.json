@@ -1,1060 +1,4 @@
 {
-  "34fa234d38820982f925b2da841b5296dfd89aed99684906eca69c8826517514": {
-    "source": "Welcome to my site",
-    "targetLang": "es",
-    "translated": "Bienvenido a mi sitio",
-    "cachedAt": "2026-07-01T21:51:21.866Z"
-  },
-  "e0db0938f38739f83dd1b4ec7fd17944d96a4d5ab822ed80f0b56f703dcaadf6": {
-    "source": "This is a personal project",
-    "targetLang": "es",
-    "translated": "Este es un proyecto personal",
-    "cachedAt": "2026-07-01T21:51:22.138Z"
-  },
-  "3d1cadd90d67053e49e97085377fdb86de881e279b5eaf412be3e0780b18e306": {
-    "source": "Built with love in 2026",
-    "targetLang": "es",
-    "translated": "Construido con amor en 2026",
-    "cachedAt": "2026-07-01T21:51:22.294Z"
-  },
-  "78aeb2e802a691cc44d1804b049248201e0fd939874e2b575534a569382fdbfc": {
-    "source": "About",
-    "targetLang": "es",
-    "translated": "Acerca de",
-    "cachedAt": "2026-07-01T21:51:22.357Z"
-  },
-  "7f3a9ffc37e3b685fc79f6a0d5655b6c1cb660a13de93f25df8d197ac2b0a278": {
-    "source": "Contact",
-    "targetLang": "es",
-    "translated": "Contacto",
-    "cachedAt": "2026-07-01T21:51:22.468Z"
-  },
-  "06814ac8e88bc52a6a247fc1eeb257b4af4007362f6dc09baaa65a7161882ddf": {
-    "source": "Welcome to my site",
-    "targetLang": "fr",
-    "translated": "Bienvenue sur mon site",
-    "cachedAt": "2026-07-01T21:51:22.571Z"
-  },
-  "580594a62bf59f88aaec8aa39e02973b39c7b3a13051d590ac8ceab11ab44905": {
-    "source": "This is a personal project",
-    "targetLang": "fr",
-    "translated": "C’est un projet personnel",
-    "cachedAt": "2026-07-01T21:51:22.720Z"
-  },
-  "b4004af30dfa422ba92c950176cf8037d8e76abcdc07df8663204b4b2562ef52": {
-    "source": "Built with love in 2026",
-    "targetLang": "fr",
-    "translated": "Construit avec amour en 2026",
-    "cachedAt": "2026-07-01T21:51:22.871Z"
-  },
-  "f11f704d641e5b50503057acbb9ab530d9fe8b55e37b559e58bb662ea2634260": {
-    "source": "About",
-    "targetLang": "fr",
-    "translated": "À propos",
-    "cachedAt": "2026-07-01T21:51:22.989Z"
-  },
-  "c9a58c8db16580ad9917750a3280403eb4815536f360fcf0cbbb80af79b1ffb9": {
-    "source": "Contact",
-    "targetLang": "fr",
-    "translated": "Contact",
-    "cachedAt": "2026-07-01T21:51:23.055Z"
-  },
-  "a26b1317ff445ddf56b178418ec9adbdd8215923d81e7e3e9e946b1e78c4b349": {
-    "source": "Welcome to my site",
-    "targetLang": "de",
-    "translated": "Willkommen auf meiner Seite",
-    "cachedAt": "2026-07-01T21:51:23.489Z"
-  },
-  "cad7c55ddb86831451ea39391a5a72e0119f7e26f748d1ecf7c4ba458682cf01": {
-    "source": "This is a personal project",
-    "targetLang": "de",
-    "translated": "Dies ist ein persönliches Projekt",
-    "cachedAt": "2026-07-01T21:51:23.639Z"
-  },
-  "ecaba83351df751daa5e11ede35895e5714f88e2fe7dfb8e933cbe62796a8bf6": {
-    "source": "Built with love in 2026",
-    "targetLang": "de",
-    "translated": "Mit Liebe gebaut im Jahr 2026",
-    "cachedAt": "2026-07-01T21:51:23.770Z"
-  },
-  "940c6b31d8cf7f56570f6987854d01422950d17545a27975f559667f1ed758eb": {
-    "source": "About",
-    "targetLang": "de",
-    "translated": "Über uns",
-    "cachedAt": "2026-07-01T21:51:23.865Z"
-  },
-  "ea63c8c747e76e1f59ee8368e72051cf98da9dc55b2d19a41ad8ddfea359bc67": {
-    "source": "Contact",
-    "targetLang": "de",
-    "translated": "Kontakt",
-    "cachedAt": "2026-07-01T21:51:23.930Z"
-  },
-  "954869f8b5787da9eed97688eabbc0ace315ceca287ba248d1a4906e68524ed3": {
-    "source": "Welcome to my site",
-    "targetLang": "ja",
-    "translated": "私のサイトへようこそ",
-    "cachedAt": "2026-07-01T21:51:24.081Z"
-  },
-  "037db7e8e5847308a09d2ed799f1c49900e181fcfed6ac2432b065bb203ba96b": {
-    "source": "This is a personal project",
-    "targetLang": "ja",
-    "translated": "これは個人的なプロジェクトです",
-    "cachedAt": "2026-07-01T21:51:24.230Z"
-  },
-  "1e1d94959ae09fde2cf9f557675998305232d72b5471106e152a3466b5578f54": {
-    "source": "Built with love in 2026",
-    "targetLang": "ja",
-    "translated": "2026年に愛を込めて作られた",
-    "cachedAt": "2026-07-01T21:51:24.382Z"
-  },
-  "4c1dc616e1983b0dbe92e355b08a66b6e1f3b016f8874bb55175eec70057c41e": {
-    "source": "About",
-    "targetLang": "ja",
-    "translated": "概要",
-    "cachedAt": "2026-07-01T21:51:24.447Z"
-  },
-  "99cc081fe418e459b83c37f156904145b77a17ba626e17e9d757f7e3a873d3d8": {
-    "source": "Contact",
-    "targetLang": "ja",
-    "translated": "連絡先",
-    "cachedAt": "2026-07-01T21:51:24.583Z"
-  },
-  "4d442e4d31fa61086e77e5582d88fa314f8ecc7f6740630963d5e2a7b38db5e6": {
-    "source": "Claire Wu",
-    "targetLang": "es",
-    "translated": "Claire Wu",
-    "cachedAt": "2026-07-01T22:09:52.006Z"
-  },
-  "7292255519b61dac41beabbc5f3fffd36984210acfb36cb301b4acb31197fb63": {
-    "source": "CS senior at Texas A&M, minoring in Statistics and",
-    "targetLang": "es",
-    "translated": "Estudiante de último año de informática en Texas A&M, con una asignatura secundaria en Estadística y",
-    "cachedAt": "2026-07-01T22:09:52.430Z"
-  },
-  "99080c5cd7094e02ea9ef49a4e3737cf43a05246158b1ade81a2f064af479e42": {
-    "source": "AI in business",
-    "targetLang": "es",
-    "translated": "La IA en los negocios",
-    "cachedAt": "2026-07-01T22:09:52.578Z"
-  },
-  "557e0792990b356880d7a79629e450519e0d80050256af6b9436dfe4f39195a8": {
-    "source": "Claire Wu headshot",
-    "targetLang": "es",
-    "translated": "Disparo a la cabeza de Claire Wu",
-    "cachedAt": "2026-07-01T22:09:52.735Z"
-  },
-  "0169d03442623a5f008a6aac3ac51d29f3aa374d27fa166307e03b7e91d081d9": {
-    "source": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
-    "targetLang": "es",
-    "translated": "Me apasionan la ingeniería de software, la ciencia de datos, la IA/ML y el diseño UX. Actualmente, estoy investigando en el Dr. Xia's",
-    "cachedAt": "2026-07-01T22:09:52.868Z"
-  },
-  "c81a5c3195b21b75fda9be0c27116a46163ce583dae5ec39c8be2976802b0b13": {
-    "source": "Dream Lab",
-    "targetLang": "es",
-    "translated": "Laboratorio de Sueños",
-    "cachedAt": "2026-07-01T22:09:53.223Z"
-  },
-  "1bba03fd1f39086edfbb4f4e229d9c5e7a0f6251ee974a554cd7628316a3634d": {
-    "source": "working on",
-    "targetLang": "es",
-    "translated": "Trabajando en",
-    "cachedAt": "2026-07-01T22:09:53.317Z"
-  },
-  "58d4f44b20a7d7615fa11c1669ffc31d965a37b329d36d18c95e3421f03cfac9": {
-    "source": "AnnoMath",
-    "targetLang": "es",
-    "translated": "AnnoMath",
-    "cachedAt": "2026-07-01T22:09:53.443Z"
-  },
-  "87975063a715f20658616ec90364ea143758ff6785f1ba316c89b211242c4e9e": {
-    "source": "an AI-powered multimodial interactive math tutorial system.",
-    "targetLang": "es",
-    "translated": "un sistema de tutoriales interactivos multimodiales de matemáticas impulsado por IA.",
-    "cachedAt": "2026-07-01T22:09:53.562Z"
-  },
-  "458d1623c60585f32f1e962c7ccddd9f7ca3af73b88704e5145e3fa82e8ea492": {
-    "source": "When I'm not coding, you can usually find me at the gym, crocheting or doing other crafts, or exploring new coffee shops!",
-    "targetLang": "es",
-    "translated": "Cuando no estoy programando, normalmente me encuentras en el gimnasio, haciendo ganchillo o haciendo otras manualidades, o explorando nuevas cafeterías.",
-    "cachedAt": "2026-07-01T22:09:53.744Z"
-  },
-  "91fbfba1a295d25dab849ea86251f862f2fb5d6551c18ea4c779769fbbd3fa14": {
-    "source": "Check out my",
-    "targetLang": "es",
-    "translated": "Mira mi",
-    "cachedAt": "2026-07-01T22:09:53.893Z"
-  },
-  "da214a2116949046366fdde558f0ceabfaccd1e1bfa62e89799f2af550897ec9": {
-    "source": "portfolio",
-    "targetLang": "es",
-    "translated": "Cartera",
-    "cachedAt": "2026-07-01T22:09:54.032Z"
-  },
-  "e1bd861549f85c5251eb65a0fe7938bd418eff512cee8a629b4bf06a0ab1c921": {
-    "source": "or feel free to",
-    "targetLang": "es",
-    "translated": "o siéntete libre",
-    "cachedAt": "2026-07-01T22:09:54.126Z"
-  },
-  "9251971806ffe7ee62f67435101ebaf648e9d3098d8326ce4a995e50b2186a55": {
-    "source": "contact me!",
-    "targetLang": "es",
-    "translated": "¡Contáctame!",
-    "cachedAt": "2026-07-01T22:09:54.228Z"
-  },
-  "0a60920999641d107f28d4cad08c265890a9042c8d1cd688b2bdd732467d0709": {
-    "source": "My Skills",
-    "targetLang": "es",
-    "translated": "Mis habilidades",
-    "cachedAt": "2026-07-01T22:09:54.319Z"
-  },
-  "879cb98194c6910ea8d94f8faed2cc489de506529a8621246ac2e5843296c495": {
-    "source": "Portfolio",
-    "targetLang": "es",
-    "translated": "Cartera",
-    "cachedAt": "2026-07-01T22:09:54.438Z"
-  },
-  "22d3261d1243913b361e2fc334d29cdb6a614e87a35df2b0c5c1f9f35954311b": {
-    "source": "Qualifications",
-    "targetLang": "es",
-    "translated": "Cualificaciones",
-    "cachedAt": "2026-07-01T22:09:54.506Z"
-  },
-  "8134da36c597b5eef90c9e08539040389845f375ed7b70a7a8c4daccca875135": {
-    "source": "Fields That Inspire Me",
-    "targetLang": "es",
-    "translated": "Campos que me inspiran",
-    "cachedAt": "2026-07-01T22:09:54.653Z"
-  },
-  "9baa5c1eec4739bf7f196e5f4f08d25c6765ea4d878c01f7dfeb3ba20fcef773": {
-    "source": "Data Science",
-    "targetLang": "es",
-    "translated": "Ciencia de Datos",
-    "cachedAt": "2026-07-01T22:09:54.744Z"
-  },
-  "74a5424971a6b24c555738549c0f0dd33eaacb26b15108af7868aab29a61a445": {
-    "source": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I collaborated to work with",
-    "targetLang": "es",
-    "translated": "Los datos están por todas partes, y sus análisis pueden revelar ideas. Para explorar el campo, colaboré para trabajar con",
-    "cachedAt": "2026-07-01T22:09:54.857Z"
-  },
-  "1ceb0d5a8d7a315fadc6c645ac82271398e37857aed34a35f80d1e24a177215a": {
-    "source": "Signify Health",
-    "targetLang": "es",
-    "translated": "Significar Salud",
-    "cachedAt": "2026-07-01T22:09:55.034Z"
-  },
-  "e1f3b2ec3f58a4fdd23dd28fdca14519ae61a2ad83aa178506399578c3e70197": {
-    "source": "to create a system that brings healthcare services to patients' doorsteps. I am grateful to have worked on a project combining two powerful fields (computer science and statistics) to have a direct, positive impact on patients.",
-    "targetLang": "es",
-    "translated": "crear un sistema que lleve los servicios sanitarios a las puertas de los pacientes. Estoy agradecido de haber trabajado en un proyecto que combina dos campos poderosos (informática y estadística) para tener un impacto directo y positivo en los pacientes.",
-    "cachedAt": "2026-07-01T22:09:55.196Z"
-  },
-  "1154cc4478e969edbbec0923c6d95b91b831ca3f7b59053fb1d7135955ef5601": {
-    "source": "Artificial intelligence (AI)",
-    "targetLang": "es",
-    "translated": "Inteligencia artificial (IA)",
-    "cachedAt": "2026-07-01T22:09:55.290Z"
-  },
-  "6a6700ded29a87674d8989b5ca47be4c8eb59c823f45c18f64f1a64c43ce3219": {
-    "source": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodial college math tutoring system as part of my research under",
-    "targetLang": "es",
-    "translated": "Me gusta explorar la IA, la teoría detrás del aprendizaje automático y el impacto que las herramientas de IA pueden tener en la industria del software. Para seguir este interés, estoy trabajando en un sistema de tutoría universitaria multimodial de matemáticas impulsado por IA como parte de mi investigación bajo",
-    "cachedAt": "2026-07-01T22:09:55.438Z"
-  },
-  "fd71d94c36267d66e2ff4b92c49d8c5fe62b2905f80382d7de562adcd3bb6e84": {
-    "source": "Dr. Xia",
-    "targetLang": "es",
-    "translated": "Dra. Xia",
-    "cachedAt": "2026-07-01T22:09:55.536Z"
-  },
-  "e5b0902ae7ac7c671ccdce3c741e530f25fa785dcd0d84928e5699fe39f961a0": {
-    "source": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
-    "targetLang": "es",
-    "translated": "en el Departamento de Informática e Ingeniería. Además, recientemente cursé CSCE 421 (Aprendizaje Automático).",
-    "cachedAt": "2026-07-01T22:09:55.791Z"
-  },
-  "bb7e9aba86fc61d0ef96d2851ac1f8559e50921c8fda007055ee36b5aa02f6f8": {
-    "source": "Business",
-    "targetLang": "es",
-    "translated": "Negocios",
-    "cachedAt": "2026-07-01T22:09:55.856Z"
-  },
-  "249e48d870d45c953eb4b21bc9e39adccae538fd78e155e8bc7210af81a3fccd": {
-    "source": "Inspired my dad, I developed an interest in business early on. In high school, I pursued and graduated with an Associate degree in Business through dual credit. Currently, I am earning a minor under Mays Business School in",
-    "targetLang": "es",
-    "translated": "Inspiró a mi padre, y yo desarrollé un interés por los negocios desde muy joven. En el instituto, cursé y me gradué con un título de Asociado en Empresariales mediante doble crédito. Actualmente, estoy haciendo una asignatura optativa en la Mays Business School en",
-    "cachedAt": "2026-07-01T22:09:55.998Z"
-  },
-  "437ca0f9233997434f16f00ab36050d0a48f8ada1273cdaecbd9d2d1b17358eb": {
-    "source": "Coursework",
-    "targetLang": "es",
-    "translated": "Cursos",
-    "cachedAt": "2026-07-01T22:09:56.088Z"
-  },
-  "b2d0c6667759a8d54aeda44fcdc1f78983dea2a43b98e5e49f88217481947daa": {
-    "source": "Please check out and download my resume here!",
-    "targetLang": "es",
-    "translated": "¡Por favor, echa un vistazo y descarga mi currículum aquí!",
-    "cachedAt": "2026-07-01T22:09:56.205Z"
-  },
-  "059137a4b8f34782a75e87970bb3cfcadb48e3c39be92559cf5c2a417e008864": {
-    "source": "Open ↗",
-    "targetLang": "es",
-    "translated": "Abierto ↗",
-    "cachedAt": "2026-07-01T22:09:56.303Z"
-  },
-  "486786eb2900fae4501d2696b941c41d6351b92cb56d284167b0720d849cd81e": {
-    "source": "Download ↓",
-    "targetLang": "es",
-    "translated": "Descargar ↓",
-    "cachedAt": "2026-07-01T22:09:56.399Z"
-  },
-  "e602478b19587a02775a9219cfb2ea7d3192e8a9617d9404c5d599a3fa07204a": {
-    "source": "Service",
-    "targetLang": "es",
-    "translated": "Servicio",
-    "cachedAt": "2026-07-01T22:09:56.469Z"
-  },
-  "adb3500cea35b15e33bb9a9f57b6c745db6c77fb0c3eebd39a41a6f20e8d06f7": {
-    "source": "I have always been passionate about serving the community. In middle school and high school, I would volunteer at the thrift store and help make sandwiches for the homeless. This love for service extended into college, and I joined a Freshman Leadership Organization (FLO) called",
-    "targetLang": "es",
-    "translated": "Siempre he sentido pasión por servir a la comunidad. En la secundaria y el instituto, hacía voluntariado en una tienda de segunda mano y ayudaba a preparar bocadillos para personas sin hogar. Este amor por el servicio se extendió a la universidad, y me uní a una Organización de Liderazgo para Estudiantes de Primer Año (FLO) llamada",
-    "cachedAt": "2026-07-01T22:09:56.628Z"
-  },
-  "7f89ed4859adcf44d9b7215e743ea146e5cef01adefe0fec2e805b61d6b03a13": {
-    "source": "MSC FISH",
-    "targetLang": "es",
-    "translated": "MSC FISH",
-    "cachedAt": "2026-07-01T22:09:56.718Z"
-  },
-  "b86d5ae4e4c1efbc704b915d470e08e3b21b74cba343bc04d088ecc9fad8dbee": {
-    "source": "Memorial Student Center Freshmen in Service and Hosting. Through MSC FISH, I participated in various service opportunities, such as picking up trash at a park and volunteering at the food bank.",
-    "targetLang": "es",
-    "translated": "Estudiantes de primer año en servicio y acogida del Memorial Student Center. A través de MSC FISH, participé en diversas oportunidades de servicio, como recoger basura en un parque y hacer voluntariado en el banco de alimentos.",
-    "cachedAt": "2026-07-01T22:09:56.876Z"
-  },
-  "5ff7d4187f206703c0c2e46ad31ba12c4dc5cf30fa5e1d75af7e83847d919694": {
-    "source": "Since freshman year, I have continued to participate in community service, including Texas A&M's annual service event called",
-    "targetLang": "es",
-    "translated": "Desde primer curso, he seguido participando en servicios comunitarios, incluyendo el evento anual de servicio de Texas A&M llamado",
-    "cachedAt": "2026-07-01T22:09:57.015Z"
-  },
-  "979e5bcf74754e2de5ca12cc9152d6591cc3d6454382a892b896b188841092ce": {
-    "source": "Big Event",
-    "targetLang": "es",
-    "translated": "Gran Evento",
-    "cachedAt": "2026-07-01T22:09:57.158Z"
-  },
-  "dc460fdb4be49502e6b986668d5f0631144e8056dc546e98c11d6876158fab11": {
-    "source": "which gives students a chance to serve residents of the Bryan-College Station area. Giving back to the community is very important to me, and I would love to be part of a corporate culture that is committed to that cause.",
-    "targetLang": "es",
-    "translated": "lo que ofrece a los estudiantes la oportunidad de atender a los residentes del área de Bryan-College Station. Devolver algo a la comunidad es muy importante para mí, y me encantaría formar parte de una cultura corporativa comprometida con esa causa.",
-    "cachedAt": "2026-07-01T22:09:57.312Z"
-  },
-  "bae90840feff115e5b638f804eef79872797da0601f2e4b8c70f2f169e2a99d4": {
-    "source": "Claire Wu",
-    "targetLang": "fr",
-    "translated": "Claire Wu",
-    "cachedAt": "2026-07-01T22:09:57.401Z"
-  },
-  "2cb5f3ac5a92a96105e7294dc3993503980b6d9eef359968ed2500d296d0d852": {
-    "source": "CS senior at Texas A&M, minoring in Statistics and",
-    "targetLang": "fr",
-    "translated": "Dernière année d’informatique à Texas A&M, avec une mineure en statistiques et",
-    "cachedAt": "2026-07-01T22:09:57.519Z"
-  },
-  "17ac0886e21e47a03536bfe7f64e6eb78382682ebfa915e4557d09f397009324": {
-    "source": "AI in business",
-    "targetLang": "fr",
-    "translated": "L’IA dans les affaires",
-    "cachedAt": "2026-07-01T22:09:57.621Z"
-  },
-  "30d1b16397a0d001a98fe1253d157d5971128e9f98ec9a38b0af4cc94dd67c74": {
-    "source": "Claire Wu headshot",
-    "targetLang": "fr",
-    "translated": "Tir de tête de Claire Wu",
-    "cachedAt": "2026-07-01T22:09:57.772Z"
-  },
-  "1b471a7ef5c8b52db18e7241b2064f8854ecca90de797025cef0288884266cc9": {
-    "source": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
-    "targetLang": "fr",
-    "translated": "Je suis passionné par l’ingénierie logicielle, la data science, l’IA/ML et le design UX. Actuellement, je fais des recherches chez le Dr Xia",
-    "cachedAt": "2026-07-01T22:09:57.912Z"
-  },
-  "1a08166a8b355255123e109dd0caf791e6f101f4110244bf21ea5b829e8c9857": {
-    "source": "Dream Lab",
-    "targetLang": "fr",
-    "translated": "Laboratoire de rêves",
-    "cachedAt": "2026-07-01T22:09:58.004Z"
-  },
-  "d78be24618c5a4cb25cf06eb36e942453811f09b2b546c5d076739d4e047555f": {
-    "source": "working on",
-    "targetLang": "fr",
-    "translated": "En train de travailler sur",
-    "cachedAt": "2026-07-01T22:09:58.100Z"
-  },
-  "cc3ee8e49025a848a77ca78a2f1bc6f5a21dbd6adddf73f764a0e40f16e056ff": {
-    "source": "AnnoMath",
-    "targetLang": "fr",
-    "translated": "AnnoMath",
-    "cachedAt": "2026-07-01T22:09:58.213Z"
-  },
-  "0cbad97537e20e024fae09ab9638662488de5ed54733af419b623993c428bfaa": {
-    "source": "an AI-powered multimodial interactive math tutorial system.",
-    "targetLang": "fr",
-    "translated": "un système de tutoriel mathématique interactif multimodial alimenté par l’IA.",
-    "cachedAt": "2026-07-01T22:09:58.376Z"
-  },
-  "752088c382d3f3997bea75d02b80c01619a92c602992841b5ecf5cebc8c63697": {
-    "source": "When I'm not coding, you can usually find me at the gym, crocheting or doing other crafts, or exploring new coffee shops!",
-    "targetLang": "fr",
-    "translated": "Quand je ne code pas, on me trouve généralement à la salle de sport, en train de crocheter ou d’autres activités manuelles, ou d’explorer de nouveaux cafés !",
-    "cachedAt": "2026-07-01T22:09:58.545Z"
-  },
-  "bf2a336dc014d8d05b752eba692362bfe24bb5a31c56ac97fdc5d47897087e91": {
-    "source": "Check out my",
-    "targetLang": "fr",
-    "translated": "Regarde mon",
-    "cachedAt": "2026-07-01T22:09:58.650Z"
-  },
-  "54fec895836811c9d714d7a3b9f384d94b30716fe3646cb0b113ed81f7ae6006": {
-    "source": "portfolio",
-    "targetLang": "fr",
-    "translated": "Portefeuille",
-    "cachedAt": "2026-07-01T22:09:58.796Z"
-  },
-  "14a4b1a6aff7441b2a2c0046b6381afa301f91f94ce65342b19fc1077e3e69ab": {
-    "source": "or feel free to",
-    "targetLang": "fr",
-    "translated": "Ou n’hésitez pas à le faire",
-    "cachedAt": "2026-07-01T22:09:58.907Z"
-  },
-  "06dc8ed6c28c537c7959268421b7e067be420faa957f4f6b1515640e678314a3": {
-    "source": "contact me!",
-    "targetLang": "fr",
-    "translated": "Contactez-moi !",
-    "cachedAt": "2026-07-01T22:09:59.001Z"
-  },
-  "dc058748e637f107abf4126726324a18b2f38726309562f3e473042e1d4fd5fb": {
-    "source": "My Skills",
-    "targetLang": "fr",
-    "translated": "Mes compétences",
-    "cachedAt": "2026-07-01T22:09:59.092Z"
-  },
-  "e44c03f543ef6bac1ebffb5412cc7ea2cb5da6d92a463b4ac47cfdde709aab57": {
-    "source": "Portfolio",
-    "targetLang": "fr",
-    "translated": "Portefeuille",
-    "cachedAt": "2026-07-01T22:09:59.183Z"
-  },
-  "a560174ff74104716303d94fd3adefe34afc2fc6e5a6d95caa3035a7df371d0a": {
-    "source": "Qualifications",
-    "targetLang": "fr",
-    "translated": "Qualifications",
-    "cachedAt": "2026-07-01T22:09:59.245Z"
-  },
-  "d1cdcf3f64bb05e252247ce337200d4da466805f3a647a60722910f9e878015f": {
-    "source": "Fields That Inspire Me",
-    "targetLang": "fr",
-    "translated": "Des domaines qui m’inspirent",
-    "cachedAt": "2026-07-01T22:09:59.404Z"
-  },
-  "488e191274f14489e2dd1faa5522523db6a497f5ea5f83e3ad1f5008daba989f": {
-    "source": "Data Science",
-    "targetLang": "fr",
-    "translated": "Science des données",
-    "cachedAt": "2026-07-01T22:09:59.496Z"
-  },
-  "09339d42dc3adaa6c49dbb513e169db459a7fe2a0c22d531724e2c1638f128ed": {
-    "source": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I collaborated to work with",
-    "targetLang": "fr",
-    "translated": "Les données sont partout, et leur analyse peut révéler des éclairages. Pour explorer ce domaine, j’ai collaboré avec",
-    "cachedAt": "2026-07-01T22:09:59.618Z"
-  },
-  "b7975518883e173b6aea5e67d0482e9628d6ce5a291bd51381b3bd6347eaa33c": {
-    "source": "Signify Health",
-    "targetLang": "fr",
-    "translated": "Signifier la santé",
-    "cachedAt": "2026-07-01T22:09:59.718Z"
-  },
-  "40239a211492d871cea39889378c62a898bccc97eec40e62db2da252943ebad6": {
-    "source": "to create a system that brings healthcare services to patients' doorsteps. I am grateful to have worked on a project combining two powerful fields (computer science and statistics) to have a direct, positive impact on patients.",
-    "targetLang": "fr",
-    "translated": "Créer un système qui amène les services de santé à la porte des patients. Je suis reconnaissant d’avoir travaillé sur un projet combinant deux domaines puissants (informatique et statistiques) pour avoir un impact direct et positif sur les patients.",
-    "cachedAt": "2026-07-01T22:09:59.902Z"
-  },
-  "7ae9b91262e706cb1741e94fa2b8286b244b75ff385d328165f6e080db137301": {
-    "source": "Artificial intelligence (AI)",
-    "targetLang": "fr",
-    "translated": "Intelligence artificielle (IA)",
-    "cachedAt": "2026-07-01T22:10:00.000Z"
-  },
-  "41ca3cde4b17f1afefda06ad3ce4f670232e8bd4b705a50569fe54efa28ebf87": {
-    "source": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodial college math tutoring system as part of my research under",
-    "targetLang": "fr",
-    "translated": "J’aime explorer l’IA, la théorie derrière l’apprentissage automatique, et l’impact que les outils d’IA peuvent avoir sur l’industrie du logiciel. Pour poursuivre cet intérêt, je travaille sur un système de tutorat universitaire multimodial alimenté par l’IA dans le cadre de mes recherches",
-    "cachedAt": "2026-07-01T22:10:00.200Z"
-  },
-  "a25a0f8822fea852e9eb723d34022feb880291492a1954b570f5cbba34ab6c69": {
-    "source": "Dr. Xia",
-    "targetLang": "fr",
-    "translated": "Dr Xia",
-    "cachedAt": "2026-07-01T22:10:00.301Z"
-  },
-  "fe84de43af500fea71e3063b290d2c3d825e887d7291a10459220fc8080fb6e5": {
-    "source": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
-    "targetLang": "fr",
-    "translated": "au département d’informatique et de génie. Aussi, j’ai récemment suivi CSCE 421 (Apprentissage automatique).",
-    "cachedAt": "2026-07-01T22:10:00.432Z"
-  },
-  "4809cd484de62b466e11e4aaea1a2939e3cb15232f7f6aecb2be639a14bc52b1": {
-    "source": "Business",
-    "targetLang": "fr",
-    "translated": "Affaires",
-    "cachedAt": "2026-07-01T22:10:00.521Z"
-  },
-  "0f1d9cb545513fb15f193ba26c4f5c7a89e71f8cd0b673f9c2f6d0d41e1f216d": {
-    "source": "Inspired my dad, I developed an interest in business early on. In high school, I pursued and graduated with an Associate degree in Business through dual credit. Currently, I am earning a minor under Mays Business School in",
-    "targetLang": "fr",
-    "translated": "Inspiré mon père, j’ai développé très tôt un intérêt pour le commerce. Au lycée, j’ai poursuivi et obtenu un diplôme d’associé en commerce grâce à un double crédit. Actuellement, je prépare une mineure à la Mays Business School en",
-    "cachedAt": "2026-07-01T22:10:00.681Z"
-  },
-  "cc71b9c8ee88affb2eb577d3e6032e79b3d388a6003f4c89096f70d5d721b0d4": {
-    "source": "Coursework",
-    "targetLang": "fr",
-    "translated": "Cours",
-    "cachedAt": "2026-07-01T22:10:00.771Z"
-  },
-  "bae33baa53c7dc80dee393441a485743befc7da2472703ca61691857e29e70da": {
-    "source": "Please check out and download my resume here!",
-    "targetLang": "fr",
-    "translated": "Veuillez consulter et télécharger mon CV ici !",
-    "cachedAt": "2026-07-01T22:10:00.870Z"
-  },
-  "b68047093c372ada145366c7cb8f3b12f9d976724d2832afdc79e34199d664d6": {
-    "source": "Open ↗",
-    "targetLang": "fr",
-    "translated": "Ouvre ↗",
-    "cachedAt": "2026-07-01T22:10:00.963Z"
-  },
-  "55f0a6df22bd6f40b921f5b6640c170c2957ec0fbd0fee9d9f8a63e232eba71c": {
-    "source": "Download ↓",
-    "targetLang": "fr",
-    "translated": "Télécharger ↓",
-    "cachedAt": "2026-07-01T22:10:01.058Z"
-  },
-  "fed6aba7ec2218986ee6575a5980e3885693b6119b64abc68378fc0d7e113a51": {
-    "source": "Service",
-    "targetLang": "fr",
-    "translated": "Service",
-    "cachedAt": "2026-07-01T22:10:01.151Z"
-  },
-  "37f9b3ccaea630dd1ebb71ab830e1482f9761ad6f412d6512926415d61084927": {
-    "source": "I have always been passionate about serving the community. In middle school and high school, I would volunteer at the thrift store and help make sandwiches for the homeless. This love for service extended into college, and I joined a Freshman Leadership Organization (FLO) called",
-    "targetLang": "fr",
-    "translated": "J’ai toujours été passionné par le service à la communauté. Au collège et au lycée, je faisais du bénévolat dans une friperie et j’aidais à préparer des sandwiches pour les sans-abri. Cet amour du service s’est étendu à l’université, et j’ai rejoint une organisation de leadership pour les étudiants de première année (FLO) appelée",
-    "cachedAt": "2026-07-01T22:10:01.328Z"
-  },
-  "9dc4fea6c6f433d4bcbcea9a9e264209aad09fcdf065101ab35e018b6ec8bb11": {
-    "source": "MSC FISH",
-    "targetLang": "fr",
-    "translated": "MSC FISH",
-    "cachedAt": "2026-07-01T22:10:01.418Z"
-  },
-  "62b5f443efeaf35cd1097c99827f355b04cf74c0388b2cd1e6fbbf54bf8f78c4": {
-    "source": "Memorial Student Center Freshmen in Service and Hosting. Through MSC FISH, I participated in various service opportunities, such as picking up trash at a park and volunteering at the food bank.",
-    "targetLang": "fr",
-    "translated": "Étudiants de première année au Memorial Student Center en service et en accueil. Grâce à MSC FISH, j’ai participé à diverses opportunités de service, comme ramasser des déchets dans un parc et faire du bénévolat à la banque alimentaire.",
-    "cachedAt": "2026-07-01T22:10:01.585Z"
-  },
-  "d421f080df5ec0fc4e7e5cd36c046f0c7e289a0923c80abe6c70b7cd9b135dc1": {
-    "source": "Since freshman year, I have continued to participate in community service, including Texas A&M's annual service event called",
-    "targetLang": "fr",
-    "translated": "Depuis ma première année, je continue à participer au service communautaire, y compris à l’événement annuel de service de Texas A&M appelé",
-    "cachedAt": "2026-07-01T22:10:01.731Z"
-  },
-  "3999ec68ab926f3d0636003fc6b649cdec3c1c498382ab9ae64a3bf954470e1c": {
-    "source": "Big Event",
-    "targetLang": "fr",
-    "translated": "Grand événement",
-    "cachedAt": "2026-07-01T22:10:01.820Z"
-  },
-  "8415bd5f0581b2e45c5e2024f58b03b89350e5a66bd479fb0c5f1ae966d8e42a": {
-    "source": "which gives students a chance to serve residents of the Bryan-College Station area. Giving back to the community is very important to me, and I would love to be part of a corporate culture that is committed to that cause.",
-    "targetLang": "fr",
-    "translated": "ce qui donne aux étudiants la possibilité de servir les habitants de la région de Bryan-College Station. Rendre à la communauté est très important pour moi, et j’aimerais faire partie d’une culture d’entreprise engagée dans cette cause.",
-    "cachedAt": "2026-07-01T22:10:01.968Z"
-  },
-  "5589168c768dfcda1120878d4deab49cf168c3f246c3a05bb68df7916048aec0": {
-    "source": "Claire Wu",
-    "targetLang": "de",
-    "translated": "Claire Wu",
-    "cachedAt": "2026-07-01T22:10:02.072Z"
-  },
-  "f82934aa863e31b4729f9ac73ce759ca3f24e72ba5dd2feb92047606a71ad3b0": {
-    "source": "CS senior at Texas A&M, minoring in Statistics and",
-    "targetLang": "de",
-    "translated": "CS Senior an der Texas A&M, mit Nebenfach Statistik und",
-    "cachedAt": "2026-07-01T22:10:02.215Z"
-  },
-  "e1da73aebfa0c2ab053a4b681a35b6ebcdb6ecc9fb1b0af5349e96c6e35179f3": {
-    "source": "AI in business",
-    "targetLang": "de",
-    "translated": "KI im Geschäftsleben",
-    "cachedAt": "2026-07-01T22:10:02.312Z"
-  },
-  "fd019f788be42fb3e9f4d2f947d717f826953a5f117e1e50bcb43e0a97a0bafa": {
-    "source": "Claire Wu headshot",
-    "targetLang": "de",
-    "translated": "Claire Wu Kopfschuss",
-    "cachedAt": "2026-07-01T22:10:02.412Z"
-  },
-  "2009efde2dfc72f05cb1efa417ac3fb80ecf53c1964503a811fe5d430bc0811e": {
-    "source": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
-    "targetLang": "de",
-    "translated": "Ich brenne für Software Engineering, Data Science, KI/ML und UX-Design. Derzeit forsche ich in Dr. Xias",
-    "cachedAt": "2026-07-01T22:10:02.545Z"
-  },
-  "6ba61aa5f6809f4989c17e375898c364a15f68b4fda746f04f4a90d0f771cf87": {
-    "source": "Dream Lab",
-    "targetLang": "de",
-    "translated": "Dream Lab",
-    "cachedAt": "2026-07-01T22:10:02.633Z"
-  },
-  "0930eaaf0619b97dfd560f85d97be024d9083641d477445fb2ba79c6dcfa9c3e": {
-    "source": "working on",
-    "targetLang": "de",
-    "translated": "Arbeit an",
-    "cachedAt": "2026-07-01T22:10:02.730Z"
-  },
-  "2298856ed941525ccecec1dde0971edf0b0b6b24e25d27139abe489fcd30581d": {
-    "source": "AnnoMath",
-    "targetLang": "de",
-    "translated": "AnnoMath",
-    "cachedAt": "2026-07-01T22:10:02.832Z"
-  },
-  "b0dcb446e99962786181764a75b88ddb5832cd95f49fd4bf5dfc03e34ad05aab": {
-    "source": "an AI-powered multimodial interactive math tutorial system.",
-    "targetLang": "de",
-    "translated": "ein KI-gestütztes, multimodales interaktives Mathematik-Tutorialsystem.",
-    "cachedAt": "2026-07-01T22:10:02.970Z"
-  },
-  "f9501bb52e10db952a06633e699327a7d8c405c87fc2d7af214ff9164e3c197a": {
-    "source": "When I'm not coding, you can usually find me at the gym, crocheting or doing other crafts, or exploring new coffee shops!",
-    "targetLang": "de",
-    "translated": "Wenn ich nicht programmiere, findet man mich meistens im Fitnessstudio, beim Häkeln, anderen Bastelarbeiten oder beim Erkunden neuer Cafés!",
-    "cachedAt": "2026-07-01T22:10:03.141Z"
-  },
-  "589d1b7aebd39a4855f8f4c26a476b4f9a5be86a5519cb38bd704bf4a1ccc0ee": {
-    "source": "Check out my",
-    "targetLang": "de",
-    "translated": "Schau dir meine an",
-    "cachedAt": "2026-07-01T22:10:03.239Z"
-  },
-  "4d7e3a0848a740cfa71945007d08c9b19f2f548dc5e57f8e98e04c655a2e6744": {
-    "source": "portfolio",
-    "targetLang": "de",
-    "translated": "Portfolio",
-    "cachedAt": "2026-07-01T22:10:03.334Z"
-  },
-  "b72ac13ad164b12f83fb44e548033a03946ae24be08145270d4e30896863d88c": {
-    "source": "or feel free to",
-    "targetLang": "de",
-    "translated": "Oder fühl dich frei",
-    "cachedAt": "2026-07-01T22:10:03.452Z"
-  },
-  "f576f348a6c5a5f63153db4b4d633f14a585b2c189ebdfc1a9b45684b37264ed": {
-    "source": "contact me!",
-    "targetLang": "de",
-    "translated": "Kontaktieren Sie mich!",
-    "cachedAt": "2026-07-01T22:10:03.544Z"
-  },
-  "c8e6e4f9b0f6681d48eb26611e5e6fdab81e3745470e72a85852d6065e7440e3": {
-    "source": "My Skills",
-    "targetLang": "de",
-    "translated": "Meine Fähigkeiten",
-    "cachedAt": "2026-07-01T22:10:03.643Z"
-  },
-  "4484b429fcdd77129fffddd479ea370d1e2197a9bf0e5bc7510820cb59beadf5": {
-    "source": "Portfolio",
-    "targetLang": "de",
-    "translated": "Portfolio",
-    "cachedAt": "2026-07-01T22:10:03.733Z"
-  },
-  "e291233bb68ed238bf1c6b139f0e6959ebdfe2daad7a231144a026913bab6f44": {
-    "source": "Qualifications",
-    "targetLang": "de",
-    "translated": "Qualifikationen",
-    "cachedAt": "2026-07-01T22:10:03.831Z"
-  },
-  "633ad8eb5286f7b1600433d8a4d13389308139c3ab9e78cb15047f5d48dc21b2": {
-    "source": "Fields That Inspire Me",
-    "targetLang": "de",
-    "translated": "Bereiche, die mich inspirieren",
-    "cachedAt": "2026-07-01T22:10:03.942Z"
-  },
-  "c0c695570d47cae683e99c38c5416c263db11b630684241bb7d6cc8d12174f46": {
-    "source": "Data Science",
-    "targetLang": "de",
-    "translated": "Datenwissenschaft",
-    "cachedAt": "2026-07-01T22:10:04.040Z"
-  },
-  "a04b565b216706d85ba8608e973d7a878bd67a40c8c160046a64aafc433776fd": {
-    "source": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I collaborated to work with",
-    "targetLang": "de",
-    "translated": "Daten sind überall, und deren Analysen können Erkenntnisse liefern. Um das Feld zu erkunden, habe ich zusammengearbeitet und mit",
-    "cachedAt": "2026-07-01T22:10:04.157Z"
-  },
-  "dde9ea456c40ace0fc05f1fb5f6fabe45343b4c3f8f1fc17c674be89d7de5596": {
-    "source": "Signify Health",
-    "targetLang": "de",
-    "translated": "Gesundheit symbolisieren",
-    "cachedAt": "2026-07-01T22:10:04.261Z"
-  },
-  "06223da660d021845f35561aa139dbef85023837f41d0cff26e8ad10da3aee84": {
-    "source": "to create a system that brings healthcare services to patients' doorsteps. I am grateful to have worked on a project combining two powerful fields (computer science and statistics) to have a direct, positive impact on patients.",
-    "targetLang": "de",
-    "translated": "ein System zu schaffen, das Gesundheitsdienstleistungen direkt vor die Haustür der Patienten bringt. Ich bin dankbar, an einem Projekt mitgearbeitet zu haben, das zwei leistungsstarke Fachgebiete (Informatik und Statistik) vereint, um einen direkten, positiven Einfluss auf Patienten zu haben.",
-    "cachedAt": "2026-07-01T22:10:04.446Z"
-  },
-  "b5244a1ab66f9b9ebfbe4c7f9dc9d8e35ee74060286f27371a24be6bc8b4850c": {
-    "source": "Artificial intelligence (AI)",
-    "targetLang": "de",
-    "translated": "Künstliche Intelligenz (KI)",
-    "cachedAt": "2026-07-01T22:10:04.547Z"
-  },
-  "2acec9facf5d500827c50b62c54656593331bf149de4cf140d28c431e69dc81a": {
-    "source": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodial college math tutoring system as part of my research under",
-    "targetLang": "de",
-    "translated": "Ich erforsche gerne KI, die Theorie hinter maschinellem Lernen und die Auswirkungen von KI-Tools auf die Softwarebranche. Um diesem Interesse nachzugehen, arbeite ich an einem KI-gestützten, multimodalen Mathematik-Tutoring-System als Teil meiner Forschung unter",
-    "cachedAt": "2026-07-01T22:10:04.712Z"
-  },
-  "1fc367268a889ca0aa7d0808864e8345504bc15ef8075f4a33f2d2c9507e9abb": {
-    "source": "Dr. Xia",
-    "targetLang": "de",
-    "translated": "Dr. Xia",
-    "cachedAt": "2026-07-01T22:10:04.811Z"
-  },
-  "1c1953f4020e856c8358787d399c64a724487c84408256858256d842cc3c276f": {
-    "source": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
-    "targetLang": "de",
-    "translated": "im Fachbereich Informatik und Ingenieurwesen. Außerdem habe ich kürzlich CSCE 421 (Maschinelles Lernen) belegt.",
-    "cachedAt": "2026-07-01T22:10:04.951Z"
-  },
-  "024c118e6e63c1d99c49175251f296f7da9329271a6a05a7cf131afd079556d8": {
-    "source": "Business",
-    "targetLang": "de",
-    "translated": "Geschäft",
-    "cachedAt": "2026-07-01T22:10:05.020Z"
-  },
-  "8f8ab1c732e621ede751d317e6e775a50213e309a750399edd94f2938ed991f1": {
-    "source": "Inspired my dad, I developed an interest in business early on. In high school, I pursued and graduated with an Associate degree in Business through dual credit. Currently, I am earning a minor under Mays Business School in",
-    "targetLang": "de",
-    "translated": "Inspiriert von meinem Vater, entwickelte ich früh ein Interesse am Geschäft. In der High School habe ich einen Associate Degree in Betriebswirtschaft mit Doppelkredit gemacht und abgeschlossen. Derzeit mache ich ein Nebenfach unter Mays Business School in",
-    "cachedAt": "2026-07-01T22:10:05.184Z"
-  },
-  "9431ec5e1c8cadd473c720b711c3f59398d638133f710ce61b53ceaa26203260": {
-    "source": "Coursework",
-    "targetLang": "de",
-    "translated": "Kursinhalte",
-    "cachedAt": "2026-07-01T22:10:05.277Z"
-  },
-  "cd2db30ed1650b69ef34ebc492602a10c961cdfd43fcf234e0c6d23120fc14a3": {
-    "source": "Please check out and download my resume here!",
-    "targetLang": "de",
-    "translated": "Bitte schaut euch meinen Lebenslauf hier an und lädt euch diesen herunter!",
-    "cachedAt": "2026-07-01T22:10:05.464Z"
-  },
-  "711b23cad3376b8e6ab366d8dc03be9161888afb9630768965143dd5d3028418": {
-    "source": "Open ↗",
-    "targetLang": "de",
-    "translated": "Offen ↗",
-    "cachedAt": "2026-07-01T22:10:05.565Z"
-  },
-  "bb0e56d172d0178a79f6f198a034be57c2535ebd742cd0c1cc811ddbc81f4d51": {
-    "source": "Download ↓",
-    "targetLang": "de",
-    "translated": "Download ↓",
-    "cachedAt": "2026-07-01T22:10:05.661Z"
-  },
-  "7566fe9e0a3564e32329f7815917eb30d5a8f1d1013ee1eff48fae997315dc52": {
-    "source": "Service",
-    "targetLang": "de",
-    "translated": "Dienst",
-    "cachedAt": "2026-07-01T22:10:05.729Z"
-  },
-  "c2e1816d796355f292ba81f7c21f0bb45ededc7a2ceabb700fd91cff83c24876": {
-    "source": "I have always been passionate about serving the community. In middle school and high school, I would volunteer at the thrift store and help make sandwiches for the homeless. This love for service extended into college, and I joined a Freshman Leadership Organization (FLO) called",
-    "targetLang": "de",
-    "translated": "Ich war schon immer leidenschaftlich daran interessiert, der Gemeinschaft zu dienen. In der Mittel- und Oberstufe habe ich ehrenamtlich im Secondhand-Laden geholfen und Sandwiches für Obdachlose gebacken. Diese Liebe zum Dienst setzte sich auch im College fort, und ich trat einer Freshman Leadership Organization (FLO) namens Freshman Leadership Organization (FLO) bei",
-    "cachedAt": "2026-07-01T22:10:05.932Z"
-  },
-  "8a8df7c9174242c51d67cd9e1c5d060a7a6e64dd1bfbc87d54bf174cf1c003bd": {
-    "source": "MSC FISH",
-    "targetLang": "de",
-    "translated": "MSC FISH",
-    "cachedAt": "2026-07-01T22:10:06.030Z"
-  },
-  "9a339edf79e5781811a068bb18bd57547e1d9ea05f8e2d65a506cf963e1e778e": {
-    "source": "Memorial Student Center Freshmen in Service and Hosting. Through MSC FISH, I participated in various service opportunities, such as picking up trash at a park and volunteering at the food bank.",
-    "targetLang": "de",
-    "translated": "Memorial Student Center für Erstsemester im Dienst und als Gastgeber. Durch MSC FISH nahm ich an verschiedenen Hilfsangeboten teil, wie zum Beispiel Müll im Park aufzusammeln und in der Tafel ehrenamtlich zu arbeiten.",
-    "cachedAt": "2026-07-01T22:10:06.196Z"
-  },
-  "566156d1625c464da098c7cb1ec196d6d876249506dcf9f8cb47dd300acd6ceb": {
-    "source": "Since freshman year, I have continued to participate in community service, including Texas A&M's annual service event called",
-    "targetLang": "de",
-    "translated": "Seit dem ersten Jahr nehme ich weiterhin an gemeinnütziger Arbeit teil, darunter auch an der jährlichen Service-Veranstaltung der Texas A&M namens Texas A&M",
-    "cachedAt": "2026-07-01T22:10:06.388Z"
-  },
-  "8d4491bec85dadc3429514174e87dc052a7fedb4ba938da77a718e638b6beac0": {
-    "source": "Big Event",
-    "targetLang": "de",
-    "translated": "Großes Ereignis",
-    "cachedAt": "2026-07-01T22:10:06.480Z"
-  },
-  "10ab3ccc72d375bfc0368517d661782c50bbeab224618136bc6b94da444275b2": {
-    "source": "which gives students a chance to serve residents of the Bryan-College Station area. Giving back to the community is very important to me, and I would love to be part of a corporate culture that is committed to that cause.",
-    "targetLang": "de",
-    "translated": "was den Studierenden die Möglichkeit gibt, den Bewohnern des Bryan-College Station Gebiets zu dienen. Der Gemeinschaft etwas zurückzugeben ist mir sehr wichtig, und ich würde gerne Teil einer Unternehmenskultur sein, die sich dieser Sache verpflichtet hat.",
-    "cachedAt": "2026-07-01T22:10:06.678Z"
-  },
-  "cf4786da7eae8b0f60d9c64f3829e06c64c2a04383f53f5efb05641770adf242": {
-    "source": "Claire Wu",
-    "targetLang": "ja",
-    "translated": "クレア・ウー",
-    "cachedAt": "2026-07-01T22:10:06.770Z"
-  },
-  "da0adaa88c376e53498082f900f2ac52e630357af53428ac8dd501439077055e": {
-    "source": "CS senior at Texas A&M, minoring in Statistics and",
-    "targetLang": "ja",
-    "translated": "テキサスA&MのCS4年生で、統計学を副専攻としています。",
-    "cachedAt": "2026-07-01T22:10:06.921Z"
-  },
-  "3a7433643f7772253183335a7b3e2257b5bd72ecd5c6bff292733fa84bad43e6": {
-    "source": "AI in business",
-    "targetLang": "ja",
-    "translated": "ビジネスにおけるAI(商業におけるAI)",
-    "cachedAt": "2026-07-01T22:10:07.026Z"
-  },
-  "97e0786798f3f09064e285d5e98b525793fabac9c1884d5a9273ab36250432f1": {
-    "source": "Claire Wu headshot",
-    "targetLang": "ja",
-    "translated": "クレア・ウーのヘッドショット",
-    "cachedAt": "2026-07-01T22:10:07.123Z"
-  },
-  "30a6e5cb903378b5fc82759748befee221307a85e67f444ced2129d52b70bfc4": {
-    "source": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
-    "targetLang": "ja",
-    "translated": "ソフトウェアエンジニアリング、データサイエンス、AI/ML、UXデザインに情熱を持っています。現在、私は夏博士のもとで研究をしています。",
-    "cachedAt": "2026-07-01T22:10:07.251Z"
-  },
-  "6c7c9d317771741172b6a008dca82c7b002368a244108519eaadc0820d25b272": {
-    "source": "Dream Lab",
-    "targetLang": "ja",
-    "translated": "ドリームラボ",
-    "cachedAt": "2026-07-01T22:10:07.342Z"
-  },
-  "261d3e108c88359f5cbae536446f8c63460217a2595cd8aac3bc53136ae2f58a": {
-    "source": "working on",
-    "targetLang": "ja",
-    "translated": "現在は",
-    "cachedAt": "2026-07-01T22:10:07.431Z"
-  },
-  "c7d66909865a8635781328a5588a97b748f13c147b8e881958a9cd37ba744eaa": {
-    "source": "AnnoMath",
-    "targetLang": "ja",
-    "translated": "アノマス",
-    "cachedAt": "2026-07-01T22:10:07.524Z"
-  },
-  "ea4e194a907b178d7f9a57ddfbeab4011d2ea6a8349708fc80dfcf8a88b74c3a": {
-    "source": "an AI-powered multimodial interactive math tutorial system.",
-    "targetLang": "ja",
-    "translated": "AI搭載のマルチモーディアルインタラクティブ数学チュートリアルシステムです。",
-    "cachedAt": "2026-07-01T22:10:07.641Z"
-  },
-  "55371dd54a4253c74d7cded16ae9df0bf60930083e9b8ccafdda00b4780f483e": {
-    "source": "When I'm not coding, you can usually find me at the gym, crocheting or doing other crafts, or exploring new coffee shops!",
-    "targetLang": "ja",
-    "translated": "コーディングしていない時は、ジムでかぎ針編みをしたり、他のクラフトをしたり、新しいコーヒーショップを探検したりしています!",
-    "cachedAt": "2026-07-01T22:10:07.806Z"
-  },
-  "2d0c7f7d2ee8de928f73431d0dc889cae2ebddde9202aa4111dd32be244c88c9": {
-    "source": "Check out my",
-    "targetLang": "ja",
-    "translated": "私の",
-    "cachedAt": "2026-07-01T22:10:07.907Z"
-  },
-  "7fceab8f7db595775dc8d34705c0269099c1c139773abe2d06f4286acc073fbf": {
-    "source": "portfolio",
-    "targetLang": "ja",
-    "translated": "ポートフォリオ",
-    "cachedAt": "2026-07-01T22:10:07.998Z"
-  },
-  "a5755af2bf4c5653c4fad2808379f69231d06dc31d816490cb300532eeed658a": {
-    "source": "or feel free to",
-    "targetLang": "ja",
-    "translated": "あるいは、どうぞ",
-    "cachedAt": "2026-07-01T22:10:08.095Z"
-  },
-  "30d047d2e80329737226c0cbef4013bbe07a67a4ea463811265f64777460cdab": {
-    "source": "contact me!",
-    "targetLang": "ja",
-    "translated": "連絡して!",
-    "cachedAt": "2026-07-01T22:10:08.192Z"
-  },
-  "8ba76bf66fd80b0051c34cbb04703761534eb9ee12acc24b4874563dafac6d42": {
-    "source": "My Skills",
-    "targetLang": "ja",
-    "translated": "私のスキル",
-    "cachedAt": "2026-07-01T22:10:08.291Z"
-  },
-  "3695515c503badae71a7db1976f5d7807cea4982a8c53395ab46bb09a18dd3ae": {
-    "source": "Portfolio",
-    "targetLang": "ja",
-    "translated": "ポートフォリオ",
-    "cachedAt": "2026-07-01T22:10:08.365Z"
-  },
-  "73cd2df4977d8f5d66fe2702fc20c1658e969fc9f0f76e3e4c009c8d7ba4f2cd": {
-    "source": "Qualifications",
-    "targetLang": "ja",
-    "translated": "資格",
-    "cachedAt": "2026-07-01T22:10:08.446Z"
-  },
-  "99ca42a73e2c6a5bddf13fac8573ae6887a0e2aacdc02a009dd1f565873b3f32": {
-    "source": "Fields That Inspire Me",
-    "targetLang": "ja",
-    "translated": "私にインスピレーションを与える分野",
-    "cachedAt": "2026-07-01T22:10:08.545Z"
-  },
-  "65c4286b0b83740b5f46ae9f78aaf6a3b6c938c12f67546924efab783f090c2b": {
-    "source": "Data Science",
-    "targetLang": "ja",
-    "translated": "データサイエンス",
-    "cachedAt": "2026-07-01T22:10:08.634Z"
-  },
-  "4179fb4bc83c02c4ec42422f560af62305661f0a9d484cd6f8542a0bb740aa50": {
-    "source": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I collaborated to work with",
-    "targetLang": "ja",
-    "translated": "データは至る所にあり、その分析は洞察を明らかにします。この分野を探求するために、私は協力して一緒に仕事をしました",
-    "cachedAt": "2026-07-01T22:10:08.747Z"
-  },
-  "7ebd368518ffb98fc72f8585579269bcd22f58625d1cea475318a4e779ee5d71": {
-    "source": "Signify Health",
-    "targetLang": "ja",
-    "translated": "健康を象徴する",
-    "cachedAt": "2026-07-01T22:10:08.844Z"
-  },
-  "ac0219186ef9368ee6ce854f49cddf152fb2b1feecfe67dcde28f80e7fcff464": {
-    "source": "to create a system that brings healthcare services to patients' doorsteps. I am grateful to have worked on a project combining two powerful fields (computer science and statistics) to have a direct, positive impact on patients.",
-    "targetLang": "ja",
-    "translated": "医療サービスを患者の玄関先に届けるシステムを作ること。コンピュータサイエンスと統計という二つの強力な分野を組み合わせ、患者に直接的かつ前向きな影響を与えるプロジェクトに携わることができたことに感謝しています。",
-    "cachedAt": "2026-07-01T22:10:09.004Z"
-  },
-  "6997dbe5dce433dfe5a4d0ab81c22279da1ffec5fbbdb080298e262c0e054291": {
-    "source": "Artificial intelligence (AI)",
-    "targetLang": "ja",
-    "translated": "人工知能(AI)",
-    "cachedAt": "2026-07-01T22:10:09.118Z"
-  },
-  "9afe491490669124f0f966c8bd4fbeb8533fabd8de72517940703e2352140279": {
-    "source": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodial college math tutoring system as part of my research under",
-    "targetLang": "ja",
-    "translated": "AIや機械学習の理論、AIツールがソフトウェア業界に与える影響を探求するのが好きです。この興味を追求するために、私は研究の一環としてAI搭載のマルチモーディアル大学数学チュータリングシステムに取り組んでいます。",
-    "cachedAt": "2026-07-01T22:10:09.282Z"
-  },
-  "7e56ee4725c1d11824f6d5a3376d158a3cc133f77cd01c033265d5b4a7f83011": {
-    "source": "Dr. Xia",
-    "targetLang": "ja",
-    "translated": "夏先生",
-    "cachedAt": "2026-07-01T22:10:09.377Z"
-  },
-  "c19b9c2388e240a877cdcc9b98e153e2af374951a0e2b267ed506ef93a9b4cf2": {
-    "source": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
-    "targetLang": "ja",
-    "translated": "コンピュータサイエンス・エンジニアリング学科に所属しています。また、最近CSCE 421(機械学習)を履修しました。",
-    "cachedAt": "2026-07-01T22:10:09.513Z"
-  },
-  "be98a54ad4d59b33abfdb832cd80399ce7afc85009d64bd2df2dca077b723540": {
-    "source": "Business",
-    "targetLang": "ja",
-    "translated": "ビジネス",
-    "cachedAt": "2026-07-01T22:10:09.578Z"
-  },
-  "2c72c985eb2fa7fba03c45bc66e5869863b4e2fff1918c90f4bc27de35908e8f": {
-    "source": "Inspired my dad, I developed an interest in business early on. In high school, I pursued and graduated with an Associate degree in Business through dual credit. Currently, I am earning a minor under Mays Business School in",
-    "targetLang": "ja",
-    "translated": "父に影響を受け、私は幼い頃からビジネスに興味を持ちました。高校時代には、ダブルクレジットでビジネスの準学士号を取得して卒業しました。現在、メイズ・ビジネススクールの副専攻を取得中です。",
-    "cachedAt": "2026-07-01T22:10:09.715Z"
-  },
-  "8d2744f76ba619f5aa3281cc1dd5dd7e9d0df9f3ed4c05d2b40f109e0a9762a4": {
-    "source": "Coursework",
-    "targetLang": "ja",
-    "translated": "履修科目",
-    "cachedAt": "2026-07-01T22:10:09.827Z"
-  },
-  "2c79bff1e4634337a018fb0d96bd2bd4c68177b69856f4b4424531ae2ceac458": {
-    "source": "Please check out and download my resume here!",
-    "targetLang": "ja",
-    "translated": "ぜひ私の履歴書をこちらからご覧いただき、ダウンロードしてください!",
-    "cachedAt": "2026-07-01T22:10:10.018Z"
-  },
-  "84e0bfce31892db1c5c74bacc93399cfa72c1937ccdc18da72a39bc693cd0f59": {
-    "source": "Open ↗",
-    "targetLang": "ja",
-    "translated": "開けて ↗",
-    "cachedAt": "2026-07-01T22:10:10.183Z"
-  },
-  "bd468f4df6d7370adcacac928deb60f73de5285bdcc4d211cc799fd59868ce80": {
-    "source": "Download ↓",
-    "targetLang": "ja",
-    "translated": "ダウンロード ↓",
-    "cachedAt": "2026-07-01T22:10:10.297Z"
-  },
-  "3ba8f13cc5a4a26c63757cf21280fde2caa0f43215797556815fe7b2e40b2f1d": {
-    "source": "Service",
-    "targetLang": "ja",
-    "translated": "運用",
-    "cachedAt": "2026-07-01T22:10:10.369Z"
-  },
-  "a5d2aeef250201383b92e094e60413385e04394ed2df28cbd4be51abd8b77ca9": {
-    "source": "I have always been passionate about serving the community. In middle school and high school, I would volunteer at the thrift store and help make sandwiches for the homeless. This love for service extended into college, and I joined a Freshman Leadership Organization (FLO) called",
-    "targetLang": "ja",
-    "translated": "私は常に地域社会に奉仕することに情熱を持ってきました。中学・高校の頃は、古着屋でボランティアをしてホームレスのためのサンドイッチ作りを手伝っていました。この奉仕への愛情は大学にまで及び、私は「フレッシュマン・リーダーシップ・オーガニゼーション(FLO)」に参加しました",
-    "cachedAt": "2026-07-01T22:10:10.521Z"
-  },
-  "ece7e85d51f91df54f477f92d78fce0b84882376a4a464406619948cfd0304a7": {
-    "source": "MSC FISH",
-    "targetLang": "ja",
-    "translated": "MSC魚",
-    "cachedAt": "2026-07-01T22:10:10.613Z"
-  },
-  "9d307463fe58fa5730848a9080ccc9294d2568fab81bc4b89f20cf5906d7e96d": {
-    "source": "Memorial Student Center Freshmen in Service and Hosting. Through MSC FISH, I participated in various service opportunities, such as picking up trash at a park and volunteering at the food bank.",
-    "targetLang": "ja",
-    "translated": "メモリアル学生センター 新入生サービスとホスティング。MSC FISHを通じて、公園でのゴミ拾いやフードバンクでのボランティアなど、さまざまな奉仕活動に参加しました。",
-    "cachedAt": "2026-07-01T22:10:10.784Z"
-  },
-  "b698e1bab70bf5afb366d6cc4871f7bd1a94dfdc22efebe417c2c058034e1fe0": {
-    "source": "Since freshman year, I have continued to participate in community service, including Texas A&M's annual service event called",
-    "targetLang": "ja",
-    "translated": "1年生の時から、テキサスA&Mの年次奉仕イベント「Terthere A&M」を含む地域奉仕活動に参加し続けています",
-    "cachedAt": "2026-07-01T22:10:10.940Z"
-  },
-  "1e291da3d524a959554466268b90e4b13dc794d21833b75d910ff7beeae47123": {
-    "source": "Big Event",
-    "targetLang": "ja",
-    "translated": "ビッグイベント",
-    "cachedAt": "2026-07-01T22:10:11.030Z"
-  },
-  "757851876eb45d37f4de1c9076ca28fcf1e19637b7681b86b46396805a1259d9": {
-    "source": "which gives students a chance to serve residents of the Bryan-College Station area. Giving back to the community is very important to me, and I would love to be part of a corporate culture that is committed to that cause.",
-    "targetLang": "ja",
-    "translated": "これにより、学生たちはブライアン・カレッジステーション地域の住民にサービスを提供する機会があります。地域社会に還元することは私にとって非常に重要であり、その目的にコミットする企業文化の一部になりたいと思っています。",
-    "cachedAt": "2026-07-01T22:10:11.171Z"
-  },
   "2a6b029a12dfbfc516a6e96cbed7618d785a606acca7abf0fb41d99fd3e89ed5": {
     "source": "Claire Wu",
     "targetLang": "zh-Hans",
@@ -1088,7 +32,7 @@
   "6994275304425acb89a5460f23cd59641541bbae05850035a958d350c681a153": {
     "source": "Dream Lab",
     "targetLang": "zh-Hans",
-    "translated": "梦幻实验室",
+    "translated": "梦想实验室",
     "cachedAt": "2026-07-01T22:12:20.812Z"
   },
   "ec2040d7fa82fcefc854d8b04d1b832e0660a1a8d6a0b877601d87418b483824": {
@@ -1112,25 +56,25 @@
   "a4455661b2b6c5e31d564de07fc0e08aa25111586203ad79ace5fa62bf65e697": {
     "source": "When I'm not coding, you can usually find me at the gym, crocheting or doing other crafts, or exploring new coffee shops!",
     "targetLang": "zh-Hans",
-    "translated": "当我不写代码时，你通常能在健身房找到我，钩针编织、做其他手工，或者探索新的咖啡馆！",
+    "translated": "闲暇时，我喜欢健身，钩针编织及相关手工，和探索新的咖啡馆！",
     "cachedAt": "2026-07-01T22:12:21.303Z"
   },
   "058ac8d0522d9ad4699404a9a16f88b7de1cf6feaa7c1a91e61fca386812804f": {
     "source": "Check out my",
     "targetLang": "zh-Hans",
-    "translated": "看看我的",
+    "translated": "敬请关注我的",
     "cachedAt": "2026-07-01T22:12:21.396Z"
   },
   "9bc5e7abe1a9636a2bdef2484d8e427eaa14a5df654fb051836702af286770c2": {
     "source": "portfolio",
     "targetLang": "zh-Hans",
-    "translated": "作品集",
+    "translated": "作品简集",
     "cachedAt": "2026-07-01T22:12:21.484Z"
   },
   "415c299c1e35369f6af74d1230b9c1cc2eae3e438ad5b6788cb15146e42e40c1": {
     "source": "or feel free to",
     "targetLang": "zh-Hans",
-    "translated": "或者你也可以",
+    "translated": "并请",
     "cachedAt": "2026-07-01T22:12:21.584Z"
   },
   "7134296151637bbef2464adf213de145eef261165f666f59ba592d274598cbd7": {
@@ -1148,7 +92,7 @@
   "1725307b1eff71f12cedd0b9849cd90e6eadd6c3af1acee5a3a36323c7563e01": {
     "source": "Portfolio",
     "targetLang": "zh-Hans",
-    "translated": "作品集",
+    "translated": "作品简集",
     "cachedAt": "2026-07-01T22:12:21.834Z"
   },
   "a99e2ab950aaa29b4b5146bcadad50ff675643d228ba59148f7f234a54d0bc0d": {
@@ -1226,14 +170,8 @@
   "96b8afea4c04eb6c09a99a9f963663603a02be5fb1af7beab34dca0b260b03cf": {
     "source": "Coursework",
     "targetLang": "zh-Hans",
-    "translated": "课程",
+    "translated": "专业课程",
     "cachedAt": "2026-07-01T22:12:23.152Z"
-  },
-  "966816abdecacb504e9d65d4a91941b04852e9fdbebf400ec65ebdd3450f5ad7": {
-    "source": "Please check out and download my resume here!",
-    "targetLang": "zh-Hans",
-    "translated": "请在这里查看并下载我的简历！",
-    "cachedAt": "2026-07-01T22:12:23.249Z"
   },
   "9d5ca16bbb4df056601e01c2b6b0ff39e7a22311dfd0f3fe98340b27f542d78f": {
     "source": "Open ↗",
@@ -1250,7 +188,7 @@
   "f6c6f5d3ec1bb086c604bc44b59f2fabda0658a12cb4e44ccfb79bae3b5b0c31": {
     "source": "Service",
     "targetLang": "zh-Hans",
-    "translated": "服役经历",
+    "translated": "志愿者经历",
     "cachedAt": "2026-07-01T22:12:23.512Z"
   },
   "22d41a547e205b65678de2a5c4e19c731f2fd0b9dc5b273f268cbc0e278b87af": {
@@ -1289,102 +227,6 @@
     "translated": "这为学生提供了服务布莱恩-学院站地区居民的机会。回馈社区对我来说非常重要，我希望能成为致力于这一目标的企业文化的一部分。",
     "cachedAt": "2026-07-01T22:12:24.305Z"
   },
-  "d11a04d55ba077e556e5f77dd3f080c53e832f0b979873f474017f967b4fc6bc": {
-    "source": "Full Stack Developer",
-    "targetLang": "es",
-    "translated": "Desarrollador Full Stack",
-    "cachedAt": "2026-07-01T22:23:42.768Z"
-  },
-  "f4e3eedfce66440e70d73468dbfa0f03cac1e9884e70a49e8fc83618a8a8a19a": {
-    "source": "LinkedIn",
-    "targetLang": "es",
-    "translated": "LinkedIn",
-    "cachedAt": "2026-07-01T22:23:42.999Z"
-  },
-  "c22247be6e2a4a45ce8c8f18a6d5bd76f00179748bbd94443ed09c0e26bdb8a2": {
-    "source": "GitHub",
-    "targetLang": "es",
-    "translated": "GitHub",
-    "cachedAt": "2026-07-01T22:23:43.196Z"
-  },
-  "0a683add37985a3e5b98befa22a2e43b7dd75b226346b2d1b13bc32980abe3bd": {
-    "source": "Email",
-    "targetLang": "es",
-    "translated": "Correo electrónico",
-    "cachedAt": "2026-07-01T22:23:43.317Z"
-  },
-  "2b8e53193e9442eb4e5689b4beaaf44d2f3030b9573328ac0c891719fca2e9a9": {
-    "source": "Full Stack Developer",
-    "targetLang": "fr",
-    "translated": "Développeur Full Stack",
-    "cachedAt": "2026-07-01T22:23:43.496Z"
-  },
-  "6bd7f4cbebbfdb4c5cacbff36b4dbb83ee92e12d0416dfa9049d3072b7b9a095": {
-    "source": "LinkedIn",
-    "targetLang": "fr",
-    "translated": "LinkedIn",
-    "cachedAt": "2026-07-01T22:23:43.656Z"
-  },
-  "4017495d4958709b067fdee1baf3790cc04d9117ab68b74a95478d67934d9376": {
-    "source": "GitHub",
-    "targetLang": "fr",
-    "translated": "GitHub",
-    "cachedAt": "2026-07-01T22:23:43.751Z"
-  },
-  "d84984dc6f3238845078eb9a42eada3402f4d916104f60da150a8453513e7f49": {
-    "source": "Email",
-    "targetLang": "fr",
-    "translated": "Email",
-    "cachedAt": "2026-07-01T22:23:43.819Z"
-  },
-  "3f219d5dec43c62bc68058f4ebc4f84245bb874c131512e295e729be53f075b0": {
-    "source": "Full Stack Developer",
-    "targetLang": "de",
-    "translated": "Full-Stack-Entwickler",
-    "cachedAt": "2026-07-01T22:23:43.955Z"
-  },
-  "8ee8fef5831a1bd9b0cf793fe1bce55fccfc02daf07f9eb8d139553382dc6f8a": {
-    "source": "LinkedIn",
-    "targetLang": "de",
-    "translated": "LinkedIn",
-    "cachedAt": "2026-07-01T22:23:44.069Z"
-  },
-  "0d082323d6966d56099715d29771abb30e8c37758978ac2782203817282a9ac1": {
-    "source": "GitHub",
-    "targetLang": "de",
-    "translated": "GitHub",
-    "cachedAt": "2026-07-01T22:23:44.163Z"
-  },
-  "d748e024f9e2ebdd11dbaf5d09dbfc76f0c6b907964eeb81ac42402b36908a52": {
-    "source": "Email",
-    "targetLang": "de",
-    "translated": "E-Mail",
-    "cachedAt": "2026-07-01T22:23:44.279Z"
-  },
-  "fbbda87dda5d2821eae5b40703f866d2d9a2104ab5a979f73badd3ec210ca8b8": {
-    "source": "Full Stack Developer",
-    "targetLang": "ja",
-    "translated": "フルスタック開発者",
-    "cachedAt": "2026-07-01T22:23:44.463Z"
-  },
-  "367e087614f493d3cd4c47aae5b9f1923d51afd7ae37522d4d40f4a4b10a4692": {
-    "source": "LinkedIn",
-    "targetLang": "ja",
-    "translated": "LinkedIn",
-    "cachedAt": "2026-07-01T22:23:44.528Z"
-  },
-  "9917142be79ad46f1fd0a35961a39bd3431b172f9ac2f7bab0fc5515a06b6f17": {
-    "source": "GitHub",
-    "targetLang": "ja",
-    "translated": "GitHub",
-    "cachedAt": "2026-07-01T22:23:44.593Z"
-  },
-  "575af221d429e54517e4e76b85a25b0a75dba6feae7f56fd8de6f501d1dd59aa": {
-    "source": "Email",
-    "targetLang": "ja",
-    "translated": "メール",
-    "cachedAt": "2026-07-01T22:23:44.729Z"
-  },
   "85ed57fa5069715bb2a15af0e778bb3f015fb8fa5efef48d99eff58d581c7850": {
     "source": "Full Stack Developer",
     "targetLang": "zh-Hans",
@@ -1394,7 +236,7 @@
   "eafad3b5e7afb78b05c7e6b04bf94046b3eed32bcfe13db30289d7d83c37bef9": {
     "source": "LinkedIn",
     "targetLang": "zh-Hans",
-    "translated": "LinkedIn",
+    "translated": "領英",
     "cachedAt": "2026-07-01T22:23:44.979Z"
   },
   "d6c7b1aa6f39f1c5f612074df4734d21d64cad4b9666011f029790a061644e03": {
@@ -1466,7 +308,7 @@
   "92c57ca6cd7152cca59abc2dce29bbc38a73a22babc2b694ba3b84f1d29144c5": {
     "source": "Dream Lab",
     "targetLang": "zh-Hant",
-    "translated": "夢幻實驗室",
+    "translated": "夢想實驗室",
     "cachedAt": "2026-07-01T22:44:39.249Z"
   },
   "8d380315be6cce63301c046043b22d44058f09b44bd11aca4ca6934dbb0e6327": {
@@ -1490,25 +332,25 @@
   "bf22165338b1eeac9e1d17c9f326661be7ce819ef03e865f7034607a3144ac2d": {
     "source": "When I'm not coding, you can usually find me at the gym, crocheting or doing other crafts, or exploring new coffee shops!",
     "targetLang": "zh-Hant",
-    "translated": "當我不寫程式時，你通常會在健身房找到我，鉤針編織、做其他手作，或是探索新的咖啡店！",
+    "translated": "閒暇時，我喜歡健身，鉤針編織及相關手工，和探索新的咖啡館！",
     "cachedAt": "2026-07-01T22:44:39.760Z"
   },
   "f85cfaa7980a170203b7e2cde0120f001f04641803b7a5e310af1aa58eb46958": {
     "source": "Check out my",
     "targetLang": "zh-Hant",
-    "translated": "看看我的",
+    "translated": "敬請關注我的",
     "cachedAt": "2026-07-01T22:44:39.850Z"
   },
   "48c38c6e3d394703990cf4b8479056584fd278cd7708dd3538a3ca55a39d79d5": {
     "source": "portfolio",
     "targetLang": "zh-Hant",
-    "translated": "作品集",
+    "translated": "作品簡集",
     "cachedAt": "2026-07-01T22:44:39.997Z"
   },
   "97b6334cbd3b9839d2d82a0c7ea0a03a8ea21053833365b4eca27408a6c96b04": {
     "source": "or feel free to",
     "targetLang": "zh-Hant",
-    "translated": "或者你也可以",
+    "translated": "並請",
     "cachedAt": "2026-07-01T22:44:40.104Z"
   },
   "8aff435c9736b2692cbf343ea59b845541d1ab35494106f59860fdeb1f4c1da1": {
@@ -1526,7 +368,7 @@
   "8cb0ad570aaa0d397284645355fcc14465be12bb8da19458a4e9cba0d9876320": {
     "source": "Portfolio",
     "targetLang": "zh-Hant",
-    "translated": "作品集",
+    "translated": "作品簡集",
     "cachedAt": "2026-07-01T22:44:40.497Z"
   },
   "62975da21e90d0524731cb9906f54509b6dddff936ae0d6620c1a1e02224b79d": {
@@ -1604,14 +446,8 @@
   "5be3e0aaaac18e2f923c3efec4142071ebd6cb1f8d5e95b45274e9951c243a8b": {
     "source": "Coursework",
     "targetLang": "zh-Hant",
-    "translated": "課程作業",
+    "translated": "專業課程",
     "cachedAt": "2026-07-01T22:44:42.078Z"
-  },
-  "c7afb6c9de7155f79730cdd64e3e983f4dd018d6a20e7381531da6bc47458b3a": {
-    "source": "Please check out and download my resume here!",
-    "targetLang": "zh-Hant",
-    "translated": "請點此查看並下載我的履歷！",
-    "cachedAt": "2026-07-01T22:44:42.191Z"
   },
   "6f36e3a4b1349cdfc09587e5135975c9bd9b5ed08fbc027e3dd0ff122d4e61c0": {
     "source": "Open ↗",
@@ -1628,7 +464,7 @@
   "df2951f63a0edd9e8e3549985be8b4d4ec5f8245f366ead6dec38054b7f73181": {
     "source": "Service",
     "targetLang": "zh-Hant",
-    "translated": "服役",
+    "translated": "志願者經歷",
     "cachedAt": "2026-07-01T22:44:42.468Z"
   },
   "d917b2d1f438582ec64096d169991dff0c761d80d2aee96c941f4bfa79c4cdb2": {
@@ -1670,13 +506,13 @@
   "fc7d7ccae1b5ce76d267950e399e75346a94203d6d9a60e46dd2694414a791f8": {
     "source": "About",
     "targetLang": "zh-Hans",
-    "translated": "关于",
+    "translated": "我的概述",
     "cachedAt": "2026-07-02T01:05:24.267Z"
   },
   "4d46252f69314c629e8b815ac79e19c578ff548c5bef38d9fef4f0e5edaaffb7": {
     "source": "About",
     "targetLang": "zh-Hant",
-    "translated": "關於",
+    "translated": "我的概述",
     "cachedAt": "2026-07-02T01:05:24.498Z"
   },
   "d2df79f08f4bfad16e039e96deae38c967879a50a6961e936ea6a565ad2a9739": {
@@ -1775,12 +611,6 @@
     "translated": "软件工程顾问",
     "cachedAt": "2026-07-02T02:40:29.115Z"
   },
-  "5dd654dd7fa644eeb73d0912286cdf64f5b3db47ce4d5d25ee0ee443e3bbd1cb": {
-    "source": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place at the Aggies Create Innovation Expo.",
-    "targetLang": "zh-Hans",
-    "translated": "通过Agies Create，我们开发了Signify Hex，一个内部数据可视化工具，将患者与医疗提供者连接起来，实现居家服务。创建了地理空间十六进制覆盖层以实现提供者可达性，实现了实时gRPC数据获取，并通过基于Redis的变更跟踪减少了不必要的前端刷新。定期与Signify Health领导层会面。在Aggies Create Innovation Expo获得一等奖。",
-    "cachedAt": "2026-07-02T02:40:29.301Z"
-  },
   "a374eaa01b24e4d8e023a18fa6e71626a61e6d12030e2982646970cc2d6ff6b1": {
     "source": "Engineering TA Organization",
     "targetLang": "zh-Hans",
@@ -1790,13 +620,13 @@
   "9ab22549eda9fe0017e488df6cf3545a84e682be0f9e72ff17ab97cc397694e6": {
     "source": "Web Officer & Software Engineering Intern",
     "targetLang": "zh-Hans",
-    "translated": "网站官员兼软件工程实习生",
+    "translated": "网站专员兼软件工程实习生",
     "cachedAt": "2026-07-02T02:40:29.500Z"
   },
   "df848cf7d8f0ef9f7ad3d346c60cf62d71ca6774c80443f196cb4c6e49086555": {
     "source": "Developed the TAO website with fellow SWE interns for 10,000+ viewers. Practiced Git workflows including pull requests and code reviews. Helped manage a Discord community of 5,000+ engineering students and supported freshmen by brainstorming ideas for events, such as review sessions.",
     "targetLang": "zh-Hans",
-    "translated": "与其他SWE实习生共同开发了TAO网站，观众人数为10,000+。练习了包括拉取请求和代码审查在内的Git工作流程。协助管理一个由5000+名工程学生组成的Discord社区，并通过头脑风暴活动（如复习会议）支持新生。",
+    "translated": "与其他SWE实习生共同开发了TAO网站，观众人数为10,000+。练习了包括拉取请求和代码审查在内的Git工作流程。协助管理一个由5000+名工程学生组成的Discord社区，并通过头脑风暴活动（如复习辅导）支持新生。",
     "cachedAt": "2026-07-02T02:40:29.665Z"
   },
   "cade3b4d842ce456030f242a6ffaa8ebbc2bf81ed437cf206905157b17822ee0": {
@@ -1907,12 +737,6 @@
     "translated": "軟體工程顧問",
     "cachedAt": "2026-07-02T02:40:32.067Z"
   },
-  "8f5cbd93207f0025395e987ccd68dc2aec224fd4916767505c681ac9994c83c6": {
-    "source": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place at the Aggies Create Innovation Expo.",
-    "targetLang": "zh-Hant",
-    "translated": "透過 Aggies Create，我們建立了 Signify Hex，一個內部數據視覺化工具，連結病患與醫療提供者，提供居家服務。建立了地理空間十六進位覆蓋層以提升提供者可達性，實作即時 gRPC 資料擷取，並透過基於 Redis 的變更追蹤減少不必要的前端刷新。定期與Signify Health領導層會面。榮獲 Aggies Create Innovation 博覽會第一名。",
-    "cachedAt": "2026-07-02T02:40:32.282Z"
-  },
   "09bddde982dd0dd186b318e5cc4170ba752479dd39ea9e80af75495cb6289b8b": {
     "source": "Engineering TA Organization",
     "targetLang": "zh-Hant",
@@ -1922,13 +746,13 @@
   "ab569ecdd1acfd6695aca40577df4ded61333e04aa606ff8be70a63d04949f62": {
     "source": "Web Officer & Software Engineering Intern",
     "targetLang": "zh-Hant",
-    "translated": "網頁管理員與軟體工程實習生",
+    "translated": "網站專員與軟體工程實習生",
     "cachedAt": "2026-07-02T02:40:32.505Z"
   },
   "3430bf914b6b2eb4d1de7e928d06f4740d14148ccf2dd576670fc46a63d90d96": {
     "source": "Developed the TAO website with fellow SWE interns for 10,000+ viewers. Practiced Git workflows including pull requests and code reviews. Helped manage a Discord community of 5,000+ engineering students and supported freshmen by brainstorming ideas for events, such as review sessions.",
     "targetLang": "zh-Hant",
-    "translated": "與其他 SWE 實習生共同開發了 TAO 網站，擁有 10,000+ 觀眾。練習了 Git 工作流程，包括 pull request 和程式碼審查。協助管理一個有 5,000+ 名工程學生的 Discord 社群，並透過集思廣益支持新生，為活動（如複習會）構思。",
+    "translated": "與其他 SWE 實習生共同開發了 TAO 網站，擁有 10,000+ 觀眾。練習了 Git 工作流程，包括 pull request 和程式碼審查。協助管理一個有 5,000+ 名工程學生的 Discord 社群，並透過集思廣益支持新生，為活動（如複習輔導）構思。",
     "cachedAt": "2026-07-02T02:40:32.699Z"
   },
   "7eeba1160bb4dcb8daa285784314be898e58884900d632aa92f1b944158fba41": {
@@ -1994,7 +818,7 @@
   "1810e6b4fe3803f300b50a3483bf6f7e045efe5f8804db38c6b26ea6517f8356": {
     "source": "Personal",
     "targetLang": "zh-Hans",
-    "translated": "个人生活",
+    "translated": "自主项目",
     "cachedAt": "2026-07-02T02:48:49.417Z"
   },
   "a67f1e80b3cc3bddba83c23b4188de72c2bd51563cfa30957121a03775cbd7ef": {
@@ -2048,7 +872,7 @@
   "3b8b4cbb709eb3147ba2bc77f76a7cd928fda2268b8f9d7d797b1a88d703fc6f": {
     "source": "Personal",
     "targetLang": "zh-Hant",
-    "translated": "個人生活",
+    "translated": "自主項目",
     "cachedAt": "2026-07-02T02:48:50.206Z"
   },
   "c84f575addeac87fa4aec3258dbe9268d74fd72088581c62f948a3368645ee15": {
@@ -2072,7 +896,7 @@
   "a04465e0215c3637be229ad20bc9d57ee80fb3c38b80ba0103b2028f84e6351f": {
     "source": "AI in Business",
     "targetLang": "zh-Hans",
-    "translated": "商业中的人工智能",
+    "translated": "人工智能在企业中的应用",
     "cachedAt": "2026-07-02T03:09:36.284Z"
   },
   "b76ffeb07ee9113dc1c1d58e73a7d208fbd07b5996f8ff3efdb227ad7ba8d79a": {
@@ -2396,7 +1220,7 @@
   "4f2d0b2b67cad09528aa371a961f1f3925ab8bff7c0800ba22ea19b3b97a25e3": {
     "source": "AI in Business",
     "targetLang": "zh-Hant",
-    "translated": "商業中的人工智慧",
+    "translated": "人工智慧在企業中的應用",
     "cachedAt": "2026-07-02T03:09:42.712Z"
   },
   "6cbe50957d1ba678a80c3d271a60effb902b5f13eabe8645ed2ae0ab0f0c0eb6": {
@@ -2746,5 +1570,29 @@
     "targetLang": "zh-Hant",
     "translated": "大二參加 Aggies Create 的大活動",
     "cachedAt": "2026-07-02T03:19:38.053Z"
+  },
+  "c6206eb43a508dbc97131b474e7cb41a68c0a9c709f4febe91f7d7e645163c94": {
+    "source": "Resume",
+    "targetLang": "zh-Hans",
+    "translated": "简历",
+    "cachedAt": "2026-07-02T20:33:39.022Z"
+  },
+  "6ae5a385f611276c03a5d93f7d8ea9a74ff3727d3a3e2eb52347b363811cb469": {
+    "source": "Resume",
+    "targetLang": "zh-Hant",
+    "translated": "履歷",
+    "cachedAt": "2026-07-02T20:33:39.346Z"
+  },
+  "407f769c9115e0897de279837ca6711a5f4a7c3a417ba2720048c3f2f91e85c0": {
+    "source": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+    "targetLang": "zh-Hans",
+    "translated": "通过Agies Create，我们开发了Signify Hex，一个内部数据可视化工具，将患者与医疗提供者连接起来，实现居家服务。创建了地理空间十六进制覆盖层以实现提供者可达性，实现了实时gRPC数据获取，并通过基于Redis的变更跟踪减少了不必要的前端刷新。定期与Signify Health领导层会面。在Aggies Create Innovation Expo中获得咨询项目第一名。",
+    "cachedAt": "2026-07-02T20:42:49.644Z"
+  },
+  "30258d0ddd891ce5c720add59ddfe688023adca3dfadffef5ff6234fbf3a4649": {
+    "source": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+    "targetLang": "zh-Hant",
+    "translated": "透過 Aggies Create，我們建立了 Signify Hex，一個內部數據視覺化工具，連結病患與醫療提供者，提供居家服務。建立了地理空間十六進位覆蓋層以提升提供者可達性，實作即時 gRPC 資料擷取，並透過基於 Redis 的變更追蹤減少不必要的前端刷新。定期與Signify Health領導層會面。在 Aggies Create Innovation Expo 諮詢專案中獲得第一名。",
+    "cachedAt": "2026-07-02T20:42:50.203Z"
   }
 }
