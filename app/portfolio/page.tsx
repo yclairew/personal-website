@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import ".././globals.css";
-import Cards from "@/components/Cards";
+import Cards from "@/components/Portfolio_cards";
 import Overscroll_color from "@/components/Overscroll_color";
 
 // export default function Portfolio() {

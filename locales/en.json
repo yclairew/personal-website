@@ -31,13 +31,20 @@
 
 
   "portfolio_heading": "Portfolio",
+
   "filter_type_label": "Type: ",
   "filter_context_label": "Context: ",
   "filter_all": "All",
-  "filter_project_singular": "project",
-  "filter_project_plural": "projects",
   "filter_reset": "Reset",
-  "filter_found": "found",
+  "filter_found_one": "{count} project found",
+  "filter_found_other": "{count} projects found",
+
+  "title_annomath": "AnnoMath",
+  "title_pearl-tea": "Pearl Tea POS System",
+  "title_aggies-create": "Aggies Create",
+  "title_signify-health": "Signify Health",
+  "title_tao": "Engineering TA Organization",
+  "title_bingo-board": "Bingo Board Generator",
 
   "card_annomath_role": "Undergraduate Researcher",
   "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Co-coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented annotation rendering, covering 22% of all annotations identified from frequency analysis of 30 instructional videos. Built frontend logic to render AI generated outputs from the OpenAI API.",
@@ -56,9 +63,26 @@
 
   "card_bingo-board_desc": "Built an automated bingo board generator that creates randomized bingo boards for ice cream store employees based on time-of-day logic and shift type to keep engagement up during slow periods.",
 
+  "skill_research-skills": "Research Skills",
+  "skill_teamwork": "Teamwork",
+  "skill_annotation-coding": "Annotation Coding",
+  "skill_agile": "Agile",
+  "skill_debugging": "Debugging",
+  "skill_leadership": "Leadership",
+  "skill_public-speaking": "Public Speaking",
+  "skill_machine-learning-model-training": "Machine Learning (Model Training)",
+  "skill_responsive-design": "Responsive Design",
+  "skill_automation": "Automation",
+  "skill_prompt-engineering": "Prompt Engineering",
+
+  "link_pos-system": "POS System",
+  "link_github": "GitHub",
+  "link_aggies-create": "Aggies Create",
+  "link_about-signify-health": "About Signify Health",
+  "link_website": "Website",
+
   "stacktype_frontend": "Frontend",
   "stacktype_full-stack": "Full-Stack",
-  "stacktype_ai/ml": "AI/ML",
   "stacktype_data-visualization": "Data Visualization",
   "stacktype_automation": "Automation",
 
@@ -69,7 +93,8 @@
   "context_personal": "Personal",
 
 
-  "coursework_heading": "Qualifications",
+
+  "coursework_heading": "Coursework",
   "coursework_inspire_heading": "Fields That Inspire Me",
   "coursework_datascience_title": "Data Science",
   "coursework_datascience_text_prefix": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I collaborated to work with",

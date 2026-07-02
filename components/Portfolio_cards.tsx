@@ -155,81 +155,205 @@ import { useLocale } from "@/lib/i18n/Locale_context";
 
 
 
-const cardsData: Omit<Card, "role" | "description">[] = [
+// const cardsData: Omit<Card, "role" | "description">[] = [
+//   {
+//     id: "annomath",
+//     title: "AnnoMath",
+//     stackType: ["Frontend", "AI/ML"],
+//     context: "Research",
+//     type: "video",
+//     media: "annomath-paper-video.mp4",
+//     links: [],
+//     skills: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
+//   },
+//   {
+//     id: "pearl-tea",
+//     title: "Pearl Tea POS System",
+//     stackType: ["Full-Stack"],
+//     context: "Coursework",
+//     type: "image",
+//     media: "boba-pos-img.png",
+//     links: [
+//       { label: "POS System", url: "https://new-project3-gang71.onrender.com/" },
+//       { label: "GitHub", url: "https://github.com/yclairew/project3-gang71" }
+//     ],
+//     skills: ["PostgreSQL", "Java", "Rest APIs", "AWS", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging"]
+//   },
+//   {
+//     id: "aggies-create",
+//     title: "Aggies Create",
+//     logo: "aggies-create-logo.png",
+//     stackType: ["Frontend", "AI/ML"],
+//     context: "Consulting",
+//     type: "video",
+//     media: "aggies-create-quiz-demo.mov",
+//     links: [
+//       { label: "Aggies Create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
+//     ],
+//     skills: ["scikit-learn", "Machine Learning (Model Training)", "JavaScript", "HTML/CSS", "Leadership", "Public Speaking"]
+//   },
+//   {
+//     id: "signify-health",
+//     title: "Signify Health",
+//     logo: "signify-health-logo.png",
+//     stackType: ["Full-Stack", "Data Visualization"],
+//     context: "Consulting",
+//     type: "video",
+//     media: "signify-hex-demo.mp4",
+//     links: [
+//       { label: "About Signify Health", url: "https://www.signifyhealth.com/" }
+//     ],
+//     skills: ["Go", "UberH3", "Redis", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
+//   },
+//   {
+//     id: "tao",
+//     title: "Engineering TA Organization",
+//     logo: "tao-logo.png",
+//     stackType: ["Frontend"],
+//     context: "Organization",
+//     type: "image",
+//     media: "tao-img.png",
+//     links: [
+//       { label: "Website", url: "https://engrtao.tech/" },
+//       { label: "GitHub", url: "https://github.com/TAO-ENGR/club-website" }
+//     ],
+//     skills: ["Next.js", "Tailwind CSS", "TypeScript", "React", "Responsive Design", "Teamwork"]
+//   },
+//   {
+//     id: "bingo-board",
+//     title: "Bingo Board Generator",
+//     stackType: ["Automation"],
+//     context: "Personal",
+//     type: "image",
+//     media: "bingo-board-img.png",
+//     links: [
+//       { label: "GitHub", url: "https://github.com/yclairew/automated-bingo-generator" }
+//     ],
+//     skills: ["Python", "Selenium", "Automation"]
+//   },
+// ];
+
+// interface Card {
+//   id: string;
+//   title: string;
+//   role?: string;
+//   logo?: string;
+//   description: string;
+//   stackType: string[];
+//   context: string;
+//   type: "image" | "video";
+//   media: string;
+//   links: { label: string; url: string }[];
+//   skills: string[];
+// }
+
+
+// function slugify(value: string) {
+//   return value.toLowerCase().replace(/\s+/g, "-");
+// }
+
+
+// function getCards(t: Record<string, string>): Card[] {
+//   return cardsData.map((card) => ({
+//     ...card,
+//     role: t[`card_${card.id}_role`] || undefined,
+//     description: t[`card_${card.id}_desc`],
+//   }));
+// }
+
+const SOFT_SKILLS = new Set([
+  "Research Skills",
+  "Teamwork",
+  "Annotation Coding",
+  "Agile",
+  "Debugging",
+  "Leadership",
+  "Public Speaking",
+  "Machine Learning (Model Training)",
+  "Responsive Design",
+  "Automation",
+  "Prompt Engineering",
+]);
+
+const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "links"> & {
+  titleKey: string;
+  skillKeys: string[];
+  linkKeys: { key: string; url: string }[];
+})[] = [
   {
     id: "annomath",
-    title: "AnnoMath",
+    titleKey: "annomath",
     stackType: ["Frontend", "AI/ML"],
     context: "Research",
     type: "video",
     media: "annomath-paper-video.mp4",
-    links: [],
-    skills: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
+    linkKeys: [],
+    skillKeys: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
   },
   {
     id: "pearl-tea",
-    title: "Pearl Tea POS System",
+    titleKey: "pearl-tea",
     stackType: ["Full-Stack"],
     context: "Coursework",
     type: "image",
     media: "boba-pos-img.png",
-    links: [
-      { label: "POS System", url: "https://new-project3-gang71.onrender.com/" },
-      { label: "GitHub", url: "https://github.com/yclairew/project3-gang71" }
+    linkKeys: [
+      { key: "pos-system", url: "https://new-project3-gang71.onrender.com/" },
+      { key: "github", url: "https://github.com/yclairew/project3-gang71" }
     ],
-    skills: ["PostgreSQL", "Java", "Rest APIs", "AWS", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging"]
+    skillKeys: ["PostgreSQL", "Java", "Rest APIs", "AWS", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging"]
   },
   {
     id: "aggies-create",
-    title: "Aggies Create",
+    titleKey: "aggies-create",
     logo: "aggies-create-logo.png",
     stackType: ["Frontend", "AI/ML"],
     context: "Consulting",
     type: "video",
     media: "aggies-create-quiz-demo.mov",
-    links: [
-      { label: "Aggies Create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
+    linkKeys: [
+      { key: "aggies-create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
     ],
-    skills: ["scikit-learn", "Machine Learning (Model Training)", "JavaScript", "HTML/CSS", "Leadership", "Public Speaking"]
+    skillKeys: ["scikit-learn", "Machine Learning (Model Training)", "JavaScript", "HTML/CSS", "Leadership", "Public Speaking"]
   },
   {
     id: "signify-health",
-    title: "Signify Health",
+    titleKey: "signify-health",
     logo: "signify-health-logo.png",
     stackType: ["Full-Stack", "Data Visualization"],
     context: "Consulting",
     type: "video",
     media: "signify-hex-demo.mp4",
-    links: [
-      { label: "About Signify Health", url: "https://www.signifyhealth.com/" }
+    linkKeys: [
+      { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
     ],
-    skills: ["Go", "UberH3", "Redis", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
+    skillKeys: ["Go", "UberH3", "Redis", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
   },
   {
     id: "tao",
-    title: "Engineering TA Organization",
+    titleKey: "tao",
     logo: "tao-logo.png",
     stackType: ["Frontend"],
     context: "Organization",
     type: "image",
     media: "tao-img.png",
-    links: [
-      { label: "Website", url: "https://engrtao.tech/" },
-      { label: "GitHub", url: "https://github.com/TAO-ENGR/club-website" }
+    linkKeys: [
+      { key: "website", url: "https://engrtao.tech/" },
+      { key: "github", url: "https://github.com/TAO-ENGR/club-website" }
     ],
-    skills: ["Next.js", "Tailwind CSS", "TypeScript", "React", "Responsive Design", "Teamwork"]
+    skillKeys: ["Next.js", "Tailwind CSS", "TypeScript", "React", "Responsive Design", "Teamwork"]
   },
   {
     id: "bingo-board",
-    title: "Bingo Board Generator",
+    titleKey: "bingo-board",
     stackType: ["Automation"],
     context: "Personal",
     type: "image",
     media: "bingo-board-img.png",
-    links: [
-      { label: "GitHub", url: "https://github.com/yclairew/automated-bingo-generator" }
+    linkKeys: [
+      { key: "github", url: "https://github.com/yclairew/automated-bingo-generator" }
     ],
-    skills: ["Python", "Selenium", "Automation"]
+    skillKeys: ["Python", "Selenium", "Automation"]
   },
 ];
 
@@ -247,19 +371,29 @@ interface Card {
   skills: string[];
 }
 
-
 function slugify(value: string) {
   return value.toLowerCase().replace(/\s+/g, "-");
 }
 
+function translateSkill(skill: string, t: Record<string, string>) {
+  if (!SOFT_SKILLS.has(skill)) return skill; // keep tech/tool names untranslated
+  return t[`skill_${slugify(skill)}`] || skill;
+}
 
 function getCards(t: Record<string, string>): Card[] {
   return cardsData.map((card) => ({
     ...card,
+    title: t[`title_${card.titleKey}`] || card.titleKey,
     role: t[`card_${card.id}_role`] || undefined,
     description: t[`card_${card.id}_desc`],
+    skills: card.skillKeys.map((skill) => translateSkill(skill, t)),
+    links: card.linkKeys.map(({ key, url }) => ({
+      label: t[`link_${key}`] || key,
+      url,
+    })),
   }));
 }
+
 
 
 // function ProjectCard({ card, setSkillFilter, skillFilter }: { 
@@ -522,6 +656,9 @@ export default function Cards() {
     (skillFilter === "All" || card.skills.includes(skillFilter))
   );
 
+  const key = filteredCards.length === 1 ? "filter_found_one" : "filter_found_other";
+  const found_text = t[key].replace("{count}", String(filteredCards.length));
+
   useEffect(() => {
     const hash = window.location.hash.slice(1);
     if (hash) {
@@ -563,7 +700,7 @@ export default function Cards() {
       
       <div className="flex flex-row gap-3 items-center justify-center mb-4">
         <p className="text-sm [font-family:var(--font-body)] text-subheading text-center">
-          {filteredCards.length} {filteredCards.length === 1 ? t.filter_project_singular : t.filter_project_plural} {t.filter_found}
+          {found_text}
         </p>
 
         {(typeFilter !== "All" || contextFilter !== "All" || skillFilter !== "All") &&  

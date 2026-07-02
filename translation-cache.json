@@ -44,7 +44,7 @@
   "966b197235228c474c0d251f7f4414b4c7f9135feaf0b213719c6be1dd492606": {
     "source": "AnnoMath",
     "targetLang": "zh-Hans",
-    "translated": "安诺数学",
+    "translated": "AnnoMath",
     "cachedAt": "2026-07-01T22:12:21.012Z"
   },
   "9ca28d217903cfe938f6984cc77191e4c2d0d6091fff9873ade6fc5c423c1a69": {
@@ -122,7 +122,7 @@
   "19da9591efd8d7845080bd09cdf1d1cf75fdf2178d45985deab50e979c19d0f4": {
     "source": "Signify Health",
     "targetLang": "zh-Hans",
-    "translated": "健康象征",
+    "translated": "Signify Health",
     "cachedAt": "2026-07-01T22:12:22.283Z"
   },
   "9c0fce68799348e5c927354f51286f3c5cea1848f6fc7461f1959d89b8e60000": {
@@ -398,7 +398,7 @@
   "d89ee362b87ff7de805b241b0f4e83668002ec3df50ba2c43c4be6b20abf7cb4": {
     "source": "Signify Health",
     "targetLang": "zh-Hant",
-    "translated": "象徵健康",
+    "translated": "Signify Health",
     "cachedAt": "2026-07-01T22:44:40.993Z"
   },
   "60d428083570cd3a741c5a99bc77b0f32c78ecbba3572eff994910564a61f43b": {
@@ -572,7 +572,7 @@
   "819eaba0775739859047ff32d85c4d23052134adab06a637d98a6ed4457ce3cb": {
     "source": "Pearl Tea POS System",
     "targetLang": "zh-Hans",
-    "translated": "珍珠茶POS系统",
+    "translated": "珍珠奶茶收款系统",
     "cachedAt": "2026-07-02T02:40:28.208Z"
   },
   "406fef7c452bfef22cb00d865fbe0774b2581caf014c3c1d80aab989a2380814": {
@@ -590,7 +590,7 @@
   "7a4190b5aebaee294c19350a5c803a225f9d20380075299b1cd163b41e8c0a03": {
     "source": "Aggies Create",
     "targetLang": "zh-Hans",
-    "translated": "农工创造",
+    "translated": "Aggies Create",
     "cachedAt": "2026-07-02T02:40:28.612Z"
   },
   "aa56152eddf030fcd3ffd50de8a4e210e2a04e655db650c8195f8295bc9dfc6c": {
@@ -632,7 +632,7 @@
   "cade3b4d842ce456030f242a6ffaa8ebbc2bf81ed437cf206905157b17822ee0": {
     "source": "Bingo Board Generator",
     "targetLang": "zh-Hans",
-    "translated": "宾果棋盘生成器",
+    "translated": "网上宾果游戏生成器",
     "cachedAt": "2026-07-02T02:40:29.767Z"
   },
   "b11c11382d1c3982844c81801ccc0b509ccab63957a166db523ee609b8b74813": {
@@ -698,7 +698,7 @@
   "c68d5d71a74970a57eac8417954af0fe22ca515c6499a45bd99f6b5da0f23109": {
     "source": "Pearl Tea POS System",
     "targetLang": "zh-Hant",
-    "translated": "珍珠茶POS系統",
+    "translated": "珍珠奶茶收款系統",
     "cachedAt": "2026-07-02T02:40:31.286Z"
   },
   "0359c0e9807344945dc94ed05c2ae31c59ecca46a6ad03300fa583cc0fa983bb": {
@@ -758,13 +758,13 @@
   "7eeba1160bb4dcb8daa285784314be898e58884900d632aa92f1b944158fba41": {
     "source": "Bingo Board Generator",
     "targetLang": "zh-Hant",
-    "translated": "賓果棋盤產生器",
+    "translated": "網上賓果遊戲生成器",
     "cachedAt": "2026-07-02T02:40:32.798Z"
   },
   "0ffb551539cf6d2732af05a32ffa1ccbb9b69e32494f32f5bbcf9414f6c7cf07": {
     "source": "Built an automated bingo board generator that creates randomized bingo boards for ice cream store employees based on time-of-day logic and shift type to keep engagement up during slow periods.",
     "targetLang": "zh-Hant",
-    "translated": "打造了自動賓果板產生器，根據時間邏輯和班次類型，為冰淇淋店員工隨機生成賓果板，以在清閒時段保持互動。",
+    "translated": "打造了自動賓果棋盤生成器，根據時間邏輯和班次類型，為冰淇淋店員工隨機生成賓果板，以在清閒時段保持互動。",
     "cachedAt": "2026-07-02T02:40:32.979Z"
   },
   "2e90c1dd85af8d784052970d3c57c798887c3eec9ec8d3adc778be0f5cfaf80d": {
@@ -1594,5 +1594,185 @@
     "targetLang": "zh-Hant",
     "translated": "透過 Aggies Create，我們建立了 Signify Hex，一個內部數據視覺化工具，連結病患與醫療提供者，提供居家服務。建立了地理空間十六進位覆蓋層以提升提供者可達性，實作即時 gRPC 資料擷取，並透過基於 Redis 的變更追蹤減少不必要的前端刷新。定期與Signify Health領導層會面。在 Aggies Create Innovation Expo 諮詢專案中獲得第一名。",
     "cachedAt": "2026-07-02T20:42:50.203Z"
+  },
+  "a0d669b7b92766c3c596666070242546a6ac8ec49b123c82c8407e7e7fab6b31": {
+    "source": "{count} project found",
+    "targetLang": "zh-Hans",
+    "translated": "发现 {count} 个项目",
+    "cachedAt": "2026-07-02T20:55:24.067Z"
+  },
+  "307e53a77054bf6cff56b74f81dcdb300d530ce1db55a28ffb7deeeecaad281b": {
+    "source": "{count} projects found",
+    "targetLang": "zh-Hans",
+    "translated": "发现 {count} 个项目",
+    "cachedAt": "2026-07-02T20:55:24.499Z"
+  },
+  "757b9978fa44bd662f97958b601ef72373e48eb4c979a67208fdbc0095c1afbf": {
+    "source": "{count} project found",
+    "targetLang": "zh-Hant",
+    "translated": "發現 {count} 個項目",
+    "cachedAt": "2026-07-02T20:55:24.762Z"
+  },
+  "610c4b340c7e2a982f91d32ab36d13951af693d28646639b46d32c834ce113d4": {
+    "source": "{count} projects found",
+    "targetLang": "zh-Hant",
+    "translated": "發現 {count} 個項目",
+    "cachedAt": "2026-07-02T20:55:24.941Z"
+  },
+  "10ab982feb5414037ee4bbc59636903cf2fcdef427fac7ccf5d9102279564cf8": {
+    "source": "Research Skills",
+    "targetLang": "zh-Hans",
+    "translated": "研究技能",
+    "cachedAt": "2026-07-02T21:06:27.735Z"
+  },
+  "6d8c76c6a88e7c7acb66a8affd2a83b96c74ac1101873f68adf12a596f7c554a": {
+    "source": "Teamwork",
+    "targetLang": "zh-Hans",
+    "translated": "团队合作",
+    "cachedAt": "2026-07-02T21:06:27.975Z"
+  },
+  "9e8245157056bbc70dc135e15388815a5a567a283dae59d157a255de135d4fdd": {
+    "source": "Annotation Coding",
+    "targetLang": "zh-Hans",
+    "translated": "注释编码",
+    "cachedAt": "2026-07-02T21:06:28.166Z"
+  },
+  "a84a00d8791a72d8cab82c454b78feb22cbe650e1cad8e3f1eb577b4799da57d": {
+    "source": "Agile",
+    "targetLang": "zh-Hans",
+    "translated": "敏捷",
+    "cachedAt": "2026-07-02T21:06:28.327Z"
+  },
+  "24d788fdd40c79edb9180d64afcf4ebdab14c459a9a0293179576a3674ca63f6": {
+    "source": "Debugging",
+    "targetLang": "zh-Hans",
+    "translated": "调试",
+    "cachedAt": "2026-07-02T21:06:28.399Z"
+  },
+  "eefc3bee6ed9b9b3fd5950b042c052bb6f21705d6470c6126c8e166914e7728d": {
+    "source": "Leadership",
+    "targetLang": "zh-Hans",
+    "translated": "领导层",
+    "cachedAt": "2026-07-02T21:06:28.520Z"
+  },
+  "fff859364d39d65790a2129d16c052969329d8258918c3ec5e6d3d68345ceed6": {
+    "source": "Public Speaking",
+    "targetLang": "zh-Hans",
+    "translated": "公众演讲",
+    "cachedAt": "2026-07-02T21:06:28.703Z"
+  },
+  "c7ace8853841bc03faf221dec396014ce5eb67601f7336e35f1c0341e4fc256b": {
+    "source": "Machine Learning (Model Training)",
+    "targetLang": "zh-Hans",
+    "translated": "机器学习（模型训练）",
+    "cachedAt": "2026-07-02T21:06:28.858Z"
+  },
+  "ae26b8dc81a24f9d52eb32830c31c0cf8bdd119a90d07e064b6ed6b9c0aa3ba0": {
+    "source": "Responsive Design",
+    "targetLang": "zh-Hans",
+    "translated": "响应式设计",
+    "cachedAt": "2026-07-02T21:06:28.984Z"
+  },
+  "be4d50e05714ead5abfd45ffdd1398dfe22cba45aa722ae9de8aff6ba902c9aa": {
+    "source": "Prompt Engineering",
+    "targetLang": "zh-Hans",
+    "translated": "提示工程",
+    "cachedAt": "2026-07-02T21:06:29.075Z"
+  },
+  "793e6da30ea530f5ab3fde2cbc00ffd6b32445d36544e4278016c770597d2e40": {
+    "source": "POS System",
+    "targetLang": "zh-Hans",
+    "translated": "收款系统",
+    "cachedAt": "2026-07-02T21:06:29.274Z"
+  },
+  "8595086a0a22a42a7990acdff28deb59627768ff8e9542f1ab0bf59d06a85136": {
+    "source": "About Signify Health",
+    "targetLang": "zh-Hans",
+    "translated": "关于Signify Health",
+    "cachedAt": "2026-07-02T21:06:29.453Z"
+  },
+  "3abd95e3fb77ed787b2ea1275e1e386bdb5919522d4f303c9a49d0bcd943d907": {
+    "source": "Website",
+    "targetLang": "zh-Hans",
+    "translated": "网站",
+    "cachedAt": "2026-07-02T21:06:29.534Z"
+  },
+  "d5328568ee6bdb2a16277fcccb014bb6345f74842cf8f754ebd42c63c402b738": {
+    "source": "Research Skills",
+    "targetLang": "zh-Hant",
+    "translated": "研究技能",
+    "cachedAt": "2026-07-02T21:06:29.776Z"
+  },
+  "489b37a5496bc45b2d7f2872f120c9c719bbdbb28240f0367c6c66b1e0c998aa": {
+    "source": "Teamwork",
+    "targetLang": "zh-Hant",
+    "translated": "團隊合作",
+    "cachedAt": "2026-07-02T21:06:29.897Z"
+  },
+  "e86a55631a7eb9dd126fd55880397560aeb363bb352869fe47f6b68f9c58015e": {
+    "source": "Annotation Coding",
+    "targetLang": "zh-Hant",
+    "translated": "註解編碼",
+    "cachedAt": "2026-07-02T21:06:29.990Z"
+  },
+  "ba9352093b52007aeca95250cb4cf0041b22600cfb3e74a946908faeec1fa1f5": {
+    "source": "Agile",
+    "targetLang": "zh-Hant",
+    "translated": "敏捷",
+    "cachedAt": "2026-07-02T21:06:30.080Z"
+  },
+  "c5e92479a59a3fbb730bfc9f10a80aae246682c225dcb73f7c43f124e3cd23c9": {
+    "source": "Debugging",
+    "targetLang": "zh-Hant",
+    "translated": "除錯",
+    "cachedAt": "2026-07-02T21:06:30.174Z"
+  },
+  "61b0a7c3425c285ff97810dcbdfe7ddf85494112b01828b90cd2e75d6d54c333": {
+    "source": "Leadership",
+    "targetLang": "zh-Hant",
+    "translated": "領導層",
+    "cachedAt": "2026-07-02T21:06:30.264Z"
+  },
+  "dd99f4898d5140d26e1e1fa25ec85bb50e17d7b73b8a27986eb91b5cac5b4dc5": {
+    "source": "Public Speaking",
+    "targetLang": "zh-Hant",
+    "translated": "公開演講",
+    "cachedAt": "2026-07-02T21:06:30.363Z"
+  },
+  "3325d218fcf7d7894e9e13e357fb49d22b3b30e213bc6f56ce85403909c7820b": {
+    "source": "Machine Learning (Model Training)",
+    "targetLang": "zh-Hant",
+    "translated": "機器學習（模型訓練）",
+    "cachedAt": "2026-07-02T21:06:30.513Z"
+  },
+  "ba57a7c0c04d76d5ce31ee840b524ae6a4f41f51f934778f56f2ea7e75abbcb4": {
+    "source": "Responsive Design",
+    "targetLang": "zh-Hant",
+    "translated": "響應式設計",
+    "cachedAt": "2026-07-02T21:06:30.615Z"
+  },
+  "fb0f6fa68fbe2d5bfe5714215540354f8c6f22cde848470a1fea581f425ba2ff": {
+    "source": "Prompt Engineering",
+    "targetLang": "zh-Hant",
+    "translated": "提示工程",
+    "cachedAt": "2026-07-02T21:06:30.705Z"
+  },
+  "2418ffedf72327f974a99f105b2de2871fdeaf44d78c5e32dfe0643798cdba83": {
+    "source": "POS System",
+    "targetLang": "zh-Hant",
+    "translated": "收款系統",
+    "cachedAt": "2026-07-02T21:06:30.853Z"
+  },
+  "05306763c5afc5e2e955939b6a45bdcc8f188f65f7f5cd49513d2576a44cc108": {
+    "source": "About Signify Health",
+    "targetLang": "zh-Hant",
+    "translated": "關於 Signify Health",
+    "cachedAt": "2026-07-02T21:06:30.961Z"
+  },
+  "5aabbe380894c0aa044e96b9458d6a7dd7e5595fb9c9ffb623988e05e8ae9acb": {
+    "source": "Website",
+    "targetLang": "zh-Hant",
+    "translated": "網站",
+    "cachedAt": "2026-07-02T21:06:31.026Z"
   }
 }
