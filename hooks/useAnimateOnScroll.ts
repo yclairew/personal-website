@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 export function useAnimateOnScroll() {
   const ref = useRef<HTMLDivElement>(null);

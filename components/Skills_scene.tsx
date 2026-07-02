@@ -89,7 +89,7 @@ function seededShuffle(arr: string[], seed: number) {
 }
 
 
-const AnimatedMesh = animated('mesh')
+const AnimatedMesh = animated("mesh")
 
 const Icon = forwardRef<THREE.Mesh, { 
   position: [number, number, number], 
@@ -192,7 +192,7 @@ function IconGrid() {
 
 export default function Skills_scene() {
   return (
-    <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100vw", height: "100vh" }}>
+    <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100vw", height: "100vh" }} className="cursor-grab active:cursor-grabbing">
       <IconGrid/>
       <OrbitControls 
         enableRotate={false} 

@@ -7,15 +7,36 @@ import Footer from "@/components/footer";
 import Cards from "@/components/Cards";
 import Overscroll_color from "@/components/Overscroll_color";
 
+// export default function Portfolio() {
+//   Overscroll_color(); 
+
+//   return (
+//     <div className="bg-background">
+//       <title>Claire Wu</title>
+//       <Nav/>
+//       <h1 className="heading-text text-text mt-5">Portfolio</h1>
+      
+//       <div className="center">
+//         <Cards/>
+//       </div>
+
+//       <Footer/>
+//     </div>
+//   );
+// }
+
+import { useLocale } from "@/lib/i18n/Locale_context";
+
 export default function Portfolio() {
   Overscroll_color(); 
+  const { t } = useLocale();
 
   return (
     <div className="bg-background">
-      <title>Claire Wu</title>
+      <title>{t.site_title}</title>
       <Nav/>
-      <h1 className="heading-text text-text mt-5">Portfolio</h1>
-      
+      <h1 className="heading-text text-text mt-5">{t.portfolio_heading}</h1>
+
       <div className="center">
         <Cards/>
       </div>

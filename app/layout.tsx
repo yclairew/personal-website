@@ -58,6 +58,8 @@ export const metadata: Metadata = {
 
 
 import { Lora, Montserrat } from "next/font/google";
+import { LocaleProvider } from "@/lib/i18n/Locale_context";
+import LanguageSwitcher from "@/components/Language_switcher";
 
 
 const lora = Lora({ subsets: ["latin"] })
@@ -82,7 +84,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "--font-heading": "'Kapakana', serif",
         } as React.CSSProperties}
       >
-        {children}
+        <LocaleProvider>
+          <header>
+            <LanguageSwitcher />
+          </header>
+          {children}
+          
+        </LocaleProvider>
       </body>
     </html>
   )

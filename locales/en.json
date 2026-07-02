@@ -1,0 +1,96 @@
+{
+  "site_title": "Claire Wu",
+
+  "nav_about": "About",
+  "nav_portfolio": "Portfolio", 
+  "nav_qualifications": "Qualifications",
+  "nav_service": "Service",
+
+  "footer_heading": "Claire Wu",
+  "footer_role": "Full Stack Developer",
+  "footer_linkedin": "LinkedIn",
+  "footer_github": "GitHub",
+  "footer_email": "Email",
+
+  "home_heading": "Claire Wu",
+  "home_subtitle_prefix": "CS senior at Texas A&M, minoring in Statistics and",
+  "home_subtitle_link": "AI in business",
+  "home_headshot_alt": "Claire Wu headshot",
+  "home_intro_p1_prefix": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
+  "home_intro_p1_link": "Dream Lab",
+  "home_intro_p1_suffix": "working on",
+  "home_intro_p1_project": "AnnoMath",
+  "home_intro_p1_suffix2": "an AI-powered multimodial interactive math tutorial system.",
+  "home_intro_p2_prefix": "When I'm not coding, you can usually find me at the gym, crocheting or doing other crafts, or exploring new coffee shops!",
+  "home_intro_p2_middle": "Check out my",
+  "home_intro_p2_portfolio_link": "portfolio",
+  "home_intro_p2_or": "or feel free to",
+  "home_intro_p2_contact_link": "contact me!",
+  "home_skills_heading": "My Skills",
+
+
+  "portfolio_heading": "Portfolio",
+  "filter_type_label": "Type: ",
+  "filter_context_label": "Context: ",
+  "filter_all": "All",
+  "filter_project_singular": "project",
+  "filter_project_plural": "projects",
+  "filter_reset": "Reset",
+  "filter_found": "found",
+
+  "card_annomath_role": "Undergraduate Researcher",
+  "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Co-coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented annotation rendering, covering 22% of all annotations identified from frequency analysis of 30 instructional videos. Built frontend logic to render AI generated outputs from the OpenAI API.",
+
+  "card_pearl-tea_role": "Full-Stack Developer",
+  "card_pearl-tea_desc": "Built a multi-interface boba shop POS platform on an Agile Scrum team. Led deployment and authentification security, integrated a TTS API and weather based drink recommendations, and contributed to dynamic database driven menu rendering, drink customization, and checkout flows.",
+
+  "card_aggies-create_role": "Team Lead and Consultant",
+  "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.",
+
+  "card_signify-health_role": "Software Engineering Consultant",
+  "card_signify-health_desc": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place at the Aggies Create Innovation Expo.",
+
+  "card_tao_role": "Web Officer & Software Engineering Intern",
+  "card_tao_desc": "Developed the TAO website with fellow SWE interns for 10,000+ viewers. Practiced Git workflows including pull requests and code reviews. Helped manage a Discord community of 5,000+ engineering students and supported freshmen by brainstorming ideas for events, such as review sessions.",
+
+  "card_bingo-board_desc": "Built an automated bingo board generator that creates randomized bingo boards for ice cream store employees based on time-of-day logic and shift type to keep engagement up during slow periods.",
+
+  "stacktype_frontend": "Frontend",
+  "stacktype_full-stack": "Full-Stack",
+  "stacktype_ai/ml": "AI/ML",
+  "stacktype_data-visualization": "Data Visualization",
+  "stacktype_automation": "Automation",
+
+  "context_research": "Research",
+  "context_coursework": "Coursework",
+  "context_consulting": "Consulting",
+  "context_organization": "Organization",
+  "context_personal": "Personal",
+
+
+  "qualifications_heading": "Qualifications",
+  "qualifications_inspire_heading": "Fields That Inspire Me",
+  "qualifications_datascience_title": "Data Science",
+  "qualifications_datascience_text_prefix": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I collaborated to work with",
+  "qualifications_datascience_link": "Signify Health",
+  "qualifications_datascience_text_suffix": "to create a system that brings healthcare services to patients' doorsteps. I am grateful to have worked on a project combining two powerful fields (computer science and statistics) to have a direct, positive impact on patients.",
+  "qualifications_ai_title": "Artificial intelligence (AI)",
+  "qualifications_ai_text_prefix": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodial college math tutoring system as part of my research under",
+  "qualifications_ai_link": "Dr. Xia",
+  "qualifications_ai_text_suffix": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
+  "qualifications_business_title": "Business",
+  "qualifications_business_text_prefix": "Inspired my dad, I developed an interest in business early on. In high school, I pursued and graduated with an Associate degree in Business through dual credit. Currently, I am earning a minor under Mays Business School in",
+  "qualifications_business_link": "AI in business",
+  "qualifications_coursework_heading": "Coursework",
+  "qualifications_resume_prompt": "Please check out and download my resume here!",
+  "qualifications_resume_open_button": "Open ↗",
+  "qualifications_resume_download_button": "Download ↓",
+
+  "service_heading": "Service",
+  "service_text_prefix": "I have always been passionate about serving the community. In middle school and high school, I would volunteer at the thrift store and help make sandwiches for the homeless. This love for service extended into college, and I joined a Freshman Leadership Organization (FLO) called",
+  "service_text_link": "MSC FISH",
+  "service_text_suffix": "Memorial Student Center Freshmen in Service and Hosting. Through MSC FISH, I participated in various service opportunities, such as picking up trash at a park and volunteering at the food bank.",
+  "service_extra_text_prefix": "Since freshman year, I have continued to participate in community service, including Texas A&M's annual service event called",
+  "service_extra_text_link": "Big Event",
+  "service_extra_text_suffix": "which gives students a chance to serve residents of the Bryan-College Station area. Giving back to the community is very important to me, and I would love to be part of a corporate culture that is committed to that cause."
+}
