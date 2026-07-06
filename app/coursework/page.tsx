@@ -7,15 +7,15 @@ import { useLocale } from "@/lib/i18n/Locale_context";
 
 
 export default function Coursework() {
+  Overscroll_color(); 
   const { t, locale } = useLocale();
   const isChinese = ["zh-Hans", "zh-Hant"].includes(locale);
-  Overscroll_color(); 
 
   return (
     <div className="bg-background">
       <title>{t.site_title}</title>
 
-      <h1 className="heading-text mt-5">{t.coursework_heading}</h1>
+      <h1 className={`heading-text mt-5 ${isChinese ? "text-[10rem]! mt-18 mb-5! underline-offset-20!" : ""}`}>{t.coursework_heading}</h1>
 
       <div className="inspire-div ml-12 mr-20 mb-30">
         <h2 className="reveal-box areas-subheading subheadings mb-7 text-5xl!">{t.coursework_inspire_heading}</h2>

@@ -7,17 +7,28 @@ import { useLocale } from "@/lib/i18n/Locale_context";
 
 export default function Home() {
   Overscroll_color();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+  const isChinese = ["zh-Hans", "zh-Hant"].includes(locale);
+  const isSimplifiedChinese = locale === "zh-Hans";
+  const isTraditionalChinese = locale === "zh-Hant";  
+  const typingWidth =
+  isSimplifiedChinese
+    ? "49.5ch"
+    : isTraditionalChinese
+    ? "43ch"
+    : "48.5ch"; // for typing animation
 
   return (
     <div className="bg-background">
       <title>{t.site_title}</title>
       <div>
-        <h1 className="heading-text text-text [text-box-trim:trim-end] mt-5 -mb-4">{t.home_heading}</h1>
+        <h1 className={`heading-text text-text ${isChinese ? "text-[10rem]! mt-18 mb-5! underline-offset-20!" : ""} [text-box-trim:trim-end] mt-5 -mb-4`}>{t.home_heading}</h1>
       </div>
 
       <div className="flex justify-center"> {/* keeps text centered during typing animation */}
-        <p className="body-text typing-animation mb-14 text-text">
+        <p className="body-text typing-animation mb-14 text-text" 
+          style={{ "--typing-width": typingWidth }}
+        >
           {t.home_subtitle_prefix}{" "}
           <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">{t.home_subtitle_link}</a>
         </p>

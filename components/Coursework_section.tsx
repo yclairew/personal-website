@@ -253,12 +253,6 @@ export default function CourseworkSection() {
               {course.name}
             </button>
 
-            {/* {course.portfolioLink && (
-              <Link href={`${course.portfolioLink.href}?from=coursework`} title={course.portfolioLink.label}>
-                <p className="text-subheading hover:text-accent">↗</p>
-              </Link>
-            )} */}
-
             {course.portfolioLink && (
               <Link
                 href={insertQueryBeforeHash(course.portfolioLink.href, "from=coursework")}

@@ -10,7 +10,8 @@ import { BackButton } from "@/components/ui/back-button";
 
 export default function PortfolioContent() {
   Overscroll_color();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+  const isChinese = ["zh-Hans", "zh-Hant"].includes(locale);
 
   const searchParams = useSearchParams();
   const showBackButton = searchParams.get("from") === "coursework";
@@ -25,7 +26,7 @@ export default function PortfolioContent() {
         </div>
       )}
 
-      <h1 className="heading-text text-text mt-5">{t.portfolio_heading}</h1>
+      <h1 className={`heading-text text-text mt-5 ${isChinese ? "text-[10rem]! mt-18 mb-5! underline-offset-20!" : ""}`}>{t.portfolio_heading}</h1>
 
       <div className="center mb-25">
         <Cards />

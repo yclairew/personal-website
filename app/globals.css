@@ -198,7 +198,7 @@ a:hover, a:focus {
 /* typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 48.5ch } /* reveals full text */
+  to { width: var(--typing-width) } /* reveals full text */
 }
 /* blinking cursor */
 @keyframes blink-caret {

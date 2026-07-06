@@ -25,14 +25,16 @@ export default function Service() {
   const ref1 = useAnimateOnScroll();  
   const ref2 = useAnimateOnScroll(); 
   Overscroll_color(); 
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+  const isChinese = ["zh-Hans", "zh-Hant"].includes(locale);
+
   const serviceSlides = getServiceSlides(t);
 
   return (
     <div className="bg-background">
       <title>{t.site_title}</title>
 
-      <h1 className="heading-text text-text mt-5">{t.service_heading}</h1>
+      <h1 className={`heading-text text-text mt-5 ${isChinese ? "text-[10rem]! mt-18 mb-5! underline-offset-20!" : ""}`}>{t.service_heading}</h1>
 
       <div className="service-container">
           <Slideshow slides={serviceSlides}/>

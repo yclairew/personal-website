@@ -10,21 +10,20 @@ const Nav = () => {
     return (
         <nav className="pb-3 pt-3 bg-accent-light border-b-2 border-accent-light shadow-sm align-center font-[Montserrat]">
             <div className="flex w-full">
-                <div className="flex w-12 h-auto ml-15">
+                <div className="flex gap-6 ml-15 items-center">
                     <Link href="/" className="nav-underline no-anim-link">
-                        <img src="icon0.svg"/>
+                        <img src="icon0.svg" className="w-12 h-auto"/>
                     </Link>
-                </div>
-                <div className="flex gap-10 ml-auto justify-end mr-15 items-center">
-                    <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/">{t.nav_about}</Link>
-                    <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/portfolio">{t.nav_portfolio}</Link>
-                    <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/coursework">{t.nav_coursework}</Link>
-                    <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/service">{t.nav_service}</Link>
-                    <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/Claire Wu Resume.pdf#view=Fit" target="_blank" rel="noopener noreferrer">{t.nav_resume}</Link>
-                    
                     <div className="bg-accent-light">
                         <LanguageSwitcher />
                     </div>
+                </div>
+                <div className="flex gap-6 ml-auto justify-end mr-15 items-center">
+                    <Link className="nav-bar-text text-xl text-center text-link leading-none nav-underline no-anim-link" href="/">{t.nav_about}</Link>
+                    <Link className="nav-bar-text text-xl text-center text-link leading-none nav-underline no-anim-link" href="/portfolio">{t.nav_portfolio}</Link>
+                    <Link className="nav-bar-text text-xl text-center text-link leading-none nav-underline no-anim-link" href="/coursework">{t.nav_coursework}</Link>
+                    <Link className="nav-bar-text text-xl text-center text-link leading-none nav-underline no-anim-link" href="/service">{t.nav_service}</Link>
+                    <Link className="nav-bar-text text-xl text-center text-link leading-none nav-underline no-anim-link" href="/Claire Wu Resume.pdf#view=Fit" target="_blank" rel="noopener noreferrer">{t.nav_resume}</Link>
                 </div>
             </div>
         </nav>
