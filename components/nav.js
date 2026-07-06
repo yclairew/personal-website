@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useLocale } from "@/lib/i18n/Locale_context";
+import LanguageSwitcher from "@/components/Language_switcher";
 
 
 const Nav = () => {
@@ -20,6 +21,10 @@ const Nav = () => {
                     <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/coursework">{t.nav_coursework}</Link>
                     <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/service">{t.nav_service}</Link>
                     <Link className="nav-bar-text text-2xl text-center text-link leading-none nav-underline no-anim-link" href="/Claire Wu Resume.pdf#view=Fit" target="_blank" rel="noopener noreferrer">{t.nav_resume}</Link>
+                    
+                    <div className="bg-accent-light">
+                        <LanguageSwitcher />
+                    </div>
                 </div>
             </div>
         </nav>

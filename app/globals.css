@@ -1,5 +1,6 @@
 @import "tailwindcss";
-
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 :root {
   /* base */
@@ -15,6 +16,15 @@
   --color-accent: #DE7D97;
   --color-accent-light: #FBEFF2;
   --color-accent-tag: #F0C4CF;
+
+  /* radix-ui */
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --dropdown-hover: oklch(0.97 0 0);
+  --dropdown-hover-foreground: oklch(0.205 0 0);
+  --border: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --radius: 0.625rem;
 }
 
 @theme {
@@ -163,7 +173,6 @@ a:hover, a:focus {
 }
 
 
-
 /* homepage */
 .headshot {
   clip-path: circle();
@@ -178,7 +187,7 @@ a:hover, a:focus {
   overflow: hidden; /* hide text until typed */
   border-right: 0.12em solid var(--color-text); /* blinking cursor */
   width: 0; /* start with nothing visible */
-  
+
   animation: 
     typing 3.5s steps(65, end) forwards, /* typing effect */
     blink-caret 0.75s step-end infinite; /* cursor blink */
@@ -213,7 +222,7 @@ a:hover, a:focus {
 
 .numbertext {
   text-align: center;
-  
+
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -260,4 +269,16 @@ a:hover, a:focus {
 .course-item {
   cursor: pointer;
   padding: 5px 2px;
+}
+
+@theme inline {
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-dropdown-hover: var(--dropdown-hover);
+  --color-dropdown-hover-foreground: var(--dropdown-hover-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
 }
