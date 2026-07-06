@@ -105,7 +105,7 @@
   "coursework_ai_link": "Dr. Xia",
   "coursework_ai_text_suffix": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
   "coursework_business_title": "Business",
-  "coursework_business_text_prefix": "Inspired my dad, I developed an interest in business early on. In high school, I pursued and graduated with an Associate degree in Business through dual credit. Currently, I am earning a minor under Mays Business School in",
+  "coursework_business_text_prefix": "Inspired by my dad, I developed an interest in business early on. In high school, I pursued and graduated with an Associate degree in Business through dual credit. Currently, I am earning a minor under Mays Business School in",
   "coursework_business_link": "AI in business",
   "coursework_coursework_heading": "Coursework",
 
@@ -178,7 +178,7 @@
 
 
   "service_heading": "Service",
-  "service_text_prefix": "I have always been passionate about serving the community. In middle school and high school, I would volunteer at the thrift store and help make sandwiches for the homeless. This love for service extended into college, and I joined a Freshman Leadership Organization (FLO) called",
+  "service_text_prefix": "I have always been passionate about serving the community. Since elementary school, I would volunteer at the thrift store, help make sandwiches for the homeless, and more. This love for service extended into college, and I joined a Freshman Leadership Organization (FLO) called",
   "service_text_suffix": "Memorial Student Center Freshmen in Service and Hosting. Through MSC FISH, I participated in various service opportunities, such as picking up trash at a park and volunteering at the food bank.",
   "service_extra_text_prefix": "Since freshman year, I have continued to participate in community service, including Texas A&M's annual service event called",
   "service_extra_text_suffix": "which gives students a chance to serve residents of the Bryan-College Station area. Giving back to the community is very important to me, and I would love to be part of a corporate culture that is committed to that cause.",
@@ -186,6 +186,9 @@
   "service_slide_park-cleanup_caption": "Austin Park Cleanup",
   "service_slide_flo-bowl_caption": "FLO Bowl Volunteering",
   "service_slide_freshman-big-event_caption": "Freshman Year at Big Event with MSC FISH",
-  "service_slide_sophomore-big-event_caption": "Sophomore Year at Big Event with Aggies Create"
+  "service_slide_sophomore-big-event_caption": "Sophomore Year at Big Event with Aggies Create",
+
+
+  "back_to_coursework_label": "Back to Coursework"
 
 }

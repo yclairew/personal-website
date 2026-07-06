@@ -159,6 +159,13 @@ function getCoursework(t: Record<string, string>): TranslatedCategory[] {
 }
 
 
+function insertQueryBeforeHash(href: string, query: string) {
+  const [path, hash] = href.split("#");
+  const separator = path.includes("?") ? "&" : "?";
+  return `${path}${separator}${query}${hash ? `#${hash}` : ""}`;
+}
+
+
 
 export default function CourseworkSection() {
   const { t } = useLocale();
@@ -246,11 +253,21 @@ export default function CourseworkSection() {
               {course.name}
             </button>
 
+            {/* {course.portfolioLink && (
+              <Link href={`${course.portfolioLink.href}?from=coursework`} title={course.portfolioLink.label}>
+                <p className="text-subheading hover:text-accent">↗</p>
+              </Link>
+            )} */}
+
             {course.portfolioLink && (
-              <Link href={course.portfolioLink.href} title={course.portfolioLink.label}>
+              <Link
+                href={insertQueryBeforeHash(course.portfolioLink.href, "from=coursework")}
+                title={course.portfolioLink.label}
+              >
                 <p className="text-subheading hover:text-accent">↗</p>
               </Link>
             )}
+
           </div>
         ))}
       </div>

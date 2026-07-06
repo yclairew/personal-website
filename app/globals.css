@@ -40,6 +40,9 @@
   --color-accent-light: var(--color-accent-light);
   --color-accent-tag: var(--color-accent-tag);
 
+  /* for chinese text */
+  --font-chinese: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+
 
   /* animations */
   --animate-fade-up: fadeUp 0.8s ease-out forwards;

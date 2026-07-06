@@ -5,7 +5,7 @@ import { useLocale } from "@/lib/i18n/Locale_context";
 const Footer = () => {
     const { t } = useLocale();
     return (
-        <footer className="bg-accent-light border-t-2 border-accent-light shadow-sm font-[Montserrat]">
+        <footer id="footer" className="bg-accent-light border-t-2 border-accent-light shadow-sm font-[Montserrat]">
             <div className="mx-auto flex max-w-240 justify-between items-center px-14 py-14">
                 <div className="space-y-2">
                     <h3 className="text-lg font-semibold text-text">{t.footer_heading}</h3>

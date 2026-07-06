@@ -7,7 +7,8 @@ import { useLocale } from "@/lib/i18n/Locale_context";
 
 
 export default function Coursework() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+  const isChinese = ["zh-Hans", "zh-Hant"].includes(locale);
   Overscroll_color(); 
 
   return (
@@ -41,7 +42,10 @@ export default function Coursework() {
             <h3 className="text-4xl third-level-headings mb-2">{t.coursework_business_title}</h3>
             <p className="text-2xl">
               {t.coursework_business_text_prefix}{" "}
-              <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">{t.coursework_business_link}</a>.
+              <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">
+                {t.coursework_business_link}
+              </a>
+              {isChinese ? "。" : "."}
             </p>
           </div>
         </div>
