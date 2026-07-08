@@ -85,13 +85,13 @@ const Nav = () => {
                     {navLinks.map(link => (
                         <Link
                             key={link.href}
-                            className="nav-bar-text text-xl text-link leading-none nav-underline no-anim-link w-fit p-1"
+                            className="nav-bar-text text-xl text-link leading-none no-anim-link block w-full p-1"
                             href={link.href}
                             target={link.target}
                             rel={link.target ? "noopener noreferrer" : undefined}
                             onClick={() => setIsOpen(false)}
                         >
-                            {link.label}
+                            <span className="nav-underline underline underline-offset-4 decoration-1 decoration-link">{link.label}</span>
                         </Link>
                     ))}
                 </div>

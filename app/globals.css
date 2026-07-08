@@ -152,6 +152,7 @@ a:hover, a:focus {
 .nav-underline {
   position: relative;
   color: var(--color-link);
+  display: inline-block;
 }
 .nav-underline::after {
   content: "";
