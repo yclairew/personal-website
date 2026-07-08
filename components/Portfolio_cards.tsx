@@ -198,15 +198,16 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               onMouseLeave={() => setShowAll(false)}
             >
               {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
-                <span key={skill} className="text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading 
-                cursor-pointer hover:bg-accent hover:text-background transition-colors"
+                <span key={skill} className={`text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-link bg-background text-subheading 
+                cursor-pointer hover:bg-link-hover hover:text-background transition-colors
+                ${skillFilter === skill ? "bg-link text-background!" : "bg-background text-subheading"}`}
                   onClick={() => setSkillFilter(skillFilter === skill ? "All" : skill)}
                 >
                   {skill}
                 </span>
               ))}
               {!showAll && card.skills.length > 3 && (
-                <span className="text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading">
+                <span className="text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-link bg-background text-subheading">
                   +{card.skills.length - 3}
                 </span>
               )}
@@ -261,8 +262,9 @@ export default function Cards() {
         <span className="text-sm [font-family:var(--font-body)] text-subheading">{t.filter_type_label}</span>
         {types.map(type => (
           <button key={type} onClick={() => setTypeFilter(type)}
-            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent cursor-pointer 
-              ${typeFilter === type ? "bg-accent text-background" : "bg-background text-subheading"}`}>
+            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-link cursor-pointer 
+              hover:bg-link-hover hover:text-background transition-colors
+              ${typeFilter === type ? "bg-link text-background" : "bg-background text-subheading"}`}>
             {type === "All" ? t.filter_all : t[`stacktype_${slugify(type)}`] || type}
           </button>
         ))}
@@ -271,8 +273,9 @@ export default function Cards() {
         <span className="text-sm [font-family:var(--font-body)] text-subheading block">{t.filter_context_label}</span>
         {contexts.map(c => (
           <button key={c} onClick={() => setContextFilter(c)}
-            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent cursor-pointer
-              ${contextFilter === c ? "bg-accent text-background" : "bg-background text-subheading"}`}>
+            className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-link cursor-pointer
+              hover:bg-link-hover hover:text-background transition-colors
+              ${contextFilter === c ? "bg-link text-background" : "bg-background text-subheading"}`}>
             {c === "All" ? t.filter_all : t[`context_${slugify(c)}`] || c}
           </button>
         ))}

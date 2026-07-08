@@ -17,7 +17,7 @@ export default function Coursework() {
 
       <h1 className={`heading-text mt-5 ${isChinese ? "text-[10rem]! mt-18 mb-5! underline-offset-20!" : ""}`}>{t.coursework_heading}</h1>
 
-      <div className="inspire-div ml-12 mr-20 mb-30">
+      <div className="inspire-div pt-15 pl-15 pr-15 pb-20 mb-15 bg-accent-light">
         <h2 className="reveal-box areas-subheading subheadings mb-7 text-5xl!">{t.coursework_inspire_heading}</h2>
         <div className="grid grid-cols-3 gap-8">
           <div className="body-text border-l-3 border-accent pl-4">
@@ -51,7 +51,8 @@ export default function Coursework() {
         </div>
       </div>
 
-      <div className="bg-accent-light pt-4 pb-4 mb-10">
+      <div className="mb-40">
+        {/* bg-accent-light pt-4 pb-4  */}
         <h2 className="subheadings ml-12 mb-6 text-5xl!">{t.coursework_coursework_heading}</h2>
         <CourseworkSection />
       </div>

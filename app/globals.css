@@ -7,6 +7,7 @@
   --color-background: #fcfcfc;
   --color-text: #111111;
   --color-subheading: #2c2c2c;
+  --color-third-level-heading: #33232A;
 
   /* links */
   --color-link: #1b3a6b;
@@ -32,6 +33,7 @@
   --color-background: var(--color-background);
   --color-text: var(--color-text);
   --color-subheading: var(--color-subheading);
+  --color-third-level-heading: var(--color-third-level-heading);
 
   --color-link: var(--color-link);
   --color-link-hover: var(--color-link-hover);
@@ -108,7 +110,7 @@
   font-family: var(--font-body);
   font-weight: 600;
 
-  color: var(--color-accent);
+  color: var(--color-third-level-heading);
 }
 
 
