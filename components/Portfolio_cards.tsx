@@ -147,6 +147,57 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
   const [showAll, setShowAll] = useState(false);
   const ref = useAnimateOnScroll();
 
+  const [notHoverable, setNotHoverable] = useState(false);
+
+  const renderSkills = () => {
+    if (!card.skills) return null;
+
+    if (notHoverable) {
+      return (
+        <div className="flex flex-wrap gap-2">
+          {card.skills.map((skill: string) => (
+            <span key={skill} className={`text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-link bg-background text-subheading 
+              cursor-pointer hover:bg-link-hover hover:text-background transition-colors
+              ${skillFilter === skill ? "bg-link text-background!" : "bg-background text-subheading"}`}
+                onClick={() => setSkillFilter(skillFilter === skill ? "All" : skill)}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      );
+    }
+
+    else {
+      return(
+        <div className="flex flex-wrap gap-2"
+          onMouseEnter={() => setShowAll(true)}
+          onMouseLeave={() => setShowAll(false)}
+        >
+          {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
+            <span key={skill} className={`text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-link bg-background text-subheading 
+            cursor-pointer hover:bg-link-hover hover:text-background transition-colors
+            ${skillFilter === skill ? "bg-link text-background!" : "bg-background text-subheading"}`}
+              onClick={() => setSkillFilter(skillFilter === skill ? "All" : skill)}
+            >
+              {skill}
+            </span>
+          ))}
+          {!showAll && card.skills.length > 3 && (
+            <span className="text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-link bg-background text-subheading">
+              +{card.skills.length - 3}
+            </span>
+          )}
+        </div>
+      );
+    }
+
+  }
+
+  useEffect(() => {
+    setNotHoverable(window.matchMedia('(hover: none)').matches);
+  }, []);
+
   return (
     <div ref={ref} id={card.id}
       className="opacity-0 mb-10 ml-4 mr-4 lg:mb-15 lg:ml-15 lg:mr-15 bg-accent-light p-0.5 lg:p-5 rounded-xl"
@@ -192,27 +243,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
         </div>
 
         <div className="card-skills">
-          {card.skills && (
-            <div className="flex flex-wrap gap-2"
-              onMouseEnter={() => setShowAll(true)}
-              onMouseLeave={() => setShowAll(false)}
-            >
-              {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
-                <span key={skill} className={`text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-link bg-background text-subheading 
-                cursor-pointer hover:bg-link-hover hover:text-background transition-colors
-                ${skillFilter === skill ? "bg-link text-background!" : "bg-background text-subheading"}`}
-                  onClick={() => setSkillFilter(skillFilter === skill ? "All" : skill)}
-                >
-                  {skill}
-                </span>
-              ))}
-              {!showAll && card.skills.length > 3 && (
-                <span className="text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-link bg-background text-subheading">
-                  +{card.skills.length - 3}
-                </span>
-              )}
-            </div>
-          )}
+          {renderSkills()}
         </div>
         
       </div>
