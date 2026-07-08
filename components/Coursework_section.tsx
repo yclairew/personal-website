@@ -183,9 +183,12 @@ export default function CourseworkSection() {
 
   const [currentSrc, setCurrentSrc] = useState(selectedCourse?.slides[0]?.src);
 
+  const [notHoverable, setNotHoverable] = useState(false);
+
   // reset when course changes
   useEffect(() => {
     setCurrentSrc(selectedCourse?.slides[0]?.src);
+    setNotHoverable(window.matchMedia('(hover: none)').matches);
   }, [selectedCourse]);
 
   return (
@@ -193,7 +196,7 @@ export default function CourseworkSection() {
       <div>
         {coursework.map((category) => (
         <div key={category.id} className={[
-          "flex items-center gap-2",
+          "flex items-center gap-2 pr-1",
           selectedCategoryId === category.id && "active",
           ]
             .filter(Boolean)
@@ -210,7 +213,8 @@ export default function CourseworkSection() {
           <button
           className={[
             "category-item",
-            "text-lg!",
+            "text-xs",
+            "lg:text-lg!",
             "body-text",
             "text-left",
             "text-nowrap",
@@ -233,21 +237,22 @@ export default function CourseworkSection() {
       <div>
         {courses.map((course) => (
           <div key={course.id} className={[
-            "flex items-center gap-2 whitespace-nowrap", 
+            "flex lg:items-center gap-2 lg:whitespace-nowrap pr-2", 
             selectedCourseId === course.id && "active",
             ]
               .filter(Boolean)
               .join(" ")
             }>
             <FolderIcon size={30} weight={course.slides.length > 0 ? "fill" : "regular"} 
-              className="cursor-pointer"
+              className="cursor-pointer shrink-0"
               onClick={() => setSelectedCourseId(course.id)} 
             />
 
             <button
               key={`${selectedCategoryId}-${course.id}`}
-              className="text-lg! course-item body-text overflow-hidden text-ellipsis whitespace-nowrap max-w-47.5 
-                hover:max-w-full"
+              className="text-xs lg:text-lg! course-item body-text text-wrap max-w-48 
+                lg:overflow-hidden lg:text-ellipsis 
+                lg:whitespace-nowrap pr-20 hover:max-w-full"
               onClick={() => setSelectedCourseId(course.id)}
             >
               {course.name}
@@ -275,11 +280,11 @@ export default function CourseworkSection() {
             {slides.length > 0 ? (
               <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
             ) : (
-              <p className="text-lg! body-text">{t.coursework_empty}</p>
+              <p className="text-xs lg:text-lg! body-text">{t.coursework_empty}</p>
             )}
           </>
         ) : (
-          <p className="text-lg! body-text">{t.coursework_select_prompt}</p>
+          <p className="text-xs lg:text-lg! body-text">{t.coursework_select_prompt}</p>
         )}
 
       </div>
