@@ -149,7 +149,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
 
   return (
     <div ref={ref} id={card.id}
-      className="opacity-0 mb-15 ml-15 mr-15 bg-accent-light p-5 rounded-xl"
+      className="opacity-0 mb-10 ml-4 mr-4 lg:mb-15 lg:ml-15 lg:mr-15 bg-accent-light p-0.5 lg:p-5 rounded-xl"
     >
       <div key={card.id} className="card p-6 animate-fade-up">
         <div className="card-header grid grid-cols-2"> 
@@ -157,8 +157,8 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
             {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
 
             <div>
-              <h3 className="card-title text-4xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
-              {card.role && <p className="text-md [font-family:var(--font-body)] text-subheading">{card.role}</p>}
+              <h3 className="card-title text-2xl lg:text-4xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
+              {card.role && <p className="text-sm lg:text-md [font-family:var(--font-body)] text-subheading">{card.role}</p>}
             </div>
           </div>
 
@@ -181,12 +181,12 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
           </div>
         </div>
 
-        <div className="card-body flex gap-8 pt-3">
+        <div className="card-body flex flex-col gap-8 pt-3 lg:flex-row">
           <div className="card-text [font-family:var(--font-body)] text-xl flex-1">
-            <p className="card-description w-xl text-text" dangerouslySetInnerHTML={{ __html: card.description }}/>
+            <p className="card-description text-text" dangerouslySetInnerHTML={{ __html: card.description }}/>
           </div>
 
-          <div className="card-media flex flex-1 justify-end">
+          <div className="card-media flex flex-1 justify-center max-w-full lg:justify-end mb-3 lg:mb-0">
             {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>}
           </div>
         </div>
@@ -198,7 +198,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               onMouseLeave={() => setShowAll(false)}
             >
               {card.skills.slice(0, showAll ? card.skills.length : 3).map((skill: string) => (
-                <span key={skill} className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading 
+                <span key={skill} className="text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading 
                 cursor-pointer hover:bg-accent hover:text-background transition-colors"
                   onClick={() => setSkillFilter(skillFilter === skill ? "All" : skill)}
                 >
@@ -206,7 +206,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
                 </span>
               ))}
               {!showAll && card.skills.length > 3 && (
-                <span className="text-sm [font-family:var(--font-body)] mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading">
+                <span className="text-sm [font-family:var(--font-body)] mt-2 lg:mt-5 px-2 py-1 rounded-xl border-2 border-accent bg-background text-subheading">
                   +{card.skills.length - 3}
                 </span>
               )}
@@ -266,8 +266,9 @@ export default function Cards() {
             {type === "All" ? t.filter_all : t[`stacktype_${slugify(type)}`] || type}
           </button>
         ))}
-        <span className="text-sm [font-family:var(--font-body)] text-subheading">|</span>
-        <span className="text-sm [font-family:var(--font-body)] text-subheading">{t.filter_context_label}</span>
+        <span className="text-sm [font-family:var(--font-body)] text-subheading hidden xl:inline">|</span>
+        <div className="basis-full h-0 xl:hidden" /> {/* forces wrap to next line */}
+        <span className="text-sm [font-family:var(--font-body)] text-subheading block">{t.filter_context_label}</span>
         {contexts.map(c => (
           <button key={c} onClick={() => setContextFilter(c)}
             className={`text-sm [font-family:var(--font-body)] px-2 py-0.5 rounded-lg border border-accent cursor-pointer

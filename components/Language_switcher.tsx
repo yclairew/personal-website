@@ -29,7 +29,7 @@ export default function LanguageSwitcher() {
         {localeShort[locale]}
         <ChevronDown size={14} className={`transition-transform ${open ? "rotate-180" : ""}`} />
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" sideOffset={18} >
         {locales.map((l) => (
           <DropdownMenuItem key={l} 
             onClick={() => {
