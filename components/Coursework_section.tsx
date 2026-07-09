@@ -193,8 +193,8 @@ export default function CourseworkSection() {
   };
 
 
-  const menuRef = useRef(null);
-  const buttonRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   
   const [isOpen, setIsOpen] = useState(false);
   const ToggleIcon = ({ isOpen }: { isOpen: boolean }) => (
@@ -297,7 +297,7 @@ export default function CourseworkSection() {
                                   {currentSrc?.replace("/", "")}
                                 </h3>
                                 
-                                <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+                                <Slideshow key={selectedCourse?.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
                               </>
                             )}
 
@@ -305,19 +305,6 @@ export default function CourseworkSection() {
                         );
                       })}
                     </div>
-
-                  {/* <div>
-                    {selectedCourse && (
-                      <>
-                        <h3 className="third-level-headings text-3xl! text-center pb-2">
-                          {currentSrc?.replace("/", "")}
-                        </h3>
-                        
-                        <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
-                      </>
-                    )}
-
-                  </div> */}
                 </>
                 )}
               </div>
@@ -445,12 +432,12 @@ export default function CourseworkSection() {
     setNotHoverable(window.matchMedia('(hover: none)').matches);
     setSmallScreen(window.matchMedia('(max-width: 768px)').matches);
 
-    function handleClickOutside(event) {
+    function handleClickOutside(event: MouseEvent) {
       if (
         menuRef.current &&
-        !menuRef.current.contains(event.target) &&
+        !menuRef.current.contains(event.target as Node) &&
         buttonRef.current &&
-        !buttonRef.current.contains(event.target)
+        !buttonRef.current.contains(event.target as Node)
       ) {
         setIsOpen(false);
       }
@@ -469,104 +456,5 @@ export default function CourseworkSection() {
     <div>
       {renderCoursework()}
     </div>
-
-
-    // <div className={`flex flex-row gap-12 mb-8 ${selectedCourse && slides.length > 0 ? "justify-center" : "ml-18"}`}>
-    //   <div>
-    //     {coursework.map((category) => (
-    //     <div key={category.id} className={[
-    //       "flex items-center gap-2 pr-1",
-    //       selectedCategoryId === category.id && "active",
-    //       ]
-    //         .filter(Boolean)
-    //         .join(" ")
-    //       }>
-
-          // <FolderIcon size={30} className="cursor-pointer" 
-          //   onClick={() => {
-          //   setSelectedCategoryId(category.id);
-          //   setSelectedCourseId(null);
-          // }}
-          // />
-
-    //       <button
-    //       className={[
-    //         "category-item",
-    //         "text-xs",
-    //         "lg:text-lg!",
-    //         "body-text",
-    //         "text-left",
-    //         "text-nowrap",
-    //         ]
-    //         .filter(Boolean)
-    //         .join(" ")
-    //       }
-    //       onClick={() => {
-    //         setSelectedCategoryId(category.id);
-    //         setSelectedCourseId(null);
-    //       }}
-    //       key={category.id}
-    //       >
-    //         {category.name}
-    //       </button>
-    //     </div>
-    //     ))}
-    //   </div>
-
-    //   <div>
-    //     {courses.map((course) => (
-    //       <div key={course.id} className={[
-    //         "flex lg:items-center gap-2 lg:whitespace-nowrap pr-2", 
-    //         selectedCourseId === course.id && "active",
-    //         ]
-    //           .filter(Boolean)
-    //           .join(" ")
-    //         }>
-    //         <FolderIcon size={30} weight={course.slides.length > 0 ? "fill" : "regular"} 
-    //           className="cursor-pointer shrink-0"
-    //           onClick={() => setSelectedCourseId(course.id)} 
-    //         />
-
-    //         <button
-    //           key={`${selectedCategoryId}-${course.id}`}
-    //           className="text-xs lg:text-lg! course-item body-text text-wrap max-w-48 
-    //             lg:overflow-hidden lg:text-ellipsis 
-    //             lg:whitespace-nowrap pr-20 hover:max-w-full"
-    //           onClick={() => setSelectedCourseId(course.id)}
-    //         >
-    //           {course.name}
-    //         </button>
-
-    //         {course.portfolioLink && (
-    //           <Link
-    //             href={insertQueryBeforeHash(course.portfolioLink.href, "from=coursework")}
-    //             title={course.portfolioLink.label}
-    //           >
-    //             <p className="text-subheading hover:text-accent">↗</p>
-    //           </Link>
-    //         )}
-
-    //       </div>
-    //     ))}
-    //   </div>
-            
-    //   <div>
-    //     {selectedCourse ? (
-    //       <>
-    //         <h3 className="third-level-headings text-3xl! text-center pb-2">
-    //           {currentSrc?.replace("/", "")}
-    //         </h3>
-    //         {slides.length > 0 ? (
-    //           <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
-    //         ) : (
-    //           <p className="text-xs lg:text-lg! body-text">{t.coursework_empty}</p>
-    //         )}
-    //       </>
-    //     ) : (
-    //       <p className="text-xs lg:text-lg! body-text">{t.coursework_select_prompt}</p>
-    //     )}
-
-    //   </div>
-    // </div>
   )
 }

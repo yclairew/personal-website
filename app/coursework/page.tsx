@@ -15,7 +15,15 @@ export default function Coursework() {
     <div className="bg-background">
       <title>{t.site_title}</title>
 
-      <h1 className={`heading-text mt-5 ${isChinese ? "text-[10rem]! mt-18 mb-5! underline-offset-20!" : ""}`}>{t.coursework_heading}</h1>
+      <h1 className={`heading-text text-center text-text underline 
+        decoration-[0.19rem] decoration-accent mt-5
+        ${isChinese ? 
+          "text-5xl lg:text-[10rem] mt-18 mb-5! underline-offset-10 lg:underline-offset-20" 
+          : "underline-offset-[0.3rem] text-[5rem] lg:text-[10.25rem]"
+        }`}
+      >
+        {t.coursework_heading}
+      </h1>
 
       <div className="inspire-div pt-5 pl-6 pr-6 pb-7 mb-6 lg:pt-15 lg:pl-15 lg:pr-15 lg:pb-20 lg:mb-15 bg-accent-light">
         <h2 className="reveal-box areas-subheading subheadings mb-7 lg:mb-8 text-2xl lg:text-5xl!">{t.coursework_inspire_heading}</h2>

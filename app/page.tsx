@@ -22,7 +22,15 @@ export default function Home() {
     <div className="bg-background">
       <title>{t.site_title}</title>
       <div>
-        <h1 className={`heading-text text-text ${isChinese ? "text-[10rem]! mt-18 mb-5! underline-offset-20!" : ""} [text-box-trim:trim-end] mt-5 -mb-4`}>{t.home_heading}</h1>
+        <h1 className={`heading-text text-center text-text underline 
+        decoration-[0.19rem] decoration-accent mt-5 -mb-4 [text-box-trim:trim-end] 
+        ${isChinese ? 
+          "text-5xl lg:text-[10rem] mt-18 mb-5! underline-offset-10 lg:underline-offset-20" 
+          : "underline-offset-[0.3rem] text-[5rem] lg:text-[10.25rem]"
+        }`}
+        >
+          {t.home_heading}
+        </h1>
       </div>
 
       <div className="flex justify-center"> {/* keeps text centered during typing animation */}
