@@ -21,8 +21,8 @@ export default function Coursework() {
         <h2 className="reveal-box areas-subheading subheadings mb-7 text-2xl! lg:text-5xl!">{t.coursework_inspire_heading}</h2>
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="body-text border-l-3 border-accent pl-4">
-            <h3 className="text-xl! lg:text-4xl third-level-headings mb-2">{t.coursework_datascience_title}</h3>
-            <p className="text-md lg:text-2xl">
+            <h3 className="text-xl lg:text-4xl third-level-headings mb-2">{t.coursework_datascience_title}</h3>
+            <p className="text-base lg:text-2xl">
               {t.coursework_datascience_text_prefix}{" "}
               <a href="https://www.signifyhealth.com/" target="_blank" rel="noopener noreferrer">{t.coursework_datascience_link}</a>{" "}
               {t.coursework_datascience_text_suffix}
@@ -30,8 +30,8 @@ export default function Coursework() {
           </div>
 
           <div className="body-text border-l-3 border-accent pl-4">
-            <h3 className="text-xl! lg:text-4xl third-level-headings mb-2">{t.coursework_ai_title}</h3>
-            <p className="text-md lg:text-2xl">
+            <h3 className="text-xl lg:text-4xl third-level-headings mb-2">{t.coursework_ai_title}</h3>
+            <p className="text-base lg:text-2xl">
               {t.coursework_ai_text_prefix}{" "}
               <a href="https://www.xiameng.org/" target="_blank" rel="noopener noreferrer">{t.coursework_ai_link}</a>{" "}
               {t.coursework_ai_text_suffix}
@@ -39,8 +39,8 @@ export default function Coursework() {
           </div>
 
           <div className="body-text border-l-4 border-accent pl-4">
-            <h3 className="text-xl! lg:text-4xl third-level-headings mb-2">{t.coursework_business_title}</h3>
-            <p className="text-md lg:text-2xl">
+            <h3 className="text-xl lg:text-4xl third-level-headings mb-2">{t.coursework_business_title}</h3>
+            <p className="text-base lg:text-2xl">
               {t.coursework_business_text_prefix}{" "}
               <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">
                 {t.coursework_business_link}
