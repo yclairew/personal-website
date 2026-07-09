@@ -212,48 +212,12 @@ a:hover, a:focus {
 
 /* service.html */
 .slide-img {
-  width: 50rem;
-  height: 27rem;
-  object-fit: contain; /* dont crop */
+  width: 100%;
+  max-width: 50rem;
+  aspect-ratio: 50 / 27;
+  object-fit: contain;
 }
 
-.photo-captions {
-  font-family: "Lora",serif; 
-  font-weight: 400; 
-  font-size: clamp(1rem,1.4vw,4.5rem);
-  color: var(--accents);
-  text-align: center;
-  margin: 3px 0px 0px 0px;
-}
-
-.numbertext {
-  text-align: center;
-
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-
-  font-size: clamp(1rem, 1.3vw, 3.5rem);
-  white-space: nowrap;
-
-  margin: auto;
-  padding-top: 4%;
-}
-
-.arrows {
-  display: flex;
-  justify-content: center;
-  gap: clamp(1rem, 2vw, 3rem);
-  width: clamp(6rem, 10vw, 22rem);
-  font-size: clamp(2.5rem, 2vw, 4rem);
-  align-items: center;
-  margin: auto;
-}
-
-.arrows a {
-  text-underline-offset: 11px;
-}
 
 /* coursework page */
 .category-item {

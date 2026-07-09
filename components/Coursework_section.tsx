@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { FolderIcon } from "@phosphor-icons/react";
 import "../app/globals.css";
@@ -184,110 +184,389 @@ export default function CourseworkSection() {
   const [currentSrc, setCurrentSrc] = useState(selectedCourse?.slides[0]?.src);
 
   const [notHoverable, setNotHoverable] = useState(false);
+  const [smallScreen, setSmallScreen] = useState(false);
+  const useCondensedLayout = notHoverable || smallScreen;
+  
+  const [expandedCategoryId, setExpandedCategoryId] = useState<string | null>(null);
+  const toggleCategory = (id: string) => {
+    setExpandedCategoryId(prev => (prev === id ? null : id));
+  };
 
-  // reset when course changes
-  useEffect(() => {
-    setCurrentSrc(selectedCourse?.slides[0]?.src);
-    setNotHoverable(window.matchMedia('(hover: none)').matches);
-  }, [selectedCourse]);
 
-  return (
-    <div className={`flex flex-row gap-12 mb-8 ${selectedCourse && slides.length > 0 ? "justify-center" : "ml-18"}`}>
-      <div>
-        {coursework.map((category) => (
-        <div key={category.id} className={[
-          "flex items-center gap-2 pr-1",
-          selectedCategoryId === category.id && "active",
-          ]
-            .filter(Boolean)
-            .join(" ")
-          }>
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
+  
+  const [isOpen, setIsOpen] = useState(false);
+  const ToggleIcon = ({ isOpen }: { isOpen: boolean }) => (
+    <span className="relative flex items-center justify-center w-4 h-4 shrink-0">
+      <span className={`absolute block h-0.5 w-full bg-text transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+      <span className={`absolute block h-0.5 w-full bg-text transition-transform duration-200 rotate-90 ${isOpen ? "rotate-180" : ""}`} />
+    </span>
+  );
+  
 
-          <FolderIcon size={30} className="cursor-pointer" 
-            onClick={() => {
-            setSelectedCategoryId(category.id);
-            setSelectedCourseId(null);
-          }}
-          />
+  const renderCoursework = () => {
+    if (!coursework) return null;
 
-          <button
-          className={[
-            "category-item",
-            "text-xs",
-            "lg:text-lg!",
-            "body-text",
-            "text-left",
-            "text-nowrap",
-            ]
-            .filter(Boolean)
-            .join(" ")
-          }
-          onClick={() => {
-            setSelectedCategoryId(category.id);
-            setSelectedCourseId(null);
-          }}
-          key={category.id}
-          >
-            {category.name}
-          </button>
+    if (useCondensedLayout) {
+      return (
+        <div>
+          {coursework.map((category) => {
+            const isExpanded = expandedCategoryId === category.id;
+
+            return (
+              <div key={category.id}>
+                <div className={[
+                  "flex gap-2 pl-1 pr-1 ml-6 mr-6 mb-1",
+                  selectedCategoryId === category.id && "active",
+                ].filter(Boolean).join(" ")}
+                  onClick={() => {
+                    setSelectedCategoryId(category.id);
+                    setSelectedCourseId(null);
+                    toggleCategory(category.id)
+                  }}
+                >
+                  <div className="flex items-center gap-2">
+                    <FolderIcon size={30} className="cursor-pointer" />
+
+                    <button
+                      className="category-item text-xs lg:text-lg 
+                      body-text text-left text-nowrap"
+                    >
+                      {category.name}
+                    </button>
+                  </div>
+
+                  <button className="ml-auto">
+                    <ToggleIcon isOpen={isExpanded} />
+                  </button>
+                </div>
+
+                {isExpanded && (
+                  <>
+                    <div className="ml-9 mr-6">
+                      {courses.map((course) => {
+                        const isSelected = selectedCourseId === course.id;
+
+                        return (
+                          <div key={course.id}>
+                            <div className={[
+                              "flex pl-1 pr-1 lg:items-center gap-2 lg:whitespace-nowrap lg:pr-2",
+                              course.slides.length === 0 ? "opacity-60" : "",
+                              isSelected && "active",
+                              ].filter(Boolean).join(" ")}
+                              onClick={() => setSelectedCourseId(course.id)}
+                            >
+                              <div className="flex items-center gap-2">
+                                <FolderIcon
+                                  size={30}
+                                  weight={course.slides.length > 0 ? "fill" : "regular"}
+                                  className="cursor-pointer shrink-0"
+                                />
+
+                                <button
+                                  key={`${selectedCategoryId}-${course.id}`}
+                                  disabled={course.slides.length === 0}
+                                  className="text-xs lg:text-lg course-item body-text text-wrap max-w-60 lg:max-w-48
+                                    text-left lg:overflow-hidden lg:text-ellipsis
+                                    lg:whitespace-nowrap lg:pr-20 hover:max-w-full"
+                                >
+                                  {course.name}
+                                  {course.slides.length === 0 && (
+                                    <span className="text-xs! body-text opacity-60 pl-1">(empty)</span>
+                                  )}
+                                </button>
+
+                              </div>
+
+                              {course.portfolioLink && (
+                                <Link
+                                  href={insertQueryBeforeHash(course.portfolioLink.href, "from=coursework")}
+                                  title={course.portfolioLink.label}
+                                >
+                                  <p className="text-subheading hover:text-accent">↗</p>
+                                </Link>
+                              )}
+                            </div>
+
+                            {isSelected && course.slides.length > 0 && (
+                              <>
+                                <h3 className="third-level-headings text-lg lg:text-3xl text-center pb-2
+                                mt-5 lg:mt-0"
+                                >
+                                  {currentSrc?.replace("/", "")}
+                                </h3>
+                                
+                                <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+                              </>
+                            )}
+
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                  {/* <div>
+                    {selectedCourse && (
+                      <>
+                        <h3 className="third-level-headings text-3xl! text-center pb-2">
+                          {currentSrc?.replace("/", "")}
+                        </h3>
+                        
+                        <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+                      </>
+                    )}
+
+                  </div> */}
+                </>
+                )}
+              </div>
+            );
+          })}
         </div>
-        ))}
-      </div>
+      );
+    }
+    else {
+      return (
+        <div className={`flex flex-row gap-12 mb-8 ${selectedCourse && slides.length > 0 ? "justify-center" : "ml-18"}`}>
+          <div>
+            {coursework.map((category) => (
+            <div key={category.id} className={[
+              "flex items-center gap-2 pr-1",
+              selectedCategoryId === category.id && "active",
+              ]
+                .filter(Boolean)
+                .join(" ")
+              }>
 
-      <div>
-        {courses.map((course) => (
-          <div key={course.id} className={[
-            "flex lg:items-center gap-2 lg:whitespace-nowrap pr-2", 
-            selectedCourseId === course.id && "active",
-            ]
-              .filter(Boolean)
-              .join(" ")
-            }>
-            <FolderIcon size={30} weight={course.slides.length > 0 ? "fill" : "regular"} 
-              className="cursor-pointer shrink-0"
-              onClick={() => setSelectedCourseId(course.id)} 
-            />
+              <FolderIcon size={30} className="cursor-pointer" 
+                onClick={() => {
+                setSelectedCategoryId(category.id);
+                setSelectedCourseId(null);
+              }}
+              />
 
-            <button
-              key={`${selectedCategoryId}-${course.id}`}
-              className="text-xs lg:text-lg! course-item body-text text-wrap max-w-48 
-                lg:overflow-hidden lg:text-ellipsis 
-                lg:whitespace-nowrap pr-20 hover:max-w-full"
-              onClick={() => setSelectedCourseId(course.id)}
-            >
-              {course.name}
-            </button>
-
-            {course.portfolioLink && (
-              <Link
-                href={insertQueryBeforeHash(course.portfolioLink.href, "from=coursework")}
-                title={course.portfolioLink.label}
+              <button
+              className={[
+                "category-item",
+                "text-xs",
+                "lg:text-lg!",
+                "body-text",
+                "text-left",
+                "text-nowrap",
+                ]
+                .filter(Boolean)
+                .join(" ")
+              }
+              onClick={() => {
+                setSelectedCategoryId(category.id);
+                setSelectedCourseId(null);
+              }}
+              key={category.id}
               >
-                <p className="text-subheading hover:text-accent">↗</p>
-              </Link>
+                {category.name}
+              </button>
+            </div>
+            ))}
+          </div>
+
+          <div>
+            {courses.map((course) => (
+              <div key={course.id} className={[
+                "flex lg:items-center gap-2 lg:whitespace-nowrap pr-2", 
+                selectedCourseId === course.id && "active",
+                ]
+                  .filter(Boolean)
+                  .join(" ")
+                }>
+                <FolderIcon size={30} weight={course.slides.length > 0 ? "fill" : "regular"} 
+                  className="cursor-pointer shrink-0"
+                  onClick={() =>
+                    setSelectedCourseId((prev) =>
+                      prev === course.id ? null : course.id
+                    )
+                  }
+                />
+
+                <button
+                  key={`${selectedCategoryId}-${course.id}`}
+                  className="text-xs lg:text-lg! course-item body-text text-wrap max-w-48 
+                    lg:overflow-hidden lg:text-ellipsis 
+                    lg:whitespace-nowrap pr-20 hover:max-w-full"
+                  onClick={() =>
+                    setSelectedCourseId((prev) =>
+                      prev === course.id ? null : course.id
+                    )
+                  }
+                >
+                  {course.name}
+                </button>
+
+                {course.portfolioLink && (
+                  <Link
+                    href={insertQueryBeforeHash(course.portfolioLink.href, "from=coursework")}
+                    title={course.portfolioLink.label}
+                  >
+                    <p className="text-subheading hover:text-accent">↗</p>
+                  </Link>
+                )}
+
+              </div>
+            ))}
+          </div>
+                
+          <div>
+            {selectedCourse ? (
+              <>
+                <h3 className="third-level-headings text-3xl! text-center pb-2">
+                  {currentSrc?.replace("/", "")}
+                </h3>
+                {slides.length > 0 ? (
+                  <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+                ) : (
+                  <p className="text-xs lg:text-lg! body-text">{t.coursework_empty}</p>
+                )}
+              </>
+            ) : (
+              <p className="text-xs lg:text-lg! body-text">{t.coursework_select_prompt}</p>
             )}
 
           </div>
-        ))}
-      </div>
-            
-      <div>
-        {selectedCourse ? (
-          <>
-            <h3 className="third-level-headings text-3xl! text-center pb-2">
-              {currentSrc?.replace("/", "")}
-            </h3>
-            {slides.length > 0 ? (
-              <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
-            ) : (
-              <p className="text-xs lg:text-lg! body-text">{t.coursework_empty}</p>
-            )}
-          </>
-        ) : (
-          <p className="text-xs lg:text-lg! body-text">{t.coursework_select_prompt}</p>
-        )}
+        </div>
+      );
+    }
+  }
 
-      </div>
+
+
+
+  useEffect(() => {
+    setCurrentSrc(selectedCourse?.slides[0]?.src); // reset when course changes
+    setNotHoverable(window.matchMedia('(hover: none)').matches);
+    setSmallScreen(window.matchMedia('(max-width: 768px)').matches);
+
+    function handleClickOutside(event) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [selectedCourse, isOpen]);
+
+  return (
+    <div>
+      {renderCoursework()}
     </div>
+
+
+    // <div className={`flex flex-row gap-12 mb-8 ${selectedCourse && slides.length > 0 ? "justify-center" : "ml-18"}`}>
+    //   <div>
+    //     {coursework.map((category) => (
+    //     <div key={category.id} className={[
+    //       "flex items-center gap-2 pr-1",
+    //       selectedCategoryId === category.id && "active",
+    //       ]
+    //         .filter(Boolean)
+    //         .join(" ")
+    //       }>
+
+          // <FolderIcon size={30} className="cursor-pointer" 
+          //   onClick={() => {
+          //   setSelectedCategoryId(category.id);
+          //   setSelectedCourseId(null);
+          // }}
+          // />
+
+    //       <button
+    //       className={[
+    //         "category-item",
+    //         "text-xs",
+    //         "lg:text-lg!",
+    //         "body-text",
+    //         "text-left",
+    //         "text-nowrap",
+    //         ]
+    //         .filter(Boolean)
+    //         .join(" ")
+    //       }
+    //       onClick={() => {
+    //         setSelectedCategoryId(category.id);
+    //         setSelectedCourseId(null);
+    //       }}
+    //       key={category.id}
+    //       >
+    //         {category.name}
+    //       </button>
+    //     </div>
+    //     ))}
+    //   </div>
+
+    //   <div>
+    //     {courses.map((course) => (
+    //       <div key={course.id} className={[
+    //         "flex lg:items-center gap-2 lg:whitespace-nowrap pr-2", 
+    //         selectedCourseId === course.id && "active",
+    //         ]
+    //           .filter(Boolean)
+    //           .join(" ")
+    //         }>
+    //         <FolderIcon size={30} weight={course.slides.length > 0 ? "fill" : "regular"} 
+    //           className="cursor-pointer shrink-0"
+    //           onClick={() => setSelectedCourseId(course.id)} 
+    //         />
+
+    //         <button
+    //           key={`${selectedCategoryId}-${course.id}`}
+    //           className="text-xs lg:text-lg! course-item body-text text-wrap max-w-48 
+    //             lg:overflow-hidden lg:text-ellipsis 
+    //             lg:whitespace-nowrap pr-20 hover:max-w-full"
+    //           onClick={() => setSelectedCourseId(course.id)}
+    //         >
+    //           {course.name}
+    //         </button>
+
+    //         {course.portfolioLink && (
+    //           <Link
+    //             href={insertQueryBeforeHash(course.portfolioLink.href, "from=coursework")}
+    //             title={course.portfolioLink.label}
+    //           >
+    //             <p className="text-subheading hover:text-accent">↗</p>
+    //           </Link>
+    //         )}
+
+    //       </div>
+    //     ))}
+    //   </div>
+            
+    //   <div>
+    //     {selectedCourse ? (
+    //       <>
+    //         <h3 className="third-level-headings text-3xl! text-center pb-2">
+    //           {currentSrc?.replace("/", "")}
+    //         </h3>
+    //         {slides.length > 0 ? (
+    //           <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+    //         ) : (
+    //           <p className="text-xs lg:text-lg! body-text">{t.coursework_empty}</p>
+    //         )}
+    //       </>
+    //     ) : (
+    //       <p className="text-xs lg:text-lg! body-text">{t.coursework_select_prompt}</p>
+    //     )}
+
+    //   </div>
+    // </div>
   )
 }
