@@ -64,9 +64,9 @@ const courseworkData: CategoryData[] = [
       {
         id: "computer-graphics",
         slides: [
-          { id: "cg-1", src: "/441-a3-shader.png" },
-          { id: "cg-2", src: "/441-a4-topdown.png" },
-          { id: "cg-3", src: "/441-a5-deferredrendering.png" },
+          { id: "cg-1", src: "/441-a3-shader.gif" },
+          { id: "cg-2", src: "/441-a4-topdown.gif" },
+          { id: "cg-3", src: "/441-a5-deferredrendering.gif" },
           { id: "cg-4", src: "/441-a6-raytracing.png" },
         ],
       },
