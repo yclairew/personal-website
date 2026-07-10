@@ -26,7 +26,7 @@ export default function Coursework() {
       </h1>
 
       <div className="inspire-div pt-5 pl-6 pr-6 pb-7 mb-6 lg:pt-15 lg:pl-15 lg:pr-15 lg:pb-20 lg:mb-15 bg-accent-light">
-        <h2 className="reveal-box areas-subheading subheadings mb-7 lg:mb-8 text-2xl lg:text-5xl!">{t.coursework_inspire_heading}</h2>
+        <h2 className="reveal-box areas-subheading subheadings mb-7 lg:mb-8 text-2xl lg:text-5xl">{t.coursework_inspire_heading}</h2>
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="body-text border-l-3 border-accent pl-4">
             <h3 className="text-xl lg:text-4xl third-level-headings mb-2">{t.coursework_datascience_title}</h3>
@@ -60,7 +60,7 @@ export default function Coursework() {
       </div>
 
       <div className="mb-40">
-        <h2 className="subheadings ml-6 lg:ml-12 mb-6 text-2xl! lg:text-5xl!">{t.coursework_coursework_heading}</h2>
+        <h2 className="subheadings ml-6 lg:ml-12 mb-6 text-2xl lg:text-5xl">{t.coursework_coursework_heading}</h2>
         <CourseworkSection />
       </div>
       

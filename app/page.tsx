@@ -4,6 +4,70 @@ import "./globals.css";
 import Skills_scene from "@/components/Skills_scene";
 import Overscroll_color from "@/components/Overscroll_color";
 import { useLocale } from "@/lib/i18n/Locale_context";
+import { useState, useEffect } from "react";
+
+
+function useTypewriter(fullText: string, speed = 40) {
+  const [displayedChars, setDisplayedChars] = useState(0)
+  const [done, setDone] = useState(false)
+
+  useEffect(() => {
+    setDisplayedChars(0)
+    setDone(false)
+
+    const interval = setInterval(() => {
+      setDisplayedChars((prev) => {
+        if (prev >= fullText.length) {
+          clearInterval(interval)
+          setDone(true)
+          return prev
+        }
+        return prev + 1
+      })
+    }, speed)
+
+    return () => clearInterval(interval)
+  }, [fullText, speed])
+
+  return { displayedChars, done }
+}
+
+
+function intro_typing(t: any, speed = 67) {
+  const prefix = t.home_subtitle_prefix + " "
+  const linkText = t.home_subtitle_link
+  const fullText = prefix + linkText
+
+  const { displayedChars, done } = useTypewriter(fullText, speed)
+
+  const typedPrefix = prefix.slice(0, Math.min(displayedChars, prefix.length))
+  const typedLinkChars = Math.max(0, displayedChars - prefix.length)
+  const typedLink = linkText.slice(0, typedLinkChars)
+  const linkFullyTyped = typedLinkChars >= linkText.length
+
+  return (
+    <p className="body-text text-base lg:text-2xl
+      mb-6 lg:mb-14 text-text whitespace-pre-line 
+      max-w-[90vw] text-center"
+    >
+      {typedPrefix}
+      {linkFullyTyped ? (
+        <a 
+          href="https://mays.tamu.edu/ai/ai-minor/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          {typedLink}
+        </a>
+      ) : (
+        <span>{typedLink}</span>
+      )}
+      <span className="border-r-2 border-text animate-blink-caret"></span>
+    </p>
+  )
+}
+
 
 export default function Home() {
   Overscroll_color();
@@ -11,19 +75,20 @@ export default function Home() {
   const isChinese = ["zh-Hans", "zh-Hant"].includes(locale);
   const isSimplifiedChinese = locale === "zh-Hans";
   const isTraditionalChinese = locale === "zh-Hant";  
-  const typingWidth =
+  const typingSpeed =
   isSimplifiedChinese
-    ? "49.5ch"
+    ? 120
     : isTraditionalChinese
-    ? "43ch"
-    : "48.5ch"; // for typing animation
+    ? 120
+    : 67 ; // for typing animation
+
 
   return (
     <div className="bg-background">
       <title>{t.site_title}</title>
       <div>
         <h1 className={`heading-text text-center text-text underline 
-        decoration-[0.19rem] decoration-accent mt-5 -mb-4 [text-box-trim:trim-end] 
+        decoration-[0.19rem] decoration-accent mt-5 lg:-mb-4 [text-box-trim:trim-end] 
         ${isChinese ? 
           "text-5xl lg:text-[10rem] mt-18 mb-5! underline-offset-10 lg:underline-offset-20" 
           : "underline-offset-[0.3rem] text-[5rem] lg:text-[10.25rem]"
@@ -33,28 +98,29 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="flex justify-center"> {/* keeps text centered during typing animation */}
-        <p className="body-text typing-animation mb-14 text-text" 
-          style={{ "--typing-width": typingWidth }}
-        >
-          {t.home_subtitle_prefix}{" "}
-          <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">{t.home_subtitle_link}</a>
-        </p>
+      <div className="flex justify-center">
+        {intro_typing(t, typingSpeed)}
       </div>
 
-      <div className="grid grid-cols-2 items-stretch gap-12">
+      <div className="grid md:grid-cols-2 items-stretch gap-6 lg:gap-12">
         <div className="flex justify-center items-center object-cover h-full">
           <img className="headshot" src="my-headshot.jpg" alt={t.home_headshot_alt}/>
         </div>
 
         <div className="flex flex-col justify-center text-text">
-          <p className="body-text max-w-[clamp(36rem,39.9vw,90rem)] text-left">
+          <p className="body-text text-base lg:text-2xl
+            max-w-[clamp(36rem,39.9vw,90rem)] ml-4 
+            mr-4 lg:ml-0 lg:mr-0 text-left"
+          >
             {t.home_intro_p1_prefix}{" "}
             <a href="https://www.xiameng.org/DreamLab/" target="_blank" rel="noopener noreferrer">{t.home_intro_p1_link}</a>,{" "}
             {t.home_intro_p1_suffix} <i>{t.home_intro_p1_project}</i>, {t.home_intro_p1_suffix2}
           </p>
 
-          <p className="body-text max-w-[clamp(36rem,39.9vw,90rem)] text-left mt-4">
+          <p className="body-text text-base lg:text-2xl
+            max-w-[clamp(36rem,39.9vw,90rem)] 
+            text-left mt-4 ml-4 mr-4 lg:ml-0 lg:mr-0"
+          >
             {t.home_intro_p2_prefix}
 
             <br/>
@@ -65,8 +131,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-35 pb-40 w-dvw h-auto">
-        <h2 className="subheadings mb-10 text-center">{t.home_skills_heading}</h2>
+      <div className="pt-15 lg:pt-35 pb-25 lg:pb-40 w-dvw h-auto">
+        <h2 className="subheadings mb-10 text-center text-2xl lg:text-5xl">{t.home_skills_heading}</h2>
         <Skills_scene/>
       </div>
       
