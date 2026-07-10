@@ -432,12 +432,18 @@ export default function CourseworkSection() {
 
 
 
-
   useEffect(() => {
     setCurrentSrc(selectedCourse?.slides[0]?.src); // reset when course changes
-    setNotHoverable(window.matchMedia('(hover: none)').matches);
-    setSmallScreen(window.matchMedia('(max-width: 768px)').matches);
+  }, [selectedCourse?.id]);
 
+
+  useEffect(() => {
+    setNotHoverable(window.matchMedia("(hover: none)").matches);
+    setSmallScreen(window.matchMedia("(max-width: 768px)").matches);
+  }, []);
+
+
+  useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
         menuRef.current &&
@@ -456,7 +462,7 @@ export default function CourseworkSection() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [selectedCourse, isOpen]);
+  }, [isOpen]);
 
   return (
     <div>
