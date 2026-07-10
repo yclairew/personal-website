@@ -1,5 +1,5 @@
 "use client";
-import { forwardRef, useRef, useState, useEffect } from "react";
+import { forwardRef, useRef, useState, useEffect, useMemo } from "react";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Html } from "@react-three/drei";
@@ -44,13 +44,6 @@ const icons = [
 ]
 // couldnt find: "open ai api", "glsl", "uber h3", "seaborn", 
 
-const positions: [number, number, number][] = []
-for (let x = -cols; x < cols; x++) {
-  for (let y = -rows; y < rows; y++) {
-    positions.push([x * spacing, y * spacing, 0])
-  }
-}
-
 const shuffledIcons = seededShuffle(icons, 67)
 
 
@@ -94,9 +87,10 @@ const AnimatedMesh = animated("mesh")
 const Icon = forwardRef<THREE.Mesh, { 
   position: [number, number, number], 
   name: string,
-  onHover: (isHovered: boolean) => void
+  onHover: (isHovered: boolean) => void,
+  planeGeoScale: number 
 }>(
-  ({ position, name, onHover }, ref) => {
+  ({ position, name, onHover, planeGeoScale }, ref) => {
     const texture = useSvgTexture(name)
     const [hovered, setHovered] = useState(false)
 
@@ -113,21 +107,13 @@ const Icon = forwardRef<THREE.Mesh, {
         onPointerOver={() => { setHovered(true); onHover(true) }}
         onPointerOut={() => { setHovered(false); onHover(false) }}
       >
-        <planeGeometry args={[1.5, 1.5]} />
+        <planeGeometry args={[1.5 * planeGeoScale, 1.5 * planeGeoScale]} />
         <meshBasicMaterial map={texture ?? undefined} transparent visible={!!texture} />
         {hovered && (
           <Html center position={[0, -1, 0]}>
-            <div style={{
-              color: "white",
-              fontSize: "12px",
-              fontFamily: "var(--font-body)",
-              whiteSpace: "nowrap",
-              background: "color-mix(in srgb, var(--color-accent) 80%, transparent)",
-
-              padding: "4px 8px",
-              borderRadius: "8px",
-              letterSpacing: "0.05em",
-            }}>
+            <div className="text-white text-xs font-[Lora] whitespace-nowrap 
+              bg-accent/80 px-2 py-1 -mt-10 md:-mt-2 lg:mt-0 rounded-lg tracking-wider"
+            >
               {displayNames[name] ?? name}
             </div>
           </Html>
@@ -140,12 +126,28 @@ const Icon = forwardRef<THREE.Mesh, {
 function IconGrid() {
   console.log("IconGrid rendering");
 
+  const { size, camera } = useThree()
+
+  const isSmallScreen = size.width < 768;
+  const planeGeoScale = isSmallScreen ? 0.7 : 1;
+  const responsiveSpacing = isSmallScreen ? spacing * planeGeoScale : spacing;
+
+  const positions = useMemo(() => {
+    const pos: [number, number, number][] = []
+    for (let x = -cols; x < cols; x++) {
+      for (let y = -rows; y < rows; y++) {
+        pos.push([x * responsiveSpacing, y * responsiveSpacing, 0])
+      }
+    }
+    return pos
+  }, [responsiveSpacing])
+
   const meshRefs = useRef<(THREE.Mesh | null)[]>(new Array(positions.length).fill(null))
-  const { camera } = useThree()
+
 
   useFrame(() => {
-    const gw = cols * 2 * spacing
-    const gh = rows * 2 * spacing
+    const gw = cols * 2 * responsiveSpacing
+    const gh = rows * 2 * responsiveSpacing
 
     meshRefs.current.forEach((mesh, i) => {
       if (!mesh) return
@@ -163,13 +165,13 @@ function IconGrid() {
 
       // fisheye based on screen position only
       const dist = Math.sqrt(x * x + y * y)
-      const fisheyeRadius = 6
+      const fisheyeRadius = 6 * responsiveSpacing / spacing
       const force = Math.max(0, (1 - dist / fisheyeRadius) * 0.5)
 
       const targetX = wrappedX + x * force
       const targetY = wrappedY + y * force
 
-      const threshold = spacing * 2
+      const threshold = responsiveSpacing * 2
       mesh.position.x = Math.abs(targetX - mesh.position.x) > threshold ? targetX : THREE.MathUtils.lerp(mesh.position.x, targetX, 0.08)
       mesh.position.y = Math.abs(targetY - mesh.position.y) > threshold ? targetY : THREE.MathUtils.lerp(mesh.position.y, targetY, 0.08)
     })
@@ -184,6 +186,7 @@ function IconGrid() {
           position={pos}
           name={shuffledIcons[i % shuffledIcons.length]}
           onHover={() => {}}
+          planeGeoScale={planeGeoScale}
         />
       ))}
     </>

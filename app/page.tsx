@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-35 pb-40">
+      <div className="pt-35 pb-40 w-dvw h-auto">
         <h2 className="subheadings mb-10 text-center">{t.home_skills_heading}</h2>
         <Skills_scene/>
       </div>
