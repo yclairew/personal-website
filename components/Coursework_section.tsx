@@ -361,6 +361,7 @@ export default function CourseworkSection() {
             {courses.map((course) => (
               <div key={course.id} className={[
                 "flex lg:items-center gap-2 lg:whitespace-nowrap pr-2", 
+                course.slides.length === 0 ? "opacity-60" : "",
                 selectedCourseId === course.id && "active",
                 ]
                   .filter(Boolean)
@@ -377,14 +378,19 @@ export default function CourseworkSection() {
 
                 <button
                   key={`${selectedCategoryId}-${course.id}`}
-                  className="text-xs lg:text-lg! course-item body-text text-wrap max-w-48 
+                  aria-disabled={course.slides.length === 0}
+                  className={`text-xs lg:text-lg! course-item body-text text-wrap max-w-48 
                     lg:overflow-hidden lg:text-ellipsis 
-                    lg:whitespace-nowrap pr-20 hover:max-w-full"
-                  onClick={() =>
+                    lg:whitespace-nowrap pr-20 hover:max-w-full 
+                    ${course.slides.length === 0 ? 
+                      "hover:cursor-not-allowed!" 
+                      : "hover:cursor-pointer"}`}
+                  onClick={() => {
+                    if (course.slides.length === 0) return;
                     setSelectedCourseId((prev) =>
                       prev === course.id ? null : course.id
-                    )
-                  }
+                    );
+                  }}
                 >
                   {course.name}
                 </button>
