@@ -48,7 +48,7 @@ export default function Service() {
           <Slideshow slides={serviceSlides}/>
 
           <div ref={ref1} className="animate-target service-text-container pt-10 pb-8 ml-12 mr-12">
-              <p className="service-text body-text text-sm lg:text-xl">
+              <p className="service-text body-text text-base lg:text-xl">
                   {t.service_text_prefix}{" "}
                   <a href="https://fish.tamu.edu/">MSC FISH</a>,{" "}
                   {t.service_text_suffix}
@@ -57,7 +57,7 @@ export default function Service() {
       </div>
 
       <div ref={ref2} className="animate-target extra-service-text-container ml-12 mr-12 mb-35">
-          <p className="body-text text-sm lg:text-xl">
+          <p className="body-text text-base lg:text-xl">
               {t.service_extra_text_prefix}{" "}
               <a href="https://bigevent.tamu.edu/">Big Event</a>,{" "}
               {t.service_extra_text_suffix}

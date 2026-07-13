@@ -230,7 +230,7 @@ export default function CourseworkSection() {
                     <FolderIcon size={30} className="cursor-pointer" />
 
                     <button
-                      className="category-item text-xs lg:text-lg 
+                      className="category-item text-sm 
                       body-text text-left text-nowrap"
                     >
                       {category.name}
@@ -251,7 +251,7 @@ export default function CourseworkSection() {
                         return (
                           <div key={course.id}>
                             <div className={[
-                              "flex pl-1 pr-1 lg:items-center gap-2 lg:whitespace-nowrap lg:pr-2",
+                              "flex pl-1 pr-1 gap-2",
                               course.slides.length === 0 ? "opacity-60" : "",
                               isSelected && "active",
                               ].filter(Boolean).join(" ")}
@@ -267,9 +267,8 @@ export default function CourseworkSection() {
                                 <button
                                   key={`${selectedCategoryId}-${course.id}`}
                                   disabled={course.slides.length === 0}
-                                  className="text-xs lg:text-lg course-item body-text text-wrap max-w-60 lg:max-w-48
-                                    text-left lg:overflow-hidden lg:text-ellipsis
-                                    lg:whitespace-nowrap lg:pr-20 hover:max-w-full"
+                                  className="text-xs course-item body-text text-wrap max-w-60
+                                    text-left hover:max-w-full"
                                 >
                                   {course.name}
                                   {course.slides.length === 0 && (
@@ -291,7 +290,7 @@ export default function CourseworkSection() {
 
                             {isSelected && course.slides.length > 0 && (
                               <>
-                                <h3 className="third-level-headings text-lg lg:text-3xl text-center pb-2
+                                <h3 className="third-level-headings text-xl text-center pb-2
                                 mt-5 lg:mt-0"
                                 >
                                   {currentSrc?.replace("/", "")}
@@ -336,8 +335,7 @@ export default function CourseworkSection() {
               <button
               className={[
                 "category-item",
-                "text-xs",
-                "lg:text-lg!",
+                "text-xl",
                 "body-text",
                 "text-left",
                 "text-nowrap",
@@ -379,7 +377,7 @@ export default function CourseworkSection() {
                 <button
                   key={`${selectedCategoryId}-${course.id}`}
                   aria-disabled={course.slides.length === 0}
-                  className={`text-xs lg:text-lg! course-item body-text text-wrap max-w-48 
+                  className={`text-lg course-item body-text text-wrap max-w-48 
                     lg:overflow-hidden lg:text-ellipsis 
                     lg:whitespace-nowrap pr-20 hover:max-w-full 
                     ${course.slides.length === 0 ? 
@@ -411,17 +409,17 @@ export default function CourseworkSection() {
           <div>
             {selectedCourse ? (
               <>
-                <h3 className="third-level-headings text-3xl! text-center pb-2">
+                <h3 className="third-level-headings text-3xl text-center pb-2">
                   {currentSrc?.replace("/", "")}
                 </h3>
                 {slides.length > 0 ? (
                   <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
                 ) : (
-                  <p className="text-xs lg:text-lg! body-text">{t.coursework_empty}</p>
+                  <p className="text-lg body-text">{t.coursework_empty}</p>
                 )}
               </>
             ) : (
-              <p className="text-xs lg:text-lg! body-text">{t.coursework_select_prompt}</p>
+              <p className="text-lg body-text">{t.coursework_select_prompt}</p>
             )}
 
           </div>

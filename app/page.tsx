@@ -46,7 +46,7 @@ function intro_typing(t: any, speed = 67) {
   const linkFullyTyped = typedLinkChars >= linkText.length
 
   return (
-    <p className="body-text text-base lg:text-2xl
+    <p className="body-text text-base lg:text-xl
       mb-6 lg:mb-14 text-text whitespace-pre-line 
       max-w-[90vw] text-center"
     >
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col justify-center text-text">
-          <p className="body-text text-base lg:text-2xl
+          <p className="body-text text-base lg:text-xl
             max-w-[clamp(36rem,39.9vw,90rem)] ml-4 
             mr-4 lg:ml-0 lg:mr-0 text-left"
           >
@@ -117,7 +117,7 @@ export default function Home() {
             {t.home_intro_p1_suffix} <i>{t.home_intro_p1_project}</i>, {t.home_intro_p1_suffix2}
           </p>
 
-          <p className="body-text text-base lg:text-2xl
+          <p className="body-text text-base lg:text-xl
             max-w-[clamp(36rem,39.9vw,90rem)] 
             text-left mt-4 ml-4 mr-4 lg:ml-0 lg:mr-0"
           >
@@ -132,7 +132,7 @@ export default function Home() {
       </div>
 
       <div className="pt-15 lg:pt-35 pb-25 lg:pb-40 w-dvw h-auto">
-        <h2 className="subheadings mb-10 text-center text-2xl lg:text-5xl">{t.home_skills_heading}</h2>
+        <h2 className="subheadings mb-10 text-center text-2xl lg:text-4xl">{t.home_skills_heading}</h2>
         <Skills_scene/>
       </div>
       
