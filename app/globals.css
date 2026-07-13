@@ -56,6 +56,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  img.slide-img {
+    max-width: 35rem;
+  }
+}
+
 .animate-target {
   opacity: 0;
 }
