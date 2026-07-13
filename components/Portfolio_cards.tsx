@@ -149,6 +149,8 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
 
   const [notHoverable, setNotHoverable] = useState(false);
 
+  const [smallScreen, setSmallScreen] = useState(false);
+
   const renderSkills = () => {
     if (!card.skills) return null;
 
@@ -194,22 +196,129 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
 
   }
 
+  const renderCards = () => {
+    if (smallScreen) {
+      return (
+        <div key={card.id} className="card p-6 animate-fade-up">
+          <div className="card-header grid grid-cols"> 
+            <div className="card-title-div flex">
+              {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
+
+              <h3 className="card-title text-2xl [font-family:var(--font-body)] pb-0.5 text-text">{card.title}</h3>
+            </div>
+
+            <div className="col-1">
+              {card.role && <p className="text-sm [font-family:var(--font-body)] text-subheading">{card.role}</p>}
+            </div>
+            
+
+            <div className="links-div col-1">
+              {card.links.length > 0 && (
+                <div className="card-links flex gap-5 mt-4 mb-2">
+                  {card.links.map((link: { label: string; url: string }) => (
+                    <a
+                      key={link.label}
+                      className="card__link"
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.label} ↗
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="card-body flex flex-col gap-5 mt-7">
+            <div className="card-media flex flex-1 justify-center max-w-full mb-3">
+              {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>}
+            </div>
+
+            <div className="card-text [font-family:var(--font-body)] text-base flex-1 mb-7">
+              <p className="card-description text-text" dangerouslySetInnerHTML={{ __html: card.description }}/>
+            </div>
+          </div>
+
+          <div className="card-skills">
+            {renderSkills()}
+          </div>
+          
+        </div>
+      );
+    }
+
+    else {
+      return (
+        <div key={card.id} className="card p-6 animate-fade-up">
+          <div className="card-header grid grid-cols-2"> 
+            <div className="card-title-div flex col-1">
+              {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
+
+              <div>
+                <h3 className="card-title text-2xl lg:text-4xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
+                {card.role && <p className="text-sm lg:text-base [font-family:var(--font-body)] text-subheading">{card.role}</p>}
+              </div>
+            </div>
+
+            <div className="links-div text-right col-2">
+              {card.links.length > 0 && (
+                <div className="card-links flex gap-5 justify-end">
+                  {card.links.map((link: { label: string; url: string }) => (
+                    <a
+                      key={link.label}
+                      className="card__link"
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.label} ↗
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="card-body flex flex-col gap-8 pt-3 lg:flex-row">
+            <div className="card-text [font-family:var(--font-body)] text-xl flex-1">
+              <p className="card-description text-text" dangerouslySetInnerHTML={{ __html: card.description }}/>
+            </div>
+
+            <div className="card-media flex flex-1 justify-center max-w-full lg:justify-end mb-3 lg:mb-0">
+              {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>}
+            </div>
+          </div>
+
+          <div className="card-skills">
+            {renderSkills()}
+          </div>
+          
+        </div>
+      );
+    }
+  }
+
   useEffect(() => {
     setNotHoverable(window.matchMedia('(hover: none)').matches);
+    setSmallScreen(window.matchMedia("(max-width: 640px)").matches);
   }, []);
 
   return (
     <div ref={ref} id={card.id}
       className="opacity-0 mb-10 ml-4 mr-4 lg:mb-15 lg:ml-15 lg:mr-15 bg-accent-light p-0.5 lg:p-5 rounded-xl"
     >
-      <div key={card.id} className="card p-6 animate-fade-up">
+      {renderCards()}
+        
+      {/* <div key={card.id} className="card p-6 animate-fade-up">
         <div className="card-header grid grid-cols-2"> 
           <div className="card-title-div flex col-1">
             {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
 
             <div>
               <h3 className="card-title text-2xl lg:text-4xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
-              {card.role && <p className="text-sm lg:text-md [font-family:var(--font-body)] text-subheading">{card.role}</p>}
+              {card.role && <p className="text-sm lg:text-base [font-family:var(--font-body)] text-subheading">{card.role}</p>}
             </div>
           </div>
 
@@ -246,7 +355,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
           {renderSkills()}
         </div>
         
-      </div>
+      </div> */}
     </div>
   );
 }

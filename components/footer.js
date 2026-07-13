@@ -8,7 +8,7 @@ const Footer = () => {
         <footer id="footer" className="bg-accent-light border-t-2 border-accent-light shadow-sm font-[Montserrat]">
             <div className="mx-auto flex max-w-240 justify-between items-center p-10 lg:px-14 lg:py-14">
                 <div className="space-y-2">
-                    <h3 className="text-md lg:text-lg font-semibold text-text">{t.footer_heading}</h3>
+                    <h3 className="text-base lg:text-lg font-semibold text-text">{t.footer_heading}</h3>
                     <h3 className="text-xs lg:text-sm text-text">{t.footer_role}</h3>
                     <p className="text-xs lg:text-sm text-text">© {new Date().getFullYear()}{" "}{t.footer_heading}</p>
                 </div>
