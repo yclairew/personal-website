@@ -267,12 +267,12 @@ export default function CourseworkSection() {
                                 <button
                                   key={`${selectedCategoryId}-${course.id}`}
                                   disabled={course.slides.length === 0}
-                                  className="text-xs course-item body-text text-wrap max-w-60
+                                  className="text-sm course-item body-text text-wrap max-w-60
                                     text-left hover:max-w-full"
                                 >
                                   {course.name}
                                   {course.slides.length === 0 && (
-                                    <span className="text-xs! body-text opacity-60 pl-1">(empty)</span>
+                                    <span className="text-sm body-text opacity-60 pl-1">(empty)</span>
                                   )}
                                 </button>
 

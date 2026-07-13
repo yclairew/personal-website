@@ -257,7 +257,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
 
               <div>
-                <h3 className="card-title text-xl lg:text-3xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
+                <h3 className="card-title text-xl md:text-2xl lg:text-3xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
                 {card.role && <p className="text-sm lg:text-base [font-family:var(--font-body)] text-subheading">{card.role}</p>}
               </div>
             </div>
@@ -282,7 +282,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
           </div>
 
           <div className="card-body flex flex-col gap-8 pt-3 lg:flex-row">
-            <div className="card-text [font-family:var(--font-body)] text-xl flex-1">
+            <div className="card-text [font-family:var(--font-body)] text-base lg:text-xl flex-1">
               <p className="card-description text-text" dangerouslySetInnerHTML={{ __html: card.description }}/>
             </div>
 

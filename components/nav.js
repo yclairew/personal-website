@@ -53,11 +53,11 @@ const Nav = () => {
                 </div>
 
                 {/* desktop links */}
-                <div className="hidden md:flex gap-6 ml-auto justify-end mr-15 items-center">
+                <div className="hidden md:flex gap-5 lg:gap-6 ml-auto justify-end mr-4 lg:mr-15 lg:items-center">
                     {navLinks.map(link => (
                         <Link
                             key={link.href}
-                            className="nav-bar-text text-xl text-center text-link leading-none nav-underline no-anim-link"
+                            className="nav-bar-text text-lg lg:text-xl text-center text-link leading-none nav-underline no-anim-link"
                             href={link.href}
                             target={link.target}
                             rel={link.target ? "noopener noreferrer" : undefined}
