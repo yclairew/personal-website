@@ -42,8 +42,8 @@ const Nav = () => {
 
     return (
         <nav className="pb-3 pt-3 bg-accent-light border-b-2 border-accent-light shadow-sm align-center font-[Montserrat] relative">
-            <div className="flex w-full items-center">
-                <div className="flex gap-6 ml-4 lg:ml-15 items-center">
+            <div className="flex w-full items-center justify-between">
+                <div className="flex gap-6 ml-4 lg:ml-6 xl:ml-15 items-center">
                     <Link href="/" className="nav-underline no-anim-link">
                         <img src="icon0.svg" className="w-12 h-auto"/>
                     </Link>
@@ -53,7 +53,7 @@ const Nav = () => {
                 </div>
 
                 {/* desktop links */}
-                <div className="hidden md:flex gap-5 lg:gap-6 ml-auto justify-end mr-4 lg:mr-15 lg:items-center">
+                <div className="hidden md:flex gap-5 lg:gap-6 mr-4 lg:mr-6 xl:mr-15 lg:items-center">
                     {navLinks.map(link => (
                         <Link
                             key={link.href}

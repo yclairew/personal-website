@@ -46,7 +46,7 @@ function intro_typing(t: any, speed = 67) {
   const linkFullyTyped = typedLinkChars >= linkText.length
 
   return (
-    <p className="body-text text-base lg:text-xl
+    <p className="body-text textmd lg:text-2xl
       mb-6 lg:mb-14 text-text whitespace-pre-line 
       max-w-[90vw] text-center"
     >
@@ -102,13 +102,17 @@ export default function Home() {
         {intro_typing(t, typingSpeed)}
       </div>
 
-      <div className="grid md:grid-cols-2 items-stretch gap-6 lg:gap-12">
-        <div className="flex justify-center items-center object-cover h-full">
-          <img className="headshot" src="my-headshot.jpg" alt={t.home_headshot_alt}/>
+      <div className="grid md:grid-cols-2 items-center gap-6 lg:gap-12 lg:ml-8 lg:mr-8">
+        <div className="flex justify-center items-center">
+          <img 
+            className="headshot max-h-96 w-auto object-contain" 
+            src="my-headshot.jpg" 
+            alt={t.home_headshot_alt}
+          />
         </div>
 
         <div className="flex flex-col justify-center text-text">
-          <p className="body-text text-base lg:text-xl
+          <p className="body-text text-md lg:text-2xl
             max-w-[clamp(36rem,39.9vw,90rem)] ml-4 
             mr-4 lg:ml-0 lg:mr-0 text-left"
           >
@@ -117,7 +121,7 @@ export default function Home() {
             {t.home_intro_p1_suffix} <i>{t.home_intro_p1_project}</i>, {t.home_intro_p1_suffix2}
           </p>
 
-          <p className="body-text text-base lg:text-xl
+          <p className="body-text text-md lg:text-2xl
             max-w-[clamp(36rem,39.9vw,90rem)] 
             text-left mt-4 ml-4 mr-4 lg:ml-0 lg:mr-0"
           >
