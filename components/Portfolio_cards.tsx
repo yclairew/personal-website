@@ -29,7 +29,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Frontend", "AI/ML"],
     context: "Research",
     type: "video",
-    media: "annomath-paper-video.mp4",
+    media: "/annomath-paper-video.mp4",
     linkKeys: [],
     skillKeys: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
   },
@@ -39,7 +39,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Full-Stack"],
     context: "Coursework",
     type: "image",
-    media: "boba-pos-img.png",
+    media: "/boba-pos-img.png",
     linkKeys: [
       { key: "pos-system", url: "https://new-project3-gang71.onrender.com/" },
       { key: "github", url: "https://github.com/yclairew/project3-gang71" }
@@ -49,11 +49,11 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "aggies-create",
     titleKey: "aggies-create",
-    logo: "aggies-create-logo.png",
+    logo: "/aggies-create-logo.png",
     stackType: ["Frontend", "AI/ML"],
     context: "Consulting",
     type: "video",
-    media: "aggies-create-quiz-demo.mov",
+    media: "/aggies-create-quiz-demo.mov",
     linkKeys: [
       { key: "aggies-create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
     ],
@@ -62,11 +62,11 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "signify-health",
     titleKey: "signify-health",
-    logo: "signify-health-logo.png",
+    logo: "/signify-health-logo.png",
     stackType: ["Full-Stack", "Data Visualization"],
     context: "Consulting",
     type: "video",
-    media: "signify-hex-demo.mp4",
+    media: "/signify-hex-demo.mp4",
     linkKeys: [
       { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
     ],
@@ -75,11 +75,11 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "tao",
     titleKey: "tao",
-    logo: "tao-logo.png",
+    logo: "/tao-logo.png",
     stackType: ["Frontend"],
     context: "Organization",
     type: "image",
-    media: "tao-img.png",
+    media: "/tao-img.png",
     linkKeys: [
       { key: "website", url: "https://engrtao.tech/" },
       { key: "github", url: "https://github.com/TAO-ENGR/club-website" }
@@ -92,7 +92,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Automation"],
     context: "Personal",
     type: "image",
-    media: "bingo-board-img.png",
+    media: "/bingo-board-img.png",
     linkKeys: [
       { key: "github", url: "https://github.com/yclairew/automated-bingo-generator" }
     ],
@@ -202,7 +202,10 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
         <div key={card.id} className="card p-6 animate-fade-up">
           <div className="card-header grid grid-cols"> 
             <div className="card-title-div flex">
-              {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
+              {/* {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />} */}
+
+              {/* for hosting on people.tamu.edu */}
+              {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={`/~y.clairewu${card.logo}`} alt={`${card.title} logo`} />}
 
               <h3 className="card-title text-xl [font-family:var(--font-body)] pb-0.5 text-text">{card.title}</h3>
             </div>
@@ -233,7 +236,10 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
 
           <div className="card-body flex flex-col gap-5 mt-7">
             <div className="card-media flex flex-1 justify-center max-w-full mb-3">
-              {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>}
+              {/* {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>} */}
+              
+              {/* for hosting on people.tamu.edu */}
+              {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={`/~y.clairewu${card.media}`} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={`/~y.clairewu${card.media}`} alt={`${card.title} image`}/>}
             </div>
 
             <div className="card-text [font-family:var(--font-body)] text-base flex-1 mb-7">
@@ -254,7 +260,11 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
         <div key={card.id} className="card p-6 animate-fade-up">
           <div className="card-header grid grid-cols-2"> 
             <div className="card-title-div flex col-1">
-              {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />}
+              {/* {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />} */}
+
+              {/* for hosting on people.tamu.edu */}
+              {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={`/~y.clairewu${card.logo}`} alt={`${card.title} logo`} />}
+
 
               <div>
                 <h3 className="card-title text-xl md:text-2xl lg:text-3xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
@@ -287,7 +297,10 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
             </div>
 
             <div className="card-media flex flex-1 justify-center max-w-full lg:justify-end mb-3 lg:mb-0">
-              {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>}
+              {/* {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>} */}
+
+              {/* for hosting on people.tamu.edu */}
+              {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={`/~y.clairewu${card.media}`} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={`/~y.clairewu${card.media}`} alt={`${card.title} image`}/>}
             </div>
           </div>
 

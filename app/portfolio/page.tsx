@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import ".././globals.css";
 import Cards from "@/components/Portfolio_cards";
 import Overscroll_color from "@/components/Overscroll_color";
@@ -8,7 +9,7 @@ import { useSearchParams } from "next/navigation";
 import { BackButton } from "@/components/ui/back-button";
 
 
-export default function PortfolioContent() {
+function PortfolioContent() {
   Overscroll_color();
   const { t, locale } = useLocale();
   const isChinese = ["zh-Hans", "zh-Hant"].includes(locale);
@@ -42,5 +43,13 @@ export default function PortfolioContent() {
         <Cards />
       </div>
     </div>
+  );
+}
+
+export default function PortfolioPage() {
+  return (
+    <Suspense fallback={null}>
+      <PortfolioContent />
+    </Suspense>
   );
 }

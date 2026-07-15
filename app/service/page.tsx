@@ -7,10 +7,10 @@ import { useAnimateOnScroll } from "@/hooks/useAnimateOnScroll";
 import { useLocale } from "@/lib/i18n/Locale_context";
 
 const serviceSlidesData = [
-  { id: "park-cleanup", src: "park-cleanup.jpg" },
-  { id: "flo-bowl", src: "flo-bowl.jpg" },
-  { id: "freshman-big-event", src: "freshman-big-event.jpg" },
-  { id: "sophomore-big-event", src: "sophomore-big-event.png" },
+  { id: "park-cleanup", src: "/park-cleanup.jpg" },
+  { id: "flo-bowl", src: "/flo-bowl.jpg" },
+  { id: "freshman-big-event", src: "/freshman-big-event.jpg" },
+  { id: "sophomore-big-event", src: "/sophomore-big-event.png" },
 ];
 
 function getServiceSlides(t: Record<string, string>) {

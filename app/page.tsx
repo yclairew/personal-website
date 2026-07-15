@@ -104,9 +104,16 @@ export default function Home() {
 
       <div className="grid md:grid-cols-2 items-center gap-6 lg:gap-12 lg:ml-8 lg:mr-8">
         <div className="flex justify-center items-center">
+          {/* <img 
+            className="headshot max-h-96 w-auto object-contain" 
+            src="/my-headshot.jpg" 
+            alt={t.home_headshot_alt}
+          /> */}
+
+          {/* for hosting on people.tamu.edu */}
           <img 
             className="headshot max-h-96 w-auto object-contain" 
-            src="my-headshot.jpg" 
+            src="/~y.clairewu/my-headshot.jpg" 
             alt={t.home_headshot_alt}
           />
         </div>
