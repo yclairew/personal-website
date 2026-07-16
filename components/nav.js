@@ -16,10 +16,7 @@ const Nav = () => {
         { href: "/portfolio", label: t.nav_portfolio },
         { href: "/coursework", label: t.nav_coursework },
         { href: "/service", label: t.nav_service },
-        // { href: "/Claire Wu Resume.pdf#view=Fit", label: t.nav_resume, target: "_blank" },
-        
-        // for hosting on people.tamu.edu 
-        { href: "/~y.clairewu/Claire Wu Resume.pdf#view=Fit", label: t.nav_resume, target: "_blank" },
+        { href: "/Claire Wu Resume.pdf#view=Fit", label: t.nav_resume, target: "_blank" },
     ];
 
     useEffect(() => {

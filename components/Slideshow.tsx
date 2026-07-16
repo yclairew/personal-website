@@ -5,6 +5,7 @@ import { useState } from "react";
 type Slide = {
   src: string;
   caption: string;
+  alt: string;
 };
 
 type Props = {
@@ -26,14 +27,29 @@ export default function Slideshow({ slides, onSlideChange }: Props) {
       {/* <img className="slide-img mx-auto block" src={slides[currentSlide].src} /> */}
 
       {/* for hosting on people.tamu.edu */}
-      <img className="slide-img mx-auto block" src={`/~y.clairewu${slides[currentSlide].src}`} />
+      <img className="slide-img mx-auto block" src={`/~y.clairewu${slides[currentSlide].src}`} alt={slides[currentSlide].alt}/>
       <div className="font-[Lora] text-center text-sm lg:text-xl mt-2">{slides[currentSlide].caption}</div>
       <div className="cursor-pointer flex text-sm lg:text-2xl justify-center gap-3 
         lg:gap-4 align-center m-auto lg:underline-offset-11 mt-1 lg:mt-0"
       >
-        <a onClick={() => plusSlides(-1)} aria-label="Go to previous slide">&#10229;</a>
+        <button type="button"
+          onClick={() => plusSlides(-1)} 
+          className="animated-link"
+          aria-label="Go to previous slide"
+        >
+          &#10229;
+        </button>
+
         <div className="font-[Lora] text-center text-xs lg:text-lg whitespace-nowrap m-auto">{currentSlide + 1} / {slides.length}</div>
-        <a onClick={() => plusSlides(1)} aria-label="Go to next slide">&#10230;</a>
+
+        <button
+          type="button"
+          onClick={() => plusSlides(-1)} 
+          className="animated-link"
+          aria-label="Go to next slide"
+        >
+          &#10230;
+        </button>
       </div>
     </div>
   );

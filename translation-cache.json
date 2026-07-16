@@ -1810,5 +1810,29 @@
     "targetLang": "zh-Hant",
     "translated": "回到課程",
     "cachedAt": "2026-07-06T19:25:44.767Z"
+  },
+  "96c5ee28491b0802ec511f78a28ba215b1f4556773082b1440a362147867a7d9": {
+    "source": "Exploring shaders, materials, time-based rotations with Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hans",
+    "translated": "探索着色器、材质、基于时间的轮换，使用斯坦福兔子和犹他茶壶",
+    "cachedAt": "2026-07-16T18:09:53.139Z"
+  },
+  "3e6a6dcd9ae38a385dbf525c7707fcb895471e50847235d0544c48071971009b": {
+    "source": "Exploring shaders, materials, time-based rotations with Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hant",
+    "translated": "探索著色器、材質、時間基礎旋轉，與 Stanford Bunny 和 Utah Teapot 合作",
+    "cachedAt": "2026-07-16T18:09:53.639Z"
+  },
+  "d85e6316870dde4d4425b8100b3e4d597d3734c6415da36eb3ec48e37677d594": {
+    "source": "Exploring shaders, materials, time-based animations with Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hans",
+    "translated": "探索着色器、材质、基于时间的动画，使用斯坦福兔子和犹他茶壶",
+    "cachedAt": "2026-07-16T18:10:12.335Z"
+  },
+  "173d1d8a905fc4ca31f072bcc26e6dc2e0fb23c9bf9d44cb81120e5b69c3ff02": {
+    "source": "Exploring shaders, materials, time-based animations with Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hant",
+    "translated": "探索著色器、材質、時間動畫，與史丹佛兔子和猶他茶壺一起",
+    "cachedAt": "2026-07-16T18:10:12.840Z"
   }
 }

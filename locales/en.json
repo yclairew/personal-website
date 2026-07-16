@@ -146,7 +146,7 @@
   "coursework_slide_ml-2_caption": "XGBoost ROC Curve",
   "coursework_slide_ml-3_caption": "EDA Pearson's Correlation Heatmap",
 
-  "coursework_slide_cg-1_caption": "Cell Shader with Stanford Bunny and Utah Teapot",
+  "coursework_slide_cg-1_caption": "Exploring shaders, materials, time-based animations with Stanford Bunny and Utah Teapot",
   "coursework_slide_cg-2_caption": "Top-down and Freelook Camera Scene",
   "coursework_slide_cg-3_caption": "Scene with Deferred Rendering and Light Attenuation",
   "coursework_slide_cg-4_caption": "Ray Tracing Scene",
