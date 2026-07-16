@@ -31,9 +31,9 @@ export default function Slideshow({ slides, onSlideChange }: Props) {
       <div className="cursor-pointer flex text-sm lg:text-2xl justify-center gap-3 
         lg:gap-4 align-center m-auto lg:underline-offset-11 mt-1 lg:mt-0"
       >
-        <a onClick={() => plusSlides(-1)}>&#10229;</a>
+        <a onClick={() => plusSlides(-1)} aria-label="Go to previous slide">&#10229;</a>
         <div className="font-[Lora] text-center text-xs lg:text-lg whitespace-nowrap m-auto">{currentSlide + 1} / {slides.length}</div>
-        <a onClick={() => plusSlides(1)}>&#10230;</a>
+        <a onClick={() => plusSlides(1)} aria-label="Go to next slide">&#10230;</a>
       </div>
     </div>
   );

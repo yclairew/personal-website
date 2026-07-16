@@ -50,15 +50,36 @@
   --animate-blink-caret: blink-caret 0.75s step-end infinite;
   --animate-fade-up: fadeUp 0.8s ease-out forwards;
 
-  @keyframes fadeUp {
+  /* @keyframes fadeUp {
     0% { opacity: 0; transform: translateY(3rem); }
     100% { opacity: 1; transform: translateY(0); }
+  } */
+  @keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
   }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 }
 
 @media (max-width: 768px) {
   img.slide-img {
     max-width: 35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 

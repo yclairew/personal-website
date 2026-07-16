@@ -1,24 +1,15 @@
 import type { NextConfig } from "next";
 
-// const nextConfig: NextConfig = {
-//   /* config options here */
-// };
+const isProd = process.env.NODE_ENV === "production";
 
-// export default nextConfig;
-
-
-// const nextConfig: NextConfig = { // for hosting
-//   output: 'export',
-// };
-
-// module.exports = nextConfig;
-
-
-const nextConfig: NextConfig = { // for hosting on people.tamu.edu
+const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/~y.clairewu",
-  assetPrefix: "/~y.clairewu/",
   trailingSlash: true,
+
+  ...(isProd && {
+    basePath: "/~y.clairewu",
+    assetPrefix: "/~y.clairewu/",
+  }),
 };
 
-module.exports = nextConfig;
+export default nextConfig;

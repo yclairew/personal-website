@@ -21,27 +21,29 @@ function PortfolioContent() {
     <div className="bg-background">
       <title>{t.site_title}</title>
 
-      {showBackButton && (
-        <div className="fixed top-4 left-4 z-50">
-          <BackButton />
+      <main>
+        {showBackButton && (
+          <div className="fixed top-4 left-4 z-50">
+            <BackButton />
+          </div>
+        )}
+
+        <h1 className={`heading-text text-center text-text underline 
+          decoration-[0.19rem] decoration-accent mt-5
+          ${isChinese ? 
+            "text-5xl lg:text-[10rem] mt-18 mb-5! underline-offset-10 lg:underline-offset-20" 
+            : "underline-offset-[0.3rem] text-[5rem] lg:text-[10.25rem]"
+          }`}
+        >
+          {t.portfolio_heading}
+        </h1>
+
+        
+
+        <div className="center mb-25">
+          <Cards />
         </div>
-      )}
-
-      <h1 className={`heading-text text-center text-text underline 
-        decoration-[0.19rem] decoration-accent mt-5
-        ${isChinese ? 
-          "text-5xl lg:text-[10rem] mt-18 mb-5! underline-offset-10 lg:underline-offset-20" 
-          : "underline-offset-[0.3rem] text-[5rem] lg:text-[10.25rem]"
-        }`}
-      >
-        {t.portfolio_heading}
-      </h1>
-
-      
-
-      <div className="center mb-25">
-        <Cards />
-      </div>
+      </main>
     </div>
   );
 }

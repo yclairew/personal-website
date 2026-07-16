@@ -29,7 +29,10 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Frontend", "AI/ML"],
     context: "Research",
     type: "video",
-    media: "/annomath-paper-video.mp4",
+    media: {
+      url: "/annomath-paper-video.mp4",
+      alt_text: "Annomath video for paper submission"
+    },
     linkKeys: [],
     skillKeys: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
   },
@@ -39,7 +42,10 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Full-Stack"],
     context: "Coursework",
     type: "image",
-    media: "/boba-pos-img.png",
+    media: {
+      url: "/boba-pos-img.png",
+      alt_text: "Screenshot of the manager video of the boba POS system"
+    },
     linkKeys: [
       { key: "pos-system", url: "https://new-project3-gang71.onrender.com/" },
       { key: "github", url: "https://github.com/yclairew/project3-gang71" }
@@ -53,7 +59,10 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Frontend", "AI/ML"],
     context: "Consulting",
     type: "video",
-    media: "/aggies-create-quiz-demo.mov",
+    media: {
+      url: "/aggies-create-quiz-demo.mov",
+      alt_text: "Demo of Aggies Create personalized quiz"
+    },
     linkKeys: [
       { key: "aggies-create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
     ],
@@ -66,7 +75,10 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Full-Stack", "Data Visualization"],
     context: "Consulting",
     type: "video",
-    media: "/signify-hex-demo.mp4",
+    media: {
+      url: "/signify-hex-demo.mp4",
+      alt_text: "Demo of Signify Hex"
+    },
     linkKeys: [
       { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
     ],
@@ -79,7 +91,10 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Frontend"],
     context: "Organization",
     type: "image",
-    media: "/tao-img.png",
+    media: {
+      url: "/tao-img.png",
+      alt_text: "TAO Instagram post of Web Officer introductions"
+    },
     linkKeys: [
       { key: "website", url: "https://engrtao.tech/" },
       { key: "github", url: "https://github.com/TAO-ENGR/club-website" }
@@ -92,7 +107,10 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     stackType: ["Automation"],
     context: "Personal",
     type: "image",
-    media: "/bingo-board-img.png",
+    media: {
+      url: "/bingo-board-img.png",
+      alt_text: "Screenshot of bingo board generator in progress"
+    },
     linkKeys: [
       { key: "github", url: "https://github.com/yclairew/automated-bingo-generator" }
     ],
@@ -109,7 +127,7 @@ interface Card {
   stackType: string[];
   context: string;
   type: "image" | "video";
-  media: string;
+  media: { url: string, alt_text: string};
   links: { label: string; url: string }[];
   skills: string[];
 }
@@ -207,7 +225,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {/* for hosting on people.tamu.edu */}
               {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={`/~y.clairewu${card.logo}`} alt={`${card.title} logo`} />}
 
-              <h3 className="card-title text-xl [font-family:var(--font-body)] pb-0.5 text-text">{card.title}</h3>
+              <h2 className="card-title text-xl [font-family:var(--font-body)] pb-0.5 text-text">{card.title}</h2>
             </div>
 
             <div className="col-1">
@@ -239,7 +257,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {/* {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>} */}
               
               {/* for hosting on people.tamu.edu */}
-              {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={`/~y.clairewu${card.media}`} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={`/~y.clairewu${card.media}`} alt={`${card.title} image`}/>}
+              {card.type === "video" ? <video controls className="card-video w-xl h-auto" aria-label={card.media.alt_text}> <source src={`/~y.clairewu${card.media.url}`} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={`/~y.clairewu${card.media.url}`}  alt={card.media.alt_text}/>}
             </div>
 
             <div className="card-text [font-family:var(--font-body)] text-base flex-1 mb-7">
@@ -267,7 +285,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
 
 
               <div>
-                <h3 className="card-title text-xl md:text-2xl lg:text-3xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h3>
+                <h2 className="card-title text-xl md:text-2xl lg:text-3xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h2>
                 {card.role && <p className="text-sm lg:text-base [font-family:var(--font-body)] text-subheading">{card.role}</p>}
               </div>
             </div>
@@ -300,7 +318,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {/* {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>} */}
 
               {/* for hosting on people.tamu.edu */}
-              {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={`/~y.clairewu${card.media}`} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={`/~y.clairewu${card.media}`} alt={`${card.title} image`}/>}
+              {card.type === "video" ? <video controls className="card-video w-xl h-auto" aria-label={card.media.alt_text}> <source src={`/~y.clairewu${card.media.url}`} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={`/~y.clairewu${card.media.url}`} alt={card.media.alt_text}/>}
             </div>
           </div>
 

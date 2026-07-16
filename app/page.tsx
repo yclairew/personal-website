@@ -169,7 +169,11 @@ export default function Home() {
               mr-4 lg:ml-0 lg:mr-0 text-left"
             >
               {t.home_intro_p1_prefix}{" "}
-              <a href="https://www.xiameng.org/DreamLab/" target="_blank" rel="noopener noreferrer">{t.home_intro_p1_link}</a>,{" "}
+              <a href="https://www.xiameng.org/DreamLab/" 
+                target="_blank" rel="noopener noreferrer"
+              >
+                {t.home_intro_p1_link}
+              </a>,{" "}
               {t.home_intro_p1_suffix} <i>{t.home_intro_p1_project}</i>, {t.home_intro_p1_suffix2}
             </p>
 
@@ -182,7 +186,16 @@ export default function Home() {
               <br/>
               <br/>
 
-              {t.home_intro_p2_middle} <a href="portfolio">{t.home_intro_p2_portfolio_link}</a> {t.home_intro_p2_or} <a href="#footer">{t.home_intro_p2_contact_link}</a>
+              {t.home_intro_p2_middle}{" "} 
+              <a href="portfolio">
+                {t.home_intro_p2_portfolio_link}
+              </a>
+
+              {" "}{t.home_intro_p2_or}{" "}
+
+              <a href="#footer">
+                  {t.home_intro_p2_contact_link}
+              </a>
             </p>
           </div>
         </div>
