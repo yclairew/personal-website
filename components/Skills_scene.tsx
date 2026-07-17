@@ -47,23 +47,74 @@ const icons = [
 const shuffledIcons = seededShuffle(icons, 67)
 
 
-function useSvgTexture(name: string) {
-  const [texture, setTexture] = useState<THREE.Texture | null>(null)
+// module-level cache
+const textureCache = new Map<string, THREE.Texture>()
+const texturePromises = new Map<string, Promise<THREE.Texture>>()
 
-  useEffect(() => {
+
+function loadSvgTexture(name: string): Promise<THREE.Texture> {
+  // if already loaded
+  if (textureCache.has(name)) {
+    return Promise.resolve(textureCache.get(name)!)
+  }
+
+  // if already loading
+  if (texturePromises.has(name)) {
+    return texturePromises.get(name)!
+  }
+
+  const promise = new Promise<THREE.Texture>((resolve, reject) => {
+    console.log("Loading texture for:", name)
     const src = customIcons[name] ?? `https://cdn.simpleicons.org/${name}`
     const img = new Image()
     img.crossOrigin = "anonymous"
     img.src = src
-    img.onerror = () => {}
+
+    img.onerror = () => {
+      texturePromises.delete(name)
+      reject(new Error(`Failed to load icon: ${name}`))
+    }
+
     img.onload = () => {
       const canvas = document.createElement("canvas")
       canvas.width = 256
       canvas.height = 256
       const ctx = canvas.getContext("2d")!
       ctx.drawImage(img, 0, 0, 256, 256)
-      setTexture(new THREE.CanvasTexture(canvas))
+
+      const texture = new THREE.CanvasTexture(canvas)
+      textureCache.set(name, texture)
+      texturePromises.delete(name)
+      resolve(texture)
     }
+  })
+
+  texturePromises.set(name, promise)
+  return promise
+}
+
+
+function useSvgTexture(name: string) {
+  const [texture, setTexture] = useState<THREE.Texture | null>(
+    () => textureCache.get(name) ?? null // synchronously use cached texture if already available
+  )
+
+  useEffect(() => {
+    let cancelled = false
+
+    // Already cached — nothing to do
+    if (textureCache.has(name)) {
+      setTexture(textureCache.get(name)!)
+      return
+    }
+
+    loadSvgTexture(name).then((tex) => {
+      if (!cancelled) setTexture(tex)
+    }).catch(() => {
+      // silently ignore
+    })
+
+    return () => { cancelled = true }
   }, [name])
 
   return texture
@@ -124,8 +175,6 @@ const Icon = forwardRef<THREE.Mesh, {
 )
 
 function IconGrid() {
-  console.log("IconGrid rendering");
-
   const { size, camera } = useThree()
 
   const isSmallScreen = size.width < 768;
@@ -144,10 +193,13 @@ function IconGrid() {
 
   const meshRefs = useRef<(THREE.Mesh | null)[]>(new Array(positions.length).fill(null))
 
+  const [visibleSet, setVisibleSet] = useState<Set<number>>(new Set())
 
   useFrame(() => {
     const gw = cols * 2 * responsiveSpacing
     const gh = rows * 2 * responsiveSpacing
+
+    const stillVisible = new Set<number>()
 
     meshRefs.current.forEach((mesh, i) => {
       if (!mesh) return
@@ -160,11 +212,19 @@ function IconGrid() {
       let y = originalY - camera.position.y
       y = ((y + gh / 2) % gh + gh) % gh - gh / 2
 
+      const dist = Math.sqrt(x * x + y * y)
+      const cullRadius = 10 * responsiveSpacing / spacing // tune
+
+      if (dist < cullRadius) {
+        stillVisible.add(i)
+      }
+
+      if (!mesh) return // skip position update for unmounted meshes
+
       const wrappedX = x + camera.position.x
       const wrappedY = y + camera.position.y
 
       // fisheye based on screen position only
-      const dist = Math.sqrt(x * x + y * y)
       const fisheyeRadius = 6 * responsiveSpacing / spacing
       const force = Math.max(0, (1 - dist / fisheyeRadius) * 0.5)
 
@@ -174,6 +234,14 @@ function IconGrid() {
       const threshold = responsiveSpacing * 2
       mesh.position.x = Math.abs(targetX - mesh.position.x) > threshold ? targetX : THREE.MathUtils.lerp(mesh.position.x, targetX, 0.08)
       mesh.position.y = Math.abs(targetY - mesh.position.y) > threshold ? targetY : THREE.MathUtils.lerp(mesh.position.y, targetY, 0.08)
+
+      // only update state when the set actually changes
+      setVisibleSet((prev) => {
+        if (prev.size === stillVisible.size && [...prev].every(i => stillVisible.has(i))) {
+          return prev
+        }
+        return stillVisible
+      })
     })
   })
 

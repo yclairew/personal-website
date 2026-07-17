@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
 
+  images: {
+    unoptimized: true,
+  },
+
   ...(isProd && {
     basePath: "/~y.clairewu",
     assetPrefix: "/~y.clairewu/",

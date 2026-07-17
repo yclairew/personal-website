@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useAnimateOnScroll } from "@/hooks/useAnimateOnScroll";
 import { useLocale } from "@/lib/i18n/Locale_context";
 
@@ -30,7 +30,8 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     context: "Research",
     type: "video",
     media: {
-      url: "/annomath-paper-video.mp4",
+      // url: "/annomath-paper-video.mp4",
+      url: "/annomath-paper-video-optimized.mp4",
       alt_text: "Annomath video for paper submission"
     },
     linkKeys: [],
@@ -60,7 +61,8 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     context: "Consulting",
     type: "video",
     media: {
-      url: "/aggies-create-quiz-demo.mov",
+      // url: "/aggies-create-quiz-demo.mov",
+      url: "/aggies-create-quiz-demo-optimized.mov",
       alt_text: "Demo of Aggies Create personalized quiz"
     },
     linkKeys: [
@@ -76,7 +78,8 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     context: "Consulting",
     type: "video",
     media: {
-      url: "/signify-hex-demo.mp4",
+      // url: "/signify-hex-demo.mp4",
+      url: "/signify-hex-demo-optimized.mp4",
       alt_text: "Demo of Signify Hex"
     },
     linkKeys: [
@@ -223,7 +226,13 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {/* {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />} */}
 
               {/* for hosting on people.tamu.edu */}
-              {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={`/~y.clairewu${card.logo}`} alt={`${card.title} logo`} />}
+              {card.logo && 
+                <img className="card-logo h-9 w-auto object-cover pr-3" 
+                  src={`/~y.clairewu${card.logo}`} 
+                  alt={`${card.title} logo`} 
+                  loading="lazy"
+                />
+              }
 
               <h2 className="card-title text-xl [font-family:var(--font-body)] pb-0.5 text-text">{card.title}</h2>
             </div>
@@ -257,7 +266,22 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {/* {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>} */}
               
               {/* for hosting on people.tamu.edu */}
-              {card.type === "video" ? <video controls className="card-video w-xl h-auto" aria-label={card.media.alt_text}> <source src={`/~y.clairewu${card.media.url}`} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={`/~y.clairewu${card.media.url}`}  alt={card.media.alt_text}/>}
+              {card.type === "video" ? 
+                <video controls 
+                  className="card-video w-xl h-auto" 
+                  preload="none"
+                  aria-label={card.media.alt_text}
+                > 
+                  <source src={`/~y.clairewu${card.media.url}`} 
+                    type="video/mp4"
+                  /> 
+                </video> : 
+                <img className="card-image w-xl h-auto" 
+                  src={`/~y.clairewu${card.media.url}`}  
+                  alt={card.media.alt_text}
+                  loading="lazy"
+                />
+              }
             </div>
 
             <div className="card-text [font-family:var(--font-body)] text-base flex-1 mb-7">
@@ -281,7 +305,13 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {/* {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />} */}
 
               {/* for hosting on people.tamu.edu */}
-              {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={`/~y.clairewu${card.logo}`} alt={`${card.title} logo`} />}
+              {card.logo && 
+                <img className="card-logo h-9 w-auto object-cover pr-3" 
+                  src={`/~y.clairewu${card.logo}`} 
+                  alt={`${card.title} logo`}
+                  loading="lazy"
+                />
+              }
 
 
               <div>
@@ -318,7 +348,21 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {/* {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>} */}
 
               {/* for hosting on people.tamu.edu */}
-              {card.type === "video" ? <video controls className="card-video w-xl h-auto" aria-label={card.media.alt_text}> <source src={`/~y.clairewu${card.media.url}`} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={`/~y.clairewu${card.media.url}`} alt={card.media.alt_text}/>}
+              {card.type === "video" ? 
+                <video controls 
+                  className="card-video w-xl h-auto" 
+                  preload="none"
+                  aria-label={card.media.alt_text}
+                > 
+                  <source src={`/~y.clairewu${card.media.url}`}
+                    type="video/mp4"
+                  /> 
+                </video> : 
+                <img className="card-image w-xl h-auto" 
+                  src={`/~y.clairewu${card.media.url}`} 
+                  alt={card.media.alt_text}
+                  loading="lazy"
+                />}
             </div>
           </div>
 
@@ -348,19 +392,30 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
 
 export default function Cards() {
   const { t } = useLocale();
-  const cards = getCards(t);
+  const cards = useMemo(() => getCards(t), [t]);
 
   const [typeFilter, setTypeFilter] = useState("All");
   const [contextFilter, setContextFilter] = useState("All");
   const [skillFilter, setSkillFilter] = useState("All");
 
-  const types = ["All", ...Array.from(new Set(cards.flatMap(card => card.stackType)))];
-  const contexts = ["All", ...Array.from(new Set(cards.map(card => card.context)))];
+  const types = useMemo(
+    () => ["All", ...Array.from(new Set(cards.flatMap(card => card.stackType)))],
+    [cards]
+  );
+  const contexts = useMemo(
+    () => ["All", ...Array.from(new Set(cards.map(card => card.context)))],
+    [cards]
+  );
 
-  const filteredCards = cards.filter(card =>
-    (typeFilter === "All" || card.stackType.includes(typeFilter)) &&
-    (contextFilter === "All" || card.context === contextFilter) &&
-    (skillFilter === "All" || card.skills.includes(skillFilter))
+  const filteredCards = useMemo(
+    () =>
+      cards.filter(
+        (card) =>
+          (typeFilter === "All" || card.stackType.includes(typeFilter)) &&
+          (contextFilter === "All" || card.context === contextFilter) &&
+          (skillFilter === "All" || card.skills.includes(skillFilter))
+      ),
+    [cards, typeFilter, contextFilter, skillFilter]
   );
 
   const key = filteredCards.length === 1 ? "filter_found_one" : "filter_found_other";

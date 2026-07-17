@@ -1,10 +1,10 @@
 "use client";
 
 import "./globals.css";
-// import Skills_scene from "@/components/Skills_scene";
 import Overscroll_color from "@/components/Overscroll_color";
 import { useLocale } from "@/lib/i18n/Locale_context";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 
 const Skills_scene = dynamic(
@@ -155,10 +155,13 @@ export default function Home() {
             /> */}
 
             {/* for hosting on people.tamu.edu */}
-            <img 
+            <Image 
               className="headshot max-h-96 w-auto object-contain" 
-              src="/~y.clairewu/my-headshot.jpg" 
+              src="/~y.clairewu/my-headshot.webp" 
               alt={t.home_headshot_alt}
+              width={500}
+              height={500}
+              priority
               fetchPriority="high"
             />
           </div>
