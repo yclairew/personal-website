@@ -1,8 +1,2 @@
-## Claire's Personal Website
-Inspired by a software engineering class project, I wanted to update the design, rearchitect the system from pure HTML/CSS/JS to React/Next.js/TypeScript/Tailwind CSS, and add some new features.
-
-Use
-```
-node build-translations.js
-```
-to translate content in en.json.
+## Hello, I'm Claire!
+Welcome to my personal website, where I share what I've been working on and learning about. Thanks for stopping by!

@@ -16,6 +16,7 @@ const SOFT_SKILLS = new Set([
   "Responsive Design",
   "Automation",
   "Prompt Engineering",
+  "Accessibility",
 ]);
 
 const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "links"> & {
@@ -23,6 +24,23 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   skillKeys: string[];
   linkKeys: { key: string; url: string }[];
 })[] = [
+  {
+    id: "signify-health",
+    titleKey: "signify-health",
+    logo: "/signify-health-logo.png",
+    stackType: ["Full-Stack", "Data Visualization"],
+    context: "Consulting",
+    type: "video",
+    media: {
+      // url: "/signify-hex-demo.mp4",
+      url: "/signify-hex-demo-optimized.mp4",
+      alt_text: "Demo of Signify Hex"
+    },
+    linkKeys: [
+      { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
+    ],
+    skillKeys: ["Go", "UberH3", "Redis", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
+  },
   {
     id: "annomath",
     titleKey: "annomath",
@@ -51,7 +69,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
       { key: "pos-system", url: "https://new-project3-gang71.onrender.com/" },
       { key: "github", url: "https://github.com/yclairew/project3-gang71" }
     ],
-    skillKeys: ["PostgreSQL", "Java", "Rest APIs", "AWS", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging"]
+    skillKeys: ["PostgreSQL", "Java", "Rest APIs", "AWS", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging", "Accessibility"]
   },
   {
     id: "aggies-create",
@@ -71,21 +89,19 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["scikit-learn", "Machine Learning (Model Training)", "JavaScript", "HTML/CSS", "Leadership", "Public Speaking"]
   },
   {
-    id: "signify-health",
-    titleKey: "signify-health",
-    logo: "/signify-health-logo.png",
-    stackType: ["Full-Stack", "Data Visualization"],
-    context: "Consulting",
-    type: "video",
+    id: "personal-website",
+    titleKey: "personal-website",
+    stackType: ["Frontend"],
+    context: "Personal",
+    type: "image",
     media: {
-      // url: "/signify-hex-demo.mp4",
-      url: "/signify-hex-demo-optimized.mp4",
-      alt_text: "Demo of Signify Hex"
-    },
+      url: "/personal-website-img.png",
+      alt_text: "Screenshot of my personal website"
+    }, 
     linkKeys: [
-      { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
+      { key: "github", url: "https://github.com/yclairew/personal-website" }
     ],
-    skillKeys: ["Go", "UberH3", "Redis", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
+    skillKeys: ["React Three Fiber", "Azure Translator", "Static i18n", "REST APIs", "React", "Next.js", "TypeScript", "Tailwind CSS", "Responsive Design", "Accessibility"]
   },
   {
     id: "tao",

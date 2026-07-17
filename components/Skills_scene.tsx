@@ -12,6 +12,7 @@ const customIcons: Record<string, string> = {
   "amazonwebservices": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   "matplotlib": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/matplotlib/matplotlib-original.svg",
   "vscode": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+  "microsoftazure": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
 }
 
 const spacing = 2
@@ -30,6 +31,7 @@ const displayNames: Record<string, string> = {
   "scikitlearn": "scikit-learn", "opengl": "OpenGL", "tldraw": "tldraw", "render": "Render",
   "nextdotjs": "Next.js", "selenium": "Selenium", "jupyter": "Jupyter", "r": "R", "java": "Java", 
   "amazonwebservices": "AWS", "matplotlib": "Matplotlib", "vscode": "VS Code",
+  "shadcnui": "shadcn/ui", "threedotjs": "Three.js", "microsoftazure": "Microsoft Azure",
 }
 
 const icons = [
@@ -40,7 +42,8 @@ const icons = [
   "pytorch", "bootstrap", "numpy", "pandas", 
   "tailwindcss", "scikitlearn", "opengl", "tldraw", "render", 
   "nextdotjs", "selenium", "jupyter", "r",
-  "java", "amazonwebservices", "matplotlib", "vscode"
+  "java", "amazonwebservices", "matplotlib", "vscode",
+  "shadcnui", "threedotjs", "microsoftazure"
 ]
 // couldnt find: "open ai api", "glsl", "uber h3", "seaborn", 
 

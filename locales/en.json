@@ -43,6 +43,7 @@
   "title_pearl-tea": "Pearl Tea POS System",
   "title_aggies-create": "Aggies Create",
   "title_signify-health": "Signify Health",
+  "title_personal-website": "Personal Website",
   "title_tao": "Engineering TA Organization",
   "title_bingo-board": "Bingo Board Generator",
 
@@ -57,6 +58,8 @@
 
   "card_signify-health_role": "Software Engineering Consultant",
   "card_signify-health_desc": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+
+  "card_personal-website_desc": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using the Microsoft Azure Translator REST API with hash-based caching to provide Chinese localization while minimizing redundant API calls. Created an interactive animated skills section using React Three Fiber, featuring cached texture loading for 40+ technology icons. Optimized site performance through lazy-loaded 3D assets, texture caching, and video compression, reducing main-thread load time by nearly 50%.",
 
   "card_tao_role": "Web Officer & Software Engineering Intern",
   "card_tao_desc": "Developed the TAO website with fellow SWE interns for 10,000+ viewers. Practiced Git workflows including pull requests and code reviews. Helped manage a Discord community of 5,000+ engineering students and supported freshmen by brainstorming ideas for events, such as review sessions.",

@@ -1834,5 +1834,41 @@
     "targetLang": "zh-Hant",
     "translated": "探索著色器、材質、時間動畫，與史丹佛兔子和猶他茶壺一起",
     "cachedAt": "2026-07-16T18:10:12.840Z"
+  },
+  "63c9113c744f5a5511bed73359649822873f861eacf7931632611ddce33045e0": {
+    "source": "Personal Website",
+    "targetLang": "zh-Hans",
+    "translated": "个人网站",
+    "cachedAt": "2026-07-17T21:48:06.595Z"
+  },
+  "4d5804a9060470ffa75820dc84b9928a8bb37eb0e441f27dfd9cd87b84fc592d": {
+    "source": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using the Azure Translator REST API with hash-based caching to provide Chinese localization while minimizing redundant API calls. Created an interactive animated skills section using React Three Fiber, featuring cached texture loading for 40+ technology icons. Optimized site performance through lazy-loaded 3D assets, texture caching, and video compression, reducing main-thread load time by nearly 50%.",
+    "targetLang": "zh-Hans",
+    "translated": "设计并开发了一个个人作品集网站，展示项目和课程作业。我用 Azure Translator REST API 构建了一个基于哈希缓存的构建时翻译流水线，既能实现中文本地化，又尽量减少冗余的 API 调用。使用 React Three Fiber 创建了一个交互式动画技能板块，支持为 40+ 技术图标缓存纹理加载。通过懒加载的3D资产、纹理缓存和视频压缩优化网站性能，将主线程加载时间缩短近50%。",
+    "cachedAt": "2026-07-17T21:48:07.195Z"
+  },
+  "04d050186221d3c253ba8f5a249953bbc229a5d2373724b9b3a7c7ec0df12561": {
+    "source": "Personal Website",
+    "targetLang": "zh-Hant",
+    "translated": "個人網站",
+    "cachedAt": "2026-07-17T21:48:07.449Z"
+  },
+  "c5851db7ffffdfb8dde4f66c9f0710ee3c8b9524b7e39635c21ba06f17ba1c53": {
+    "source": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using the Azure Translator REST API with hash-based caching to provide Chinese localization while minimizing redundant API calls. Created an interactive animated skills section using React Three Fiber, featuring cached texture loading for 40+ technology icons. Optimized site performance through lazy-loaded 3D assets, texture caching, and video compression, reducing main-thread load time by nearly 50%.",
+    "targetLang": "zh-Hant",
+    "translated": "設計並開發個人作品集網站，展示專案與課程作業。我用 Azure Translator REST API 建立了建置時的翻譯管線，並以雜湊快取方式提供中文在地化，同時減少重複的 API 呼叫。使用 React Three Fiber 建立了互動式動畫技能區塊，並支援 40+ 科技圖示的快取貼圖載入。透過懶散載入的 3D 資產、貼圖快取與影片壓縮，優化網站效能，將主執行緒載入時間縮短近 50%。",
+    "cachedAt": "2026-07-17T21:48:07.743Z"
+  },
+  "bfa29ff40474b5781f7688634426154b576ef6cf003e35d4b3b8c66e084e9ebe": {
+    "source": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using the Microsoft Azure Translator REST API with hash-based caching to provide Chinese localization while minimizing redundant API calls. Created an interactive animated skills section using React Three Fiber, featuring cached texture loading for 40+ technology icons. Optimized site performance through lazy-loaded 3D assets, texture caching, and video compression, reducing main-thread load time by nearly 50%.",
+    "targetLang": "zh-Hans",
+    "translated": "设计并开发了一个个人作品集网站，展示项目和课程作业。利用Microsoft Azure Translator REST API构建了一个构建时翻译流水线，并基于哈希缓存，实现中文本地化同时减少冗余API调用。使用 React Three Fiber 创建了一个交互式动画技能板块，支持为 40+ 技术图标缓存纹理加载。通过懒加载的3D资产、纹理缓存和视频压缩优化网站性能，将主线程加载时间缩短近50%。",
+    "cachedAt": "2026-07-17T21:49:11.661Z"
+  },
+  "266b50db82104d31049fd662e146ff27a06fa781f84f1087ea5b8dc22434c565": {
+    "source": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using the Microsoft Azure Translator REST API with hash-based caching to provide Chinese localization while minimizing redundant API calls. Created an interactive animated skills section using React Three Fiber, featuring cached texture loading for 40+ technology icons. Optimized site performance through lazy-loaded 3D assets, texture caching, and video compression, reducing main-thread load time by nearly 50%.",
+    "targetLang": "zh-Hant",
+    "translated": "設計並開發個人作品集網站，展示專案與課程作業。利用 Microsoft Azure Translator REST API 建立建置時轉譯流程，並以雜湊快取方式提供中文在地化，同時減少重複的 API 呼叫。使用 React Three Fiber 建立了互動式動畫技能區塊，並支援 40+ 科技圖示的快取貼圖載入。透過懶散載入的 3D 資產、貼圖快取與影片壓縮，優化網站效能，將主執行緒載入時間縮短近 50%。",
+    "cachedAt": "2026-07-17T21:49:12.107Z"
   }
 }
