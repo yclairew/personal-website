@@ -34,7 +34,8 @@ export default function Slideshow({ slides, onSlideChange }: Props) {
       >
         <button type="button"
           onClick={() => plusSlides(-1)} 
-          className="animated-link"
+          disabled={currentSlide === 0}
+          className="animated-link disabled:opacity-50 disabled:cursor-not-allowed"
           aria-label="Go to previous slide"
         >
           &#10229;
@@ -44,8 +45,9 @@ export default function Slideshow({ slides, onSlideChange }: Props) {
 
         <button
           type="button"
-          onClick={() => plusSlides(-1)} 
-          className="animated-link"
+          onClick={() => plusSlides(1)} 
+          disabled={currentSlide === slides.length - 1}
+          className="animated-link disabled:opacity-50 disabled:cursor-not-allowed"
           aria-label="Go to next slide"
         >
           &#10230;
