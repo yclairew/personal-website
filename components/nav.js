@@ -45,10 +45,7 @@ const Nav = () => {
             <div className="flex w-full items-center justify-between">
                 <div className="flex gap-6 ml-4 lg:ml-6 xl:ml-15 items-center">
                     <Link href="/" className="nav-underline no-anim-link">
-                        {/* <img src="icon0.svg" className="w-12 h-auto"/> */}
-
-                        {/* for hosting on people.tamu.edu */}
-                        <img src="/~y.clairewu/icon0.svg" className="w-12 h-auto" alt="favicon"/>
+                        <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/icon0.svg`} className="w-12 h-auto" alt="favicon"/>
                     </Link>
                     <div className="bg-accent-light">
                         <LanguageSwitcher />

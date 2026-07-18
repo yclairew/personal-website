@@ -80,7 +80,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     type: "video",
     media: {
       // url: "/aggies-create-quiz-demo.mov",
-      url: "/aggies-create-quiz-demo-optimized.mov",
+      url: "/aggies-create-quiz-demo.mp4",
       alt_text: "Demo of Aggies Create personalized quiz"
     },
     linkKeys: [
@@ -239,12 +239,9 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
         <div key={card.id} className="card p-6 animate-fade-up">
           <div className="card-header grid grid-cols"> 
             <div className="card-title-div flex">
-              {/* {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />} */}
-
-              {/* for hosting on people.tamu.edu */}
               {card.logo && 
                 <img className="card-logo h-9 w-auto object-cover pr-3" 
-                  src={`/~y.clairewu${card.logo}`} 
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.logo}`} 
                   alt={`${card.title} logo`} 
                   loading="lazy"
                 />
@@ -279,21 +276,18 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
 
           <div className="card-body flex flex-col gap-5 mt-7">
             <div className="card-media flex flex-1 justify-center max-w-full mb-3">
-              {/* {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>} */}
-              
-              {/* for hosting on people.tamu.edu */}
               {card.type === "video" ? 
                 <video controls 
-                  className="card-video w-xl h-auto" 
-                  preload="none"
+                  className="card-video w-full h-auto object-contain" 
+                  preload="metadata"
                   aria-label={card.media.alt_text}
                 > 
-                  <source src={`/~y.clairewu${card.media.url}`} 
+                  <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.url}`} 
                     type="video/mp4"
                   /> 
                 </video> : 
-                <img className="card-image w-xl h-auto" 
-                  src={`/~y.clairewu${card.media.url}`}  
+                <img className="card-image w-full h-auto object-contain" 
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.url}`}  
                   alt={card.media.alt_text}
                   loading="lazy"
                 />
@@ -318,17 +312,13 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
         <div key={card.id} className="card p-6 animate-fade-up">
           <div className="card-header grid grid-cols-2"> 
             <div className="card-title-div flex col-1">
-              {/* {card.logo && <img className="card-logo h-9 w-auto object-cover pr-3" src={card.logo} alt={`${card.title} logo`} />} */}
-
-              {/* for hosting on people.tamu.edu */}
               {card.logo && 
                 <img className="card-logo h-9 w-auto object-cover pr-3" 
-                  src={`/~y.clairewu${card.logo}`} 
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.logo}`} 
                   alt={`${card.title} logo`}
                   loading="lazy"
                 />
               }
-
 
               <div>
                 <h2 className="card-title text-xl md:text-2xl lg:text-3xl [font-family:var(--font-body)] pb-1.5 text-text">{card.title}</h2>
@@ -355,30 +345,29 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
             </div>
           </div>
 
-          <div className="card-body flex flex-col gap-8 pt-3 lg:flex-row">
-            <div className="card-text [font-family:var(--font-body)] text-base lg:text-xl flex-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start pt-3">
+            <div className="card-text [font-family:var(--font-body)] text-base lg:text-xl">
               <p className="card-description text-text" dangerouslySetInnerHTML={{ __html: card.description }}/>
             </div>
 
-            <div className="card-media flex flex-1 justify-center max-w-full lg:justify-end mb-3 lg:mb-0">
-              {/* {card.type === "video" ? <video controls className="card-video w-xl h-auto"> <source src={card.media} type="video/mp4"/> </video> : <img className="card-image w-xl h-auto" src={card.media} alt={`${card.title} image`}/>} */}
-
-              {/* for hosting on people.tamu.edu */}
+            <div className="card-media w-full flex justify-center md:justify-end self-center">
               {card.type === "video" ? 
                 <video controls 
-                  className="card-video w-xl h-auto" 
-                  preload="none"
+                  className="card-video w-full h-auto object-contain" 
+                  preload="metadata"
                   aria-label={card.media.alt_text}
                 > 
-                  <source src={`/~y.clairewu${card.media.url}`}
+                  <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.url}`} 
                     type="video/mp4"
                   /> 
                 </video> : 
-                <img className="card-image w-xl h-auto" 
-                  src={`/~y.clairewu${card.media.url}`} 
+                <img className="card-image w-full h-auto object-contain" 
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.url}`}  
                   alt={card.media.alt_text}
                   loading="lazy"
-                />}
+                />
+              }
+
             </div>
           </div>
 

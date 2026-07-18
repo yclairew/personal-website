@@ -24,10 +24,7 @@ export default function Slideshow({ slides, onSlideChange }: Props) {
 
   return (
     <div className="slideshow-container flex flex-col align-center w-full mb-5 lg:mb-0">
-      {/* <img className="slide-img mx-auto block" src={slides[currentSlide].src} /> */}
-
-      {/* for hosting on people.tamu.edu */}
-      <img className="slide-img mx-auto block" src={`/~y.clairewu${slides[currentSlide].src}`} alt={slides[currentSlide].alt}/>
+      <img className="slide-img mx-auto block" src={`${process.env.NEXT_PUBLIC_BASE_PATH}${slides[currentSlide].src}`} alt={slides[currentSlide].alt}/>
       <div className="font-[Lora] text-center text-sm lg:text-xl mt-2">{slides[currentSlide].caption}</div>
       <div className="cursor-pointer flex text-sm lg:text-2xl justify-center gap-3 
         lg:gap-4 align-center m-auto lg:underline-offset-11 mt-1 lg:mt-0"

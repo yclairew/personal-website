@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
     basePath: "/~y.clairewu",
     assetPrefix: "/~y.clairewu/",
   }),
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/~y.clairewu" : "",
+},
 };
 
 export default nextConfig;

@@ -6,6 +6,7 @@ import { OrbitControls, Html } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useSpring, animated } from "react-spring"
 
+const isTouchDevice = typeof window !== "undefined" && window.matchMedia("(hover: none)").matches
 
 const customIcons: Record<string, string> = {
   "java": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg",
@@ -160,7 +161,9 @@ const Icon = forwardRef<THREE.Mesh, {
         scale={scale}
         onPointerOver={() => { setHovered(true); onHover(true) }}
         onPointerOut={() => { setHovered(false); onHover(false) }}
+        onClick={() => { if (isTouchDevice) { setHovered(h => !h); onHover(!hovered) } }}
       >
+
         <planeGeometry args={[1.5 * planeGeoScale, 1.5 * planeGeoScale]} />
         <meshBasicMaterial map={texture ?? undefined} transparent visible={!!texture} />
         {hovered && (
@@ -264,7 +267,48 @@ function IconGrid() {
   )
 }
 
+
 export default function Skills_scene() {
+  const [active, setActive] = useState(false)
+
+  if (isTouchDevice) {
+    if (!active) {
+      return (
+        <div 
+          className="relative w-full h-[70vh] rounded-lg cursor-pointer overflow-hidden"
+          onClick={() => setActive(true)}
+        >
+          <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100%", height: "100%" }}>
+            <IconGrid/>
+          </Canvas>
+          <div className="absolute inset-0 flex items-center justify-center bg-accent-light/20 pointer-events-none">
+            <p className="text-lg lg:text-xl font-[Lora] bg-accent-light/70 px-4 py-2 rounded-xl">Tap to explore skills</p>
+          </div>
+        </div>
+      )
+    }
+
+    return (
+      <div className="relative w-screen h-[80vh]">
+        <button
+          onClick={() => setActive(false)}
+          className="absolute top-3 right-3 z-50 bg-subheading/70 text-white rounded-full w-9 h-9 flex items-center justify-center"
+        >
+          ✕
+        </button>
+        <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100%", height: "100%" }} className="cursor-grab active:cursor-grabbing">
+          <IconGrid/>
+          <OrbitControls 
+            enableRotate={false} 
+            enableZoom={false} 
+            mouseButtons={{ LEFT: 2, RIGHT: 2 }}
+            touches={{ ONE: THREE.TOUCH.PAN, TWO: THREE.TOUCH.DOLLY_PAN }}
+          />
+        </Canvas>
+      </div>
+    )
+  }
+
   return (
     <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100vw", height: "100vh" }} className="cursor-grab active:cursor-grabbing">
       <IconGrid/>
@@ -276,4 +320,3 @@ export default function Skills_scene() {
     </Canvas>
   )
 }
-
