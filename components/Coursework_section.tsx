@@ -36,16 +36,6 @@ const courseworkData: CategoryData[] = [
       { id: "computer-systems", slides: [] },
       {
         id: "software-engineering",
-        // slides: [
-        //   { id: "se-1", src: "/331-proj2-order.png" },
-        //   { id: "se-2", src: "/331-proj2-add-item.png" },
-          // { id: "se-3", src: "/331-proj2-add-associated-ingredients.png" },
-          // { id: "se-4", src: "/331-proj3-customer-kiosk.png" },
-          // { id: "se-5", src: "/331-proj3-customer-customizations-popup.png" },
-          // { id: "se-6", src: "/331-proj3-customer-cart.png" },
-          // { id: "se-7", src: "/331-proj3-employee-kiosk.png" },
-          // { id: "se-8", src: "/331-proj3-manager-reports.webp" },
-        // ],
         slides: [
           {
             id: "se-1",
@@ -98,11 +88,6 @@ const courseworkData: CategoryData[] = [
     courses: [
       {
         id: "machine-learning",
-        // slides: [
-        //   { id: "ml-1", src: "/421-3d-svm-scatterplot-with-margin.png" },
-        //   { id: "ml-2", src: "/421-xgboost-roc-curve.png" },
-        //   { id: "ml-3", src: "/421-eda-correlation-heatmap.png" },
-        // ],
         slides: [
           {
             id: "ml-1",
@@ -123,12 +108,6 @@ const courseworkData: CategoryData[] = [
       },
       {
         id: "computer-graphics",
-        // slides: [
-        //   { id: "cg-1", src: "/441-a3-shader.gif" },
-        //   { id: "cg-2", src: "/441-a4-topdown.gif" },
-        //   { id: "cg-3", src: "/441-a5-deferredrendering.gif" },
-        //   { id: "cg-4", src: "/441-a6-raytracing.png" },
-        // ],
         slides: [
           {
             id: "cg-1",
@@ -154,11 +133,6 @@ const courseworkData: CategoryData[] = [
       },
       {
         id: "cs-research",
-        // slides: [
-        //   { id: "res-1", src: "/491-annomath-interface.png" },
-        //   { id: "res-2", src: "/491-annomath-technical-pipeline.png" },
-        //   { id: "res-3", src: "491-annotation-coding-example.png" },
-        // ],
         slides: [
           {
             id: "res-1",
@@ -172,7 +146,7 @@ const courseworkData: CategoryData[] = [
           },
           {
             id: "res-3",
-            src: "491-annotation-coding-example.png",
+            src: "/491-annotation-coding-example.png",
             alt: "Example of annotations and color changes from open coding of Khan Academy math videos.",
           },
         ],
@@ -186,12 +160,6 @@ const courseworkData: CategoryData[] = [
       { id: "statistics-1-2", slides: [] },
       {
         id: "statistical-computing",
-        // slides: [
-        //   { id: "sc-1", src: "/stat404-nyc-airbnb-neighborhood-vs-price.png" },
-        //   { id: "sc-2", src: "/stat404-poly-plot.png" },
-        //   { id: "sc-3", src: "/stat404-residuals-vs-fitted.png" },
-        //   { id: "sc-4", src: "/stat404-theta1-hist.png" },
-        // ],
         slides: [
           {
             id: "sc-1",
@@ -222,75 +190,60 @@ const courseworkData: CategoryData[] = [
     courses: [
       {
         id: "ml-predictive-modeling",
-        // slides: [
-        //   { id: "mlp-1", src: "460-machine-learning-mock-flow.png" },
-        // ],
         slides: [
           {
             id: "mlp-1",
-            src: "460-machine-learning-mock-flow.png",
+            src: "/460-machine-learning-mock-flow.png",
             alt: "Flowchart depicting a machine learning system designed for a local business as a semester-long mock project.",
           },
         ],
       },
       {
         id: "business-genai",
-        // slides: [
-        //   { id: "bg-1", src: "450-arts-participation-by-age-group.png" },
-        //   { id: "bg-2", src: "450-arts-participation-heatmap-by-region.png" },
-        //   { id: "bg-3", src: "450-michaels-profit-margins-over-time.png" },
-        //   { id: "bg-4", src: "450-retail-sales-over-time.png" },
-        // ],
         slides: [
           {
             id: "bg-1",
-            src: "450-arts-participation-by-age-group.png",
+            src: "/450-arts-participation-by-age-group.png",
             alt: "Market analysis showing arts participation by age group to identify target demographics.",
           },
           {
             id: "bg-2",
-            src: "450-arts-participation-heatmap-by-region.png",
+            src: "/450-arts-participation-heatmap-by-region.png",
             alt: "Market analysis showing arts participation by region to assess geographic demand.",
           },
           {
             id: "bg-3",
-            src: "450-michaels-profit-margins-over-time.png",
+            src: "/450-michaels-profit-margins-over-time.png",
             alt: "Competitor analysis showing Michaels profit margins over time.",
           },
           {
             id: "bg-4",
-            src: "450-retail-sales-over-time.png",
+            src: "/450-retail-sales-over-time.png",
             alt: "Partnership viability analysis showing retail sales trends over time.",
           },
         ],
       },
       {
         id: "business-storytelling-ai",
-        // slides: [
-        //   { id: "bs-1", src: "455-gnn-movie-recommendation-calibration-plot.png" },
-        //   { id: "bs-2", src: "455-who-regions.png" },
-        //   { id: "bs-3", src: "455-covid-new-deaths.png" },
-        //   { id: "bs-4", src: "455-ga4-gertificate.png" },
-        // ],
         slides: [
           {
             id: "bs-1",
-            src: "455-gnn-movie-recommendation-calibration-plot.png",
+            src: "/455-gnn-movie-recommendation-calibration-plot.png",
             alt: "Calibration plot for a GNN-based movie recommendation model.",
           },
           {
             id: "bs-2",
-            src: "455-who-regions.png",
+            src: "/455-who-regions.png",
             alt: "WHO regions visualization for geospatial analysis of global COVID-19 data.",
           },
           {
             id: "bs-3",
-            src: "455-covid-new-deaths.png",
+            src: "/455-covid-new-deaths.png",
             alt: "COVID-19 new deaths over time from WHO geospatial data.",
           },
           {
             id: "bs-4",
-            src: "455-ga4-gertificate.png",
+            src: "/455-ga4-gertificate.png",
             alt: "Google Analytics 4 certification for managing GA4 data and reading reports.",
           },
         ],

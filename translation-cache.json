@@ -1870,5 +1870,29 @@
     "targetLang": "zh-Hant",
     "translated": "設計並開發個人作品集網站，展示專案與課程作業。利用 Microsoft Azure Translator REST API 建立建置時轉譯流程，並以雜湊快取方式提供中文在地化，同時減少重複的 API 呼叫。使用 React Three Fiber 建立了互動式動畫技能區塊，並支援 40+ 科技圖示的快取貼圖載入。透過懶散載入的 3D 資產、貼圖快取與影片壓縮，優化網站效能，將主執行緒載入時間縮短近 50%。",
     "cachedAt": "2026-07-17T21:49:12.107Z"
+  },
+  "22d9cbf05f2ab9f82fbad571e2552ae63a59703f1072d15f932e08becf8f3810": {
+    "source": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI generated outputs from the OpenAI API.",
+    "targetLang": "zh-Hans",
+    "translated": "AnnoMath 建于 Dr. Xia 的梦想实验室，是一个由人工智能驱动的多模态大学数学辅导系统，将基于教学法的注释类型应用于学生手写作业。与一位博士研究员一起编写并分析了30个可汗学院的视频，以构建注释框架。实现了多种注释类型的渲染。构建了前端逻辑，渲染来自OpenAI API的AI生成输出。",
+    "cachedAt": "2026-07-19T03:55:52.640Z"
+  },
+  "67a1f88bcd3d3d8ddee392ae19a96da3cd22e0957141104e97034d77458ac5fb": {
+    "source": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using Microsoft Azure Translator (REST API) with hash-based caching to minimize redundant calls. Created an interactive, animated skills section using React Three Fiber, featuring cached texture loading for 40+ tech icons. Cut main-thread load time by nearly 50% through lazy-loaded 3D assets, texture caching, and video compression.",
+    "targetLang": "zh-Hans",
+    "translated": "设计并开发了一个个人作品集网站，展示项目和课程作业。使用Microsoft Azure Translator（REST API）构建了一个构建时转换流水线，并采用基于哈希的缓存以减少冗余调用。用 React Three Fiber 创建了一个互动动画技能板块，支持缓存纹理加载，支持 40+ 个技术图标。通过懒散加载的3D素材、纹理缓存和视频压缩，将主线程加载时间缩短近50%。",
+    "cachedAt": "2026-07-19T03:55:53.005Z"
+  },
+  "c076941eec9d9912550084800c9d2507289bd82b151c1911e6da1b39628b800e": {
+    "source": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI generated outputs from the OpenAI API.",
+    "targetLang": "zh-Hant",
+    "translated": "AnnoMath 建於 Sha 博士的夢想實驗室，是一個由 AI 驅動的多模態大學數學輔導系統，將教學基礎的註解類型應用於學生手寫作業。與一位博士研究員一起編碼並分析了30支可汗學院的影片，以建立註解框架。實作了多種註解類型的渲染。建立了前端邏輯來渲染 OpenAI API 產生的 AI 輸出。",
+    "cachedAt": "2026-07-19T03:55:53.383Z"
+  },
+  "abbb1670a838ed926b9962286a436a01e6d91fb3303f8bc7f82ee4f6086b633e": {
+    "source": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using Microsoft Azure Translator (REST API) with hash-based caching to minimize redundant calls. Created an interactive, animated skills section using React Three Fiber, featuring cached texture loading for 40+ tech icons. Cut main-thread load time by nearly 50% through lazy-loaded 3D assets, texture caching, and video compression.",
+    "targetLang": "zh-Hant",
+    "translated": "設計並開發個人作品集網站，展示專案與課程作業。使用 Microsoft Azure Translator（REST API）建立建置時轉譯管線，並採用雜湊快取以減少重複呼叫。使用 React Three Fiber 建立了一個互動式動畫技能區，並支援 40+ 科技圖示的快取貼圖載入。透過懶散載入的 3D 資產、貼圖快取和影片壓縮，將主執行緒載入時間縮短近 50%。",
+    "cachedAt": "2026-07-19T03:55:53.618Z"
   }
 }

@@ -34,7 +34,8 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     media: {
       // url: "/signify-hex-demo.mp4",
       url: "/signify-hex-demo-optimized.mp4",
-      alt_text: "Demo of Signify Hex"
+      alt_text: "Demo of Signify Hex",
+      poster: "/signify-hex-demo-optimized-poster.mp4"
     },
     linkKeys: [
       { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
@@ -50,7 +51,8 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     media: {
       // url: "/annomath-paper-video.mp4",
       url: "/annomath-paper-video-optimized.mp4",
-      alt_text: "Annomath video for paper submission"
+      alt_text: "Annomath video for paper submission",
+      poster: "/annomath-paper-video-optimized-poster.mp4"
     },
     linkKeys: [],
     skillKeys: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
@@ -81,7 +83,8 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     media: {
       // url: "/aggies-create-quiz-demo.mov",
       url: "/aggies-create-quiz-demo.mp4",
-      alt_text: "Demo of Aggies Create personalized quiz"
+      alt_text: "Demo of Aggies Create personalized quiz",
+      poster: "/aggies-create-quiz-demo-poster.mp4"
     },
     linkKeys: [
       { key: "aggies-create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
@@ -146,7 +149,11 @@ interface Card {
   stackType: string[];
   context: string;
   type: "image" | "video";
-  media: { url: string, alt_text: string};
+  media: { 
+    url: string, 
+    alt_text: string,
+    poster?: string,
+  };
   links: { label: string; url: string }[];
   skills: string[];
 }
@@ -279,7 +286,8 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
               {card.type === "video" ? 
                 <video controls 
                   className="card-video w-full h-auto object-contain" 
-                  preload="metadata"
+                  preload="none"
+                  poster={card.media.poster}
                   aria-label={card.media.alt_text}
                 > 
                   <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.url}`} 

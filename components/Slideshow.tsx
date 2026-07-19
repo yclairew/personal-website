@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 
 type Slide = {
   src: string;
@@ -15,6 +14,14 @@ type Props = {
 
 export default function Slideshow({ slides, onSlideChange }: Props) {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  // preload all slide images once on mount so browser cache already has them
+  useEffect(() => {
+    slides.forEach((slide) => {
+      const img = new Image();
+      img.src = `${process.env.NEXT_PUBLIC_BASE_PATH}${slide.src}`;
+    });
+  }, [slides]);
 
   const plusSlides = (n: number) => {
     const next = (currentSlide + n + slides.length) % slides.length;
