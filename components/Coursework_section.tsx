@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState, useRef, useMemo } from "react";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { type Components } from "react-markdown";
 import Link from "next/link";
 import { FolderIcon } from "@phosphor-icons/react";
 import "../app/globals.css";
@@ -351,7 +351,7 @@ export default function CourseworkSection() {
     ? selectedCourse?.readme?.replace(/\.md$/, "-zh-s.md")
     : isTraditionalChinese
     ? selectedCourse?.readme?.replace(/\.md$/, "-zh-t.md")
-    : selectedCourse?.readme; // for typing animation
+    : selectedCourse?.readme;
 
   const [currentSrc, setCurrentSrc] = useState(selectedCourse?.slides[0]?.src);
 
@@ -378,7 +378,7 @@ export default function CourseworkSection() {
 
   const [readmeMap, setReadmeMap] = useState<Record<string, string>>({});
 
-  const markdownComponents = useMemo(() => ({
+  const markdownComponents: Components = useMemo(() => ({
     h2: ({ children }) => <h2 className="text-xl lg:text-3xl third-level-headings mb-2">{children}</h2>,
     h3: ({ children }) => <h3 className="text-lg lg:text-2xl third-level-headings mb-2 mt-4">{children}</h3>,
     p: ({ children }) => <p className="body-text text-base lg:text-xl mb-3">{children}</p>,
@@ -466,7 +466,7 @@ export default function CourseworkSection() {
                               )}
                             </div>
 
-                            {isSelected && (course.slides.length > 0 || readmeMap[selectedCourse?.id]) && (
+                            {isSelected && (course.slides.length > 0 || readmeMap[selectedCourse?.id ?? ""]) && (
                               <>
                                 <h3 className={`third-level-headings text-xl text-center pb-2
                                 mt-5 lg:mt-0 ${course.slides.length === 0 && "mt-3"}`}
@@ -477,12 +477,12 @@ export default function CourseworkSection() {
 
                                 {slides.length > 0 ? (
                                   <Slideshow key={selectedCourse?.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
-                                ) : readmeMap[selectedCourse.id] ? (
+                                ) : readmeMap[selectedCourse?.id ?? ""] ? (
                                   <div className="readme mb-8">
                                     <ReactMarkdown
-                                      
+                                      components={markdownComponents}
                                     >
-                                      {readmeMap[selectedCourse?.id]}
+                                      {readmeMap[selectedCourse?.id ?? ""]}
                                     </ReactMarkdown>
                                   </div>
                                   ) : null}
@@ -657,17 +657,28 @@ export default function CourseworkSection() {
     if (!coursework) return;
 
     const allCourses = coursework.flatMap((cat) => cat.courses ?? courses);
-    const readmesToFetch = allCourses.filter((c) => c.readme);
+    const readmesToFetch = allCourses.filter(
+      (c): c is typeof c & { readme: string } => Boolean(c.readme)
+    );
 
     Promise.all(
       readmesToFetch.map((c) => {
-        return fetch(readmePath)
+        const path = isSimplifiedChinese
+          ? c.readme.replace(/\.md$/, "-zh-s.md")
+          : isTraditionalChinese
+          ? c.readme.replace(/\.md$/, "-zh-t.md")
+          : c.readme;
+
+        return fetch(path)
           .then((res) => res.text())
           .then((text) => [c.id, text] as const)
           .catch(() => [c.id, null] as const);
       })
     ).then((entries) => {
-      setReadmeMap(Object.fromEntries(entries.filter(([, text]) => text !== null)));
+      const validEntries = entries.filter(
+        (entry): entry is [string, string] => entry[1] !== null
+      );
+      setReadmeMap(Object.fromEntries(validEntries));
       setReadmesLoaded(true);
     });
   }, [coursework, readmePath]);
