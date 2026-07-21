@@ -346,13 +346,15 @@ export default function CourseworkSection() {
   const selectedCourse = courses.find((c) => c.id === selectedCourseId) || null;
   const slides = selectedCourse?.slides || [];
 
-  const readmePath =
-  isSimplifiedChinese
-    ? selectedCourse?.readme?.replace(/\.md$/, "-zh-s.md")
-    : isTraditionalChinese
-    ? selectedCourse?.readme?.replace(/\.md$/, "-zh-t.md")
-    : selectedCourse?.readme;
+  const readmePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "") + (
+    isSimplifiedChinese
+      ? selectedCourse?.readme?.replace(/\.md$/, "-zh-s.md")
+      : isTraditionalChinese
+      ? selectedCourse?.readme?.replace(/\.md$/, "-zh-t.md")
+      : selectedCourse?.readme
+  );
 
+  
   const [currentSrc, setCurrentSrc] = useState(selectedCourse?.slides[0]?.src);
 
   const [notHoverable, setNotHoverable] = useState(false);
@@ -471,9 +473,11 @@ export default function CourseworkSection() {
                                 <h3 className={`third-level-headings text-xl text-center pb-2
                                 mt-5 lg:mt-0 ${course.slides.length === 0 && "mt-3"}`}
                                 >
-                                  {slides.length > 0 ? currentSrc?.replace("/", "") : readmePath?.replace("/", "")}
+                                  {slides.length > 0 
+                                    ? currentSrc?.replace("/", "") 
+                                    : readmePath?.replace(`${process.env.NEXT_PUBLIC_BASE_PATH}/`, "")
+                                  }
                                 </h3>
-
 
                                 {slides.length > 0 ? (
                                   <Slideshow key={selectedCourse?.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
@@ -591,7 +595,10 @@ export default function CourseworkSection() {
             {selectedCourse ? (
               <>
                 <h3 className={`third-level-headings text-3xl text-center pb-2`}>
-                  {slides.length > 0 ? currentSrc?.replace("/", "") : readmePath?.replace("/", "")}
+                  {slides.length > 0 
+                    ? currentSrc?.replace("/", "") 
+                    : readmePath?.replace(`${process.env.NEXT_PUBLIC_BASE_PATH}/`, "")
+                  }
                 </h3>
                 {slides.length > 0 ? (
                   <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
@@ -654,9 +661,7 @@ export default function CourseworkSection() {
 
 
   useEffect(() => {
-    if (!coursework) return;
-
-    const allCourses = coursework.flatMap((cat) => cat.courses ?? courses);
+    const allCourses = courseworkData.flatMap((cat) => cat.courses);
     const readmesToFetch = allCourses.filter(
       (c): c is typeof c & { readme: string } => Boolean(c.readme)
     );
@@ -669,7 +674,7 @@ export default function CourseworkSection() {
           ? c.readme.replace(/\.md$/, "-zh-t.md")
           : c.readme;
 
-        return fetch(path)
+        return fetch(`${process.env.NEXT_PUBLIC_BASE_PATH}${path}`)
           .then((res) => res.text())
           .then((text) => [c.id, text] as const)
           .catch(() => [c.id, null] as const);
@@ -681,7 +686,8 @@ export default function CourseworkSection() {
       setReadmeMap(Object.fromEntries(validEntries));
       setReadmesLoaded(true);
     });
-  }, [coursework, readmePath]);
+  }, [isSimplifiedChinese, isTraditionalChinese]);
+
 
   if (!readmesLoaded) return null;
 
