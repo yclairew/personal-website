@@ -71,7 +71,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
       { key: "pos-system", url: "https://new-project3-gang71.onrender.com/" },
       { key: "github", url: "https://github.com/yclairew/project3-gang71" }
     ],
-    skillKeys: ["PostgreSQL", "Java", "Rest APIs", "AWS", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging", "Accessibility"]
+    skillKeys: ["PostgreSQL", "JavaFX", "Rest APIs", "AWS", "Node.js/Express", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging", "Accessibility"]
   },
   {
     id: "aggies-create",

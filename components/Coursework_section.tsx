@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
+import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 import { FolderIcon } from "@phosphor-icons/react";
 import "../app/globals.css";
@@ -16,6 +17,7 @@ type Slide = {
 type Course = {
   id: string;
   slides: Slide[];
+  readme?: string;
   portfolioLink?: { href: string; name: string };
 };
 
@@ -28,12 +30,36 @@ const courseworkData: CategoryData[] = [
   {
     id: "required-cs",
     courses: [
-      { id: "program-design", slides: [] },
-      { id: "discrete-structures", slides: [] },
-      { id: "linear-algebra", slides: [] },
-      { id: "computer-organization", slides: [] },
-      { id: "data-structures-algorithms", slides: [] },
-      { id: "computer-systems", slides: [] },
+      { 
+        id: "program-design", 
+        slides: [],
+        readme: "/120-README.md"
+      },
+      { 
+        id: "discrete-structures", 
+        slides: [], 
+        readme: "/222-README.md"
+      },
+      { 
+        id: "linear-algebra", 
+        slides: [],
+        readme: "/304-README.md" 
+      },
+      { 
+        id: "computer-organization", 
+        slides: [],
+        readme: "/312-README.md"
+      },
+      { 
+        id: "data-structures-algorithms", 
+        slides: [],
+        readme: "/221-README.md" 
+      },
+      { 
+        id: "computer-systems", 
+        slides: [], 
+        readme: "/313-README.md"
+      },
       {
         id: "software-engineering",
         slides: [
@@ -80,7 +106,11 @@ const courseworkData: CategoryData[] = [
         ],
         portfolioLink: { href: "/portfolio#pearl-tea", name: "Pearl Tea POS" },
       },
-      { id: "algorithm-design", slides: [] },
+      { 
+        id: "algorithm-design", 
+        slides: [],
+        readme: "/411-README.md"
+      },
     ],
   },
   {
@@ -151,13 +181,17 @@ const courseworkData: CategoryData[] = [
           },
         ],
         portfolioLink: { href: "/portfolio#annomath", name: "AnnoMath" },
-      },
+      }, 
     ],
   },
   {
     id: "statistics",
     courses: [
-      { id: "statistics-1-2", slides: [] },
+      { 
+        id: "statistics-1-2", 
+        slides: [], 
+        readme: "/211-212-README.md"
+      },
       {
         id: "statistical-computing",
         slides: [
@@ -293,7 +327,13 @@ function insertQueryBeforeHash(href: string, query: string) {
 
 
 export default function CourseworkSection() {
-  const { t } = useLocale();
+  const [readmesLoaded, setReadmesLoaded] = useState(false);
+
+  const { t, locale } = useLocale();
+
+  const isSimplifiedChinese = locale === "zh-Hans";
+  const isTraditionalChinese = locale === "zh-Hant";  
+
   const coursework = getCoursework(t);
 
   const [selectedCategoryId, setSelectedCategoryId] = useState(
@@ -305,6 +345,13 @@ export default function CourseworkSection() {
   const courses = selectedCategory?.courses || [];
   const selectedCourse = courses.find((c) => c.id === selectedCourseId) || null;
   const slides = selectedCourse?.slides || [];
+
+  const readmePath =
+  isSimplifiedChinese
+    ? selectedCourse?.readme?.replace(/\.md$/, "-zh-s.md")
+    : isTraditionalChinese
+    ? selectedCourse?.readme?.replace(/\.md$/, "-zh-t.md")
+    : selectedCourse?.readme; // for typing animation
 
   const [currentSrc, setCurrentSrc] = useState(selectedCourse?.slides[0]?.src);
 
@@ -328,7 +375,18 @@ export default function CourseworkSection() {
       <span className={`absolute block h-0.5 w-full bg-text transition-transform duration-200 rotate-90 ${isOpen ? "rotate-180" : ""}`} />
     </span>
   );
-  
+
+  const [readmeMap, setReadmeMap] = useState<Record<string, string>>({});
+
+  const markdownComponents = useMemo(() => ({
+    h2: ({ children }) => <h2 className="text-xl lg:text-3xl third-level-headings mb-2">{children}</h2>,
+    h3: ({ children }) => <h3 className="text-lg lg:text-2xl third-level-headings mb-2 mt-4">{children}</h3>,
+    p: ({ children }) => <p className="body-text text-base lg:text-xl mb-3">{children}</p>,
+    ul: ({ children }) => <ul className="body-text border-l-3 border-accent pl-4 space-y-1 mb-3">{children}</ul>,
+    li: ({ children }) => <li className="text-base lg:text-xl list-disc list-inside">{children}</li>,
+    strong: ({ children }) => <strong className="text-accent font-semibold">{children}</strong>,
+    a: ({ children, href }) => <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>,
+  }), []);
 
   const renderCoursework = () => {
     if (!coursework) return null;
@@ -377,7 +435,6 @@ export default function CourseworkSection() {
                           <div key={course.id}>
                             <div className={[
                               "flex pl-1 pr-1 gap-2",
-                              course.slides.length === 0 ? "opacity-60" : "",
                               isSelected && "active",
                               ].filter(Boolean).join(" ")}
                               onClick={() => setSelectedCourseId(course.id)}
@@ -391,14 +448,10 @@ export default function CourseworkSection() {
 
                                 <button
                                   key={`${selectedCategoryId}-${course.id}`}
-                                  disabled={course.slides.length === 0}
                                   className="text-sm course-item body-text text-wrap max-w-60
                                     text-left hover:max-w-full"
                                 >
                                   {course.name}
-                                  {course.slides.length === 0 && (
-                                    <span className="text-sm body-text opacity-60 pl-1">(empty)</span>
-                                  )}
                                 </button>
 
                               </div>
@@ -413,15 +466,26 @@ export default function CourseworkSection() {
                               )}
                             </div>
 
-                            {isSelected && course.slides.length > 0 && (
+                            {isSelected && (course.slides.length > 0 || readmeMap[selectedCourse?.id]) && (
                               <>
-                                <h3 className="third-level-headings text-xl text-center pb-2
-                                mt-5 lg:mt-0"
+                                <h3 className={`third-level-headings text-xl text-center pb-2
+                                mt-5 lg:mt-0 ${course.slides.length === 0 && "mt-3"}`}
                                 >
-                                  {currentSrc?.replace("/", "")}
+                                  {slides.length > 0 ? currentSrc?.replace("/", "") : readmePath?.replace("/", "")}
                                 </h3>
-                                
-                                <Slideshow key={selectedCourse?.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+
+
+                                {slides.length > 0 ? (
+                                  <Slideshow key={selectedCourse?.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+                                ) : readmeMap[selectedCourse.id] ? (
+                                  <div className="readme mb-8">
+                                    <ReactMarkdown
+                                      
+                                    >
+                                      {readmeMap[selectedCourse?.id]}
+                                    </ReactMarkdown>
+                                  </div>
+                                  ) : null}
                               </>
                             )}
 
@@ -439,23 +503,29 @@ export default function CourseworkSection() {
     }
     else {
       return (
-        <div className={`flex flex-row gap-12 mb-8 ${selectedCourse && slides.length > 0 ? "justify-center" : "ml-18"}`}>
+        <div className={`flex flex-row gap-12 mb-8 ${
+            selectedCourse && (slides.length > 0 || readmeMap[selectedCourse.id]) 
+              ? "justify-center" 
+              : "ml-18"
+          }`}
+        >
           <div>
             {coursework.map((category) => (
-            <div key={category.id} className={[
+            <div key={category.id} 
+              className={[
               "flex items-center gap-2 pr-1",
               selectedCategoryId === category.id && "active",
               ]
                 .filter(Boolean)
                 .join(" ")
-              }>
-
-              <FolderIcon size={30} className="cursor-pointer" 
-                onClick={() => {
+              }
+              onClick={() => {
                 setSelectedCategoryId(category.id);
                 setSelectedCourseId(null);
               }}
-              />
+            >
+
+              <FolderIcon size={30} className="cursor-pointer"/>
 
               <button
               className={[
@@ -468,10 +538,6 @@ export default function CourseworkSection() {
                 .filter(Boolean)
                 .join(" ")
               }
-              onClick={() => {
-                setSelectedCategoryId(category.id);
-                setSelectedCourseId(null);
-              }}
               key={category.id}
               >
                 {category.name}
@@ -484,36 +550,26 @@ export default function CourseworkSection() {
             {courses.map((course) => (
               <div key={course.id} className={[
                 "flex lg:items-center gap-2 lg:whitespace-nowrap pr-2", 
-                course.slides.length === 0 ? "opacity-60" : "",
                 selectedCourseId === course.id && "active",
                 ]
                   .filter(Boolean)
                   .join(" ")
-                }>
+                }
+                onClick={() =>
+                  setSelectedCourseId((prev) =>
+                    prev === course.id ? null : course.id
+                  )
+                }
+              >
                 <FolderIcon size={30} weight={course.slides.length > 0 ? "fill" : "regular"} 
                   className="cursor-pointer shrink-0"
-                  onClick={() =>
-                    setSelectedCourseId((prev) =>
-                      prev === course.id ? null : course.id
-                    )
-                  }
                 />
 
                 <button
                   key={`${selectedCategoryId}-${course.id}`}
-                  aria-disabled={course.slides.length === 0}
                   className={`text-lg course-item body-text text-wrap max-w-48 
                     lg:overflow-hidden lg:text-ellipsis 
-                    lg:whitespace-nowrap pr-20 hover:max-w-full 
-                    ${course.slides.length === 0 ? 
-                      "hover:cursor-not-allowed!" 
-                      : "hover:cursor-pointer"}`}
-                  onClick={() => {
-                    if (course.slides.length === 0) return;
-                    setSelectedCourseId((prev) =>
-                      prev === course.id ? null : course.id
-                    );
-                  }}
+                    lg:whitespace-nowrap pr-20 hover:max-w-full`}
                 >
                   {course.name}
                 </button>
@@ -534,14 +590,23 @@ export default function CourseworkSection() {
           <div>
             {selectedCourse ? (
               <>
-                <h3 className="third-level-headings text-3xl text-center pb-2">
-                  {currentSrc?.replace("/", "")}
+                <h3 className={`third-level-headings text-3xl text-center pb-2`}>
+                  {slides.length > 0 ? currentSrc?.replace("/", "") : readmePath?.replace("/", "")}
                 </h3>
                 {slides.length > 0 ? (
                   <Slideshow key={selectedCourse.id} slides={slides} onSlideChange={(slide) => setCurrentSrc(slide.src)} />
+                ) : readmeMap[selectedCourse.id] ? (
+                  <div className="readme">
+                    <ReactMarkdown
+                      components={markdownComponents}
+                    >
+                      {readmeMap[selectedCourse.id]}
+                    </ReactMarkdown>
+                  </div>
                 ) : (
                   <p className="text-lg body-text">{t.coursework_empty}</p>
                 )}
+
               </>
             ) : (
               <p className="text-lg body-text">{t.coursework_select_prompt}</p>
@@ -586,6 +651,28 @@ export default function CourseworkSection() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen]);
+
+
+  useEffect(() => {
+    if (!coursework) return;
+
+    const allCourses = coursework.flatMap((cat) => cat.courses ?? courses);
+    const readmesToFetch = allCourses.filter((c) => c.readme);
+
+    Promise.all(
+      readmesToFetch.map((c) => {
+        return fetch(readmePath)
+          .then((res) => res.text())
+          .then((text) => [c.id, text] as const)
+          .catch(() => [c.id, null] as const);
+      })
+    ).then((entries) => {
+      setReadmeMap(Object.fromEntries(entries.filter(([, text]) => text !== null)));
+      setReadmesLoaded(true);
+    });
+  }, [coursework, readmePath]);
+
+  if (!readmesLoaded) return null;
 
   return (
     <div>

@@ -51,7 +51,7 @@
   "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI generated outputs from the OpenAI API.",
 
   "card_pearl-tea_role": "Full-Stack Developer",
-  "card_pearl-tea_desc": "Built a multi-interface boba shop POS platform on an Agile Scrum team. Led deployment and authentification security, integrated a TTS API and weather based drink recommendations, and contributed to dynamic database driven menu rendering, drink customization, and checkout flows.",
+  "card_pearl-tea_desc": "Built a multi-interface boba shop POS platform on an Agile Scrum team. Led deployment and authentification security, integrated a TTS API and weather based drink recommendations, and resulted incomplete translations via multi-layer caching. Contributed to dynamic database driven menu rendering, drink customization, and checkout flows.",
 
   "card_aggies-create_role": "Team Lead and Consultant",
   "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.",

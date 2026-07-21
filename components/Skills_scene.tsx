@@ -33,6 +33,7 @@ const displayNames: Record<string, string> = {
   "nextdotjs": "Next.js", "selenium": "Selenium", "jupyter": "Jupyter", "r": "R", "java": "Java", 
   "amazonwebservices": "AWS", "matplotlib": "Matplotlib", "vscode": "VS Code",
   "shadcnui": "shadcn/ui", "threedotjs": "Three.js", "microsoftazure": "Microsoft Azure",
+  "nodedotjs": "Node.js",
 }
 
 const icons = [
@@ -44,9 +45,10 @@ const icons = [
   "tailwindcss", "scikitlearn", "opengl", "tldraw", "render", 
   "nextdotjs", "selenium", "jupyter", "r",
   "java", "amazonwebservices", "matplotlib", "vscode",
-  "shadcnui", "threedotjs", "microsoftazure"
+  "shadcnui", "threedotjs", "microsoftazure", 
+  "nodedotjs"
 ]
-// couldnt find: "open ai api", "glsl", "uber h3", "seaborn", 
+// couldnt find: "open ai api", "glsl", "uber h3", "seaborn", "grpc", "javafx", "xgboost" 
 
 const shuffledIcons = seededShuffle(icons, 67)
 

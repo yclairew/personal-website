@@ -1894,5 +1894,17 @@
     "targetLang": "zh-Hant",
     "translated": "設計並開發個人作品集網站，展示專案與課程作業。使用 Microsoft Azure Translator（REST API）建立建置時轉譯管線，並採用雜湊快取以減少重複呼叫。使用 React Three Fiber 建立了一個互動式動畫技能區，並支援 40+ 科技圖示的快取貼圖載入。透過懶散載入的 3D 資產、貼圖快取和影片壓縮，將主執行緒載入時間縮短近 50%。",
     "cachedAt": "2026-07-19T03:55:53.618Z"
+  },
+  "89b150f20312dda7729ed2137f7ab2dc8b1ff2688ad44b9b11627d325c654126": {
+    "source": "Built a multi-interface boba shop POS platform on an Agile Scrum team. Led deployment and authentification security, integrated a TTS API and weather based drink recommendations, and resulted incomplete translations via multi-layer caching. Contributed to dynamic database driven menu rendering, drink customization, and checkout flows.",
+    "targetLang": "zh-Hans",
+    "translated": "在敏捷Scrum团队上构建了一个多界面的Boba商店POS平台。主导部署和认证安全，集成了TTS API和基于天气的饮品推荐，但通过多层缓存导致了不完整的翻译。参与了动态数据库驱动的菜单渲染、饮品定制和结账流程。",
+    "cachedAt": "2026-07-20T21:10:50.381Z"
+  },
+  "00977cfad3ff83a3c7d577d49c480e72a4f5ba3e1fe0d7e3975a9db2e8447b27": {
+    "source": "Built a multi-interface boba shop POS platform on an Agile Scrum team. Led deployment and authentification security, integrated a TTS API and weather based drink recommendations, and resulted incomplete translations via multi-layer caching. Contributed to dynamic database driven menu rendering, drink customization, and checkout flows.",
+    "targetLang": "zh-Hant",
+    "translated": "在敏捷 Scrum 團隊上建立了一個多介面的 Boba 商店 POS 平台。主導部署與認證安全，整合 TTS API 與天氣飲料推薦，並導致多層快取導致不完整的翻譯。參與動態資料庫驅動的菜單渲染、飲料自訂及結帳流程。",
+    "cachedAt": "2026-07-20T21:10:50.932Z"
   }
 }

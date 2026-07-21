@@ -42,7 +42,7 @@
   "card_annomath_role": "本科生研究員",
   "card_annomath_desc": "AnnoMath 建於 Sha 博士的夢想實驗室，是一個由 AI 驅動的多模態大學數學輔導系統，將教學基礎的註解類型應用於學生手寫作業。與一位博士研究員一起編碼並分析了30支可汗學院的影片，以建立註解框架。實作了多種註解類型的渲染。建立了前端邏輯來渲染 OpenAI API 產生的 AI 輸出。",
   "card_pearl-tea_role": "全端開發者",
-  "card_pearl-tea_desc": "在敏捷框架 Scrum 團隊上建立了一個多介面的 Boba 商店 POS 平台。主導部署與認證安全，整合 TTS API 與天氣飲料推薦，並協助動態資料庫驅動的菜單渲染、飲料自訂及結帳流程。",
+  "card_pearl-tea_desc": "在敏捷 Scrum 團隊上建立了一個多介面的 Boba 商店 POS 平台。主導部署與認證安全，整合 TTS API 與天氣飲料推薦，並導致多層快取導致不完整的翻譯。參與動態資料庫驅動的菜單渲染、飲料自訂及結帳流程。",
   "card_aggies-create_role": "團隊領導與顧問",
   "card_aggies-create_desc": "曾領導一家小型護膚公司的顧問團隊。建立了一個前端產品推薦測驗，設計用來整合客戶現有的 Shopify 商店。訓練了一個隨機森林模型，從模擬銷售資料產生電子郵件推薦，預測準確率達 98%。同時也協調團隊完成完整的設計與品牌重塑流程。於2025年秋季Aggies Create Innovation Expo發表。",
   "card_signify-health_role": "軟體工程顧問",
