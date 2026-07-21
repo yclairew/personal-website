@@ -161,7 +161,7 @@ export default function Home() {
 
           <div className="flex flex-col justify-center text-text">
             <p className="body-text text-md lg:text-2xl
-              max-w-[clamp(36rem,39.9vw,90rem)] ml-4 
+              lg:max-w-[clamp(36rem,39.9vw,90rem)] ml-4 
               mr-4 lg:ml-0 lg:mr-0 text-left"
             >
               {t.home_intro_p1_prefix}{" "}
