@@ -271,7 +271,14 @@ function IconGrid() {
 
 
 export default function Skills_scene() {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false) // for touch devices
+  const [showHint, setShowHint] = useState(true) // for non-touch devices
+
+  useEffect(() => {
+    const t = setTimeout(() => setShowHint(false), 2500)
+    return () => clearTimeout(t)
+  }, [])
+    
 
   if (isTouchDevice) {
     if (!active) {
@@ -284,7 +291,7 @@ export default function Skills_scene() {
             <IconGrid/>
           </Canvas>
           <div className="absolute inset-0 flex items-center justify-center bg-accent-light/20 pointer-events-none">
-            <p className="text-lg lg:text-xl font-[Lora] bg-accent-light/70 px-4 py-2 rounded-xl">Tap to explore skills</p>
+            <p className="text-lg lg:text-xl font-[Lora] bg-accent-light/70 px-4 py-2 rounded-xl">Tap to explore. Drag to move.</p>
           </div>
         </div>
       )
@@ -311,14 +318,26 @@ export default function Skills_scene() {
     )
   }
 
+
+
   return (
-    <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100vw", height: "100vh" }} className="cursor-grab active:cursor-grabbing">
-      <IconGrid/>
-      <OrbitControls 
-        enableRotate={false} 
-        enableZoom={false} 
-        mouseButtons={{ LEFT: 2, RIGHT: 2 }} // pan w/ left or right click
-      />
-    </Canvas>
+    <div className="relative rounded-lg overflow-hidden">
+      <Canvas camera={{ position: [0, 0, 10], fov: 40 }} style={{ width: "100vw", height: "100vh" }} className="cursor-grab active:cursor-grabbing">
+        <IconGrid/>
+        <OrbitControls 
+          enableRotate={false} 
+          enableZoom={false} 
+          mouseButtons={{ LEFT: 2, RIGHT: 2 }}
+        />
+      </Canvas>
+
+      <div 
+        className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity duration-700 ${showHint ? "opacity-100" : "opacity-0"}`}
+      >
+        <p className="text-base lg:text-lg font-[Lora] bg-accent-light/70 px-3 py-1.5 rounded-lg whitespace-nowrap">
+          Drag to move. Hover for names.
+        </p>
+      </div>
+    </div>
   )
 }

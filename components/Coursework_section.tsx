@@ -571,7 +571,7 @@ export default function CourseworkSection() {
 
                 <button
                   key={`${selectedCategoryId}-${course.id}`}
-                  className={`text-lg course-item body-text text-wrap max-w-48 
+                  className={`text-lg course-item body-text text-wrap max-w-64 
                     lg:overflow-hidden lg:text-ellipsis 
                     lg:whitespace-nowrap pr-20 hover:max-w-full`}
                 >
