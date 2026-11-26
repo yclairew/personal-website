@@ -2134,5 +2134,41 @@
     "targetLang": "zh-Hant",
     "translated": "圖像",
     "cachedAt": "2026-11-26T20:00:13.217Z"
+  },
+  "45e83b1db98aec814c2b9977f03ce3f8b109ad8e8ac0c3e10570f35a2c00cfe9": {
+    "source": "Boston Housing Regression",
+    "targetLang": "zh-Hans",
+    "translated": "波士顿住房倒退",
+    "cachedAt": "2026-11-26T20:03:12.454Z"
+  },
+  "dbbe0e6e58e9424df144fd82d2cbfb5a071aa75c5f0ca4c8327f0940fda7ea02": {
+    "source": "Built and compared three regression models in R to predict median home values across Boston neighborhoods. Started with a single predictor, the share of lower-income residents, then added every available feature, raising the adjusted R² from 0.54 to 0.73. Checked the larger model for overlapping predictors using VIF, and used ANOVA to show that adding a curved term fit the data significantly better than a straight line.",
+    "targetLang": "zh-Hans",
+    "translated": "在 R 中构建并比较了三个回归模型，以预测波士顿各社区的中位房价。从单一预测变量——低收入居民的比例开始，然后加入所有可用特征，将调整后的 R² 从 0.54 提高到 0.73。用 VIF 检查了更大模型中是否有重叠预测变量，并利用方差分析（ANOVA）显示，加入曲线项比直线更贴合数据。",
+    "cachedAt": "2026-11-26T20:03:12.918Z"
+  },
+  "4e8ad85194afeb28503fc9ba60135fee657a571bdd35f3bfffd9a1ca1fa0e3b1": {
+    "source": "Data Analysis",
+    "targetLang": "zh-Hans",
+    "translated": "数据分析",
+    "cachedAt": "2026-11-26T20:03:13.019Z"
+  },
+  "b4c998bd81a638a84ba682863a389200aa51d921dc453b5ffe8d658ab1f4ce44": {
+    "source": "Boston Housing Regression",
+    "targetLang": "zh-Hant",
+    "translated": "波士頓住房倒退",
+    "cachedAt": "2026-11-26T20:03:13.262Z"
+  },
+  "552180c699c734324071453158805cd2cdd0423c581fded168b21a7793dbc262": {
+    "source": "Built and compared three regression models in R to predict median home values across Boston neighborhoods. Started with a single predictor, the share of lower-income residents, then added every available feature, raising the adjusted R² from 0.54 to 0.73. Checked the larger model for overlapping predictors using VIF, and used ANOVA to show that adding a curved term fit the data significantly better than a straight line.",
+    "targetLang": "zh-Hant",
+    "translated": "在 R 中建立並比較三個迴歸模型，以預測波士頓各社區的中位房價。先從單一預測變數——低收入居民的比例——開始，然後加入所有可用特徵，將調整後的 R² 從 0.54 提高到 0.73。利用 VIF 檢查較大模型是否有重疊預測變數，並利用 ANOVA 顯示加入曲線項比直線更貼合數據。",
+    "cachedAt": "2026-11-26T20:03:13.795Z"
+  },
+  "aaa2dc9c45e830fb887f975726c86762dfa11829b81b26b9d1fca269edd043de": {
+    "source": "Data Analysis",
+    "targetLang": "zh-Hant",
+    "translated": "資料分析",
+    "cachedAt": "2026-11-26T20:03:14.071Z"
   }
 }

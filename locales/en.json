@@ -52,6 +52,7 @@
   "title_imdb-sentiment": "IMDB Sentiment Classifier",
   "title_scene-cnn": "Room Scene Classifier",
   "title_graphics-pipeline": "3D Graphics Pipeline",
+  "title_boston-regression": "Boston Housing Regression",
 
   "card_annomath_role": "Undergraduate Researcher",
   "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI generated outputs from the OpenAI API.",
@@ -71,6 +72,8 @@
   "card_scene-cnn_desc": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.4% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
 
   "card_graphics-pipeline_desc": "Built six graphics projects in C++, OpenGL, and GLSL for CSCE 441, each adding another piece of a 3D rendering pipeline. Started with a rasterizer written from scratch that fills in triangles and blends colors across them, then built a system for posing jointed 3D models. Wrote custom shaders for Blinn-Phong lighting, silhouettes, and cel shading, and added a free-look camera with a top-down map view. Built a deferred renderer that stores the scene in four textures and lights it with 10 moving colored lights, adds a screen-space blur, and shapes a surface of revolution on the GPU. Finished with a ray tracer that renders shadows, reflections, glass, and ambient occlusion.",
+
+  "card_boston-regression_desc": "Built and compared three regression models in R to predict median home values across Boston neighborhoods. Started with a single predictor, the share of lower-income residents, then added every available feature, raising the adjusted R² from 0.54 to 0.73. Checked the larger model for overlapping predictors using VIF, and used ANOVA to show that adding a curved term fit the data significantly better than a straight line.",
 
   "card_aggies-create_role": "Team Lead and Consultant",
   "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.",
@@ -112,6 +115,7 @@
   "stacktype_systems": "Systems",
   "stacktype_cloud": "Cloud",
   "stacktype_graphics": "Graphics",
+  "stacktype_data-analysis": "Data Analysis",
 
   "context_research": "Research",
   "context_coursework": "Coursework",

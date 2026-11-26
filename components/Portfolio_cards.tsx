@@ -156,6 +156,19 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["C++", "OpenGL", "GLSL", "Ray Tracing", "3D Math"]
   },
   {
+    id: "boston-regression",
+    titleKey: "boston-regression",
+    stackType: ["Data Analysis"],
+    context: "Coursework",
+    type: "image",
+    media: {
+      url: "/boston-regression-img.png",
+      alt_text: "Two scatterplots of Boston median home value versus percent lower-status population, one with a straight-line fit and one with a curved polynomial fit"
+    },
+    linkKeys: [],
+    skillKeys: ["R", "Linear Regression", "ANOVA", "Statistical Modeling"]
+  },
+  {
     id: "aggies-create",
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",
