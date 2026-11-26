@@ -17,6 +17,14 @@ const SOFT_SKILLS = new Set([
   "Automation",
   "Prompt Engineering",
   "Accessibility",
+  "Data Cleaning",
+  "Statistical Modeling",
+  "Linear Regression",
+  "Computer Vision",
+  "NLP",
+  "Multithreading",
+  "Ray Tracing",
+  "3D Math",
 ]);
 
 const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "links"> & {
@@ -40,7 +48,42 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     linkKeys: [
       { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
     ],
-    skillKeys: ["Go", "UberH3", "Redis", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
+    skillKeys: ["Go", "Uber H3", "Redis", "gRPC", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
+  },
+  {
+    id: "aggies-create",
+    titleKey: "aggies-create",
+    logo: "/aggies-create-logo.png",
+    stackType: ["Web", "AI/ML"],
+    context: "Internship",
+    type: "video",
+    media: {
+      // url: "/aggies-create-quiz-demo.mov",
+      url: "/aggies-create-quiz-demo.mp4",
+      alt_text: "Demo of Aggies Create personalized quiz",
+      poster: "/aggies-create-quiz-demo-poster.png"
+    },
+    linkKeys: [
+      { key: "aggies-create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
+    ],
+    skillKeys: ["Python", "scikit-learn", "Machine Learning (Model Training)", "JavaScript", "HTML/CSS", "Leadership", "Public Speaking"]
+  },
+  {
+    id: "tao",
+    titleKey: "tao",
+    logo: "/tao-logo.png",
+    stackType: ["Web"],
+    context: "Internship",
+    type: "image",
+    media: {
+      url: "/tao-img.png",
+      alt_text: "TAO Instagram post of Web Officer introductions"
+    },
+    linkKeys: [
+      { key: "website", url: "https://engrtao.tech/" },
+      { key: "github", url: "https://github.com/TAO-ENGR/club-website" }
+    ],
+    skillKeys: ["Next.js", "Node.js", "Tailwind CSS", "TypeScript", "React", "Responsive Design", "Teamwork"]
   },
   {
     id: "annomath",
@@ -182,24 +225,6 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["R", "ggplot2", "dplyr", "Data Cleaning"]
   },
   {
-    id: "aggies-create",
-    titleKey: "aggies-create",
-    logo: "/aggies-create-logo.png",
-    stackType: ["Web", "AI/ML"],
-    context: "Internship",
-    type: "video",
-    media: {
-      // url: "/aggies-create-quiz-demo.mov",
-      url: "/aggies-create-quiz-demo.mp4",
-      alt_text: "Demo of Aggies Create personalized quiz",
-      poster: "/aggies-create-quiz-demo-poster.png"
-    },
-    linkKeys: [
-      { key: "aggies-create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
-    ],
-    skillKeys: ["scikit-learn", "Machine Learning (Model Training)", "JavaScript", "HTML/CSS", "Leadership", "Public Speaking"]
-  },
-  {
     id: "personal-website",
     titleKey: "personal-website",
     stackType: ["Web"],
@@ -213,23 +238,6 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
       { key: "github", url: "https://github.com/yclairew/personal-website" }
     ],
     skillKeys: ["React Three Fiber", "Azure Translator", "Static i18n", "REST APIs", "React", "Next.js", "TypeScript", "Tailwind CSS", "Responsive Design", "Accessibility"]
-  },
-  {
-    id: "tao",
-    titleKey: "tao",
-    logo: "/tao-logo.png",
-    stackType: ["Web"],
-    context: "Internship",
-    type: "image",
-    media: {
-      url: "/tao-img.png",
-      alt_text: "TAO Instagram post of Web Officer introductions"
-    },
-    linkKeys: [
-      { key: "website", url: "https://engrtao.tech/" },
-      { key: "github", url: "https://github.com/TAO-ENGR/club-website" }
-    ],
-    skillKeys: ["Next.js", "Tailwind CSS", "TypeScript", "React", "Responsive Design", "Teamwork"]
   },
   {
     id: "bingo-board",

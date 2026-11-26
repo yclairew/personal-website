@@ -2386,5 +2386,125 @@
     "targetLang": "zh-Hant",
     "translated": "探索 Stanford Bunny 和 Utah Teapot 的著色器、材質與時間動畫",
     "cachedAt": "2026-11-26T20:22:57.108Z"
+  },
+  "6bacd9b24cef63460774fa961bf5722bab2f715fce91defe36bd3c17020ae3c5": {
+    "source": "Team Lead & Software Engineering Intern",
+    "targetLang": "zh-Hans",
+    "translated": "团队负责人兼软件工程实习生",
+    "cachedAt": "2026-11-26T20:42:05.344Z"
+  },
+  "7058a46353cde88badfff98efc45ec6a96fa19b69233a9c179b8f26dd3e4edf9": {
+    "source": "Accessibility",
+    "targetLang": "zh-Hans",
+    "translated": "可达性",
+    "cachedAt": "2026-11-26T20:42:05.570Z"
+  },
+  "7930afd5abb42c2f6f89fb14cfe67f0470f449bf84819eec3e65caa3bf466a44": {
+    "source": "Data Cleaning",
+    "targetLang": "zh-Hans",
+    "translated": "数据清理",
+    "cachedAt": "2026-11-26T20:42:05.679Z"
+  },
+  "59afc188984c763a41962442921c04f64fe00d46a196069e1fb61751d21b45eb": {
+    "source": "Statistical Modeling",
+    "targetLang": "zh-Hans",
+    "translated": "统计建模",
+    "cachedAt": "2026-11-26T20:42:05.862Z"
+  },
+  "91d3778ee067782ee53b02b1ad464fc2fc8a3d5a3e36579c2ffc5702b63f201d": {
+    "source": "Linear Regression",
+    "targetLang": "zh-Hans",
+    "translated": "线性回归",
+    "cachedAt": "2026-11-26T20:42:05.958Z"
+  },
+  "db3a658bd062d2a4f032d99d4caca9b67e4999fbdad2432b6a0f0d67b56e8893": {
+    "source": "Computer Vision",
+    "targetLang": "zh-Hans",
+    "translated": "计算机视觉",
+    "cachedAt": "2026-11-26T20:42:06.050Z"
+  },
+  "f4d7383ac3fd93ea6efe68a18a5da3f20aa876100d637a4b047d68425088efad": {
+    "source": "NLP",
+    "targetLang": "zh-Hans",
+    "translated": "NLP",
+    "cachedAt": "2026-11-26T20:42:06.161Z"
+  },
+  "653c5f41cf11f81ffe504c4c63e4fdc067aa52e840021d8430ab277bb5aad90c": {
+    "source": "Multithreading",
+    "targetLang": "zh-Hans",
+    "translated": "多线程",
+    "cachedAt": "2026-11-26T20:42:06.272Z"
+  },
+  "8d91f25c164c6653d009425742cbb1146f3d7b7e6b92ce3779201207d9c9152b": {
+    "source": "Ray Tracing",
+    "targetLang": "zh-Hans",
+    "translated": "光线追踪",
+    "cachedAt": "2026-11-26T20:42:06.385Z"
+  },
+  "8ca855d8d7fa786f3ebb5d8ac3ef6ca0e499d0922fbbcf7aa5216e14087d307a": {
+    "source": "3D Math",
+    "targetLang": "zh-Hans",
+    "translated": "3D 数学",
+    "cachedAt": "2026-11-26T20:42:06.486Z"
+  },
+  "781a3a81aa7d5e25e225e5a1774ca1b4dd0b776be4bad8a6410cc178793c302b": {
+    "source": "Team Lead & Software Engineering Intern",
+    "targetLang": "zh-Hant",
+    "translated": "團隊主管兼軟體工程實習生",
+    "cachedAt": "2026-11-26T20:42:06.738Z"
+  },
+  "2a23f4d07f9af304c6c5c9651292e02f5a5cebcc36b31102aaa623f49304cf22": {
+    "source": "Accessibility",
+    "targetLang": "zh-Hant",
+    "translated": "無障礙性",
+    "cachedAt": "2026-11-26T20:42:06.909Z"
+  },
+  "89f16e7f6db2394378e11cd21ec51e5791d9e70cc901b7653c02c18d18c6ff45": {
+    "source": "Data Cleaning",
+    "targetLang": "zh-Hant",
+    "translated": "資料清理",
+    "cachedAt": "2026-11-26T20:42:07.037Z"
+  },
+  "dd8d0aca5485bfda0599d9925c01531fc1280c652274ad1f77a15532c5b32b06": {
+    "source": "Statistical Modeling",
+    "targetLang": "zh-Hant",
+    "translated": "統計建模",
+    "cachedAt": "2026-11-26T20:42:07.199Z"
+  },
+  "5c1973282819113427eb5c4d4a86f8a53aa2d5af91fd49253713f62441da9a63": {
+    "source": "Linear Regression",
+    "targetLang": "zh-Hant",
+    "translated": "線性迴歸",
+    "cachedAt": "2026-11-26T20:42:07.350Z"
+  },
+  "de2842f069252d6c224e4a40ec0ca190f1a4b5f9d8bd447b94cc221b8bd91051": {
+    "source": "Computer Vision",
+    "targetLang": "zh-Hant",
+    "translated": "電腦視覺",
+    "cachedAt": "2026-11-26T20:42:07.684Z"
+  },
+  "5e83b2c7d157d3fd3e98a992bf569f40c76854ed604707abb7de96d22f11339a": {
+    "source": "NLP",
+    "targetLang": "zh-Hant",
+    "translated": "NLP",
+    "cachedAt": "2026-11-26T20:42:07.968Z"
+  },
+  "02255c13b0c5af005b68d3e9ae3e0da126c38d8dc303b7b968837c169a946221": {
+    "source": "Multithreading",
+    "targetLang": "zh-Hant",
+    "translated": "多執行緒",
+    "cachedAt": "2026-11-26T20:42:08.093Z"
+  },
+  "6d84d2e5a270787b5581f514240f9c1dfa47fdd66f5e04eed20c3aab35d9a77a": {
+    "source": "Ray Tracing",
+    "targetLang": "zh-Hant",
+    "translated": "光線追蹤",
+    "cachedAt": "2026-11-26T20:42:08.209Z"
+  },
+  "a6addc8f419c8a0ea2b8ab49b74d4d66645d3945af7bf7d06a00727ae59f429e": {
+    "source": "3D Math",
+    "targetLang": "zh-Hant",
+    "translated": "3D 數學",
+    "cachedAt": "2026-11-26T20:42:08.324Z"
   }
 }

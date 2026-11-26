@@ -73,8 +73,8 @@
       "text": "系统与云端"
     },
     "card_tao_role": {
-      "source": "Web Officer & Software Engineer Intern",
-      "text": "网站负责人兼软件工程师实习生"
+      "source": "Web Officer & Software Engineering Intern",
+      "text": "网站负责人兼软件工程实习生"
     },
     "home_intro_p1_prefix": {
       "source": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
@@ -111,6 +111,18 @@
     "card_aggies-create_desc": {
       "source": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at the Fall 2025 Aggies Create Innovation Expo.",
       "text": "曾为一家小型护肤公司领导咨询团队。开发了前端产品推荐测验，旨在与客户现有的 Shopify 店铺集成。训练了一个随机森林模型，利用模拟销售数据生成邮件推荐，预测准确率达 98%。还协调团队完成了完整的设计和品牌重塑过程。在 2025 年秋季 Aggies Create 创新博览会上展示了项目成果。"
+    },
+    "skill_accessibility": {
+      "source": "Accessibility",
+      "text": "无障碍"
+    },
+    "skill_leadership": {
+      "source": "Leadership",
+      "text": "领导力"
+    },
+    "skill_agile": {
+      "source": "Agile",
+      "text": "敏捷开发"
     }
   },
   "zh-Hant": {
@@ -171,8 +183,8 @@
       "text": "用 R 清理並探索了包含 48,000+ 個紐約市 Airbnb 房源的資料集。處理缺失值，將日期和分類轉換成正確類型，並依房源全年可預訂天數分組。接著用 ggplot2 深入分析價格與評論：整棟房屋是最常見的房源類型，曼哈頓和布魯克林是價格最高的區，價格較低的房源往往獲得的評論多得多。"
     },
     "card_tao_role": {
-      "source": "Web Officer & Software Engineer Intern",
-      "text": "網站負責人暨軟體工程師實習生"
+      "source": "Web Officer & Software Engineering Intern",
+      "text": "網站負責人暨軟體工程實習生"
     },
     "home_intro_p1_prefix": {
       "source": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
@@ -217,6 +229,18 @@
     "title_annomath": {
       "source": "AnnoMath",
       "text": "AnnoMath"
+    },
+    "skill_accessibility": {
+      "source": "Accessibility",
+      "text": "無障礙"
+    },
+    "skill_leadership": {
+      "source": "Leadership",
+      "text": "領導力"
+    },
+    "skill_agile": {
+      "source": "Agile",
+      "text": "敏捷開發"
     }
   }
 }
