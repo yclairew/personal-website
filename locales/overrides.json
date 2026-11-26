@@ -41,8 +41,8 @@
       "text": "构建并比较了两个 PyTorch 模型，用于读取 IMDB 电影评论并判断其为正面还是负面：一个 Transformer 编码器和一个 LSTM。自己编写了模型外围的完整流程，包括文本清理、一万词的词汇表、分类标记、跳过填充的注意力掩码以及正弦位置编码。使用 Dropout、权重衰减和余弦学习率调度训练两个模型，Transformer 的测试准确率达到 82.4%，LSTM 达到 82.1%。"
     },
     "card_scene-cnn_desc": {
-      "source": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.9% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
-      "text": "在 PyTorch 中构建了一个卷积神经网络，根据照片判断照片显示的是机场航站楼、卧室、餐厅还是客厅，使用来自 SUN397 场景数据集的图像。设计了一个包含批量归一化和 Dropout 的四层网络，并在训练过程中添加了随机裁剪和翻转，以便从更多样化的实例中学习。在未参与训练的测试照片上，准确率达到了 76.9%，其中客厅与卧室、餐厅最容易混淆。"
+      "source": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.4% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
+      "text": "在 PyTorch 中构建了一个卷积神经网络，根据照片判断照片显示的是机场航站楼、卧室、餐厅还是客厅，使用来自 SUN397 场景数据集的图像。设计了一个包含批量归一化和 Dropout 的四层网络，并在训练过程中添加了随机裁剪和翻转，以便从更多样化的实例中学习。在未参与训练的测试照片上，准确率达到了 76.4%，其中客厅与卧室、餐厅最容易混淆。"
     }
   },
   "zh-Hant": {
@@ -83,8 +83,8 @@
       "text": "建置並比較了兩個 PyTorch 模型，用來閱讀 IMDB 電影評論並判斷其為正面或負面：一個 Transformer 編碼器和一個 LSTM。自行撰寫了模型外圍的完整流程，包括文字清理、一萬詞的詞彙表、分類標記、跳過填充的注意力遮罩以及正弦位置編碼。使用 Dropout、權重衰減和餘弦學習率排程訓練兩個模型，Transformer 的測試準確率達到 82.4%，LSTM 達到 82.1%。"
     },
     "card_scene-cnn_desc": {
-      "source": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.9% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
-      "text": "在 PyTorch 中建立了卷積神經網路，根據照片判斷顯示的是機場航廈、臥室、餐廳還是客廳，並利用 SUN397 場景資料集的影像。設計了一套包含批次正規化與 Dropout 的四層網路，並在訓練時加入隨機裁切與翻轉，讓它能從更多樣的範例中學習。在未參與訓練的測試照片上，準確率達到 76.9%，其中客廳與臥室、餐廳最容易混淆。"
+      "source": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.4% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
+      "text": "在 PyTorch 中建立了卷積神經網路，根據照片判斷顯示的是機場航廈、臥室、餐廳還是客廳，並利用 SUN397 場景資料集的影像。設計了一套包含批次正規化與 Dropout 的四層網路，並在訓練時加入隨機裁切與翻轉，讓它能從更多樣的範例中學習。在未參與訓練的測試照片上，準確率達到 76.4%，其中客廳與臥室、餐廳最容易混淆。"
     }
   }
 }
