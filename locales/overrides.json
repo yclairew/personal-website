@@ -71,6 +71,10 @@
     "stacktype_systems-&-cloud": {
       "source": "Systems & Cloud",
       "text": "系统与云端"
+    },
+    "card_tao_role": {
+      "source": "Web Officer & Software Engineer Intern",
+      "text": "网站负责人兼软件工程师实习生"
     }
   },
   "zh-Hant": {
@@ -129,6 +133,10 @@
     "card_airbnb-analysis_desc": {
       "source": "Cleaned and explored a dataset of 48,000+ New York City Airbnb listings in R. Handled missing values, converted dates and categories to the right types, and grouped listings by how often they're available. Then used ggplot2 to dig into prices and reviews: entire homes are the most common listing type, Manhattan and Brooklyn are the priciest boroughs, and cheaper listings tend to collect far more reviews.",
       "text": "用 R 清理並探索了包含 48,000+ 個紐約市 Airbnb 房源的資料集。處理缺失值，將日期和分類轉換成正確類型，並依房源全年可預訂天數分組。接著用 ggplot2 深入分析價格與評論：整棟房屋是最常見的房源類型，曼哈頓和布魯克林是價格最高的區，價格較低的房源往往獲得的評論多得多。"
+    },
+    "card_tao_role": {
+      "source": "Web Officer & Software Engineer Intern",
+      "text": "網站負責人暨軟體工程師實習生"
     }
   }
 }

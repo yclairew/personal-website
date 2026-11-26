@@ -29,13 +29,13 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     titleKey: "signify-health",
     logo: "/signify-health-logo.png",
     stackType: ["Web", "Data"],
-    context: "Consulting",
+    context: "Internship",
     type: "video",
     media: {
       // url: "/signify-hex-demo.mp4",
       url: "/signify-hex-demo-optimized.mp4",
       alt_text: "Demo of Signify Hex",
-      poster: "/signify-hex-demo-optimized-poster.mp4"
+      poster: "/signify-hex-demo-optimized-poster.png"
     },
     linkKeys: [
       { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
@@ -52,7 +52,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
       // url: "/annomath-paper-video.mp4",
       url: "/annomath-paper-video-optimized.mp4",
       alt_text: "Annomath video for paper submission",
-      poster: "/annomath-paper-video-optimized-poster.mp4"
+      poster: "/annomath-paper-video-optimized-poster.png"
     },
     linkKeys: [],
     skillKeys: ["TypeScript", "React", "Prompt Engineering", "tldraw", "Research Skills", "Teamwork", "Annotation Coding"]
@@ -186,13 +186,13 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",
     stackType: ["Web", "AI/ML"],
-    context: "Consulting",
+    context: "Internship",
     type: "video",
     media: {
       // url: "/aggies-create-quiz-demo.mov",
       url: "/aggies-create-quiz-demo.mp4",
       alt_text: "Demo of Aggies Create personalized quiz",
-      poster: "/aggies-create-quiz-demo-poster.mp4"
+      poster: "/aggies-create-quiz-demo-poster.png"
     },
     linkKeys: [
       { key: "aggies-create", url: "https://www.aggiescreate.com/portfolio/consulting-projects-current/aksa-oils" }
@@ -219,7 +219,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     titleKey: "tao",
     logo: "/tao-logo.png",
     stackType: ["Web"],
-    context: "Organization",
+    context: "Internship",
     type: "image",
     media: {
       url: "/tao-img.png",
@@ -395,7 +395,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
                 <video controls 
                   className="card-video w-full h-auto object-contain" 
                   preload="none"
-                  poster={card.media.poster}
+                  poster={card.media.poster && `${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.poster}`}
                   aria-label={card.media.alt_text}
                 > 
                   <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.url}`} 
@@ -471,6 +471,7 @@ function ProjectCard({ card, setSkillFilter, skillFilter }: {
                 <video controls 
                   className="card-video w-full h-auto object-contain" 
                   preload="metadata"
+                  poster={card.media.poster && `${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.poster}`}
                   aria-label={card.media.alt_text}
                 > 
                   <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}${card.media.url}`} 

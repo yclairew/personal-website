@@ -2230,5 +2230,65 @@
     "targetLang": "zh-Hant",
     "translated": "系統與雲端",
     "cachedAt": "2026-11-26T20:10:11.260Z"
+  },
+  "c36d5a5591d4d3be0ac5657b06de9502694a2e31af4a11d2588c0d952bfec7b2": {
+    "source": "AI Researcher",
+    "targetLang": "zh-Hans",
+    "translated": "人工智能研究员",
+    "cachedAt": "2026-11-26T20:11:53.252Z"
+  },
+  "303f1c3629719c1cd169502c74a3973a22d47b2f2b29f7f663d0a8d3bf5acef4": {
+    "source": "Team Lead & Software Engineer Intern",
+    "targetLang": "zh-Hans",
+    "translated": "团队负责人兼软件工程师实习生",
+    "cachedAt": "2026-11-26T20:11:53.548Z"
+  },
+  "8b823fed305a480a603eb8b6307b0ff052c02ad04117dec17959c39c16d9d9dd": {
+    "source": "Software Engineering Intern",
+    "targetLang": "zh-Hans",
+    "translated": "软件工程实习生",
+    "cachedAt": "2026-11-26T20:11:53.711Z"
+  },
+  "4d8b636baef64807a5a61eee827b7bd5226f5dab800adf01cf8e0a89ee2443d9": {
+    "source": "Web Officer & Software Engineer Intern",
+    "targetLang": "zh-Hans",
+    "translated": "网页官 兼软件工程师实习生",
+    "cachedAt": "2026-11-26T20:11:53.900Z"
+  },
+  "89af98e3e2aee4ea73f169541c8110202bfc9298faaeed46eef2091a9ee44859": {
+    "source": "Internship",
+    "targetLang": "zh-Hans",
+    "translated": "实习",
+    "cachedAt": "2026-11-26T20:11:53.980Z"
+  },
+  "5ece2e9b04006b268e8d68448a7c9af6f96ecd94758c5a4c16e608e0be25918c": {
+    "source": "AI Researcher",
+    "targetLang": "zh-Hant",
+    "translated": "AI 研究員",
+    "cachedAt": "2026-11-26T20:11:54.165Z"
+  },
+  "743ef2f539102cefb81f451aca6ecd60a29b3dcdb138ff9f7fdadb6721e5d5d9": {
+    "source": "Team Lead & Software Engineer Intern",
+    "targetLang": "zh-Hant",
+    "translated": "團隊主管兼軟體工程師實習生",
+    "cachedAt": "2026-11-26T20:11:54.429Z"
+  },
+  "e487923d82ecf2dc988f69ebc6dca2be4808cb5da7d58bd2754b1939947980f5": {
+    "source": "Software Engineering Intern",
+    "targetLang": "zh-Hant",
+    "translated": "軟體工程實習生",
+    "cachedAt": "2026-11-26T20:11:54.530Z"
+  },
+  "12b16aeb28606460497a6f91d9ba6ffeda216dac4ce3d4874dec5ba5bd342da6": {
+    "source": "Web Officer & Software Engineer Intern",
+    "targetLang": "zh-Hant",
+    "translated": "網頁主管暨軟體工程師實習生",
+    "cachedAt": "2026-11-26T20:11:54.666Z"
+  },
+  "da9036dd7f235ab5fb5e4a1280b36e93266a5daef5b5d23fd274bd683ef4ed6b": {
+    "source": "Internship",
+    "targetLang": "zh-Hant",
+    "translated": "實習",
+    "cachedAt": "2026-11-26T20:11:54.842Z"
   }
 }

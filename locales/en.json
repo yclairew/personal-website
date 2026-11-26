@@ -55,7 +55,7 @@
   "title_boston-regression": "Boston Housing Regression",
   "title_airbnb-analysis": "NYC Airbnb Market Analysis",
 
-  "card_annomath_role": "Undergraduate Researcher",
+  "card_annomath_role": "AI Researcher",
   "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI generated outputs from the OpenAI API.",
 
   "card_pearl-tea_role": "Full-Stack Developer",
@@ -78,15 +78,15 @@
 
   "card_airbnb-analysis_desc": "Cleaned and explored a dataset of 48,000+ New York City Airbnb listings in R. Handled missing values, converted dates and categories to the right types, and grouped listings by how often they're available. Then used ggplot2 to dig into prices and reviews: entire homes are the most common listing type, Manhattan and Brooklyn are the priciest boroughs, and cheaper listings tend to collect far more reviews.",
 
-  "card_aggies-create_role": "Team Lead and Consultant",
+  "card_aggies-create_role": "Team Lead & Software Engineer Intern",
   "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.",
 
-  "card_signify-health_role": "Software Engineering Consultant",
+  "card_signify-health_role": "Software Engineering Intern",
   "card_signify-health_desc": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
 
   "card_personal-website_desc": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using Microsoft Azure Translator (REST API) with hash-based caching to minimize redundant calls. Created an interactive, animated skills section using React Three Fiber, featuring cached texture loading for 40+ tech icons. Cut main-thread load time by nearly 50% through lazy-loaded 3D assets, texture caching, and video compression.",
 
-  "card_tao_role": "Web Officer & Software Engineering Intern",
+  "card_tao_role": "Web Officer & Software Engineer Intern",
   "card_tao_desc": "Developed the TAO website with fellow SWE interns for 10,000+ viewers. Practiced Git workflows including pull requests and code reviews. Helped manage a Discord community of 5,000+ engineering students and supported freshmen by brainstorming ideas for events, such as review sessions.",
 
   "card_bingo-board_desc": "Built an automated bingo board generator that creates randomized bingo boards for ice cream store employees based on time-of-day logic and shift type to keep engagement up during slow periods.",
@@ -119,8 +119,7 @@
 
   "context_research": "Research",
   "context_coursework": "Coursework",
-  "context_consulting": "Consulting",
-  "context_organization": "Organization",
+  "context_internship": "Internship",
   "context_personal": "Personal",
 
 
