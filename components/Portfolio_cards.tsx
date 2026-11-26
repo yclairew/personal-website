@@ -71,7 +71,21 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
       { key: "pos-system", url: "https://new-project3-gang71.onrender.com/" },
       { key: "github", url: "https://github.com/yclairew/project3-gang71" }
     ],
-    skillKeys: ["PostgreSQL", "JavaFX", "Rest APIs", "AWS", "Node.js/Express", "Javascript", "Render", "HTML/CSS", "Jira", "Agile", "Teamwork", "Debugging", "Accessibility"]
+    skillKeys: ["PostgreSQL", "Java", "JavaFX", "REST APIs", "AWS", "Node.js/Express", "JavaScript", "Render", "HTML/CSS", "CI/CD", "Jira", "Agile", "Teamwork", "Debugging", "Accessibility"]
+  },
+  {
+    id: "banking-system",
+    titleKey: "banking-system",
+    stackType: ["Systems"],
+    context: "Coursework",
+    type: "video",
+    media: {
+      url: "/distributed-banking-demo-optimized.mp4",
+      alt_text: "Demo of the distributed banking system with finance, file, and logging servers handling two clients",
+      poster: "/distributed-banking-demo-optimized-poster.png"
+    },
+    linkKeys: [],
+    skillKeys: ["C++", "POSIX", "Multithreading", "TCP/IP Sockets", "Linux", "Debugging"]
   },
   {
     id: "aggies-create",

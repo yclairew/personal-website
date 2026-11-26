@@ -1,0 +1,42 @@
+{
+  "zh-Hans": {
+    "card_banking-system_role": {
+      "source": "Systems Developer",
+      "text": "系统工程师"
+    },
+    "card_banking-system_desc": {
+      "source": "Built a C++ banking system on Linux that grew over the semester from a single-machine program into a distributed one. Started with processes talking through pipes, moved to a client-server setup, then added a thread pool so the server could handle many requests at once. Finished by connecting clients and servers across machines over TCP/IP sockets.",
+      "text": "在 Linux 上构建了一个 C++ 银行系统，这个系统在一个学期内从单机程序发展成分布式程序。最初是通过管道通信的进程，后来发展成客户端-服务器架构，然后添加了线程池，让服务器能同时处理大量请求。最后通过 TCP/IP 套接字连接客户端和服务器，跨机器连接。"
+    },
+    "card_pearl-tea_desc": {
+      "source": "Built a boba shop POS system with a team, starting as a JavaFX desktop app with customer and manager views for 120+ menu items, backed by a PostgreSQL database on AWS. Then moved it to the web with Node.js/Express APIs and led deployment on Render with secure authentication. Added multi-layer caching that cut API calls per page load by more than half, plus text-to-speech and weather-based drink recommendations for accessibility.",
+      "text": "和团队一起构建了一个珍珠奶茶店 POS 系统，最初是一个带有 120+ 菜单项的客户和经理视图的 JavaFX 桌面应用，并由 AWS 上的 PostgreSQL 数据库支撑。随后将其迁移到网页，使用 Node.js/Express API，并带领了带安全认证的 Render 部署。增加了多层缓存，使每页加载的 API 调用减少了一半以上，同时还提供了基于文本转语音和天气的饮料推荐，以提升无障碍性。"
+    },
+    "coursework_slide_se-1_caption": {
+      "source": "JavaFX-Based Boba POS GUI (Project 2)",
+      "text": "基于 JavaFX 的珍珠奶茶 POS 图形界面（项目 2）"
+    },
+    "coursework_slide_se-4_caption": {
+      "source": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
+      "text": "基于网站的动态珍珠奶茶 POS 客户自助终端（项目 3）"
+    }
+  },
+  "zh-Hant": {
+    "card_banking-system_role": {
+      "source": "Systems Developer",
+      "text": "系統工程師"
+    },
+    "card_pearl-tea_desc": {
+      "source": "Built a boba shop POS system with a team, starting as a JavaFX desktop app with customer and manager views for 120+ menu items, backed by a PostgreSQL database on AWS. Then moved it to the web with Node.js/Express APIs and led deployment on Render with secure authentication. Added multi-layer caching that cut API calls per page load by more than half, plus text-to-speech and weather-based drink recommendations for accessibility.",
+      "text": "與團隊一起打造了珍珠奶茶店 POS 系統，起初是 JavaFX 桌面應用程式，具備 120+ 個選單項目的客戶與經理視圖，並以 AWS 上的 PostgreSQL 資料庫為後盾。後來將系統移至網頁，採用 Node.js/Express API，並主導在 Render 上部署，並具備安全驗證。新增多層快取，將每次頁面載入的 API 呼叫次數減少一半以上，並新增文字轉語音與天氣飲料推薦，提升無障礙性。"
+    },
+    "coursework_slide_se-1_caption": {
+      "source": "JavaFX-Based Boba POS GUI (Project 2)",
+      "text": "基於 JavaFX 的珍珠奶茶 POS 圖形介面（專案 2）"
+    },
+    "coursework_slide_se-4_caption": {
+      "source": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
+      "text": "動態網站式珍珠奶茶 POS 客戶自助服務機（專案 3）"
+    }
+  }
+}

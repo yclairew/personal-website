@@ -1906,5 +1906,65 @@
     "targetLang": "zh-Hant",
     "translated": "在敏捷 Scrum 團隊上建立了一個多介面的 Boba 商店 POS 平台。主導部署與認證安全，整合 TTS API 與天氣飲料推薦，並導致多層快取導致不完整的翻譯。參與動態資料庫驅動的菜單渲染、飲料自訂及結帳流程。",
     "cachedAt": "2026-07-20T21:10:50.932Z"
+  },
+  "35b1a6550a78a35fa19e5877e2aa149577de6059a8e8b98de1e463c195379a6d": {
+    "source": "Distributed Banking System",
+    "targetLang": "zh-Hans",
+    "translated": "分布式银行系统",
+    "cachedAt": "2026-11-26T18:11:20.883Z"
+  },
+  "8c45d58ff7cc9cc501cb55db6783046e25b13716d5affe81d5317217138ea48c": {
+    "source": "Built a boba shop POS system with a team, starting as a JavaFX desktop app with customer and manager views for 120+ menu items, backed by a PostgreSQL database on AWS. Then moved it to the web with Node.js/Express APIs and led deployment on Render with secure authentication. Added multi-layer caching that cut API calls per page load by more than half, plus text-to-speech and weather-based drink recommendations for accessibility.",
+    "targetLang": "zh-Hans",
+    "translated": "和团队一起构建了一个珍珠奶茶店 POS 系统，最初是一个带有 120+ 菜单项的客户和经理视图的 JavaFX 桌面应用，并由 AWS 上的 PostgreSQL 数据库支撑。随后将其迁移到网页，使用 Node.js/Express API，并带领了带安全认证的 Render 部署。增加了多层缓存，使每页加载的 API 调用减少了一半以上，同时还提供了基于文本转语音和天气的饮料推荐，以提升无障碍性。",
+    "cachedAt": "2026-11-26T18:11:21.379Z"
+  },
+  "1e76b039794ae1b1176285d42070c0e1857fe3042e96973b695446ffcca0eb4d": {
+    "source": "Systems Developer",
+    "targetLang": "zh-Hans",
+    "translated": "系统工程师",
+    "cachedAt": "2026-11-26T18:11:21.496Z"
+  },
+  "927b551cbeec1970a8f9f79ef06b7fa8898a23e17d6a099ac2df156ed529db1d": {
+    "source": "Built a C++ banking system on Linux that grew over the semester from a single-machine program into a distributed one. Started with processes talking through pipes, moved to a client-server setup, then added a thread pool so the server could handle many requests at once. Finished by connecting clients and servers across machines over TCP/IP sockets.",
+    "targetLang": "zh-Hans",
+    "translated": "在 Linux 上构建了一个 C++ 银行系统，这个系统在一个学期内从单机程序发展成分布式程序。最初是通过管道通信的进程，后来发展成客户端-服务器架构，然后添加了线程池，让服务器能同时处理大量请求。最后通过 TCP/IP 套接字连接客户端和服务器，跨机器连接。",
+    "cachedAt": "2026-11-26T18:11:21.820Z"
+  },
+  "5c33bd1f753eaa65847de4453a06402d6060acd767f60a2458aa0dbc9475d5b1": {
+    "source": "Systems",
+    "targetLang": "zh-Hans",
+    "translated": "系统",
+    "cachedAt": "2026-11-26T18:11:21.941Z"
+  },
+  "db5457723249324a7cb0c1281c56036e6481e419d0f7423a7e37e07da8a3c9a4": {
+    "source": "Distributed Banking System",
+    "targetLang": "zh-Hant",
+    "translated": "分散式銀行系統",
+    "cachedAt": "2026-11-26T18:11:22.162Z"
+  },
+  "f2f7bdffd45f335d9f52b677711b1865d3e978f3e544786339ce7c112154b9e8": {
+    "source": "Built a boba shop POS system with a team, starting as a JavaFX desktop app with customer and manager views for 120+ menu items, backed by a PostgreSQL database on AWS. Then moved it to the web with Node.js/Express APIs and led deployment on Render with secure authentication. Added multi-layer caching that cut API calls per page load by more than half, plus text-to-speech and weather-based drink recommendations for accessibility.",
+    "targetLang": "zh-Hant",
+    "translated": "與團隊一起打造了珍珠奶茶店 POS 系統，起初是 JavaFX 桌面應用程式，具備 120+ 個選單項目的客戶與經理視圖，並以 AWS 上的 PostgreSQL 資料庫為後盾。後來將系統移至網頁，採用 Node.js/Express API，並主導在 Render 上部署，並具備安全驗證。新增多層快取，將每次頁面載入的 API 呼叫次數減少一半以上，並新增文字轉語音與天氣飲料推薦，提升無障礙性。",
+    "cachedAt": "2026-11-26T18:11:22.552Z"
+  },
+  "4e0db1af1f80df925433a54e74faa2c00e51cfb4031cecee9174109ff20c0d0d": {
+    "source": "Systems Developer",
+    "targetLang": "zh-Hant",
+    "translated": "系統工程師",
+    "cachedAt": "2026-11-26T18:11:22.681Z"
+  },
+  "d87c93a1ade4fee6f829293e6da89e1ad6a854d016adeebc1e489f5d932f9fc3": {
+    "source": "Built a C++ banking system on Linux that grew over the semester from a single-machine program into a distributed one. Started with processes talking through pipes, moved to a client-server setup, then added a thread pool so the server could handle many requests at once. Finished by connecting clients and servers across machines over TCP/IP sockets.",
+    "targetLang": "zh-Hant",
+    "translated": "在 Linux 上建置了一個 C++ 銀行系統，這個系統在學期中從單機程式發展成分散式程式。一開始是透過管道溝通的程序，後來轉為客戶端-伺服器架構，再加建執行緒池，讓伺服器能同時處理大量請求。最後透過 TCP/IP 套接字連接客戶端與伺服器，跨機器連線。",
+    "cachedAt": "2026-11-26T18:11:22.948Z"
+  },
+  "d609dc35c2bdbfff2037238aab526f74bf2091c29d80e90cca8b441d6550e7e0": {
+    "source": "Systems",
+    "targetLang": "zh-Hant",
+    "translated": "系統",
+    "cachedAt": "2026-11-26T18:11:23.089Z"
   }
 }
