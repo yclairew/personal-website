@@ -117,6 +117,19 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["Python", "LangChain", "OpenAI API", "RAG", "Chroma", "LangSmith", "Prompt Engineering", "Teamwork"]
   },
   {
+    id: "imdb-sentiment",
+    titleKey: "imdb-sentiment",
+    stackType: ["AI/ML"],
+    context: "Coursework",
+    type: "image",
+    media: {
+      url: "/imdb-sentiment-img.png",
+      alt_text: "LSTM and Transformer confidence on three short movie reviews with mixed sentiment"
+    },
+    linkKeys: [],
+    skillKeys: ["Python", "PyTorch", "Transformers", "LSTM", "NLP", "Machine Learning (Model Training)"]
+  },
+  {
     id: "aggies-create",
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",

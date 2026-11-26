@@ -31,6 +31,14 @@
     "card_real-estate-deal_desc": {
       "source": "Built a multi-agent AI tool with a five-person team that screens commercial real estate deals and writes investment memos. Instead of relying on what the model remembers, it pulls every number from the uploaded deal documents, cites where it came from, and flags missing data rather than guessing. Added guardrails that keep it on topic and double-check its answers, which blocked all five prompt-injection and off-topic attempts in testing.",
       "text": "与五人团队一起构建了一个多代理 AI 工具，用于筛选商业地产交易并撰写投资备忘录。它不再依赖模型记忆，而是从上传的交易文件中提取所有数字，标明数据来源，并标记缺失数据而非猜测。增加了防护栏，确保其聚焦主题并再次核对答案，这阻止了测试中所有五次提示注入和偏离主题的尝试。"
+    },
+    "title_imdb-sentiment": {
+      "source": "IMDB Sentiment Classifier",
+      "text": "IMDB 情感分类器"
+    },
+    "card_imdb-sentiment_desc": {
+      "source": "Built and compared two PyTorch models that read IMDB movie reviews and decide whether they're positive or negative: a Transformer encoder and an LSTM. Wrote the pipeline around them myself, including text cleaning, a 10,000-word vocabulary, a classification token, attention masks that skip padding, and sinusoidal positional encoding. Trained both with dropout, weight decay, and a cosine learning rate schedule, reaching 82.4% test accuracy with the Transformer and 82.1% with the LSTM.",
+      "text": "构建并比较了两个 PyTorch 模型，用于读取 IMDB 电影评论并判断其为正面还是负面：一个 Transformer 编码器和一个 LSTM。自己编写了模型外围的完整流程，包括文本清理、一万词的词汇表、分类标记、跳过填充的注意力掩码以及正弦位置编码。使用 Dropout、权重衰减和余弦学习率调度训练两个模型，Transformer 的测试准确率达到 82.4%，LSTM 达到 82.1%。"
     }
   },
   "zh-Hant": {
@@ -61,6 +69,14 @@
     "card_real-estate-deal_desc": {
       "source": "Built a multi-agent AI tool with a five-person team that screens commercial real estate deals and writes investment memos. Instead of relying on what the model remembers, it pulls every number from the uploaded deal documents, cites where it came from, and flags missing data rather than guessing. Added guardrails that keep it on topic and double-check its answers, which blocked all five prompt-injection and off-topic attempts in testing.",
       "text": "與五人團隊一起打造了一個多代理人 AI 工具，用於篩選商業不動產交易並撰寫投資備忘錄。它不再依賴模型記憶中的數字，而是從上傳的交易文件中擷取每個數字，標註來源，並標記缺失資料而非猜測。新增了防護欄，確保它能聚焦主題並再次核對答案，這在測試中阻擋了所有五次提示注入和離題嘗試。"
+    },
+    "title_imdb-sentiment": {
+      "source": "IMDB Sentiment Classifier",
+      "text": "IMDB 情感分類器"
+    },
+    "card_imdb-sentiment_desc": {
+      "source": "Built and compared two PyTorch models that read IMDB movie reviews and decide whether they're positive or negative: a Transformer encoder and an LSTM. Wrote the pipeline around them myself, including text cleaning, a 10,000-word vocabulary, a classification token, attention masks that skip padding, and sinusoidal positional encoding. Trained both with dropout, weight decay, and a cosine learning rate schedule, reaching 82.4% test accuracy with the Transformer and 82.1% with the LSTM.",
+      "text": "建置並比較了兩個 PyTorch 模型，用來閱讀 IMDB 電影評論並判斷其為正面或負面：一個 Transformer 編碼器和一個 LSTM。自行撰寫了模型外圍的完整流程，包括文字清理、一萬詞的詞彙表、分類標記、跳過填充的注意力遮罩以及正弦位置編碼。使用 Dropout、權重衰減和餘弦學習率排程訓練兩個模型，Transformer 的測試準確率達到 82.4%，LSTM 達到 82.1%。"
     }
   }
 }

@@ -2050,5 +2050,29 @@
     "targetLang": "zh-Hant",
     "translated": "筆記本",
     "cachedAt": "2026-11-26T19:10:45.512Z"
+  },
+  "d7b1043dfd6d0a0c1da6557a782c1ff9971a8614d081985574ed9cb3a0a0d8f2": {
+    "source": "IMDB Sentiment Classifier",
+    "targetLang": "zh-Hans",
+    "translated": "IMDB情感分类器",
+    "cachedAt": "2026-11-26T19:33:24.198Z"
+  },
+  "b7a46d317d682686060a0ae93cbb37d359830baa0cab256b2b0a734f92796ba9": {
+    "source": "Built and compared two PyTorch models that read IMDB movie reviews and decide whether they're positive or negative: a Transformer encoder and an LSTM. Wrote the pipeline around them myself, including text cleaning, a 10,000-word vocabulary, a classification token, attention masks that skip padding, and sinusoidal positional encoding. Trained both with dropout, weight decay, and a cosine learning rate schedule, reaching 82.4% test accuracy with the Transformer and 82.1% with the LSTM.",
+    "targetLang": "zh-Hans",
+    "translated": "我构建并比较了两个读取 IMDB 电影评论并判断其正负的 PyTorch 模型：一个 Transformer 编码器，一个 LSTM。我自己编写了围绕它们的流程，包括文本清理、一万字词汇表、分类令牌、跳过填充的注意力掩码以及正弦位置编码。我用掉出、权重衰减和余弦学习率计划训练，Transformer测试准确率达到82.4%，LSTM达到82.1%。",
+    "cachedAt": "2026-11-26T19:33:24.726Z"
+  },
+  "87404e3fd01dc9dc6adf32ee1dea3f6922cee170eb649659de90b391f62ddfd6": {
+    "source": "IMDB Sentiment Classifier",
+    "targetLang": "zh-Hant",
+    "translated": "IMDB情感分類器",
+    "cachedAt": "2026-11-26T19:33:25.004Z"
+  },
+  "166f04d5765946ee11075f065843f8790a9fed9f5fa9fd445dd5b4768568fec3": {
+    "source": "Built and compared two PyTorch models that read IMDB movie reviews and decide whether they're positive or negative: a Transformer encoder and an LSTM. Wrote the pipeline around them myself, including text cleaning, a 10,000-word vocabulary, a classification token, attention masks that skip padding, and sinusoidal positional encoding. Trained both with dropout, weight decay, and a cosine learning rate schedule, reaching 82.4% test accuracy with the Transformer and 82.1% with the LSTM.",
+    "targetLang": "zh-Hant",
+    "translated": "我製作並比較了兩個 PyTorch 模型，這些模型會閱讀 IMDB 電影評論並判斷它們是正面還是負面：一個是 Transformer 編碼器，一個是 LSTM。我自己撰寫了圍繞它們的流程，包括文字清理、一萬字詞彙、分類標記、跳過填充的注意力遮罩，以及正弦位置編碼。同時用掉線、權重衰減和餘弦學習率程式訓練，Transformer 測試準確率達到 82.4%，LSTM 達到 82.1%。",
+    "cachedAt": "2026-11-26T19:33:25.427Z"
   }
 }
