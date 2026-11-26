@@ -111,14 +111,11 @@
   "link_full-demo": "Full Demo",
   "link_notebook": "Notebook",
 
-  "stacktype_frontend": "Frontend",
-  "stacktype_full-stack": "Full-Stack",
-  "stacktype_data-visualization": "Data Visualization",
-  "stacktype_automation": "Automation",
-  "stacktype_systems": "Systems",
-  "stacktype_cloud": "Cloud",
+  "stacktype_web": "Web",
+  "stacktype_ai/ml": "AI/ML",
+  "stacktype_data": "Data",
+  "stacktype_systems-&-cloud": "Systems & Cloud",
   "stacktype_graphics": "Graphics",
-  "stacktype_data-analysis": "Data Analysis",
 
   "context_research": "Research",
   "context_coursework": "Coursework",

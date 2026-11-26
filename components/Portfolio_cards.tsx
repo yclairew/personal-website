@@ -28,7 +28,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     id: "signify-health",
     titleKey: "signify-health",
     logo: "/signify-health-logo.png",
-    stackType: ["Full-Stack", "Data Visualization"],
+    stackType: ["Web", "Data"],
     context: "Consulting",
     type: "video",
     media: {
@@ -45,7 +45,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "annomath",
     titleKey: "annomath",
-    stackType: ["Frontend", "AI/ML"],
+    stackType: ["Web", "AI/ML"],
     context: "Research",
     type: "video",
     media: {
@@ -60,7 +60,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "pearl-tea",
     titleKey: "pearl-tea",
-    stackType: ["Full-Stack"],
+    stackType: ["Web"],
     context: "Coursework",
     type: "image",
     media: {
@@ -76,7 +76,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "banking-system",
     titleKey: "banking-system",
-    stackType: ["Systems"],
+    stackType: ["Systems & Cloud"],
     context: "Coursework",
     type: "video",
     media: {
@@ -90,7 +90,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "multi-agent-deploy",
     titleKey: "multi-agent-deploy",
-    stackType: ["AI/ML", "Cloud"],
+    stackType: ["AI/ML", "Systems & Cloud"],
     context: "Coursework",
     type: "image",
     media: {
@@ -158,7 +158,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "boston-regression",
     titleKey: "boston-regression",
-    stackType: ["Data Analysis"],
+    stackType: ["Data"],
     context: "Coursework",
     type: "image",
     media: {
@@ -171,7 +171,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "airbnb-analysis",
     titleKey: "airbnb-analysis",
-    stackType: ["Data Analysis", "Data Visualization"],
+    stackType: ["Data"],
     context: "Coursework",
     type: "image",
     media: {
@@ -185,7 +185,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     id: "aggies-create",
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",
-    stackType: ["Frontend", "AI/ML"],
+    stackType: ["Web", "AI/ML"],
     context: "Consulting",
     type: "video",
     media: {
@@ -202,7 +202,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "personal-website",
     titleKey: "personal-website",
-    stackType: ["Frontend"],
+    stackType: ["Web"],
     context: "Personal",
     type: "image",
     media: {
@@ -218,7 +218,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     id: "tao",
     titleKey: "tao",
     logo: "/tao-logo.png",
-    stackType: ["Frontend"],
+    stackType: ["Web"],
     context: "Organization",
     type: "image",
     media: {
@@ -234,7 +234,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
   {
     id: "bingo-board",
     titleKey: "bingo-board",
-    stackType: ["Automation"],
+    stackType: ["Systems & Cloud"],
     context: "Personal",
     type: "image",
     media: {

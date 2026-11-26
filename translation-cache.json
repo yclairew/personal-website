@@ -2194,5 +2194,41 @@
     "targetLang": "zh-Hant",
     "translated": "用 R 清理並探索了包含 48,000+ 個紐約市 Airbnb 房源的資料集。處理缺失值，將日期和分類轉換成正確類型，並依照房源開放頻率分組。接著用 ggplot2 深入分析價格與評論：整棟房屋是最常見的房源類型，曼哈頓和布魯克林是價格最高的區，價格較低的房源往往能收集更多評論。",
     "cachedAt": "2026-11-26T20:05:02.324Z"
+  },
+  "79797d2a04d3ff6f48a4c3f1edb5f9cccaf663cdee20b918e6082bf17bda0f5f": {
+    "source": "Web",
+    "targetLang": "zh-Hans",
+    "translated": "网络",
+    "cachedAt": "2026-11-26T20:10:10.318Z"
+  },
+  "90053506fd2373724ed9ee02661167c68423cfbdd04f133f2263181ded1ac18a": {
+    "source": "Data",
+    "targetLang": "zh-Hans",
+    "translated": "数据",
+    "cachedAt": "2026-11-26T20:10:10.600Z"
+  },
+  "29944626549cca3608240de0e9d678b8f4d4405912e25292684123e857862c30": {
+    "source": "Systems & Cloud",
+    "targetLang": "zh-Hans",
+    "translated": "系统与云",
+    "cachedAt": "2026-11-26T20:10:10.718Z"
+  },
+  "11d487a940885bc007a763effe803054c77ed2ccbf105af9693c7f2035112335": {
+    "source": "Web",
+    "targetLang": "zh-Hant",
+    "translated": "網頁",
+    "cachedAt": "2026-11-26T20:10:10.941Z"
+  },
+  "49538c01c482eb2f0e43e98d91e86cc121c93640d74138926f9083330c89c283": {
+    "source": "Data",
+    "targetLang": "zh-Hant",
+    "translated": "資料",
+    "cachedAt": "2026-11-26T20:10:11.128Z"
+  },
+  "4ce3757e476d566584a953309bef06cc00857db109447e2b17a1fc42e6fde103": {
+    "source": "Systems & Cloud",
+    "targetLang": "zh-Hant",
+    "translated": "系統與雲端",
+    "cachedAt": "2026-11-26T20:10:11.260Z"
   }
 }
