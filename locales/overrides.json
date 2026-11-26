@@ -27,6 +27,10 @@
     "stacktype_cloud": {
       "source": "Cloud",
       "text": "云端"
+    },
+    "card_real-estate-deal_desc": {
+      "source": "Built a multi-agent AI tool with a five-person team that screens commercial real estate deals and writes investment memos. Instead of relying on what the model remembers, it pulls every number from the uploaded deal documents, cites where it came from, and flags missing data rather than guessing. Added guardrails that keep it on topic and double-check its answers, which blocked all five prompt-injection and off-topic attempts in testing.",
+      "text": "与五人团队一起构建了一个多代理 AI 工具，用于筛选商业地产交易并撰写投资备忘录。它不再依赖模型记忆，而是从上传的交易文件中提取所有数字，标明数据来源，并标记缺失数据而非猜测。增加了防护栏，确保其聚焦主题并再次核对答案，这阻止了测试中所有五次提示注入和偏离主题的尝试。"
     }
   },
   "zh-Hant": {
@@ -53,6 +57,10 @@
     "stacktype_cloud": {
       "source": "Cloud",
       "text": "雲端"
+    },
+    "card_real-estate-deal_desc": {
+      "source": "Built a multi-agent AI tool with a five-person team that screens commercial real estate deals and writes investment memos. Instead of relying on what the model remembers, it pulls every number from the uploaded deal documents, cites where it came from, and flags missing data rather than guessing. Added guardrails that keep it on topic and double-check its answers, which blocked all five prompt-injection and off-topic attempts in testing.",
+      "text": "與五人團隊一起打造了一個多代理人 AI 工具，用於篩選商業不動產交易並撰寫投資備忘錄。它不再依賴模型記憶中的數字，而是從上傳的交易文件中擷取每個數字，標註來源，並標記缺失資料而非猜測。新增了防護欄，確保它能聚焦主題並再次核對答案，這在測試中阻擋了所有五次提示注入和離題嘗試。"
     }
   }
 }

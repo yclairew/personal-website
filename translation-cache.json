@@ -2002,5 +2002,53 @@
     "targetLang": "zh-Hant",
     "translated": "雲",
     "cachedAt": "2026-11-26T18:37:21.873Z"
+  },
+  "e7568c61b1b5bcfb612189905f8b92fb4c3cecd9773b57ef71e5dc8fbf7cc9ba": {
+    "source": "Real Estate Deal Screener",
+    "targetLang": "zh-Hans",
+    "translated": "房地产交易筛选器",
+    "cachedAt": "2026-11-26T19:10:43.924Z"
+  },
+  "4e4c8ce3835e36b964e2affaec458ff6dfadb740c37b4710b559078d80b321a4": {
+    "source": "Built a multi-agent AI tool with a five-person team that screens commercial real estate deals and writes investment memos. Instead of relying on what the model remembers, it pulls every number from the uploaded deal documents, cites where it came from, and flags missing data rather than guessing. Added guardrails that keep it on topic and double-check its answers, which blocked all five prompt-injection and off-topic attempts in testing.",
+    "targetLang": "zh-Hans",
+    "translated": "构建了一个多代理AI工具，由五人团队负责筛选商业地产交易并撰写投资备忘录。它不再依赖模型记忆，而是从上传的交易文件中提取所有数字，标明数据来源，并标记缺失数据而非猜测。增加了防护栏，确保其聚焦主题并再次核对答案，这阻止了测试中所有五次提示注入和偏离主题的尝试。",
+    "cachedAt": "2026-11-26T19:10:44.364Z"
+  },
+  "c199f22dd51dfab6fa38e2108c1b044840279d1861abd0f5ec2e7b719bc8cf17": {
+    "source": "Full Demo",
+    "targetLang": "zh-Hans",
+    "translated": "完整演示",
+    "cachedAt": "2026-11-26T19:10:44.507Z"
+  },
+  "78673a103c6bb5356cecff21de0b155e185cf69405ced34f0a62b60d33e750dd": {
+    "source": "Notebook",
+    "targetLang": "zh-Hans",
+    "translated": "笔记本",
+    "cachedAt": "2026-11-26T19:10:44.635Z"
+  },
+  "e2468bf86b15d032f96a4c62ba9c26ba5c1a359465d5f565943f908d0ee27f89": {
+    "source": "Real Estate Deal Screener",
+    "targetLang": "zh-Hant",
+    "translated": "房地產交易篩選器",
+    "cachedAt": "2026-11-26T19:10:44.892Z"
+  },
+  "394a059dd49074321a40824bb47f185f728cf85f19082e014846c8a47662459a": {
+    "source": "Built a multi-agent AI tool with a five-person team that screens commercial real estate deals and writes investment memos. Instead of relying on what the model remembers, it pulls every number from the uploaded deal documents, cites where it came from, and flags missing data rather than guessing. Added guardrails that keep it on topic and double-check its answers, which blocked all five prompt-injection and off-topic attempts in testing.",
+    "targetLang": "zh-Hant",
+    "translated": "打造了一個多代理人 AI 工具，由五人團隊負責篩選商業不動產交易並撰寫投資備忘錄。它不再依賴模型記憶中的數字，而是從上傳的交易文件中擷取每個數字，標註來源，並標記缺失資料而非猜測。新增了防護欄，確保它能聚焦主題並再次核對答案，這在測試中阻擋了所有五次提示注入和離題嘗試。",
+    "cachedAt": "2026-11-26T19:10:45.259Z"
+  },
+  "49b5e70fc1203ce903cdb00ab8198e574f51ca9d4da10ca57b0d671abbd61b8d": {
+    "source": "Full Demo",
+    "targetLang": "zh-Hant",
+    "translated": "完整示範",
+    "cachedAt": "2026-11-26T19:10:45.426Z"
+  },
+  "ca2e093dcd4a6a1af98a7feb673c60341b52675a2b0d911316b1e401c42d7c37": {
+    "source": "Notebook",
+    "targetLang": "zh-Hant",
+    "translated": "筆記本",
+    "cachedAt": "2026-11-26T19:10:45.512Z"
   }
 }

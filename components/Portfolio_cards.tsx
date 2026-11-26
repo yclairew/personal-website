@@ -101,6 +101,22 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["Python", "Claude API", "AWS", "boto3", "CI/CD", "GitHub Actions", "Pytest", "Prompt Engineering", "Automation"]
   },
   {
+    id: "real-estate-deal",
+    titleKey: "real-estate-deal",
+    stackType: ["AI/ML"],
+    context: "Coursework",
+    type: "image",
+    media: {
+      url: "/real-estate-screener-img.png",
+      alt_text: "Slide showing how a request moves through the deal screener: topic check, Chroma search, GPT-4o answer, and output check"
+    },
+    linkKeys: [
+      { key: "full-demo", url: "https://youtu.be/PVjLSeSY26o" },
+      { key: "notebook", url: "https://colab.research.google.com/drive/1d8HuVVzUn2tChiUr4uKdYGsijKtQBw_l?usp=sharing" }
+    ],
+    skillKeys: ["Python", "LangChain", "OpenAI API", "RAG", "Chroma", "LangSmith", "Prompt Engineering", "Teamwork"]
+  },
+  {
     id: "aggies-create",
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",
