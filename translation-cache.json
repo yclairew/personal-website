@@ -2074,5 +2074,29 @@
     "targetLang": "zh-Hant",
     "translated": "我製作並比較了兩個 PyTorch 模型，這些模型會閱讀 IMDB 電影評論並判斷它們是正面還是負面：一個是 Transformer 編碼器，一個是 LSTM。我自己撰寫了圍繞它們的流程，包括文字清理、一萬字詞彙、分類標記、跳過填充的注意力遮罩，以及正弦位置編碼。同時用掉線、權重衰減和餘弦學習率程式訓練，Transformer 測試準確率達到 82.4%，LSTM 達到 82.1%。",
     "cachedAt": "2026-11-26T19:33:25.427Z"
+  },
+  "85f57c00abaffe0ac52e1f87b6c261ffe83ea9bbb943a5806b1a001a94a90d02": {
+    "source": "Room Scene Classifier",
+    "targetLang": "zh-Hans",
+    "translated": "房间场景分类器",
+    "cachedAt": "2026-11-26T19:44:02.122Z"
+  },
+  "75d74e264c08e1f8cdc1a7b5bbd5419b4b0e62f8311bde4ff26e48ac2b3cf5ab": {
+    "source": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.9% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
+    "targetLang": "zh-Hans",
+    "translated": "在 PyTorch 中构建了一个卷积神经网络，根据照片判断照片显示的是机场航站楼、卧室、餐厅还是客厅，使用来自 SUN397 场景数据集的图像。设计了一个包含批量归一化和丢弃的四层网络，并在训练过程中添加了随机裁剪和翻转，以便从更多样化的实例中学习。在保留测试照片上，准确率达到了 76.9%，其中客厅与卧室、餐厅最容易混淆。",
+    "cachedAt": "2026-11-26T19:44:02.661Z"
+  },
+  "344cfaba9d206f0c0b96c0a266a67d07904ffa631e908d420c409b558ad080a6": {
+    "source": "Room Scene Classifier",
+    "targetLang": "zh-Hant",
+    "translated": "房間場景分類器",
+    "cachedAt": "2026-11-26T19:44:02.886Z"
+  },
+  "bac8d8d8601dddcff8337ddff5c5a319172d01fdce0e5ab3cedafa1032974631": {
+    "source": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.9% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
+    "targetLang": "zh-Hant",
+    "translated": "在 PyTorch 中建立了卷積神經網路，根據照片判斷顯示的是機場航廈、臥室、餐廳還是客廳，並利用 SUN397 場景資料集的影像。設計了一套包含批次正規化與丟棄的四層網路，並在訓練時加入隨機裁切與翻轉，讓它能從更多樣的範例中學習。在保留的測試照片上，準確率達到 76.9%，其中客廳與臥室、餐廳最容易混淆。",
+    "cachedAt": "2026-11-26T19:44:03.330Z"
   }
 }

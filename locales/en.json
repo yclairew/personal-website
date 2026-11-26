@@ -50,6 +50,7 @@
   "title_multi-agent-deploy": "Agentic CI/CD Pipeline",
   "title_real-estate-deal": "Real Estate Deal Screener",
   "title_imdb-sentiment": "IMDB Sentiment Classifier",
+  "title_scene-cnn": "Room Scene Classifier",
 
   "card_annomath_role": "Undergraduate Researcher",
   "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI generated outputs from the OpenAI API.",
@@ -65,6 +66,8 @@
   "card_real-estate-deal_desc": "Built a multi-agent AI tool with a five-person team that screens commercial real estate deals and writes investment memos. Instead of relying on what the model remembers, it pulls every number from the uploaded deal documents, cites where it came from, and flags missing data rather than guessing. Added guardrails that keep it on topic and double-check its answers, which blocked all five prompt-injection and off-topic attempts in testing.",
 
   "card_imdb-sentiment_desc": "Built and compared two PyTorch models that read IMDB movie reviews and decide whether they're positive or negative: a Transformer encoder and an LSTM. Wrote the pipeline around them myself, including text cleaning, a 10,000-word vocabulary, a classification token, attention masks that skip padding, and sinusoidal positional encoding. Trained both with dropout, weight decay, and a cosine learning rate schedule, reaching 82.4% test accuracy with the Transformer and 82.1% with the LSTM.",
+
+  "card_scene-cnn_desc": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.9% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
 
   "card_aggies-create_role": "Team Lead and Consultant",
   "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.",

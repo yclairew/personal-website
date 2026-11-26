@@ -130,6 +130,19 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["Python", "PyTorch", "Transformers", "LSTM", "NLP", "Machine Learning (Model Training)"]
   },
   {
+    id: "scene-cnn",
+    titleKey: "scene-cnn",
+    stackType: ["AI/ML"],
+    context: "Coursework",
+    type: "image",
+    media: {
+      url: "/cnn-scenes-img.png",
+      alt_text: "Eight test photos of airport terminals, bedrooms, dining rooms, and living rooms, each labeled with the CNN's prediction and confidence"
+    },
+    linkKeys: [],
+    skillKeys: ["Python", "PyTorch", "CNNs", "Computer Vision", "Machine Learning (Model Training)"]
+  },
+  {
     id: "aggies-create",
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",
