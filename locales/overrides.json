@@ -43,6 +43,18 @@
     "card_scene-cnn_desc": {
       "source": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.4% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
       "text": "在 PyTorch 中构建了一个卷积神经网络，根据照片判断照片显示的是机场航站楼、卧室、餐厅还是客厅，使用来自 SUN397 场景数据集的图像。设计了一个包含批量归一化和 Dropout 的四层网络，并在训练过程中添加了随机裁剪和翻转，以便从更多样化的实例中学习。在未参与训练的测试照片上，准确率达到了 76.4%，其中客厅与卧室、餐厅最容易混淆。"
+    },
+    "stacktype_graphics": {
+      "source": "Graphics",
+      "text": "图形"
+    },
+    "title_graphics-pipeline": {
+      "source": "3D Graphics Pipeline",
+      "text": "3D 图形管线"
+    },
+    "card_graphics-pipeline_desc": {
+      "source": "Built six graphics projects in C++, OpenGL, and GLSL for CSCE 441, each adding another piece of a 3D rendering pipeline. Started with a rasterizer written from scratch that fills in triangles and blends colors across them, then built a system for posing jointed 3D models. Wrote custom shaders for Blinn-Phong lighting, silhouettes, and cel shading, and added a free-look camera with a top-down map view. Built a deferred renderer that stores the scene in four textures and lights it with 10 moving colored lights, adds a screen-space blur, and shapes a surface of revolution on the GPU. Finished with a ray tracer that renders shadows, reflections, glass, and ambient occlusion.",
+      "text": "为 CSCE 441 编写了六个使用 C++、OpenGL 和 GLSL 的图形项目，每个项目都为 3D 渲染管线增添了一部分。最初从零编写了一个光栅化器，填充三角形并在三角形上混合颜色，然后构建了一个用于关节 3D 模型摆姿态的系统。为 Blinn-Phong 光影、剪影和赛璐璐渲染编写了自定义着色器，并添加了一个带有俯视地图视图的自由视角摄像机。构建了一个延迟渲染器，将场景存储为四张纹理，并用 10 个动态彩色灯光照明，添加屏幕空间模糊，并在 GPU 上塑造旋转曲面。最后构建了一个光线追踪器，可以渲染阴影、反射、玻璃和环境遮挡。"
     }
   },
   "zh-Hant": {
@@ -85,6 +97,14 @@
     "card_scene-cnn_desc": {
       "source": "Built a convolutional neural network in PyTorch that looks at a photo and decides whether it shows an airport terminal, bedroom, dining room, or living room, using images from the SUN397 scene dataset. Designed a four-layer network with batch normalization and dropout, and added random crops and flips during training so it learns from more varied examples. It reached 76.4% accuracy on held-out test photos, with living rooms being the easiest to mix up with bedrooms and dining rooms.",
       "text": "在 PyTorch 中建立了卷積神經網路，根據照片判斷顯示的是機場航廈、臥室、餐廳還是客廳，並利用 SUN397 場景資料集的影像。設計了一套包含批次正規化與 Dropout 的四層網路，並在訓練時加入隨機裁切與翻轉，讓它能從更多樣的範例中學習。在未參與訓練的測試照片上，準確率達到 76.4%，其中客廳與臥室、餐廳最容易混淆。"
+    },
+    "stacktype_graphics": {
+      "source": "Graphics",
+      "text": "圖形"
+    },
+    "card_graphics-pipeline_desc": {
+      "source": "Built six graphics projects in C++, OpenGL, and GLSL for CSCE 441, each adding another piece of a 3D rendering pipeline. Started with a rasterizer written from scratch that fills in triangles and blends colors across them, then built a system for posing jointed 3D models. Wrote custom shaders for Blinn-Phong lighting, silhouettes, and cel shading, and added a free-look camera with a top-down map view. Built a deferred renderer that stores the scene in four textures and lights it with 10 moving colored lights, adds a screen-space blur, and shapes a surface of revolution on the GPU. Finished with a ray tracer that renders shadows, reflections, glass, and ambient occlusion.",
+      "text": "為 CSCE 441 用 C++、OpenGL 和 GLSL 建置了六個圖形專案，每個專案都新增了 3D 渲染管線的另一部分。一開始是從零開始寫的光柵化器，能填滿三角形並混合顏色，接著建立一個用於關節 3D 模型擺姿的系統。為 Blinn-Phong 光影、剪影和卡通渲染撰寫自訂著色器，並新增一個自由視角相機與俯視地圖視圖。建立一個延遲渲染器，將場景儲存為四張紋理，並以 10 個動態彩色燈光照明，加入螢幕空間模糊，並在 GPU 上塑造旋轉曲面。最後以光線追蹤器完成，能渲染陰影、反射、玻璃與環境遮蔽。"
     }
   }
 }

@@ -2098,5 +2098,41 @@
     "targetLang": "zh-Hant",
     "translated": "在 PyTorch 中建立了卷積神經網路，根據照片判斷顯示的是機場航廈、臥室、餐廳還是客廳，並利用 SUN397 場景資料集的影像。設計了一套包含批次正規化與丟棄的四層網路，並在訓練時加入隨機裁切與翻轉，讓它能從更多樣的範例中學習。在保留的測試照片上，準確率達到 76.9%，其中客廳與臥室、餐廳最容易混淆。",
     "cachedAt": "2026-11-26T19:44:03.330Z"
+  },
+  "784145aba09c29bf3369aceb3cc852b9b68660215cdfca5f937cdeb495c55861": {
+    "source": "3D Graphics Pipeline",
+    "targetLang": "zh-Hans",
+    "translated": "3D 图形流程",
+    "cachedAt": "2026-11-26T20:00:11.413Z"
+  },
+  "7d8c221c2530112ae5e56c01213cf9353032cdfe588d6021e5eabb7aa58701ed": {
+    "source": "Built six graphics projects in C++, OpenGL, and GLSL for CSCE 441, each adding another piece of a 3D rendering pipeline. Started with a rasterizer written from scratch that fills in triangles and blends colors across them, then built a system for posing jointed 3D models. Wrote custom shaders for Blinn-Phong lighting, silhouettes, and cel shading, and added a free-look camera with a top-down map view. Built a deferred renderer that stores the scene in four textures and lights it with 10 moving colored lights, adds a screen-space blur, and shapes a surface of revolution on the GPU. Finished with a ray tracer that renders shadows, reflections, glass, and ambient occlusion.",
+    "targetLang": "zh-Hans",
+    "translated": "为 CSCE 441 编写了六个使用 C++、OpenGL 和 GLSL 的图形项目，每个项目都为 3D 渲染流程增添了一部分。最初从零编写了一个光栅化器，填充三角形并在三角形上混合颜色，然后构建了一个用于关节 3D 模型摆姿态的系统。为 Blinn-Phong 光影、剪影和赛璐璐渲染编写了自定义着色器，并添加了一个带有俯视地图视图的自由视角摄像机。构建了一个延迟渲染器，将场景存储为四种纹理，并用 10 个动态彩色灯光照明，添加屏幕空间模糊，并在 GPU 上塑造旋转曲面。最后还用一个光线追踪器完成，可以渲染阴影、反射、玻璃和环境遮挡。",
+    "cachedAt": "2026-11-26T20:00:12.173Z"
+  },
+  "bbbd0449d962f426190862634370e9516cc3bf61a09edcc27e43fc6a9137f0cf": {
+    "source": "Graphics",
+    "targetLang": "zh-Hans",
+    "translated": "画面",
+    "cachedAt": "2026-11-26T20:00:12.380Z"
+  },
+  "a2bd82e1b427751ad61eb839699f99c3e17038c497885f6530c89c2e20146a22": {
+    "source": "3D Graphics Pipeline",
+    "targetLang": "zh-Hant",
+    "translated": "3D 圖形管線",
+    "cachedAt": "2026-11-26T20:00:12.595Z"
+  },
+  "5ebaae812a1e65116152dbe1f96089ef481e93adf89697f21479d6537358201a": {
+    "source": "Built six graphics projects in C++, OpenGL, and GLSL for CSCE 441, each adding another piece of a 3D rendering pipeline. Started with a rasterizer written from scratch that fills in triangles and blends colors across them, then built a system for posing jointed 3D models. Wrote custom shaders for Blinn-Phong lighting, silhouettes, and cel shading, and added a free-look camera with a top-down map view. Built a deferred renderer that stores the scene in four textures and lights it with 10 moving colored lights, adds a screen-space blur, and shapes a surface of revolution on the GPU. Finished with a ray tracer that renders shadows, reflections, glass, and ambient occlusion.",
+    "targetLang": "zh-Hant",
+    "translated": "為 CSCE 441 用 C++、OpenGL 和 GLSL 建置了六個圖形專案，每個專案都新增了 3D 渲染流程的另一部分。一開始是從零開始寫的點柵化器，能填滿三角形並混合顏色，接著建立一個用於關節 3D 模型擺姿的系統。為 Blinn-Phong 光影、剪影和卡通渲染撰寫自訂著色器，並新增一個自由視角相機與俯視地圖視圖。建立一個延遲渲染器，將場景儲存為四種材質，並以 10 個動態彩色燈光照明，加入螢幕空間模糊，並在 GPU 上塑造旋轉曲面。最後以光線追蹤器完成，能渲染陰影、反射、玻璃與環境遮蔽。",
+    "cachedAt": "2026-11-26T20:00:13.125Z"
+  },
+  "441a441d2a4c2d6bb6264434f30bd4e37a5e83c31da497752a0cb9b0ef8252b9": {
+    "source": "Graphics",
+    "targetLang": "zh-Hant",
+    "translated": "圖像",
+    "cachedAt": "2026-11-26T20:00:13.217Z"
   }
 }

@@ -143,6 +143,19 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["Python", "PyTorch", "CNNs", "Computer Vision", "Machine Learning (Model Training)"]
   },
   {
+    id: "graphics-pipeline",
+    titleKey: "graphics-pipeline",
+    stackType: ["Graphics"],
+    context: "Coursework",
+    type: "image",
+    media: {
+      url: "/graphics-pipeline-img.png",
+      alt_text: "Three renders: a rasterized teapot with interpolated colors, a deferred-lit scene of bunnies and teapots under colored lights, and a ray-traced scene with reflective and glass spheres"
+    },
+    linkKeys: [],
+    skillKeys: ["C++", "OpenGL", "GLSL", "Ray Tracing", "3D Math"]
+  },
+  {
     id: "aggies-create",
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",
