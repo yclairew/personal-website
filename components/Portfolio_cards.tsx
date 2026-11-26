@@ -48,7 +48,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     linkKeys: [
       { key: "about-signify-health", url: "https://www.signifyhealth.com/" }
     ],
-    skillKeys: ["Go", "Uber H3", "Redis", "gRPC", "Docker", "React", "TypeScript", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
+    skillKeys: ["Go", "Uber H3", "Redis", "gRPC", "Docker", "React", "TypeScript", "MUI", "PostgreSQL", "Mapbox", "Public Speaking", "Teamwork"]
   },
   {
     id: "aggies-create",
@@ -128,7 +128,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
       poster: "/distributed-banking-demo-optimized-poster.png"
     },
     linkKeys: [],
-    skillKeys: ["C++", "POSIX", "Multithreading", "TCP/IP Sockets", "Linux", "Debugging"]
+    skillKeys: ["C++", "POSIX", "Multithreading", "TCP/IP Sockets", "Linux", "GDB", "Debugging"]
   },
   {
     id: "multi-agent-deploy",

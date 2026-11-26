@@ -15,7 +15,7 @@
 
   "home_heading": "Claire Wu",
   "home_subtitle_prefix": "CS senior at Texas A&M, minoring in Statistics and",
-  "home_subtitle_link": "AI in business",
+  "home_subtitle_link": "AI in Business",
   "home_headshot_alt": "Claire Wu headshot",
   "home_intro_p1_prefix": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
   "home_intro_p1_link": "Dream Lab",
@@ -56,7 +56,7 @@
   "title_airbnb-analysis": "NYC Airbnb Market Analysis",
 
   "card_annomath_role": "AI Researcher",
-  "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI-powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive an annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI-generated outputs from the OpenAI API.",
+  "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI-powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive an annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI-generated outputs from the OpenAI API. Also cut video-preview render time by 75–85% (from 4–6.5s to 0.5–2s) by reusing one persistent Python process instead of restarting Manim for every render.",
 
   "card_pearl-tea_role": "Full-Stack Developer",
   "card_pearl-tea_desc": "Built a boba shop POS system with a team, starting as a JavaFX desktop app with customer and manager views for 120+ menu items, backed by a PostgreSQL database on AWS. Then moved it to the web with Node.js/Express APIs and led deployment on Render with secure authentication. Added multi-layer caching that cut API calls per page load by more than half, plus text-to-speech and weather-based drink recommendations for accessibility.",
@@ -82,7 +82,7 @@
   "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at the Fall 2025 Aggies Create Innovation Expo.",
 
   "card_signify-health_role": "Software Engineering Intern",
-  "card_signify-health_desc": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at-home services. Created a geospatial hex overlay for provider reachability, implemented real-time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+  "card_signify-health_desc": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at-home services. Built travel-radius overlays with Mapbox and Uber H3 showing reachability for 10,000+ providers nationwide, using H3's cell hierarchy to cut intersection checks by about 7x. Implemented real-time gRPC data fetching and Redis-based change tracking with batched WebSocket updates, cutting frontend refreshes by about 10x during heavy traffic. Built the interface with React, TypeScript, and MUI. Presented live demos to Signify Health's engineering leadership and won 1st place among consulting projects at the Aggies Create Innovation Expo.",
 
   "card_personal-website_desc": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using Microsoft Azure Translator (REST API) with hash-based caching to minimize redundant calls. Created an interactive, animated skills section using React Three Fiber, featuring cached texture loading for 40+ tech icons. Cut main-thread load time by nearly 50% through lazy-loaded 3D assets, texture caching, and video compression.",
 
@@ -145,7 +145,7 @@
   "coursework_ai_text_suffix": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
   "coursework_business_title": "Business",
   "coursework_business_text_prefix": "Inspired by my dad, I developed an interest in business early on. In high school, I pursued and graduated with an Associate degree in Business through dual credit. Currently, I am earning a minor under Mays Business School in",
-  "coursework_business_link": "AI in business",
+  "coursework_business_link": "AI in Business",
   "coursework_coursework_heading": "Coursework",
 
   "coursework_category_required-cs": "Required CS",
@@ -185,21 +185,21 @@
   "coursework_slide_ml-2_caption": "XGBoost ROC Curve",
   "coursework_slide_ml-3_caption": "EDA Pearson's Correlation Heatmap",
 
-  "coursework_slide_cg-1_caption": "Exploring shaders, materials, and time-based animations with Stanford Bunny and Utah Teapot",
-  "coursework_slide_cg-2_caption": "Top-down and Freelook Camera Scene",
+  "coursework_slide_cg-1_caption": "Exploring Shaders, Materials, and Time-Based Animations with the Stanford Bunny and Utah Teapot",
+  "coursework_slide_cg-2_caption": "Top-Down and Free-Look Camera Scene",
   "coursework_slide_cg-3_caption": "Scene with Deferred Rendering and Light Attenuation",
   "coursework_slide_cg-4_caption": "Ray Tracing Scene",
 
   "coursework_slide_res-1_caption": "Interactive Interface Graphic for AnnoMath",
-  "coursework_slide_res-2_caption": "Full Technical Pipeline Graphics for AnnoMath",
+  "coursework_slide_res-2_caption": "Full Technical Pipeline Graphic for AnnoMath",
   "coursework_slide_res-3_caption": "Annotations and Color Changes from Open Coding of Khan Academy Math Videos",
 
-  "coursework_slide_sc-1_caption": "Boxplots Comparing NYC Neighborhoods and Prices using Airbnb Listing Data",
-  "coursework_slide_sc-2_caption": "Polynomial Fit Plot using Boston Housing Dataset",
-  "coursework_slide_sc-3_caption": "Residuals vs Fitted Graph with Boston Housing Dataset",
+  "coursework_slide_sc-1_caption": "Boxplots Comparing NYC Neighborhoods and Prices Using Airbnb Listing Data",
+  "coursework_slide_sc-2_caption": "Polynomial Fit Plot Using Boston Housing Dataset",
+  "coursework_slide_sc-3_caption": "Residuals vs. Fitted Graph Using Boston Housing Dataset",
   "coursework_slide_sc-4_caption": "Parameter Distribution Graph",
 
-  "coursework_slide_mlp-1_caption": "ML System Designed for a Local Business for Semester-long Mock Project",
+  "coursework_slide_mlp-1_caption": "ML System Designed for a Local Business for a Semester-Long Mock Project",
 
   "coursework_slide_bg-1_caption": "Market Analysis: Arts Participation by Age Group to Identify Target Demographics",
   "coursework_slide_bg-2_caption": "Market Analysis: Arts Participation by Region to Assess Geographic Demand",

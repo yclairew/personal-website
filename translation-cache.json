@@ -2506,5 +2506,89 @@
     "targetLang": "zh-Hant",
     "translated": "3D 數學",
     "cachedAt": "2026-11-26T20:42:08.324Z"
+  },
+  "24cd4ba5dc80f347beda54f9decb232f95db3eba92cf785f205b37609d18f8fc": {
+    "source": "Exploring Shaders, Materials, and Time-Based Animations with the Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hans",
+    "translated": "探索着色器、材质和基于时间的动画，使用斯坦福兔子和犹他茶壶",
+    "cachedAt": "2026-11-26T20:55:02.596Z"
+  },
+  "8800e2521a7a2d79901f7f5b92f014d110fc725915f0bfe0371a87c5ecf39005": {
+    "source": "Top-Down and Free-Look Camera Scene",
+    "targetLang": "zh-Hans",
+    "translated": "俯视和自由视角摄像场景",
+    "cachedAt": "2026-11-26T20:55:02.840Z"
+  },
+  "11b427ab3a143e63710e19342a69d800f892bfda4e879b01100ba955d5d3ee90": {
+    "source": "Full Technical Pipeline Graphic for AnnoMath",
+    "targetLang": "zh-Hans",
+    "translated": "AnnoMath 的完整技术流程图",
+    "cachedAt": "2026-11-26T20:55:02.962Z"
+  },
+  "7843e40331acefcb7a2e431ccb6b1b5d06af54ff096da56d24a7aa035016384a": {
+    "source": "Boxplots Comparing NYC Neighborhoods and Prices Using Airbnb Listing Data",
+    "targetLang": "zh-Hans",
+    "translated": "利用 Airbnb 房源数据比较纽约市各社区和价格的箱形图",
+    "cachedAt": "2026-11-26T20:55:03.142Z"
+  },
+  "656923c6a66b1f799cee1dfe2ee2335dde4ce69a035a9b55cc7daa57541a367a": {
+    "source": "Polynomial Fit Plot Using Boston Housing Dataset",
+    "targetLang": "zh-Hans",
+    "translated": "使用波士顿住房数据集进行多项式拟合图",
+    "cachedAt": "2026-11-26T20:55:03.268Z"
+  },
+  "35b5f055c626ecb581fc93bf34a6e7bf26da384ba3bc44c87726bb2358714869": {
+    "source": "Residuals vs. Fitted Graph Using Boston Housing Dataset",
+    "targetLang": "zh-Hans",
+    "translated": "使用波士顿住房数据集的残差与拟合图",
+    "cachedAt": "2026-11-26T20:55:03.498Z"
+  },
+  "ffec7fe7c167938fca3fe1ffb0dd27c4d90857c98af3bb60ff650f93aa7cfc65": {
+    "source": "ML System Designed for a Local Business for a Semester-Long Mock Project",
+    "targetLang": "zh-Hans",
+    "translated": "为本地企业设计的机器学习系统，用于一个为期一个学期的模拟项目",
+    "cachedAt": "2026-11-26T20:55:03.638Z"
+  },
+  "68b689830a3505d9cc0b4d65a4dc421c89daeb32f476e93aabd9dcf2ce8e861a": {
+    "source": "Exploring Shaders, Materials, and Time-Based Animations with the Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hant",
+    "translated": "探索著色器、材質與時間動畫，搭配史丹佛兔子與猶他茶壺",
+    "cachedAt": "2026-11-26T20:55:04.040Z"
+  },
+  "e3a1647cb32e69b132d4e70a5aa3c4932a1e072030dabde0ab7067bfeeef187d": {
+    "source": "Top-Down and Free-Look Camera Scene",
+    "targetLang": "zh-Hant",
+    "translated": "俯視與自由視角攝影機場景",
+    "cachedAt": "2026-11-26T20:55:04.183Z"
+  },
+  "1d804a83de94a00a3661380379d1c4470c321e871a034c838ac9aa3df177fcdd": {
+    "source": "Full Technical Pipeline Graphic for AnnoMath",
+    "targetLang": "zh-Hant",
+    "translated": "AnnoMath 的完整技術流程圖",
+    "cachedAt": "2026-11-26T20:55:04.416Z"
+  },
+  "bb2b27d90979256df7c7deafecf03f6226ed45812608c13931db3f03dcfa3681": {
+    "source": "Boxplots Comparing NYC Neighborhoods and Prices Using Airbnb Listing Data",
+    "targetLang": "zh-Hant",
+    "translated": "利用 Airbnb 房源資料比較紐約市各社區與價格的箱形圖",
+    "cachedAt": "2026-11-26T20:55:04.560Z"
+  },
+  "019306f92f2e59a3c8dbccb3ce90b629d23ff9ca46d9a08378e0e39e3ef15353": {
+    "source": "Polynomial Fit Plot Using Boston Housing Dataset",
+    "targetLang": "zh-Hant",
+    "translated": "使用波士頓住宅資料集的多項式擬合圖",
+    "cachedAt": "2026-11-26T20:55:04.773Z"
+  },
+  "b9b5d4130814d85bfa036432e70eb487035488622c5f4e074a949040c4176720": {
+    "source": "Residuals vs. Fitted Graph Using Boston Housing Dataset",
+    "targetLang": "zh-Hant",
+    "translated": "使用波士頓住房資料集的殘差與擬合圖",
+    "cachedAt": "2026-11-26T20:55:04.940Z"
+  },
+  "c19495134772555f4e19e347e148e1fd49126c052f11ebc9b710781d63ed0797": {
+    "source": "ML System Designed for a Local Business for a Semester-Long Mock Project",
+    "targetLang": "zh-Hant",
+    "translated": "為地方企業設計的機器學習系統，用於為期一學期的模擬專案",
+    "cachedAt": "2026-11-26T20:55:05.092Z"
   }
 }

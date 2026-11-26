@@ -6,7 +6,7 @@ import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Claire Wu Website",
+  title: "Claire Wu",
   description: "Personal portfolio and coursework showcase for Claire Wu.",
   manifest: "/manifest.json",
 };
