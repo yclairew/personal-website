@@ -76,8 +76,8 @@ function useTypewriter(fullText: string, speed = 40) {
 }
 
 
-function intro_typing(t: any, speed = 67) {
-  const prefix = t.home_subtitle_prefix + " "
+function intro_typing(t: any, speed = 67, isChinese = false) {
+  const prefix = t.home_subtitle_prefix + (isChinese ? "" : " ")
   const linkText = t.home_subtitle_link
   const fullText = prefix + linkText
 
@@ -143,7 +143,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center">
-          {intro_typing(t, typingSpeed)}
+          {intro_typing(t, typingSpeed, isChinese)}
         </div>
 
         <div className="grid md:grid-cols-2 items-center gap-6 lg:gap-12 lg:ml-8 lg:mr-8">
@@ -169,8 +169,8 @@ export default function Home() {
                 target="_blank" rel="noopener noreferrer"
               >
                 {t.home_intro_p1_link}
-              </a>,{" "}
-              {t.home_intro_p1_suffix} <i>{t.home_intro_p1_project}</i>, {t.home_intro_p1_suffix2}
+              </a>{isChinese ? "，" : ", "}
+              {t.home_intro_p1_suffix} <i>{t.home_intro_p1_project}</i>{isChinese ? "，" : ", "}{t.home_intro_p1_suffix2}
             </p>
 
             <p className="body-text text-md lg:text-2xl

@@ -34,8 +34,8 @@ export default function CourseworkContent({
                 <div className="body-text border-l-3 border-accent pl-4">
                     <h3 className="text-xl lg:text-3xl third-level-headings mb-2">{t.coursework_ai_title}</h3>
                     <p className="text-base lg:text-xl">
-                    {t.coursework_ai_text_prefix}{" "}
-                    <a href="https://www.xiameng.org/" target="_blank" rel="noopener noreferrer">{t.coursework_ai_link}</a>{" "}
+                    {t.coursework_ai_text_prefix}{isChinese ? "" : " "}
+                    <a href="https://www.xiameng.org/" target="_blank" rel="noopener noreferrer">{t.coursework_ai_link}</a>{isChinese ? "" : " "}
                     {t.coursework_ai_text_suffix}
                     </p>
                 </div>
@@ -43,7 +43,7 @@ export default function CourseworkContent({
                 <div className="body-text border-l-4 border-accent pl-4">
                     <h3 className="text-xl lg:text-3xl third-level-headings mb-2">{t.coursework_business_title}</h3>
                     <p className="text-base lg:text-xl">
-                    {t.coursework_business_text_prefix}{" "}
+                    {t.coursework_business_text_prefix}{isChinese ? "" : " "}
                     <a href="https://mays.tamu.edu/ai/ai-minor/" target="_blank" rel="noopener noreferrer">
                         {t.coursework_business_link}
                     </a>
