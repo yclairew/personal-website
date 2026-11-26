@@ -2170,5 +2170,29 @@
     "targetLang": "zh-Hant",
     "translated": "資料分析",
     "cachedAt": "2026-11-26T20:03:14.071Z"
+  },
+  "4420872dee56b54f708905a6a55c33e8ac158674177a6cbb9253b8e2e1f5a0fe": {
+    "source": "NYC Airbnb Market Analysis",
+    "targetLang": "zh-Hans",
+    "translated": "纽约市 Airbnb 市场分析",
+    "cachedAt": "2026-11-26T20:05:00.992Z"
+  },
+  "d927e062ff0a193331753c990b2fa8302ec0e668f0feb02015355d06ffed63e1": {
+    "source": "Cleaned and explored a dataset of 48,000+ New York City Airbnb listings in R. Handled missing values, converted dates and categories to the right types, and grouped listings by how often they're available. Then used ggplot2 to dig into prices and reviews: entire homes are the most common listing type, Manhattan and Brooklyn are the priciest boroughs, and cheaper listings tend to collect far more reviews.",
+    "targetLang": "zh-Hans",
+    "translated": "用R语言清理并浏览了48,000+个纽约市Airbnb挂牌信息的数据集。处理缺失值，将日期和类别转换为正确类型，并按房源的出现频率分组。然后用 ggplot2 深入分析价格和评价：整套房屋是最常见的房源类型，曼哈顿和布鲁克林是价格最高的区，价格较低的房源往往收集的评价更多。",
+    "cachedAt": "2026-11-26T20:05:01.518Z"
+  },
+  "acf01b0fbd3d929147f10853c622d66c4567f39f885cc717a2521560de11ae0d": {
+    "source": "NYC Airbnb Market Analysis",
+    "targetLang": "zh-Hant",
+    "translated": "紐約市 Airbnb 市場分析",
+    "cachedAt": "2026-11-26T20:05:01.796Z"
+  },
+  "546c1fd63341785a14264c0d4118987f6abbc351e33d711fcc0d8426df1dbe6b": {
+    "source": "Cleaned and explored a dataset of 48,000+ New York City Airbnb listings in R. Handled missing values, converted dates and categories to the right types, and grouped listings by how often they're available. Then used ggplot2 to dig into prices and reviews: entire homes are the most common listing type, Manhattan and Brooklyn are the priciest boroughs, and cheaper listings tend to collect far more reviews.",
+    "targetLang": "zh-Hant",
+    "translated": "用 R 清理並探索了包含 48,000+ 個紐約市 Airbnb 房源的資料集。處理缺失值，將日期和分類轉換成正確類型，並依照房源開放頻率分組。接著用 ggplot2 深入分析價格與評論：整棟房屋是最常見的房源類型，曼哈頓和布魯克林是價格最高的區，價格較低的房源往往能收集更多評論。",
+    "cachedAt": "2026-11-26T20:05:02.324Z"
   }
 }

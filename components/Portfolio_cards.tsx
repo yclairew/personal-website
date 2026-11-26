@@ -169,6 +169,19 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["R", "Linear Regression", "ANOVA", "Statistical Modeling"]
   },
   {
+    id: "airbnb-analysis",
+    titleKey: "airbnb-analysis",
+    stackType: ["Data Analysis", "Data Visualization"],
+    context: "Coursework",
+    type: "image",
+    media: {
+      url: "/airbnb-analysis-img.png",
+      alt_text: "Boxplot of Airbnb prices by New York City borough and a scatterplot of price versus number of reviews colored by room type"
+    },
+    linkKeys: [],
+    skillKeys: ["R", "ggplot2", "dplyr", "Data Cleaning"]
+  },
+  {
     id: "aggies-create",
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",

@@ -63,6 +63,10 @@
     "card_boston-regression_desc": {
       "source": "Built and compared three regression models in R to predict median home values across Boston neighborhoods. Started with a single predictor, the share of lower-income residents, then added every available feature, raising the adjusted R² from 0.54 to 0.73. Checked the larger model for overlapping predictors using VIF, and used ANOVA to show that adding a curved term fit the data significantly better than a straight line.",
       "text": "在 R 中构建并比较了三个回归模型，以预测波士顿各社区的中位房价。从单一预测变量——低收入居民的比例开始，然后加入所有可用特征，将调整后的 R² 从 0.54 提高到 0.73。用 VIF 检查了更大模型中是否有重叠预测变量，并利用方差分析（ANOVA）显示，加入曲线项比直线显著更贴合数据。"
+    },
+    "card_airbnb-analysis_desc": {
+      "source": "Cleaned and explored a dataset of 48,000+ New York City Airbnb listings in R. Handled missing values, converted dates and categories to the right types, and grouped listings by how often they're available. Then used ggplot2 to dig into prices and reviews: entire homes are the most common listing type, Manhattan and Brooklyn are the priciest boroughs, and cheaper listings tend to collect far more reviews.",
+      "text": "用 R 清理并探索了包含 48,000+ 条纽约市 Airbnb 房源的数据集。处理缺失值，将日期和类别转换为正确类型，并按房源全年可预订天数分组。然后用 ggplot2 深入分析价格和评价：整套房屋是最常见的房源类型，曼哈顿和布鲁克林是价格最高的区，价格较低的房源往往获得的评价多得多。"
     }
   },
   "zh-Hant": {
@@ -121,6 +125,10 @@
     "card_boston-regression_desc": {
       "source": "Built and compared three regression models in R to predict median home values across Boston neighborhoods. Started with a single predictor, the share of lower-income residents, then added every available feature, raising the adjusted R² from 0.54 to 0.73. Checked the larger model for overlapping predictors using VIF, and used ANOVA to show that adding a curved term fit the data significantly better than a straight line.",
       "text": "在 R 中建立並比較三個迴歸模型，以預測波士頓各社區的中位房價。先從單一預測變數——低收入居民的比例——開始，然後加入所有可用特徵，將調整後的 R² 從 0.54 提高到 0.73。利用 VIF 檢查較大模型是否有重疊預測變數，並利用 ANOVA 顯示加入曲線項比直線顯著更貼合數據。"
+    },
+    "card_airbnb-analysis_desc": {
+      "source": "Cleaned and explored a dataset of 48,000+ New York City Airbnb listings in R. Handled missing values, converted dates and categories to the right types, and grouped listings by how often they're available. Then used ggplot2 to dig into prices and reviews: entire homes are the most common listing type, Manhattan and Brooklyn are the priciest boroughs, and cheaper listings tend to collect far more reviews.",
+      "text": "用 R 清理並探索了包含 48,000+ 個紐約市 Airbnb 房源的資料集。處理缺失值，將日期和分類轉換成正確類型，並依房源全年可預訂天數分組。接著用 ggplot2 深入分析價格與評論：整棟房屋是最常見的房源類型，曼哈頓和布魯克林是價格最高的區，價格較低的房源往往獲得的評論多得多。"
     }
   }
 }
