@@ -88,6 +88,19 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     skillKeys: ["C++", "POSIX", "Multithreading", "TCP/IP Sockets", "Linux", "Debugging"]
   },
   {
+    id: "multi-agent-deploy",
+    titleKey: "multi-agent-deploy",
+    stackType: ["AI/ML", "Cloud"],
+    context: "Coursework",
+    type: "image",
+    media: {
+      url: "/multi-agent-deploy-img.png",
+      alt_text: "Architecture diagram of the CI/CD pipeline: GitHub to S3 to AWS CodePipeline stages, with AI agents handling setup, tests, and recovery"
+    },
+    linkKeys: [],
+    skillKeys: ["Python", "Claude API", "AWS", "boto3", "CI/CD", "GitHub Actions", "Pytest", "Prompt Engineering", "Automation"]
+  },
+  {
     id: "aggies-create",
     titleKey: "aggies-create",
     logo: "/aggies-create-logo.png",

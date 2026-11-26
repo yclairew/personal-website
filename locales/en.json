@@ -47,6 +47,7 @@
   "title_tao": "Engineering TA Organization",
   "title_bingo-board": "Bingo Board Generator",
   "title_banking-system": "Distributed Banking System",
+  "title_multi-agent-deploy": "Agentic CI/CD Pipeline",
 
   "card_annomath_role": "Undergraduate Researcher",
   "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI generated outputs from the OpenAI API.",
@@ -56,6 +57,8 @@
 
   "card_banking-system_role": "Systems Developer",
   "card_banking-system_desc": "Built a C++ banking system on Linux that grew over the semester from a single-machine program into a distributed one. Started with processes talking through pipes, moved to a client-server setup, then added a thread pool so the server could handle many requests at once. Finished by connecting clients and servers across machines over TCP/IP sockets.",
+
+  "card_multi-agent-deploy_desc": "Built a team of five AI agents with the Claude API that set up and manage a cloud deployment on AWS (S3, CloudFront, CodePipeline, CodeBuild). Each agent only gets the tools it needs, and risky changes wait for a human to approve them. Every push to GitHub runs 39 site tests, publishes a new release behind CloudFront, and runs 10 live checks, automatically rolling back to the last working release if anything fails. When something breaks, a diagnostician agent traces the cause and proposes a fix.",
 
   "card_aggies-create_role": "Team Lead and Consultant",
   "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.",
@@ -93,6 +96,7 @@
   "stacktype_data-visualization": "Data Visualization",
   "stacktype_automation": "Automation",
   "stacktype_systems": "Systems",
+  "stacktype_cloud": "Cloud",
 
   "context_research": "Research",
   "context_coursework": "Coursework",

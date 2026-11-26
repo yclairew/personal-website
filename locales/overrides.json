@@ -19,6 +19,14 @@
     "coursework_slide_se-4_caption": {
       "source": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
       "text": "基于网站的动态珍珠奶茶 POS 客户自助终端（项目 3）"
+    },
+    "card_multi-agent-deploy_desc": {
+      "source": "Built a team of five AI agents with the Claude API that set up and manage a cloud deployment on AWS (S3, CloudFront, CodePipeline, CodeBuild). Each agent only gets the tools it needs, and risky changes wait for a human to approve them. Every push to GitHub runs 39 site tests, publishes a new release behind CloudFront, and runs 10 live checks, automatically rolling back to the last working release if anything fails. When something breaks, a diagnostician agent traces the cause and proposes a fix.",
+      "text": "组建了一支由五名 AI 代理组成的团队，使用 Claude API，在 AWS 上搭建和管理云部署（S3、CloudFront、CodePipeline、CodeBuild）。每个代理只获得所需的工具，风险变更需人工批准。每次推送到 GitHub 都会运行 39 项网站测试，在 CloudFront 后面发布新版本，并运行 10 项实时检查，如果出现故障会自动回滚到最后一个可用的版本。当某项系统出现故障时，诊断代理会追踪原因并提出修复方案。"
+    },
+    "stacktype_cloud": {
+      "source": "Cloud",
+      "text": "云端"
     }
   },
   "zh-Hant": {
@@ -37,6 +45,14 @@
     "coursework_slide_se-4_caption": {
       "source": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
       "text": "動態網站式珍珠奶茶 POS 客戶自助服務機（專案 3）"
+    },
+    "card_multi-agent-deploy_desc": {
+      "source": "Built a team of five AI agents with the Claude API that set up and manage a cloud deployment on AWS (S3, CloudFront, CodePipeline, CodeBuild). Each agent only gets the tools it needs, and risky changes wait for a human to approve them. Every push to GitHub runs 39 site tests, publishes a new release behind CloudFront, and runs 10 live checks, automatically rolling back to the last working release if anything fails. When something breaks, a diagnostician agent traces the cause and proposes a fix.",
+      "text": "組建了一支由五位 AI 代理組成的團隊，使用 Claude API，在 AWS 上建立並管理雲端部署（S3、CloudFront、CodePipeline、CodeBuild）。每個代理只拿到它需要的工具，而風險較高的變更則需要人工審核。每次推送到 GitHub 都會執行 39 項網站測試，並在 CloudFront 後方發布新版本，並執行 10 項即時檢查，若有任何問題會自動回滾到最後可用的版本。當某個東西出問題時，診斷代理會追蹤原因並提出修正方案。"
+    },
+    "stacktype_cloud": {
+      "source": "Cloud",
+      "text": "雲端"
     }
   }
 }
