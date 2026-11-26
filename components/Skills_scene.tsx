@@ -26,7 +26,7 @@ const displayNames: Record<string, string> = {
   "cplusplus": "C++", "cmake": "CMake", "css": "CSS", "html5": "HTML", "dart": "Dart",
   "flutter": "Flutter", "kubernetes": "Kubernetes", "deepgram": "Deepgram", 
   "javascript": "JavaScript", "figma": "Figma", "git": "Git", "github": "GitHub", 
-  "rstudioide": "R Studio", "jira": "Jira", "latex": "LaTeX", "pycharm": "PyCharm", 
+  "rstudioide": "RStudio", "jira": "Jira", "latex": "LaTeX", "pycharm": "PyCharm", 
   "intellijidea": "IntelliJ IDEA", "mapbox": "Mapbox", "pytorch": "PyTorch",
   "bootstrap": "Bootstrap", "numpy": "NumPy", "pandas": "Pandas", "tailwindcss": "Tailwind CSS", 
   "scikitlearn": "scikit-learn", "opengl": "OpenGL", "tldraw": "tldraw", "render": "Render",

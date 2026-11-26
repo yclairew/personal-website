@@ -17,7 +17,7 @@
       "text": "基于 JavaFX 的珍珠奶茶 POS 图形界面（项目 2）"
     },
     "coursework_slide_se-4_caption": {
-      "source": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
+      "source": "Dynamic Website-Based Boba POS Customer Kiosk (Project 3)",
       "text": "基于网站的动态珍珠奶茶 POS 客户自助终端（项目 3）"
     },
     "card_multi-agent-deploy_desc": {
@@ -75,6 +75,42 @@
     "card_tao_role": {
       "source": "Web Officer & Software Engineer Intern",
       "text": "网站负责人兼软件工程师实习生"
+    },
+    "home_intro_p1_prefix": {
+      "source": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
+      "text": "我对软件工程、数据科学、人工智能/机器学习和用户体验设计充满热情。目前，我在 Xia 博士的"
+    },
+    "home_intro_p1_link": {
+      "source": "Dream Lab",
+      "text": "Dream Lab"
+    },
+    "home_intro_p1_suffix": {
+      "source": "working on",
+      "text": "正在开发"
+    },
+    "coursework_ai_text_prefix": {
+      "source": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodal college math tutoring system as part of my research under",
+      "text": "我喜欢探索人工智能、机器学习背后的理论，以及人工智能工具对软件行业可能产生的影响。为了追求这一兴趣，我在计算机科学与工程系的"
+    },
+    "coursework_ai_link": {
+      "source": "Dr. Xia",
+      "text": "Xia 博士"
+    },
+    "coursework_ai_text_suffix": {
+      "source": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
+      "text": "指导下做研究，正在开发一套由人工智能驱动的多模态大学数学辅导系统。另外，我最近修了 CSCE 421（机器学习）。"
+    },
+    "card_annomath_desc": {
+      "source": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI-powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive an annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI-generated outputs from the OpenAI API.",
+      "text": "AnnoMath 诞生于 Xia 博士的 Dream Lab，是一个由 AI 驱动的多模态大学数学辅导系统，将基于教学法的注释类型应用于学生的手写作业。与一位博士研究员共同编码并分析了 30 个 Khan Academy 视频，以建立注释框架。实现了多种注释类型的渲染，并构建了前端逻辑来渲染 OpenAI API 生成的 AI 输出。"
+    },
+    "card_signify-health_desc": {
+      "source": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at-home services. Created a geospatial hex overlay for provider reachability, implemented real-time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+      "text": "通过 Aggies Create 开发了 Signify Hex，一款内部数据可视化工具，将患者与提供居家服务的医疗人员连接起来。创建了显示医疗人员可达范围的地理空间六边形叠加层，实现了实时 gRPC 数据获取，并通过基于 Redis 的变更跟踪减少了不必要的前端刷新。定期与 Signify Health 领导层会面。在 Aggies Create 创新博览会上获得咨询项目第一名。"
+    },
+    "card_aggies-create_desc": {
+      "source": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at the Fall 2025 Aggies Create Innovation Expo.",
+      "text": "曾为一家小型护肤公司领导咨询团队。开发了前端产品推荐测验，旨在与客户现有的 Shopify 店铺集成。训练了一个随机森林模型，利用模拟销售数据生成邮件推荐，预测准确率达 98%。还协调团队完成了完整的设计和品牌重塑过程。在 2025 年秋季 Aggies Create 创新博览会上展示了项目成果。"
     }
   },
   "zh-Hant": {
@@ -91,7 +127,7 @@
       "text": "基於 JavaFX 的珍珠奶茶 POS 圖形介面（專案 2）"
     },
     "coursework_slide_se-4_caption": {
-      "source": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
+      "source": "Dynamic Website-Based Boba POS Customer Kiosk (Project 3)",
       "text": "動態網站式珍珠奶茶 POS 客戶自助服務機（專案 3）"
     },
     "card_multi-agent-deploy_desc": {
@@ -137,6 +173,50 @@
     "card_tao_role": {
       "source": "Web Officer & Software Engineer Intern",
       "text": "網站負責人暨軟體工程師實習生"
+    },
+    "home_intro_p1_prefix": {
+      "source": "I am passionate about software engineering, data science, AI/ML, and UX design. Currently, I am researching in Dr. Xia's",
+      "text": "我熱衷於軟體工程、資料科學、人工智慧/機器學習和使用者體驗設計。目前，我在 Xia 博士的"
+    },
+    "home_intro_p1_link": {
+      "source": "Dream Lab",
+      "text": "Dream Lab"
+    },
+    "home_intro_p1_suffix": {
+      "source": "working on",
+      "text": "正在開發"
+    },
+    "home_intro_p1_project": {
+      "source": "AnnoMath",
+      "text": "AnnoMath"
+    },
+    "coursework_ai_text_prefix": {
+      "source": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodal college math tutoring system as part of my research under",
+      "text": "我喜歡探索 AI、機器學習背後的理論，以及 AI 工具對軟體產業所能帶來的影響。為了追求這個興趣，我在電腦科學與工程系的"
+    },
+    "coursework_ai_link": {
+      "source": "Dr. Xia",
+      "text": "Xia 博士"
+    },
+    "coursework_ai_text_suffix": {
+      "source": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
+      "text": "指導下做研究，正在開發一套由 AI 驅動的多模態大學數學輔導系統。另外，我最近修了 CSCE 421（機器學習）。"
+    },
+    "card_annomath_desc": {
+      "source": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI-powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive an annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI-generated outputs from the OpenAI API.",
+      "text": "AnnoMath 誕生於 Xia 博士的 Dream Lab，是一套由 AI 驅動的多模態大學數學輔導系統，將以教學法為基礎的註解類型應用於學生的手寫作業。與一位博士研究員共同編碼並分析了 30 支 Khan Academy 影片，以建立註解框架。實作了多種註解類型的渲染，並建構前端邏輯來渲染 OpenAI API 生成的 AI 輸出。"
+    },
+    "card_signify-health_desc": {
+      "source": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at-home services. Created a geospatial hex overlay for provider reachability, implemented real-time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+      "text": "透過 Aggies Create 打造了 Signify Hex，一套內部資料視覺化工具，將病患與提供居家服務的醫療人員連結起來。建立了顯示醫療人員可達範圍的地理空間六角形疊加層，實作即時 gRPC 資料擷取，並透過基於 Redis 的變更追蹤減少不必要的前端更新。定期與 Signify Health 領導層會面。在 Aggies Create Innovation Expo 的諮詢專案中榮獲第一名。"
+    },
+    "card_aggies-create_desc": {
+      "source": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at the Fall 2025 Aggies Create Innovation Expo.",
+      "text": "曾領導一家小型護膚公司顧問團隊。設計前端產品推薦測驗，與客戶現有的 Shopify 商店整合。訓練隨機森林模型，從模擬銷售數據中產生電子郵件推薦，預測準確率達 98%。同時協調團隊完成完整的設計與品牌重塑流程。於 2025 年秋季 Aggies Create Innovation Expo 展示專案成果。"
+    },
+    "title_annomath": {
+      "source": "AnnoMath",
+      "text": "AnnoMath"
     }
   }
 }

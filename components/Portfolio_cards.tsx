@@ -51,7 +51,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     media: {
       // url: "/annomath-paper-video.mp4",
       url: "/annomath-paper-video-optimized.mp4",
-      alt_text: "Annomath video for paper submission",
+      alt_text: "AnnoMath video for paper submission",
       poster: "/annomath-paper-video-optimized-poster.png"
     },
     linkKeys: [],
@@ -65,7 +65,7 @@ const cardsData: (Omit<Card, "role" | "description" | "title" | "skills" | "link
     type: "image",
     media: {
       url: "/boba-pos-img.png",
-      alt_text: "Screenshot of the manager video of the boba POS system"
+      alt_text: "Screenshot of the manager view of the boba POS system"
     },
     linkKeys: [
       { key: "pos-system", url: "https://new-project3-gang71.onrender.com/" },

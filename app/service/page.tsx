@@ -7,9 +7,9 @@ import { useAnimateOnScroll } from "@/hooks/useAnimateOnScroll";
 import { useLocale } from "@/lib/i18n/Locale_context";
 
 const serviceSlidesData = [
-  { id: "park-cleanup", src: "/park-cleanup.webp", alt: "Group picture with MSC Fish before park cleanup" },
-  { id: "flo-bowl", src: "/flo-bowl.webp", alt: "Group picture with MSC Fish after a successful FLO Bowl event" },
-  { id: "freshman-big-event", src: "/freshman-big-event.jpg", alt: "Volunteering with MSC Fish for Big Event"},
+  { id: "park-cleanup", src: "/park-cleanup.webp", alt: "Group picture with MSC FISH before park cleanup" },
+  { id: "flo-bowl", src: "/flo-bowl.webp", alt: "Group picture with MSC FISH after a successful FLO Bowl event" },
+  { id: "freshman-big-event", src: "/freshman-big-event.jpg", alt: "Volunteering with MSC FISH for Big Event"},
   { id: "sophomore-big-event", src: "/sophomore-big-event.png", alt: "Volunteering with Aggies Create for Big Event" },
 ];
 

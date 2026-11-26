@@ -2290,5 +2290,101 @@
     "targetLang": "zh-Hant",
     "translated": "實習",
     "cachedAt": "2026-11-26T20:11:54.842Z"
+  },
+  "0860b19106d094a80b53031005bf8098e3dd7d1ff700af433bede7b019993af3": {
+    "source": "an AI-powered multimodal interactive math tutoring system.",
+    "targetLang": "zh-Hans",
+    "translated": "一个由人工智能驱动的多模态互动数学辅导系统。",
+    "cachedAt": "2026-11-26T20:22:52.674Z"
+  },
+  "27c07f21909503d373255f8c25e5ae793a3c30cf71d8e68619351b37dd50b419": {
+    "source": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI-powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive an annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI-generated outputs from the OpenAI API.",
+    "targetLang": "zh-Hans",
+    "translated": "AnnoMath 由 Sha 博士的 Dream Lab 构建，是一个由 AI 驱动的多模态大学数学辅导系统，将基于教学法的注释类型应用于学生手写作品。与一位博士研究员共同编写并分析了 30 个 Khan Academy 视频，构建了一个注释框架。实现了多种注释类型的渲染。构建了前端逻辑，用于渲染 OpenAI API 中 AI 生成的输出。",
+    "cachedAt": "2026-11-26T20:22:53.098Z"
+  },
+  "66fe67f5bb9bc067999a043d899f2eda84f5ba5cfb4536867d77b0fe5b3afb6a": {
+    "source": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at the Fall 2025 Aggies Create Innovation Expo.",
+    "targetLang": "zh-Hans",
+    "translated": "曾为一家小型护肤公司领导咨询团队。开发了前端产品推荐测验，旨在与客户现有的 Shopify 店铺集成。训练了一个随机森林模型，利用模拟销售数据生成邮件推荐，预测准确率达 98%。还协调团队完成了完整的设计和品牌重塑过程。在 2025 年秋季 Aggies Create 创新博览会上发表。",
+    "cachedAt": "2026-11-26T20:22:53.356Z"
+  },
+  "04704c3c695a3e93c9e3616511b83c92c0f2ff0a1d5757c1d7cae667b4192970": {
+    "source": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at-home services. Created a geospatial hex overlay for provider reachability, implemented real-time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+    "targetLang": "zh-Hans",
+    "translated": "通过 Aggies Create，他开发了 Signify Hex，一款内部数据可视化工具，将患者与医疗提供者连接起来，实现居家服务。创建了地理空间六边形叠加层，便于提供者可达性，实现实时 gRPC 数据获取，并通过基于 Redis 的变更跟踪减少不必要的前端刷新。定期与 Signify Health 领导层会面。在 Aggies Create 创新博览会上获得咨询项目第一名。",
+    "cachedAt": "2026-11-26T20:22:53.698Z"
+  },
+  "de4268e5f59143bd531cdca6adf48408c02b3889806f171af0015029abd9a2c6": {
+    "source": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I worked with",
+    "targetLang": "zh-Hans",
+    "translated": "数据无处不在，对数据的分析可以带来洞见。为了探索这个领域，我曾与",
+    "cachedAt": "2026-11-26T20:22:53.876Z"
+  },
+  "47fad7d5fed7d8457fd438528ef6fee36751262b030fe42abe63390017b87d8b": {
+    "source": "Artificial Intelligence (AI)",
+    "targetLang": "zh-Hans",
+    "translated": "人工智能（AI）",
+    "cachedAt": "2026-11-26T20:22:53.992Z"
+  },
+  "a548ca5cff6f882eb5d6527a0ccdd113b9628a80a95fba5208a18a49835b8d8b": {
+    "source": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodal college math tutoring system as part of my research under",
+    "targetLang": "zh-Hans",
+    "translated": "我喜欢探索人工智能、机器学习背后的理论，以及人工智能工具对软件行业可能产生的影响。为了追求这一兴趣，我正在开发一套由人工智能驱动的多模态大学数学辅导系统，作为我研究的一部分",
+    "cachedAt": "2026-11-26T20:22:54.199Z"
+  },
+  "73445e6e8bab8c9727a1b1286fb6b84e16f63f0f68d06538bbdb6cef921eb437": {
+    "source": "Exploring shaders, materials, and time-based animations with Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hans",
+    "translated": "探索着色器、材质和基于时间的动画，使用斯坦福兔子和犹他茶壶",
+    "cachedAt": "2026-11-26T20:22:54.386Z"
+  },
+  "010d35bd5643f1dfb118e53d1d4e6c5923ff4cf05d5afc81c767ebd2896ae900": {
+    "source": "an AI-powered multimodal interactive math tutoring system.",
+    "targetLang": "zh-Hant",
+    "translated": "一套由 AI 驅動的多模態互動數學輔導系統。",
+    "cachedAt": "2026-11-26T20:22:54.653Z"
+  },
+  "25df5fca954bc90b2fc3219c2827613447431fff5207e88500502d8da9d4cdfe": {
+    "source": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI-powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive an annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI-generated outputs from the OpenAI API.",
+    "targetLang": "zh-Hant",
+    "translated": "AnnoMath 建置於夏博士的夢想實驗室，是一套由 AI 驅動的多模態大學數學輔導系統，將教學基礎的註解類型應用於學生手寫作品中。與博士研究員共同編寫並分析了 30 支 Khan Academy 影片，以建立註解框架。實作多種註解類型的渲染功能。建構前端邏輯以渲染 OpenAI API 生成的 AI 輸出。",
+    "cachedAt": "2026-11-26T20:22:55.154Z"
+  },
+  "9292db39d52e66a4d3e42ddcc67e66cc1001e1dfc3ec848971ac28deb1cb61d9": {
+    "source": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at the Fall 2025 Aggies Create Innovation Expo.",
+    "targetLang": "zh-Hant",
+    "translated": "曾領導一家小型護膚公司顧問團隊。設計前端產品推薦測驗，與客戶現有的 Shopify 商店整合。訓練隨機森林模型，從模擬銷售數據中產生電子郵件推薦，預測準確率達 98%。同時協調團隊完成完整的設計與品牌重塑流程。於 2025 年秋季 Aggies Create Innovation 博覽會發表。",
+    "cachedAt": "2026-11-26T20:22:55.441Z"
+  },
+  "e0f8efbb332747b4720c07712bf051e0597f338956add67f284ac80a3703619e": {
+    "source": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at-home services. Created a geospatial hex overlay for provider reachability, implemented real-time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+    "targetLang": "zh-Hant",
+    "translated": "透過 Aggies Create，他打造了 Signify Hex，一套內部資料視覺化工具，連結病患與醫療提供者，提供居家服務。建立了地理空間六角形疊加層，提升醫療提供者的可達性，實施即時 gRPC 資料擷取，並透過基於 Redis 的變更追蹤減少不必要的前端更新。定期與 Signify Health 領導層會面。在 Aggies Create Innovation Expo 諮詢專案中榮獲第一名。",
+    "cachedAt": "2026-11-26T20:22:55.838Z"
+  },
+  "7863fffef074569009cc7755920d079b8f4fa1d46dbeb2027879e2d8df7bd6a5": {
+    "source": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I worked with",
+    "targetLang": "zh-Hant",
+    "translated": "數據無處不在，對其的分析能帶來洞見。為了探索這個領域，我曾與",
+    "cachedAt": "2026-11-26T20:22:56.225Z"
+  },
+  "b7f5243c55c455527d51c04ae4caf4a1510deea18a97f8f2a13779a5892f67b2": {
+    "source": "Artificial Intelligence (AI)",
+    "targetLang": "zh-Hant",
+    "translated": "人工智慧（AI）",
+    "cachedAt": "2026-11-26T20:22:56.390Z"
+  },
+  "11c343fec3ff15b30323d1f42c49ed88051219dc9e9eaa850cdf2abea8f5297b": {
+    "source": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodal college math tutoring system as part of my research under",
+    "targetLang": "zh-Hant",
+    "translated": "我喜歡探索 AI、機器學習背後的理論，以及 AI 工具對軟體產業所能帶來的影響。為了追求這個興趣，我正在研究一套由 AI 驅動的多模態大學數學輔導系統，作為研究的一部分",
+    "cachedAt": "2026-11-26T20:22:56.683Z"
+  },
+  "ebdc9d73cbbcbef17d8e6c324eda9d7aa740cbed6323a11e2b59fedda4dc27f9": {
+    "source": "Exploring shaders, materials, and time-based animations with Stanford Bunny and Utah Teapot",
+    "targetLang": "zh-Hant",
+    "translated": "探索 Stanford Bunny 和 Utah Teapot 的著色器、材質與時間動畫",
+    "cachedAt": "2026-11-26T20:22:57.108Z"
   }
 }

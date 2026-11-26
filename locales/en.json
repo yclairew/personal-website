@@ -8,7 +8,7 @@
   "nav_resume": "Resume",
 
   "footer_heading": "Claire Wu",
-  "footer_role": "Full Stack Developer",
+  "footer_role": "Full-Stack Developer",
   "footer_linkedin": "LinkedIn",
   "footer_github": "GitHub",
   "footer_email": "Email",
@@ -21,7 +21,7 @@
   "home_intro_p1_link": "Dream Lab",
   "home_intro_p1_suffix": "working on",
   "home_intro_p1_project": "AnnoMath",
-  "home_intro_p1_suffix2": "an AI-powered multimodial interactive math tutorial system.",
+  "home_intro_p1_suffix2": "an AI-powered multimodal interactive math tutoring system.",
   "home_intro_p2_prefix": "When I'm not coding, you can usually find me at the gym, crocheting or doing other crafts, or exploring new coffee shops!",
   "home_intro_p2_middle": "Check out my",
   "home_intro_p2_portfolio_link": "portfolio",
@@ -56,7 +56,7 @@
   "title_airbnb-analysis": "NYC Airbnb Market Analysis",
 
   "card_annomath_role": "AI Researcher",
-  "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI generated outputs from the OpenAI API.",
+  "card_annomath_desc": "Built in Dr. Xia's Dream Lab, AnnoMath is an AI-powered multimodal college math tutoring system applying pedagogically grounded annotation types to handwritten student work. Coded and analyzed 30 Khan Academy videos with a PhD researcher to derive an annotation framework. Implemented rendering for multiple annotation types. Built frontend logic to render AI-generated outputs from the OpenAI API.",
 
   "card_pearl-tea_role": "Full-Stack Developer",
   "card_pearl-tea_desc": "Built a boba shop POS system with a team, starting as a JavaFX desktop app with customer and manager views for 120+ menu items, backed by a PostgreSQL database on AWS. Then moved it to the web with Node.js/Express APIs and led deployment on Render with secure authentication. Added multi-layer caching that cut API calls per page load by more than half, plus text-to-speech and weather-based drink recommendations for accessibility.",
@@ -79,10 +79,10 @@
   "card_airbnb-analysis_desc": "Cleaned and explored a dataset of 48,000+ New York City Airbnb listings in R. Handled missing values, converted dates and categories to the right types, and grouped listings by how often they're available. Then used ggplot2 to dig into prices and reviews: entire homes are the most common listing type, Manhattan and Brooklyn are the priciest boroughs, and cheaper listings tend to collect far more reviews.",
 
   "card_aggies-create_role": "Team Lead & Software Engineer Intern",
-  "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at Fall 2025 Aggies Create Innovation Expo.",
+  "card_aggies-create_desc": "Led a consulting team for a small skincare company. Built a frontend product recommendation quiz, designed to integrate with the client's existing Shopify storefront. Trained a Random Forest model generating email recommendations from mock sales data with 98% prediction accuracy. Also coordinated the team through a full design and rebranding process. Presented at the Fall 2025 Aggies Create Innovation Expo.",
 
   "card_signify-health_role": "Software Engineering Intern",
-  "card_signify-health_desc": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at home services. Created a geospatial hex overlay for provider reachability, implemented real time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
+  "card_signify-health_desc": "Through Aggies Create, built Signify Hex, an internal data visualization tool connecting patients with medical providers for at-home services. Created a geospatial hex overlay for provider reachability, implemented real-time gRPC data fetching, and reduced unnecessary frontend refreshes with Redis-based change tracking. Regularly met with Signify Health leadership. Awarded 1st place among consulting projects at the Aggies Create Innovation Expo.",
 
   "card_personal-website_desc": "Designed and developed a personal portfolio site showcasing projects and coursework. Built a build-time translation pipeline using Microsoft Azure Translator (REST API) with hash-based caching to minimize redundant calls. Created an interactive, animated skills section using React Three Fiber, featuring cached texture loading for 40+ tech icons. Cut main-thread load time by nearly 50% through lazy-loaded 3D assets, texture caching, and video compression.",
 
@@ -127,11 +127,11 @@
   "coursework_heading": "Coursework",
   "coursework_inspire_heading": "Fields That Inspire Me",
   "coursework_datascience_title": "Data Science",
-  "coursework_datascience_text_prefix": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I collaborated to work with",
+  "coursework_datascience_text_prefix": "Data is everywhere, and analyses of it can reveal insights. To explore the field, I worked with",
   "coursework_datascience_link": "Signify Health",
   "coursework_datascience_text_suffix": "to create a system that brings healthcare services to patients' doorsteps. I am grateful to have worked on a project combining two powerful fields (computer science and statistics) to have a direct, positive impact on patients.",
-  "coursework_ai_title": "Artificial intelligence (AI)",
-  "coursework_ai_text_prefix": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodial college math tutoring system as part of my research under",
+  "coursework_ai_title": "Artificial Intelligence (AI)",
+  "coursework_ai_text_prefix": "I like exploring AI, the theory behind machine learning, and the impact AI tools can have on the software industry. To pursue this interest, I am working on an AI-powered multimodal college math tutoring system as part of my research under",
   "coursework_ai_link": "Dr. Xia",
   "coursework_ai_text_suffix": "in the Department of Computer Science & Engineering. Also, I recently took CSCE 421 (Machine Learning).",
   "coursework_business_title": "Business",
@@ -166,7 +166,7 @@
   "coursework_slide_se-1_caption": "JavaFX-Based Boba POS GUI (Project 2)",
   "coursework_slide_se-2_caption": "Add Item Popup",
   "coursework_slide_se-3_caption": "Ingredient Linking to Seasonal Drinks",
-  "coursework_slide_se-4_caption": "Dynamic Website Based Boba POS Customer Kiosk (Project 3)",
+  "coursework_slide_se-4_caption": "Dynamic Website-Based Boba POS Customer Kiosk (Project 3)",
   "coursework_slide_se-5_caption": "Accessible Customer Customizations Popup",
   "coursework_slide_se-6_caption": "Customer Cart with Loyalty Point System",
   "coursework_slide_se-7_caption": "Simplified Employee View Kiosk",
@@ -176,7 +176,7 @@
   "coursework_slide_ml-2_caption": "XGBoost ROC Curve",
   "coursework_slide_ml-3_caption": "EDA Pearson's Correlation Heatmap",
 
-  "coursework_slide_cg-1_caption": "Exploring shaders, materials, time-based animations with Stanford Bunny and Utah Teapot",
+  "coursework_slide_cg-1_caption": "Exploring shaders, materials, and time-based animations with Stanford Bunny and Utah Teapot",
   "coursework_slide_cg-2_caption": "Top-down and Freelook Camera Scene",
   "coursework_slide_cg-3_caption": "Scene with Deferred Rendering and Light Attenuation",
   "coursework_slide_cg-4_caption": "Ray Tracing Scene",

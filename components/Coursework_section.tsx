@@ -33,32 +33,32 @@ const courseworkData: CategoryData[] = [
       { 
         id: "program-design", 
         slides: [],
-        readme: "/120-README.md"
+        readme: "/120-readme.md"
       },
       { 
         id: "discrete-structures", 
         slides: [], 
-        readme: "/222-README.md"
+        readme: "/222-readme.md"
       },
       { 
         id: "linear-algebra", 
         slides: [],
-        readme: "/304-README.md" 
+        readme: "/304-readme.md" 
       },
       { 
         id: "computer-organization", 
         slides: [],
-        readme: "/312-README.md"
+        readme: "/312-readme.md"
       },
       { 
         id: "data-structures-algorithms", 
         slides: [],
-        readme: "/221-README.md" 
+        readme: "/221-readme.md" 
       },
       { 
         id: "computer-systems", 
         slides: [], 
-        readme: "/313-README.md"
+        readme: "/313-readme.md"
       },
       {
         id: "software-engineering",
@@ -109,7 +109,7 @@ const courseworkData: CategoryData[] = [
       { 
         id: "algorithm-design", 
         slides: [],
-        readme: "/411-README.md"
+        readme: "/411-readme.md"
       },
     ],
   },
@@ -142,7 +142,7 @@ const courseworkData: CategoryData[] = [
           {
             id: "cg-1",
             src: "/441-a3-shader.gif",
-            alt: "Exploring shaders, materials, time-based animations with Stanford Bunny and Utah Teapot",
+            alt: "Exploring shaders, materials, and time-based animations with Stanford Bunny and Utah Teapot",
           },
           {
             id: "cg-2",
@@ -190,7 +190,7 @@ const courseworkData: CategoryData[] = [
       { 
         id: "statistics-1-2", 
         slides: [], 
-        readme: "/211-212-README.md"
+        readme: "/211-212-readme.md"
       },
       {
         id: "statistical-computing",
